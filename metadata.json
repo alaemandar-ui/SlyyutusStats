@@ -1,0 +1,6 @@
+{
+  "name": "SLYYUTUS.STATS",
+  "description": "Comprehensive statistics, community rankings, VOD archive, and monthly Chatters League platform for Kick channel Slyyutus.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

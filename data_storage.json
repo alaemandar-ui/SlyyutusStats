@@ -1,0 +1,2313 @@
+{
+  "users": [],
+  "kickUsers": [
+    {
+      "kickUserId": "16282003",
+      "username": "M4ND4R_x",
+      "avatarUrl": "https://files.kick.com/images/user/16282003/profile_image/conversion/e723cae9-87bf-4ace-9991-8239c070a90d-medium.webp",
+      "bio": "Member of Slyyutus Kick Community",
+      "firstSeenAt": "2026-09-05T16:58:13.693Z",
+      "lastActiveAt": "2026-09-05T17:43:28.422Z",
+      "totalMessages": 2,
+      "totalSubs": 0,
+      "totalGifts": 0,
+      "isVerified": false,
+      "isTest": false
+    },
+    {
+      "kickUserId": "k_1788627626013",
+      "username": "ApexLegend99",
+      "avatarUrl": "https://api.dicebear.com/7.x/bottts/svg?seed=ApexLegend99",
+      "bio": "Member of Slyyutus Kick Community",
+      "firstSeenAt": "2026-09-05T17:00:26.018Z",
+      "lastActiveAt": "2026-09-05T17:00:26.019Z",
+      "totalMessages": 1,
+      "totalSubs": 0,
+      "totalGifts": 0,
+      "isVerified": false,
+      "isTest": false
+    },
+    {
+      "kickUserId": "40562106",
+      "username": "sniper_0808",
+      "avatarUrl": "https://files.kick.com/images/user/40562106/profile_image/conversion/default6-medium.webp",
+      "bio": "Member of Slyyutus Kick Community",
+      "firstSeenAt": "2026-09-05T17:20:53.893Z",
+      "lastActiveAt": "2026-09-05T17:20:53.936Z",
+      "totalMessages": 3,
+      "totalSubs": 0,
+      "totalGifts": 0,
+      "isVerified": false,
+      "isTest": false
+    },
+    {
+      "kickUserId": "63532872",
+      "username": "Yamale10",
+      "avatarUrl": "https://files.kick.com/images/user/63532872/profile_image/conversion/f2111a60-ea87-4512-a322-a839b495971f-medium.webp",
+      "bio": "Member of Slyyutus Kick Community",
+      "firstSeenAt": "2026-09-05T17:36:13.175Z",
+      "lastActiveAt": "2026-09-05T17:59:34.395Z",
+      "totalMessages": 2,
+      "totalSubs": 0,
+      "totalGifts": 0,
+      "isVerified": false,
+      "isTest": false
+    },
+    {
+      "kickUserId": "35678970",
+      "username": "aymane_hma",
+      "avatarUrl": "https://kick.com/img/default-profile-pictures/default-avatar-1.webp",
+      "bio": "Member of Slyyutus Kick Community",
+      "firstSeenAt": "2026-09-05T17:46:48.173Z",
+      "lastActiveAt": "2026-09-05T17:46:48.174Z",
+      "totalMessages": 1,
+      "totalSubs": 0,
+      "totalGifts": 0,
+      "isVerified": false,
+      "isTest": false
+    },
+    {
+      "kickUserId": "1692922",
+      "username": "ELPATRONE",
+      "avatarUrl": "https://files.kick.com/images/user/1692922/profile_image/conversion/default3-medium.webp",
+      "bio": "Member of Slyyutus Kick Community",
+      "firstSeenAt": "2026-09-05T17:50:25.941Z",
+      "lastActiveAt": "2026-09-05T17:55:49.384Z",
+      "totalMessages": 2,
+      "totalSubs": 0,
+      "totalGifts": 0,
+      "isVerified": false,
+      "isTest": false
+    },
+    {
+      "kickUserId": "40072518",
+      "username": "znuxo",
+      "avatarUrl": "https://files.kick.com/images/user/40072518/profile_image/conversion/3409d32b-38be-42d3-858d-db39d9d04fdc-medium.webp",
+      "bio": "Member of Slyyutus Kick Community",
+      "firstSeenAt": "2026-09-05T17:50:37.018Z",
+      "lastActiveAt": "2026-09-05T17:50:53.534Z",
+      "totalMessages": 2,
+      "totalSubs": 0,
+      "totalGifts": 0,
+      "isVerified": false,
+      "isTest": false
+    },
+    {
+      "kickUserId": "120680906",
+      "username": "yasse1rr",
+      "avatarUrl": "https://kick.com/img/default-profile-pictures/default-avatar-3.webp",
+      "bio": "Member of Slyyutus Kick Community",
+      "firstSeenAt": "2026-09-05T17:55:16.827Z",
+      "lastActiveAt": "2026-09-05T17:55:16.827Z",
+      "totalMessages": 1,
+      "totalSubs": 0,
+      "totalGifts": 0,
+      "isVerified": false,
+      "isTest": false
+    },
+    {
+      "kickUserId": "38431381",
+      "username": "Veltron_exe",
+      "avatarUrl": "https://files.kick.com/images/user/38431381/profile_image/conversion/067ea324-2ba4-468d-a3b8-2878384b152f-medium.webp",
+      "bio": "Member of Slyyutus Kick Community",
+      "firstSeenAt": "2026-09-05T18:05:39.330Z",
+      "lastActiveAt": "2026-09-05T18:05:39.330Z",
+      "totalMessages": 1,
+      "totalSubs": 0,
+      "totalGifts": 0,
+      "isVerified": false,
+      "isTest": false
+    },
+    {
+      "kickUserId": "27761763",
+      "username": "fouadfd",
+      "avatarUrl": "https://kick.com/img/default-profile-pictures/default-avatar-4.webp",
+      "bio": "Member of Slyyutus Kick Community",
+      "firstSeenAt": "2026-09-05T18:11:57.132Z",
+      "lastActiveAt": "2026-09-05T18:11:57.132Z",
+      "totalMessages": 1,
+      "totalSubs": 0,
+      "totalGifts": 0,
+      "isVerified": false,
+      "isTest": false
+    }
+  ],
+  "channel": {
+    "id": "chan_slyyutus_01",
+    "slug": "slyyutus",
+    "username": "Slyyutus",
+    "userId": 231626,
+    "avatarUrl": "https://files.kick.com/images/user/231626/profile_image/conversion/b39d4d71-93ab-4563-ad7a-b054e4fdd90a-fullsize.webp",
+    "bannerUrl": "https://files.kick.com/images/channel/229384/banner_image/868e7c21-4096-40a2-90ef-8b4d933bc1dd",
+    "bio": "Moroccan Streamer !\nGamer ! GODAIM",
+    "followersCount": 26233,
+    "subscribersCount": 65,
+    "totalViews": 0,
+    "isLive": false,
+    "currentViewers": 0,
+    "averageViewers": 1542,
+    "peakViewers": 2431,
+    "totalStreams": 0,
+    "currentStreamTitle": "",
+    "currentStreamCategory": "",
+    "lastUpdated": "2026-09-05T18:13:26.362Z"
+  },
+  "streams": [
+    {
+      "streamId": "125483810",
+      "title": "👑 CasperX The Goat - PES TOURNEMENT 💚! DAY 25/365 👑 '' NEW SUB ALERT ''",
+      "category": "Just Chatting",
+      "startedAt": "2026-09-04T02:04:08.000Z",
+      "endedAt": "2026-09-04T09:46:16.000Z",
+      "durationSeconds": 27728,
+      "averageViewers": 1360,
+      "peakViewers": 1658,
+      "subscribersGained": 0,
+      "totalChatMessages": 0,
+      "vodUrl": "https://kick.com/video/05604d53-7a8f-478c-ad1d-eb2a9dd85323",
+      "thumbnailUrl": "https://images.kick.com/video_thumbnails/VcbHiZyXVlnu/aRohgJueuHzY/720.webp",
+      "isLive": false,
+      "views": 10526
+    },
+    {
+      "streamId": "125325948",
+      "title": "👑 CasperX Illegal Experience 💚! DAY 24/365 👑 '' NEW SUB ALERT ''",
+      "category": "Grand Theft Auto V (GTA)",
+      "startedAt": "2026-09-03T02:02:45.000Z",
+      "endedAt": "2026-09-03T08:11:11.000Z",
+      "durationSeconds": 22106,
+      "averageViewers": 1352,
+      "peakViewers": 1649,
+      "subscribersGained": 0,
+      "totalChatMessages": 0,
+      "vodUrl": "https://kick.com/video/eb9b8dcf-6ef1-4580-8b2f-1437072e15e2",
+      "thumbnailUrl": "https://images.kick.com/video_thumbnails/VcbHiZyXVlnu/p0eU72c5khw0/720.webp",
+      "isLive": false,
+      "views": 11293
+    },
+    {
+      "streamId": "125155625",
+      "title": "👑 CasperX Illegal Experience 💚! DAY 23/365 👑 '' NEW SUB ALERT ''",
+      "category": "Just Chatting",
+      "startedAt": "2026-09-02T00:35:47.000Z",
+      "endedAt": "2026-09-02T05:28:49.000Z",
+      "durationSeconds": 17582,
+      "averageViewers": 1993,
+      "peakViewers": 2431,
+      "subscribersGained": 0,
+      "totalChatMessages": 0,
+      "vodUrl": "https://kick.com/video/05d0eb39-bd30-483b-b418-2f82ca0f346b",
+      "thumbnailUrl": "https://images.kick.com/video_thumbnails/VcbHiZyXVlnu/j6XBBqP54qiM/720.webp",
+      "isLive": false,
+      "views": 11280
+    },
+    {
+      "streamId": "125013750",
+      "title": "👑 CasperX N3ass d Z 💚! DAY 21/365 👑 '' NEW SUB ALERT ''",
+      "category": "Just Chatting",
+      "startedAt": "2026-09-01T02:02:30.000Z",
+      "endedAt": "2026-09-01T09:52:59.000Z",
+      "durationSeconds": 28229,
+      "averageViewers": 1628,
+      "peakViewers": 1985,
+      "subscribersGained": 0,
+      "totalChatMessages": 0,
+      "vodUrl": "https://kick.com/video/4e698399-cda3-4e61-b56c-8be12e370859",
+      "thumbnailUrl": "https://images.kick.com/video_thumbnails/VcbHiZyXVlnu/iFR5BQ09RCUv/720.webp",
+      "isLive": false,
+      "views": 10950
+    },
+    {
+      "streamId": "124857848",
+      "title": "👑 CasperX  💚! DAY 21/365 👑 '' NEW SUB ALERT ''",
+      "category": "Grand Theft Auto V (GTA)",
+      "startedAt": "2026-08-31T01:50:57.000Z",
+      "endedAt": "2026-08-31T07:58:04.000Z",
+      "durationSeconds": 22027,
+      "averageViewers": 1443,
+      "peakViewers": 1760,
+      "subscribersGained": 0,
+      "totalChatMessages": 0,
+      "vodUrl": "https://kick.com/video/4a5f6ef4-b8ed-40c3-84dc-798a54262f58",
+      "thumbnailUrl": "https://images.kick.com/video_thumbnails/VcbHiZyXVlnu/R8kWpDpTPoYQ/720.webp",
+      "isLive": false,
+      "views": 11648
+    },
+    {
+      "streamId": "124681320",
+      "title": "👑 CasperX Lben Mission   💚! DAY 20/365 👑 '' NEW SUB ALERT ''",
+      "category": "Grand Theft Auto V (GTA)",
+      "startedAt": "2026-08-30T00:58:44.000Z",
+      "endedAt": "2026-08-30T10:31:18.000Z",
+      "durationSeconds": 34354,
+      "averageViewers": 1634,
+      "peakViewers": 1993,
+      "subscribersGained": 0,
+      "totalChatMessages": 0,
+      "vodUrl": "https://kick.com/video/c74264f1-4875-44b4-9147-ab5fabc3a2e5",
+      "thumbnailUrl": "https://images.kick.com/video_thumbnails/VcbHiZyXVlnu/v2qcO1lI5V5a/720.webp",
+      "isLive": false,
+      "views": 11072
+    },
+    {
+      "streamId": "124512550",
+      "title": "👑 CasperX  💚! DAY 19/365 👑 '' NEW SUB ALERT ''",
+      "category": "Grand Theft Auto V (GTA)",
+      "startedAt": "2026-08-29T01:07:06.000Z",
+      "endedAt": "2026-08-29T10:07:47.000Z",
+      "durationSeconds": 32441,
+      "averageViewers": 1624,
+      "peakViewers": 1981,
+      "subscribersGained": 0,
+      "totalChatMessages": 0,
+      "vodUrl": "https://kick.com/video/1fcb2229-a4b7-4852-bb6d-1626cfabb94f",
+      "thumbnailUrl": "https://images.kick.com/video_thumbnails/VcbHiZyXVlnu/6KO9v2DBreUh/720.webp",
+      "isLive": false,
+      "views": 10871
+    },
+    {
+      "streamId": "124353112",
+      "title": "👑 GTA 6 x Netflix 💚! DAY 18/365 👑 '' NEW SUB ALERT ''",
+      "category": "Grand Theft Auto V (GTA)",
+      "startedAt": "2026-08-28T01:32:12.000Z",
+      "endedAt": "2026-08-28T07:29:39.000Z",
+      "durationSeconds": 21447,
+      "averageViewers": 1684,
+      "peakViewers": 2054,
+      "subscribersGained": 0,
+      "totalChatMessages": 0,
+      "vodUrl": "https://kick.com/video/2b4e98fd-13cf-4499-a910-53838ea9e673",
+      "thumbnailUrl": "https://images.kick.com/video_thumbnails/VcbHiZyXVlnu/JYhkKovzkklM/720.webp",
+      "isLive": false,
+      "views": 44474
+    },
+    {
+      "streamId": "124177014",
+      "title": "👑 CasperX -16k Kighandiro liha 💚! DAY 17/365 👑 '' NEW SUB ALERT ''",
+      "category": "Just Chatting",
+      "startedAt": "2026-08-26T23:58:34.000Z",
+      "endedAt": "2026-08-27T08:20:48.000Z",
+      "durationSeconds": 30134,
+      "averageViewers": 1594,
+      "peakViewers": 1944,
+      "subscribersGained": 0,
+      "totalChatMessages": 0,
+      "vodUrl": "https://kick.com/video/17f2bfb1-de9e-4839-922f-7f4e680d1f88",
+      "thumbnailUrl": "https://images.kick.com/video_thumbnails/VcbHiZyXVlnu/IH6u9n72SxjM/720.webp",
+      "isLive": false,
+      "views": 16419
+    },
+    {
+      "streamId": "124030826",
+      "title": "👑 CasperX Datni 3ini 💚! DAY 16/365 👑",
+      "category": "Just Chatting",
+      "startedAt": "2026-08-26T01:29:04.000Z",
+      "endedAt": "2026-08-26T08:01:44.000Z",
+      "durationSeconds": 23560,
+      "averageViewers": 1824,
+      "peakViewers": 2224,
+      "subscribersGained": 0,
+      "totalChatMessages": 0,
+      "vodUrl": "https://kick.com/video/4bace416-038b-406d-b568-f92bf10b2890",
+      "thumbnailUrl": "https://images.kick.com/video_thumbnails/VcbHiZyXVlnu/YycQeBNxs5ij/720.webp",
+      "isLive": false,
+      "views": 43276
+    },
+    {
+      "streamId": "123891936",
+      "title": "👑 CasperX  💚! DAY 15/365 👑",
+      "category": "Grand Theft Auto V (GTA)",
+      "startedAt": "2026-08-25T04:00:21.000Z",
+      "endedAt": "2026-08-25T10:04:22.000Z",
+      "durationSeconds": 21841,
+      "averageViewers": 1310,
+      "peakViewers": 1598,
+      "subscribersGained": 0,
+      "totalChatMessages": 0,
+      "vodUrl": "https://kick.com/video/71f26d26-e36b-4531-aa65-e9aa5e03cc01",
+      "thumbnailUrl": "https://images.kick.com/video_thumbnails/VcbHiZyXVlnu/2aHRvLvSigLU/720.webp",
+      "isLive": false,
+      "views": 9727
+    },
+    {
+      "streamId": "123547819",
+      "title": "👑 CasperX  💚! DAY 14/365 👑",
+      "category": "Grand Theft Auto V (GTA)",
+      "startedAt": "2026-08-23T01:25:02.000Z",
+      "endedAt": "2026-08-23T05:01:32.000Z",
+      "durationSeconds": 12990,
+      "averageViewers": 1346,
+      "peakViewers": 1641,
+      "subscribersGained": 0,
+      "totalChatMessages": 0,
+      "vodUrl": "https://kick.com/video/b0dec6cf-a7c0-4b9c-b500-68be34401f86",
+      "thumbnailUrl": "https://images.kick.com/video_thumbnails/VcbHiZyXVlnu/PUUv7atIFs62/720.webp",
+      "isLive": false,
+      "views": 9760
+    },
+    {
+      "streamId": "123242569",
+      "title": "👑 CasperX Hunting 💚! DAY 12/365 👑",
+      "category": "Grand Theft Auto V (GTA)",
+      "startedAt": "2026-08-21T03:50:27.000Z",
+      "endedAt": "2026-08-21T07:00:10.000Z",
+      "durationSeconds": 11383,
+      "averageViewers": 1297,
+      "peakViewers": 1582,
+      "subscribersGained": 0,
+      "totalChatMessages": 0,
+      "vodUrl": "https://kick.com/video/b6e97db6-7d40-4e80-8d43-7b262270ae7a",
+      "thumbnailUrl": "https://images.kick.com/video_thumbnails/VcbHiZyXVlnu/Sg9IyYnZ5BFB/720.webp",
+      "isLive": false,
+      "views": 10346
+    },
+    {
+      "streamId": "123077406",
+      "title": "👑 CasperX💚! DAY 12/365 👑",
+      "category": "Grand Theft Auto V (GTA)",
+      "startedAt": "2026-08-20T02:54:00.000Z",
+      "endedAt": "2026-08-20T05:53:12.000Z",
+      "durationSeconds": 10752,
+      "averageViewers": 1296,
+      "peakViewers": 1580,
+      "subscribersGained": 0,
+      "totalChatMessages": 0,
+      "vodUrl": "https://kick.com/video/b9ca6f1f-fef4-4529-a2ce-9a896126ee4b",
+      "thumbnailUrl": "https://images.kick.com/video_thumbnails/VcbHiZyXVlnu/rDGVUPlj3N12/720.webp",
+      "isLive": false,
+      "views": 10126
+    },
+    {
+      "streamId": "122906412",
+      "title": "👑 MACHI SHORT ROBINET TSSED💚! DAY 11/365 👑",
+      "category": "Grand Theft Auto V (GTA)",
+      "startedAt": "2026-08-19T01:50:31.000Z",
+      "endedAt": "2026-08-19T06:02:19.000Z",
+      "durationSeconds": 15108,
+      "averageViewers": 1483,
+      "peakViewers": 1808,
+      "subscribersGained": 0,
+      "totalChatMessages": 0,
+      "vodUrl": "https://kick.com/video/996e3f8b-f0aa-44fe-91dd-ab70629626f6",
+      "thumbnailUrl": "https://images.kick.com/video_thumbnails/VcbHiZyXVlnu/BIAO8ByyimVG/720.webp",
+      "isLive": false,
+      "views": 33827
+    },
+    {
+      "streamId": "122728488",
+      "title": "👑 SHORT ROBINET AYTSSED💚 !21 (BIG) TIPS? 💚! DAY 10/365 👑",
+      "category": "Just Chatting",
+      "startedAt": "2026-08-18T00:24:56.000Z",
+      "endedAt": "2026-08-18T01:36:26.000Z",
+      "durationSeconds": 4290,
+      "averageViewers": 1830,
+      "peakViewers": 2232,
+      "subscribersGained": 0,
+      "totalChatMessages": 0,
+      "vodUrl": "https://kick.com/video/baf6fca3-7894-4aa2-9cd2-504ff99b156b",
+      "thumbnailUrl": "https://images.kick.com/video_thumbnails/VcbHiZyXVlnu/dtYBp1U7qERg/720.webp",
+      "isLive": false,
+      "views": 15706
+    },
+    {
+      "streamId": "122587832",
+      "title": "👑 SHORT 💚 !21 (BIG) TIPS? 💚! DAY 10/365 👑",
+      "category": "Just Chatting",
+      "startedAt": "2026-08-17T01:43:21.000Z",
+      "endedAt": "2026-08-17T03:24:15.000Z",
+      "durationSeconds": 6054,
+      "averageViewers": 1498,
+      "peakViewers": 1827,
+      "subscribersGained": 0,
+      "totalChatMessages": 0,
+      "vodUrl": "https://kick.com/video/7b285a5c-0a8d-4c86-a5bb-51f5f97fb8c0",
+      "thumbnailUrl": "https://images.kick.com/video_thumbnails/VcbHiZyXVlnu/fROCXjsawJ4k/720.webp",
+      "isLive": false,
+      "views": 8888
+    },
+    {
+      "streamId": "122400111",
+      "title": "👑 LONG STREAM 7it SEBT 💚 !21 (BIG) TIPS? 💚! DAY 10/365 👑",
+      "category": "Grand Theft Auto V (GTA)",
+      "startedAt": "2026-08-15T23:25:01.000Z",
+      "endedAt": "2026-08-16T06:31:20.000Z",
+      "durationSeconds": 25579,
+      "averageViewers": 1530,
+      "peakViewers": 1866,
+      "subscribersGained": 0,
+      "totalChatMessages": 0,
+      "vodUrl": "https://kick.com/video/320de977-f579-4cef-97e1-f4f75a855ece",
+      "thumbnailUrl": "https://images.kick.com/video_thumbnails/VcbHiZyXVlnu/PM03JbEVA690/720.webp",
+      "isLive": false,
+      "views": 12075
+    },
+    {
+      "streamId": "122252718",
+      "title": "👑 CasperX 💚 !21 (BIG) TIPS? 💚! DAY 9/365 👑",
+      "category": "Just Chatting",
+      "startedAt": "2026-08-15T01:25:46.000Z",
+      "endedAt": "2026-08-15T03:39:19.000Z",
+      "durationSeconds": 8013,
+      "averageViewers": 1790,
+      "peakViewers": 2183,
+      "subscribersGained": 0,
+      "totalChatMessages": 0,
+      "vodUrl": "https://kick.com/video/a51fe715-c8f4-4c10-a030-f897e1ab3521",
+      "thumbnailUrl": "https://images.kick.com/video_thumbnails/VcbHiZyXVlnu/cxSAt6XVN9Am/720.webp",
+      "isLive": false,
+      "views": 9282
+    },
+    {
+      "streamId": "122084899",
+      "title": "👑 CasperX 💚 !21 (BIG) 💚! DAY 8/365 👑",
+      "category": "Grand Theft Auto V (GTA)",
+      "startedAt": "2026-08-14T00:27:26.000Z",
+      "endedAt": "2026-08-14T06:43:21.000Z",
+      "durationSeconds": 22555,
+      "averageViewers": 1470,
+      "peakViewers": 1793,
+      "subscribersGained": 0,
+      "totalChatMessages": 0,
+      "vodUrl": "https://kick.com/video/e750bf74-e55d-4acc-9fe9-8640640c11c6",
+      "thumbnailUrl": "https://images.kick.com/video_thumbnails/VcbHiZyXVlnu/naSOKNBaJsev/720.webp",
+      "isLive": false,
+      "views": 24152
+    },
+    {
+      "streamId": "121799080",
+      "title": "👑 CasperX 💚 Just Chatting then RP 💚! DAY 7/365 👑",
+      "category": "Grand Theft Auto V (GTA)",
+      "startedAt": "2026-08-12T04:27:56.000Z",
+      "endedAt": "2026-08-12T07:08:37.000Z",
+      "durationSeconds": 9641,
+      "averageViewers": 1506,
+      "peakViewers": 1836,
+      "subscribersGained": 0,
+      "totalChatMessages": 0,
+      "vodUrl": "https://kick.com/video/8a58f33b-6d29-4002-9627-875dae65d0af",
+      "thumbnailUrl": "https://images.kick.com/video_thumbnails/VcbHiZyXVlnu/d4c3NaoH84O3/720.webp",
+      "isLive": false,
+      "views": 11163
+    },
+    {
+      "streamId": "121639046",
+      "title": "👑 Kolshy dyal allah ! 💚 Just Chatting then RP 💚! DAY 6/365 👑",
+      "category": "Just Chatting",
+      "startedAt": "2026-08-11T03:56:28.000Z",
+      "endedAt": "2026-08-11T05:17:43.000Z",
+      "durationSeconds": 4875,
+      "averageViewers": 1468,
+      "peakViewers": 1790,
+      "subscribersGained": 0,
+      "totalChatMessages": 0,
+      "vodUrl": "https://kick.com/video/54475012-abea-4c50-8c69-ae6be82bb808",
+      "thumbnailUrl": "https://images.kick.com/video_thumbnails/VcbHiZyXVlnu/2SU7TGQX0aYf/720.webp",
+      "isLive": false,
+      "views": 8842
+    },
+    {
+      "streamId": "121152556",
+      "title": "👑 BACK TO STREAM ! 💚 ASC 3 road to Immo lyoum 💚! DAY 5/365 👑",
+      "category": "Just Chatting",
+      "startedAt": "2026-08-08T03:48:56.000Z",
+      "endedAt": "2026-08-08T06:46:35.000Z",
+      "durationSeconds": 10659,
+      "averageViewers": 1449,
+      "peakViewers": 1767,
+      "subscribersGained": 0,
+      "totalChatMessages": 0,
+      "vodUrl": "https://kick.com/video/3de9ce53-e760-4123-99af-2710ef55e76f",
+      "thumbnailUrl": "https://images.kick.com/video_thumbnails/VcbHiZyXVlnu/oY7K1HamQHGt/720.webp",
+      "isLive": false,
+      "views": 8329
+    },
+    {
+      "streamId": "125659897",
+      "title": "👑 CasperX Hmida lghfla💚! DAY 26/365 👑 '' NEW SUB ALERT ''",
+      "category": "Grand Theft Auto V (GTA)",
+      "startedAt": "2026-09-05T03:11:52.000Z",
+      "endedAt": "2026-09-05T10:33:00.000Z",
+      "durationSeconds": 26468,
+      "averageViewers": 1609,
+      "peakViewers": 1962,
+      "subscribersGained": 0,
+      "totalChatMessages": 0,
+      "vodUrl": "https://kick.com/video/226f8305-71b8-488e-aad7-b38b8c5b43ce",
+      "thumbnailUrl": "https://images.kick.com/video_thumbnails/VcbHiZyXVlnu/SGUKzzZFcPOV/720.webp",
+      "isLive": false,
+      "views": 10309
+    }
+  ],
+  "chatMessages": [
+    {
+      "kickUserId": "k_1788627626013",
+      "username": "ApexLegend99",
+      "avatarUrl": "https://api.dicebear.com/7.x/bottts/svg?seed=ApexLegend99",
+      "streamId": "vod_live_active",
+      "streamTitle": "Kick Broadcast",
+      "content": "SLYYUTUS KINGDOM ON TOP! 🔥🔥",
+      "timestamp": "2026-09-05T17:00:26.014Z",
+      "messageId": "msg_1788627626017_3hmas",
+      "channelId": "chan_slyyutus_01",
+      "pointsAwarded": 1,
+      "isTest": false
+    },
+    {
+      "kickUserId": "40562106",
+      "username": "sniper_0808",
+      "avatarUrl": "https://files.kick.com/images/user/40562106/profile_image/conversion/default6-medium.webp",
+      "streamId": "vod_live_active",
+      "streamTitle": "Kick Broadcast",
+      "content": "[emote:6031984:oxslymso]",
+      "timestamp": "2026-09-05T17:20:54.21790586Z",
+      "messageId": "msg_1788628853890_rc7q6",
+      "channelId": "chan_slyyutus_01",
+      "pointsAwarded": 1,
+      "isTest": false
+    },
+    {
+      "kickUserId": "40562106",
+      "username": "sniper_0808",
+      "avatarUrl": "https://files.kick.com/images/user/40562106/profile_image/conversion/default6-medium.webp",
+      "streamId": "vod_live_active",
+      "streamTitle": "Kick Broadcast",
+      "content": "[emote:6031984:oxslymso]",
+      "timestamp": "2026-09-05T17:20:54.336423578Z",
+      "messageId": "msg_1788628853907_03729",
+      "channelId": "chan_slyyutus_01",
+      "pointsAwarded": 1,
+      "isTest": false
+    },
+    {
+      "kickUserId": "40562106",
+      "username": "sniper_0808",
+      "avatarUrl": "https://files.kick.com/images/user/40562106/profile_image/conversion/default6-medium.webp",
+      "streamId": "vod_live_active",
+      "streamTitle": "Kick Broadcast",
+      "content": "[emote:6031984:oxslymso]",
+      "timestamp": "2026-09-05T17:20:54.497305104Z",
+      "messageId": "msg_1788628853936_r6oli",
+      "channelId": "chan_slyyutus_01",
+      "pointsAwarded": 1,
+      "isTest": false
+    },
+    {
+      "kickUserId": "16282003",
+      "username": "M4ND4R_x",
+      "avatarUrl": "https://files.kick.com/images/user/16282003/profile_image/conversion/e723cae9-87bf-4ace-9991-8239c070a90d-medium.webp",
+      "streamId": "vod_live_active",
+      "streamTitle": "Kick Broadcast",
+      "content": "h",
+      "timestamp": "2026-09-05T17:36:05.284076464Z",
+      "messageId": "msg_1788629764944_k2fba",
+      "channelId": "chan_slyyutus_01",
+      "pointsAwarded": 1,
+      "isTest": false
+    },
+    {
+      "kickUserId": "63532872",
+      "username": "Yamale10",
+      "avatarUrl": "https://files.kick.com/images/user/63532872/profile_image/conversion/f2111a60-ea87-4512-a322-a839b495971f-medium.webp",
+      "streamId": "vod_live_active",
+      "streamTitle": "Kick Broadcast",
+      "content": "[emote:4148074:HYPERCLAP]",
+      "timestamp": "2026-09-05T17:36:13.526350052Z",
+      "messageId": "msg_1788629773175_wlofs",
+      "channelId": "chan_slyyutus_01",
+      "pointsAwarded": 1,
+      "isTest": false
+    },
+    {
+      "kickUserId": "16282003",
+      "username": "M4ND4R_x",
+      "avatarUrl": "https://files.kick.com/images/user/16282003/profile_image/conversion/e723cae9-87bf-4ace-9991-8239c070a90d-medium.webp",
+      "streamId": "vod_live_active",
+      "streamTitle": "Kick Broadcast",
+      "content": "m",
+      "timestamp": "2026-09-05T17:43:28.948982169Z",
+      "messageId": "msg_1788630208422_0awd5",
+      "channelId": "chan_slyyutus_01",
+      "pointsAwarded": 1,
+      "isTest": false
+    },
+    {
+      "kickUserId": "35678970",
+      "username": "aymane_hma",
+      "avatarUrl": "https://kick.com/img/default-profile-pictures/default-avatar-1.webp",
+      "streamId": "vod_live_active",
+      "streamTitle": "Kick Broadcast",
+      "content": "[emote:6031984:oxslymso]",
+      "timestamp": "2026-09-05T17:46:48.523076161Z",
+      "messageId": "msg_1788630408173_q5zhb",
+      "channelId": "chan_slyyutus_01",
+      "pointsAwarded": 1,
+      "isTest": false
+    },
+    {
+      "kickUserId": "1692922",
+      "username": "ELPATRONE",
+      "avatarUrl": "https://files.kick.com/images/user/1692922/profile_image/conversion/default3-medium.webp",
+      "streamId": "vod_live_active",
+      "streamTitle": "Kick Broadcast",
+      "content": "[emote:6031984:oxslymso]",
+      "timestamp": "2026-09-05T17:50:26.414407361Z",
+      "messageId": "msg_1788630625941_sfhx0",
+      "channelId": "chan_slyyutus_01",
+      "pointsAwarded": 1,
+      "isTest": false
+    },
+    {
+      "kickUserId": "40072518",
+      "username": "znuxo",
+      "avatarUrl": "https://files.kick.com/images/user/40072518/profile_image/conversion/3409d32b-38be-42d3-858d-db39d9d04fdc-medium.webp",
+      "streamId": "vod_live_active",
+      "streamTitle": "Kick Broadcast",
+      "content": "ww",
+      "timestamp": "2026-09-05T17:50:37.621629392Z",
+      "messageId": "msg_1788630637018_ik141",
+      "channelId": "chan_slyyutus_01",
+      "pointsAwarded": 1,
+      "isTest": false
+    },
+    {
+      "kickUserId": "40072518",
+      "username": "znuxo",
+      "avatarUrl": "https://files.kick.com/images/user/40072518/profile_image/conversion/3409d32b-38be-42d3-858d-db39d9d04fdc-medium.webp",
+      "streamId": "vod_live_active",
+      "streamTitle": "Kick Broadcast",
+      "content": "fin hiya stream m3a 6 hhhhhh",
+      "timestamp": "2026-09-05T17:50:54.111450622Z",
+      "messageId": "msg_1788630653534_9qg0z",
+      "channelId": "chan_slyyutus_01",
+      "pointsAwarded": 1,
+      "isTest": false
+    },
+    {
+      "kickUserId": "120680906",
+      "username": "yasse1rr",
+      "avatarUrl": "https://kick.com/img/default-profile-pictures/default-avatar-3.webp",
+      "streamId": "vod_live_active",
+      "streamTitle": "Kick Broadcast",
+      "content": "[emote:6031946:oxslyahok]",
+      "timestamp": "2026-09-05T17:55:17.337267493Z",
+      "messageId": "msg_1788630916827_r3bzf",
+      "channelId": "chan_slyyutus_01",
+      "pointsAwarded": 1,
+      "isTest": false
+    },
+    {
+      "kickUserId": "1692922",
+      "username": "ELPATRONE",
+      "avatarUrl": "https://files.kick.com/images/user/1692922/profile_image/conversion/default3-medium.webp",
+      "streamId": "vod_live_active",
+      "streamTitle": "Kick Broadcast",
+      "content": "slyutus chl9mo l alarme adrari ra ayji",
+      "timestamp": "2026-09-05T17:55:49.91752778Z",
+      "messageId": "msg_1788630949384_rbhlm",
+      "channelId": "chan_slyyutus_01",
+      "pointsAwarded": 1,
+      "isTest": false
+    },
+    {
+      "kickUserId": "63532872",
+      "username": "Yamale10",
+      "avatarUrl": "https://files.kick.com/images/user/63532872/profile_image/conversion/f2111a60-ea87-4512-a322-a839b495971f-medium.webp",
+      "streamId": "vod_live_active",
+      "streamTitle": "Kick Broadcast",
+      "content": "[emote:4148074:HYPERCLAP]",
+      "timestamp": "2026-09-05T17:59:35.005059385Z",
+      "messageId": "msg_1788631174395_wugpb",
+      "channelId": "chan_slyyutus_01",
+      "pointsAwarded": 1,
+      "isTest": false
+    },
+    {
+      "kickUserId": "38431381",
+      "username": "Veltron_exe",
+      "avatarUrl": "https://files.kick.com/images/user/38431381/profile_image/conversion/067ea324-2ba4-468d-a3b8-2878384b152f-medium.webp",
+      "streamId": "vod_live_active",
+      "streamTitle": "Kick Broadcast",
+      "content": "[emote:5380973:shoulderRoll]",
+      "timestamp": "2026-09-05T18:05:39.959892589Z",
+      "messageId": "msg_1788631539330_h5ge6",
+      "channelId": "chan_slyyutus_01",
+      "pointsAwarded": 1,
+      "isTest": false
+    },
+    {
+      "kickUserId": "27761763",
+      "username": "fouadfd",
+      "avatarUrl": "https://kick.com/img/default-profile-pictures/default-avatar-4.webp",
+      "streamId": "vod_live_active",
+      "streamTitle": "Kick Broadcast",
+      "content": "waaaaaaaaaa sly tleq tleq",
+      "timestamp": "2026-09-05T18:11:56.835602445Z",
+      "messageId": "msg_1788631917132_ajnkz",
+      "channelId": "chan_slyyutus_01",
+      "pointsAwarded": 1,
+      "isTest": false
+    }
+  ],
+  "leagueSeasons": [
+    {
+      "seasonId": "09-26",
+      "name": "September 2026",
+      "startDate": "2026-09-01T00:00:00.000Z",
+      "endDate": "2026-09-30T23:59:59.000Z",
+      "isActive": true,
+      "isFinalized": false,
+      "totalParticipants": 10,
+      "totalPointsDistributed": 16
+    }
+  ],
+  "leaguePoints": [
+    {
+      "id": "lp_09-26_k_1788627626013",
+      "seasonId": "09-26",
+      "kickUserId": "k_1788627626013",
+      "points": 1,
+      "messagesCount": 1,
+      "subsCount": 0,
+      "giftsCount": 0,
+      "firstScoreAchievedAt": "2026-09-05T17:00:26.019Z",
+      "lastPointAwardedAt": "2026-09-05T17:00:26.019Z",
+      "isTest": false
+    },
+    {
+      "id": "lp_09-26_40562106",
+      "seasonId": "09-26",
+      "kickUserId": "40562106",
+      "points": 3,
+      "messagesCount": 3,
+      "subsCount": 0,
+      "giftsCount": 0,
+      "firstScoreAchievedAt": "2026-09-05T17:20:53.893Z",
+      "lastPointAwardedAt": "2026-09-05T17:20:53.936Z",
+      "isTest": false
+    },
+    {
+      "id": "lp_09-26_16282003",
+      "seasonId": "09-26",
+      "kickUserId": "16282003",
+      "points": 2,
+      "messagesCount": 2,
+      "subsCount": 0,
+      "giftsCount": 0,
+      "firstScoreAchievedAt": "2026-09-05T17:36:04.945Z",
+      "lastPointAwardedAt": "2026-09-05T17:43:28.422Z",
+      "isTest": false
+    },
+    {
+      "id": "lp_09-26_63532872",
+      "seasonId": "09-26",
+      "kickUserId": "63532872",
+      "points": 2,
+      "messagesCount": 2,
+      "subsCount": 0,
+      "giftsCount": 0,
+      "firstScoreAchievedAt": "2026-09-05T17:36:13.175Z",
+      "lastPointAwardedAt": "2026-09-05T17:59:34.395Z",
+      "isTest": false
+    },
+    {
+      "id": "lp_09-26_35678970",
+      "seasonId": "09-26",
+      "kickUserId": "35678970",
+      "points": 1,
+      "messagesCount": 1,
+      "subsCount": 0,
+      "giftsCount": 0,
+      "firstScoreAchievedAt": "2026-09-05T17:46:48.174Z",
+      "lastPointAwardedAt": "2026-09-05T17:46:48.174Z",
+      "isTest": false
+    },
+    {
+      "id": "lp_09-26_1692922",
+      "seasonId": "09-26",
+      "kickUserId": "1692922",
+      "points": 2,
+      "messagesCount": 2,
+      "subsCount": 0,
+      "giftsCount": 0,
+      "firstScoreAchievedAt": "2026-09-05T17:50:25.941Z",
+      "lastPointAwardedAt": "2026-09-05T17:55:49.384Z",
+      "isTest": false
+    },
+    {
+      "id": "lp_09-26_40072518",
+      "seasonId": "09-26",
+      "kickUserId": "40072518",
+      "points": 2,
+      "messagesCount": 2,
+      "subsCount": 0,
+      "giftsCount": 0,
+      "firstScoreAchievedAt": "2026-09-05T17:50:37.018Z",
+      "lastPointAwardedAt": "2026-09-05T17:50:53.534Z",
+      "isTest": false
+    },
+    {
+      "id": "lp_09-26_120680906",
+      "seasonId": "09-26",
+      "kickUserId": "120680906",
+      "points": 1,
+      "messagesCount": 1,
+      "subsCount": 0,
+      "giftsCount": 0,
+      "firstScoreAchievedAt": "2026-09-05T17:55:16.827Z",
+      "lastPointAwardedAt": "2026-09-05T17:55:16.827Z",
+      "isTest": false
+    },
+    {
+      "id": "lp_09-26_38431381",
+      "seasonId": "09-26",
+      "kickUserId": "38431381",
+      "points": 1,
+      "messagesCount": 1,
+      "subsCount": 0,
+      "giftsCount": 0,
+      "firstScoreAchievedAt": "2026-09-05T18:05:39.330Z",
+      "lastPointAwardedAt": "2026-09-05T18:05:39.330Z",
+      "isTest": false
+    },
+    {
+      "id": "lp_09-26_27761763",
+      "seasonId": "09-26",
+      "kickUserId": "27761763",
+      "points": 1,
+      "messagesCount": 1,
+      "subsCount": 0,
+      "giftsCount": 0,
+      "firstScoreAchievedAt": "2026-09-05T18:11:57.132Z",
+      "lastPointAwardedAt": "2026-09-05T18:11:57.132Z",
+      "isTest": false
+    }
+  ],
+  "leagueRankings": [],
+  "badges": [
+    {
+      "badgeId": "b_s1",
+      "code": "SEASON_1ST",
+      "title": "1st Place Champion",
+      "description": "Awarded to the #1 League Chatter of the Season",
+      "iconType": "trophy",
+      "badgeTier": "gold",
+      "category": "season"
+    },
+    {
+      "badgeId": "b_s2",
+      "code": "SEASON_2ND",
+      "title": "2nd Place Finalist",
+      "description": "Awarded to the #2 League Chatter of the Season",
+      "iconType": "medal",
+      "badgeTier": "silver",
+      "category": "season"
+    },
+    {
+      "badgeId": "b_s3",
+      "code": "SEASON_3RD",
+      "title": "3rd Place Bronze",
+      "description": "Awarded to the #3 League Chatter of the Season",
+      "iconType": "award",
+      "badgeTier": "bronze",
+      "category": "season"
+    },
+    {
+      "badgeId": "b_vod_top",
+      "code": "VOD_TOP_CHATTER",
+      "title": "Top VOD Chatter",
+      "description": "Highest chat volume in a recorded stream session",
+      "iconType": "flame",
+      "badgeTier": "flame",
+      "category": "vod"
+    },
+    {
+      "badgeId": "b_sub_god",
+      "code": "SUB_TITAN",
+      "title": "Sub Titan",
+      "description": "Supported the channel with 10+ subscriptions or gifts",
+      "iconType": "crown",
+      "badgeTier": "diamond",
+      "category": "sub"
+    },
+    {
+      "badgeId": "b_og",
+      "code": "OG_CHATTER",
+      "title": "OG Chatter",
+      "description": "Community veteran participating across multiple seasons",
+      "iconType": "shield",
+      "badgeTier": "special",
+      "category": "community"
+    }
+  ],
+  "userBadges": [],
+  "vodChatterStats": [
+    {
+      "id": "vcs_vod_live_active_k_1788627626013",
+      "streamId": "vod_live_active",
+      "kickUserId": "k_1788627626013",
+      "messageCount": 1,
+      "rankInVod": 6
+    },
+    {
+      "id": "vcs_vod_live_active_40562106",
+      "streamId": "vod_live_active",
+      "kickUserId": "40562106",
+      "messageCount": 3,
+      "rankInVod": 1
+    },
+    {
+      "id": "vcs_vod_live_active_16282003",
+      "streamId": "vod_live_active",
+      "kickUserId": "16282003",
+      "messageCount": 2,
+      "rankInVod": 2
+    },
+    {
+      "id": "vcs_vod_live_active_63532872",
+      "streamId": "vod_live_active",
+      "kickUserId": "63532872",
+      "messageCount": 2,
+      "rankInVod": 3
+    },
+    {
+      "id": "vcs_vod_live_active_35678970",
+      "streamId": "vod_live_active",
+      "kickUserId": "35678970",
+      "messageCount": 1,
+      "rankInVod": 7
+    },
+    {
+      "id": "vcs_vod_live_active_1692922",
+      "streamId": "vod_live_active",
+      "kickUserId": "1692922",
+      "messageCount": 2,
+      "rankInVod": 4
+    },
+    {
+      "id": "vcs_vod_live_active_40072518",
+      "streamId": "vod_live_active",
+      "kickUserId": "40072518",
+      "messageCount": 2,
+      "rankInVod": 5
+    },
+    {
+      "id": "vcs_vod_live_active_120680906",
+      "streamId": "vod_live_active",
+      "kickUserId": "120680906",
+      "messageCount": 1,
+      "rankInVod": 8
+    },
+    {
+      "id": "vcs_vod_live_active_38431381",
+      "streamId": "vod_live_active",
+      "kickUserId": "38431381",
+      "messageCount": 1,
+      "rankInVod": 9
+    },
+    {
+      "id": "vcs_vod_live_active_27761763",
+      "streamId": "vod_live_active",
+      "kickUserId": "27761763",
+      "messageCount": 1,
+      "rankInVod": 10
+    }
+  ],
+  "pointRules": [
+    {
+      "ruleKey": "CHAT_MESSAGE",
+      "pointValue": 1,
+      "description": "1 point per valid chat message in live stream",
+      "updatedAt": "2026-09-05T17:33:20.166Z"
+    },
+    {
+      "ruleKey": "SUBSCRIPTION",
+      "pointValue": 100,
+      "description": "100 points for subscribing to Slyyutus",
+      "updatedAt": "2026-09-05T17:33:20.169Z"
+    },
+    {
+      "ruleKey": "GIFT_SUBSCRIPTION",
+      "pointValue": 100,
+      "description": "100 points per gift subscription to the community",
+      "updatedAt": "2026-09-05T17:33:20.169Z"
+    }
+  ],
+  "systemLogs": [
+    {
+      "id": "log_1788632006362_fs6b6",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26233 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T18:13:26.362Z"
+    },
+    {
+      "id": "log_1788631945767_cqhtq",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26233 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T18:12:25.767Z"
+    },
+    {
+      "id": "log_1788631917132_pgmi2",
+      "level": "info",
+      "module": "WEBHOOK",
+      "message": "Received Kick webhook event: chat.message.sent",
+      "createdAt": "2026-09-05T18:11:57.132Z"
+    },
+    {
+      "id": "log_1788631887887_v6qne",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26233 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T18:11:27.887Z"
+    },
+    {
+      "id": "log_1788631826394_ftbwn",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26233 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T18:10:26.394Z"
+    },
+    {
+      "id": "log_1788631765112_x7ku5",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26233 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T18:09:25.112Z"
+    },
+    {
+      "id": "log_1788631706445_nq2u8",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26233 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T18:08:26.445Z"
+    },
+    {
+      "id": "log_1788631644981_z0ssn",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26233 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T18:07:24.981Z"
+    },
+    {
+      "id": "log_1788631586450_92h9x",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26233 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T18:06:26.450Z"
+    },
+    {
+      "id": "log_1788631539329_b5dzd",
+      "level": "info",
+      "module": "WEBHOOK",
+      "message": "Received Kick webhook event: chat.message.sent",
+      "createdAt": "2026-09-05T18:05:39.329Z"
+    },
+    {
+      "id": "log_1788631525069_3myh0",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26233 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T18:05:25.069Z"
+    },
+    {
+      "id": "log_1788631468117_3bgbz",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26233 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T18:04:28.117Z"
+    },
+    {
+      "id": "log_1788631404973_vu8g4",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26233 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T18:03:24.973Z"
+    },
+    {
+      "id": "log_1788631346069_6mgoc",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26233 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T18:02:26.069Z"
+    },
+    {
+      "id": "log_1788631286992_vmcsl",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26233 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T18:01:26.992Z"
+    },
+    {
+      "id": "log_1788631225076_2e63c",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26233 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T18:00:25.077Z"
+    },
+    {
+      "id": "log_1788631174394_1fdqk",
+      "level": "info",
+      "module": "WEBHOOK",
+      "message": "Received Kick webhook event: chat.message.sent",
+      "createdAt": "2026-09-05T17:59:34.394Z"
+    },
+    {
+      "id": "log_1788631167935_ibvhi",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26233 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T17:59:27.935Z"
+    },
+    {
+      "id": "log_1788631106147_tcv7a",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26233 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T17:58:26.147Z"
+    },
+    {
+      "id": "log_1788631045116_lj5mi",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26233 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T17:57:25.116Z"
+    },
+    {
+      "id": "log_1788630986517_elw0k",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26233 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T17:56:26.517Z"
+    },
+    {
+      "id": "log_1788630949384_zhsi7",
+      "level": "info",
+      "module": "WEBHOOK",
+      "message": "Received Kick webhook event: chat.message.sent",
+      "createdAt": "2026-09-05T17:55:49.384Z"
+    },
+    {
+      "id": "log_1788630925062_31m9q",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26233 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T17:55:25.062Z"
+    },
+    {
+      "id": "log_1788630916826_9wju1",
+      "level": "info",
+      "module": "WEBHOOK",
+      "message": "Received Kick webhook event: chat.message.sent",
+      "createdAt": "2026-09-05T17:55:16.826Z"
+    },
+    {
+      "id": "log_1788630867759_d947g",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26233 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T17:54:27.759Z"
+    },
+    {
+      "id": "log_1788630804926_9ax8z",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26233 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T17:53:24.927Z"
+    },
+    {
+      "id": "log_1788630745150_czqr5",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26233 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T17:52:25.150Z"
+    },
+    {
+      "id": "log_1788630687547_8ql9v",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26233 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T17:51:27.547Z"
+    },
+    {
+      "id": "log_1788630653534_csh3r",
+      "level": "info",
+      "module": "WEBHOOK",
+      "message": "Received Kick webhook event: chat.message.sent",
+      "createdAt": "2026-09-05T17:50:53.534Z"
+    },
+    {
+      "id": "log_1788630637018_la6uq",
+      "level": "info",
+      "module": "WEBHOOK",
+      "message": "Received Kick webhook event: chat.message.sent",
+      "createdAt": "2026-09-05T17:50:37.018Z"
+    },
+    {
+      "id": "log_1788630625940_qe1c2",
+      "level": "info",
+      "module": "WEBHOOK",
+      "message": "Received Kick webhook event: chat.message.sent",
+      "createdAt": "2026-09-05T17:50:25.940Z"
+    },
+    {
+      "id": "log_1788630624989_uhrr6",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26233 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T17:50:24.989Z"
+    },
+    {
+      "id": "log_1788630565040_otj3x",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26233 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T17:49:25.040Z"
+    },
+    {
+      "id": "log_1788630507605_t68k0",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26233 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T17:48:27.605Z"
+    },
+    {
+      "id": "log_1788630446422_apv19",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26233 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T17:47:26.422Z"
+    },
+    {
+      "id": "log_1788630408173_tslfz",
+      "level": "info",
+      "module": "WEBHOOK",
+      "message": "Received Kick webhook event: chat.message.sent",
+      "createdAt": "2026-09-05T17:46:48.173Z"
+    },
+    {
+      "id": "log_1788630385002_fgce9",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26233 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T17:46:25.002Z"
+    },
+    {
+      "id": "log_1788630326086_2h08k",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26233 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T17:45:26.086Z"
+    },
+    {
+      "id": "log_1788630264985_a1lco",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26233 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T17:44:24.985Z"
+    },
+    {
+      "id": "log_1788630208422_v4pcp",
+      "level": "info",
+      "module": "WEBHOOK",
+      "message": "Received Kick webhook event: chat.message.sent",
+      "createdAt": "2026-09-05T17:43:28.422Z"
+    },
+    {
+      "id": "log_1788630207540_yd5jr",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26233 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T17:43:27.540Z"
+    },
+    {
+      "id": "log_1788630146317_loobx",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26233 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T17:42:26.317Z"
+    },
+    {
+      "id": "log_1788630085053_jhg9l",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26233 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T17:41:25.053Z"
+    },
+    {
+      "id": "log_1788630029036_w5pfa",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26233 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T17:40:29.036Z"
+    },
+    {
+      "id": "log_1788629967268_7d1sf",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26233 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T17:39:27.268Z"
+    },
+    {
+      "id": "log_1788629904754_vo57b",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26233 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T17:38:24.754Z"
+    },
+    {
+      "id": "log_1788629846351_5m9st",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26233 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T17:37:26.351Z"
+    },
+    {
+      "id": "log_1788629785157_gs1ex",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26233 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T17:36:25.157Z"
+    },
+    {
+      "id": "log_1788629773175_fq6i4",
+      "level": "info",
+      "module": "WEBHOOK",
+      "message": "Received Kick webhook event: chat.message.sent",
+      "createdAt": "2026-09-05T17:36:13.175Z"
+    },
+    {
+      "id": "log_1788629764943_h9gx7",
+      "level": "info",
+      "module": "WEBHOOK",
+      "message": "Received Kick webhook event: chat.message.sent",
+      "createdAt": "2026-09-05T17:36:04.943Z"
+    },
+    {
+      "id": "log_1788629726232_gb8hw",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26233 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T17:35:26.232Z"
+    },
+    {
+      "id": "log_1788629664826_z3l0p",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T17:34:24.826Z"
+    },
+    {
+      "id": "log_1788629615981_4zmzc",
+      "level": "success",
+      "module": "KICK_EVENTS",
+      "message": "Subscribed to 5 webhook event types for broadcaster 231626.",
+      "createdAt": "2026-09-05T17:33:35.981Z"
+    },
+    {
+      "id": "log_1788629612238_d67pm",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T17:33:32.238Z"
+    },
+    {
+      "id": "log_1788629603076_v5mzk",
+      "level": "info",
+      "module": "TRACKER",
+      "message": "Live channel sync service started.",
+      "createdAt": "2026-09-05T17:33:23.076Z"
+    },
+    {
+      "id": "log_1788628867846_7074y",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T17:21:07.846Z"
+    },
+    {
+      "id": "log_1788628853936_ha3pe",
+      "level": "info",
+      "module": "WEBHOOK",
+      "message": "Received Kick webhook event: chat.message.sent",
+      "createdAt": "2026-09-05T17:20:53.936Z"
+    },
+    {
+      "id": "log_1788628853907_8wdlu",
+      "level": "info",
+      "module": "WEBHOOK",
+      "message": "Received Kick webhook event: chat.message.sent",
+      "createdAt": "2026-09-05T17:20:53.907Z"
+    },
+    {
+      "id": "log_1788628853889_9qx7g",
+      "level": "info",
+      "module": "WEBHOOK",
+      "message": "Received Kick webhook event: chat.message.sent",
+      "createdAt": "2026-09-05T17:20:53.889Z"
+    },
+    {
+      "id": "log_1788628806214_64kw7",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T17:20:06.214Z"
+    },
+    {
+      "id": "log_1788628749201_w12wp",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T17:19:09.201Z"
+    },
+    {
+      "id": "log_1788628686110_2oh4l",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T17:18:06.110Z"
+    },
+    {
+      "id": "log_1788628628986_zuwpe",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T17:17:08.986Z"
+    },
+    {
+      "id": "log_1788628566039_0a03j",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T17:16:06.039Z"
+    },
+    {
+      "id": "log_1788628508536_sqsvi",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T17:15:08.536Z"
+    },
+    {
+      "id": "log_1788628446137_1niin",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T17:14:06.137Z"
+    },
+    {
+      "id": "log_1788628388672_6q2sp",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T17:13:08.672Z"
+    },
+    {
+      "id": "log_1788628326919_hhq2g",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T17:12:06.919Z"
+    },
+    {
+      "id": "log_1788628268702_2n6hr",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T17:11:08.702Z"
+    },
+    {
+      "id": "log_1788628215883_qtn54",
+      "level": "success",
+      "module": "KICK_EVENTS",
+      "message": "Subscribed to 5 webhook event types for broadcaster 231626.",
+      "createdAt": "2026-09-05T17:10:15.884Z"
+    },
+    {
+      "id": "log_1788628210192_mhuy2",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T17:10:10.192Z"
+    },
+    {
+      "id": "log_1788628204392_zjhqy",
+      "level": "info",
+      "module": "TRACKER",
+      "message": "Live channel sync service started.",
+      "createdAt": "2026-09-05T17:10:04.392Z"
+    },
+    {
+      "id": "log_1788628169655_axy9i",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T17:09:29.655Z"
+    },
+    {
+      "id": "log_1788628112269_h20qy",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T17:08:32.269Z"
+    },
+    {
+      "id": "log_1788628049720_u74fi",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T17:07:29.720Z"
+    },
+    {
+      "id": "log_1788627992101_q58sl",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T17:06:32.101Z"
+    },
+    {
+      "id": "log_1788627930779_bk0i8",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T17:05:30.779Z"
+    },
+    {
+      "id": "log_1788627877156_8sou3",
+      "level": "info",
+      "module": "LEAGUE_RULES",
+      "message": "Updated point rule GIFT_SUBSCRIPTION = 100",
+      "createdAt": "2026-09-05T17:04:37.156Z"
+    },
+    {
+      "id": "log_1788627877145_y9juf",
+      "level": "info",
+      "module": "LEAGUE_RULES",
+      "message": "Updated point rule SUBSCRIPTION = 100",
+      "createdAt": "2026-09-05T17:04:37.145Z"
+    },
+    {
+      "id": "log_1788627877134_64ow5",
+      "level": "info",
+      "module": "LEAGUE_RULES",
+      "message": "Updated point rule CHAT_MESSAGE = 1",
+      "createdAt": "2026-09-05T17:04:37.134Z"
+    },
+    {
+      "id": "log_1788627869746_c7a3v",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T17:04:29.746Z"
+    },
+    {
+      "id": "log_1788627811163_po743",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T17:03:31.163Z"
+    },
+    {
+      "id": "log_1788627756605_5j3l3",
+      "level": "success",
+      "module": "CHANNEL_CONFIG",
+      "message": "Updated channel metrics",
+      "createdAt": "2026-09-05T17:02:36.605Z"
+    },
+    {
+      "id": "log_1788627749916_gzpdd",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T17:02:29.916Z"
+    },
+    {
+      "id": "log_1788627733242_25rpw",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T17:02:13.242Z"
+    },
+    {
+      "id": "log_1788627689520_cch9r",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T17:01:29.520Z"
+    },
+    {
+      "id": "log_1788627631353_gfck1",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T17:00:31.353Z"
+    },
+    {
+      "id": "log_1788627569417_bz622",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T16:59:29.417Z"
+    },
+    {
+      "id": "log_1788627510592_ic3wh",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T16:58:30.592Z"
+    },
+    {
+      "id": "log_1788627493913_t702f",
+      "level": "success",
+      "module": "KICK_OAUTH",
+      "message": "User M4ND4R_x (Kick ID: 16282003) authenticated successfully. Role: admin",
+      "createdAt": "2026-09-05T16:58:13.913Z"
+    },
+    {
+      "id": "log_1788627493759_o79v6",
+      "level": "info",
+      "module": "AUTH_ADMIN",
+      "message": "Auto-registered Kick user M4ND4R_x (numeric ID: 16282003) as admin.",
+      "createdAt": "2026-09-05T16:58:13.759Z"
+    },
+    {
+      "id": "log_1788627449254_u3zsa",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T16:57:29.254Z"
+    },
+    {
+      "id": "log_1788627417750_f3h46",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T16:56:57.750Z"
+    },
+    {
+      "id": "log_1788627326635_ahutf",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T16:55:26.635Z"
+    },
+    {
+      "id": "log_1788627269254_wvqe3",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T16:54:29.254Z"
+    },
+    {
+      "id": "log_1788627207805_vc9fy",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T16:53:27.805Z"
+    },
+    {
+      "id": "log_1788627161120_sao5a",
+      "level": "success",
+      "module": "KICK_EVENTS",
+      "message": "Subscribed to 5 webhook event types for broadcaster 231626.",
+      "createdAt": "2026-09-05T16:52:41.120Z"
+    },
+    {
+      "id": "log_1788627156999_u76e7",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T16:52:36.999Z"
+    },
+    {
+      "id": "log_1788627144631_u8jeq",
+      "level": "info",
+      "module": "TRACKER",
+      "message": "Live channel sync service started.",
+      "createdAt": "2026-09-05T16:52:24.631Z"
+    },
+    {
+      "id": "log_1788627049289_g6bc5",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T16:50:49.290Z"
+    },
+    {
+      "id": "log_1788626990612_z1ye4",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T16:49:50.612Z"
+    },
+    {
+      "id": "log_1788626929407_f6n1h",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T16:48:49.407Z"
+    },
+    {
+      "id": "log_1788626870584_xt8jy",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T16:47:50.584Z"
+    },
+    {
+      "id": "log_1788626809452_uzp03",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T16:46:49.452Z"
+    },
+    {
+      "id": "log_1788626751486_cqkcw",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T16:45:51.486Z"
+    },
+    {
+      "id": "log_1788626690050_t8sx3",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T16:44:50.050Z"
+    },
+    {
+      "id": "log_1788626629006_fnkvn",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T16:43:49.006Z"
+    },
+    {
+      "id": "log_1788626571505_hdb6p",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T16:42:51.505Z"
+    },
+    {
+      "id": "log_1788626508919_be32i",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T16:41:48.919Z"
+    },
+    {
+      "id": "log_1788626451500_9hoc3",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T16:40:51.500Z"
+    },
+    {
+      "id": "log_1788626389232_9zmzo",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T16:39:49.232Z"
+    },
+    {
+      "id": "log_1788626331976_c3tf9",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T16:38:51.976Z"
+    },
+    {
+      "id": "log_1788626270342_w6c03",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T16:37:50.342Z"
+    },
+    {
+      "id": "log_1788626208812_ol5xa",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T16:36:48.812Z"
+    },
+    {
+      "id": "log_1788626152292_xk8pm",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T16:35:52.292Z"
+    },
+    {
+      "id": "log_1788626090239_bgzrl",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T16:34:50.239Z"
+    },
+    {
+      "id": "log_1788626028782_828p0",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T16:33:48.782Z"
+    },
+    {
+      "id": "log_1788625979846_wowny",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T16:32:59.846Z"
+    },
+    {
+      "id": "log_1788625915166_1x4ul",
+      "level": "success",
+      "module": "KICK_EVENTS",
+      "message": "Subscribed to 5 webhook event types for broadcaster 231626.",
+      "createdAt": "2026-09-05T16:31:55.166Z"
+    },
+    {
+      "id": "log_1788625907995_rhoy1",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T16:31:47.995Z"
+    },
+    {
+      "id": "log_1788625898189_exovq",
+      "level": "info",
+      "module": "TRACKER",
+      "message": "Live channel sync service started.",
+      "createdAt": "2026-09-05T16:31:38.189Z"
+    },
+    {
+      "id": "log_1788625811539_i4ahb",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T16:30:11.539Z"
+    },
+    {
+      "id": "log_1788625749852_r6c2y",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T16:29:09.852Z"
+    },
+    {
+      "id": "log_1788625690646_y19xk",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T16:28:10.646Z"
+    },
+    {
+      "id": "log_1788625629507_q22gq",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T16:27:09.507Z"
+    },
+    {
+      "id": "log_1788625570232_i366q",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T16:26:10.232Z"
+    },
+    {
+      "id": "log_1788625509699_i3wu4",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T16:25:09.699Z"
+    },
+    {
+      "id": "log_1788625459020_k17u2",
+      "level": "success",
+      "module": "KICK_EVENTS",
+      "message": "Subscribed to 5 webhook event types for broadcaster 231626.",
+      "createdAt": "2026-09-05T16:24:19.020Z"
+    },
+    {
+      "id": "log_1788625455884_3bbur",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T16:24:15.884Z"
+    },
+    {
+      "id": "log_1788625447128_3o64z",
+      "level": "info",
+      "module": "TRACKER",
+      "message": "Live channel sync service started.",
+      "createdAt": "2026-09-05T16:24:07.128Z"
+    },
+    {
+      "id": "log_1788625365198_f8s4k",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T16:22:45.198Z"
+    },
+    {
+      "id": "log_1788625304505_8x44c",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T16:21:44.505Z"
+    },
+    {
+      "id": "log_1788625243358_olyyr",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T16:20:43.358Z"
+    },
+    {
+      "id": "log_1788625184808_a0aw4",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T16:19:44.808Z"
+    },
+    {
+      "id": "log_1788625123388_e1gqo",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T16:18:43.388Z"
+    },
+    {
+      "id": "log_1788625065534_hmh3n",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T16:17:45.534Z"
+    },
+    {
+      "id": "log_1788625003426_69vd8",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T16:16:43.426Z"
+    },
+    {
+      "id": "log_1788624954142_93v55",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T16:15:54.142Z"
+    },
+    {
+      "id": "log_1788624941713_06oi2",
+      "level": "info",
+      "module": "TRACKER",
+      "message": "Live channel sync service started.",
+      "createdAt": "2026-09-05T16:15:41.714Z"
+    },
+    {
+      "id": "log_1788624852336_7q0fa",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T16:14:12.336Z"
+    },
+    {
+      "id": "log_1788624790036_mr5xm",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T16:13:10.036Z"
+    },
+    {
+      "id": "log_1788624733168_46kxf",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T16:12:13.168Z"
+    },
+    {
+      "id": "log_1788624671165_llx60",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T16:11:11.165Z"
+    },
+    {
+      "id": "log_1788624611609_52udh",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T16:10:11.610Z"
+    },
+    {
+      "id": "log_1788624550750_rfah2",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T16:09:10.751Z"
+    },
+    {
+      "id": "log_1788624491499_yxsto",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T16:08:11.499Z"
+    },
+    {
+      "id": "log_1788624430552_qkwgj",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T16:07:10.552Z"
+    },
+    {
+      "id": "log_1788624371445_t5fwu",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T16:06:11.445Z"
+    },
+    {
+      "id": "log_1788624310561_hskdd",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T16:05:10.561Z"
+    },
+    {
+      "id": "log_1788624251615_jmuvt",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T16:04:11.615Z"
+    },
+    {
+      "id": "log_1788624189735_tprmr",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T16:03:09.735Z"
+    },
+    {
+      "id": "log_1788624132268_nyqyf",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T16:02:12.268Z"
+    },
+    {
+      "id": "log_1788624070918_67ap6",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T16:01:10.918Z"
+    },
+    {
+      "id": "log_1788624009946_3kdu8",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T16:00:09.946Z"
+    },
+    {
+      "id": "log_1788623962794_vvfhr",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T15:59:22.794Z"
+    },
+    {
+      "id": "log_1788623948057_cyx5c",
+      "level": "info",
+      "module": "TRACKER",
+      "message": "Live channel sync service started.",
+      "createdAt": "2026-09-05T15:59:08.057Z"
+    },
+    {
+      "id": "log_1788623866281_7nfnc",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T15:57:46.281Z"
+    },
+    {
+      "id": "log_1788623808920_k6fiu",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T15:56:48.920Z"
+    },
+    {
+      "id": "log_1788623746535_3xyrj",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T15:55:46.535Z"
+    },
+    {
+      "id": "log_1788623688453_lvvfd",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T15:54:48.453Z"
+    },
+    {
+      "id": "log_1788623626568_leoar",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T15:53:46.568Z"
+    },
+    {
+      "id": "log_1788623568312_o3umu",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T15:52:48.312Z"
+    },
+    {
+      "id": "log_1788623506815_3l5xt",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T15:51:46.815Z"
+    },
+    {
+      "id": "log_1788623463628_rtka7",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26234 followers, 65 subs, 24 real streams.",
+      "createdAt": "2026-09-05T15:51:03.628Z"
+    },
+    {
+      "id": "log_1788623444466_ubc8n",
+      "level": "info",
+      "module": "TRACKER",
+      "message": "Live channel sync service started.",
+      "createdAt": "2026-09-05T15:50:44.466Z"
+    },
+    {
+      "id": "log_1788522930474_x7weu",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26186 followers, 63 subs, 23 real streams.",
+      "createdAt": "2026-09-04T11:55:30.474Z"
+    },
+    {
+      "id": "log_1788522927530_809vq",
+      "level": "info",
+      "module": "TRACKER",
+      "message": "Live channel sync service started.",
+      "createdAt": "2026-09-04T11:55:27.530Z"
+    },
+    {
+      "id": "log_1788522883085_ybpgk",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick Developer API for @slyyutus",
+      "createdAt": "2026-09-04T11:54:43.085Z"
+    },
+    {
+      "id": "log_1788522823255_yxst5",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick Developer API for @slyyutus",
+      "createdAt": "2026-09-04T11:53:43.255Z"
+    },
+    {
+      "id": "log_1788522763071_gp26x",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick Developer API for @slyyutus",
+      "createdAt": "2026-09-04T11:52:43.071Z"
+    },
+    {
+      "id": "log_1788522703073_esq9d",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick Developer API for @slyyutus",
+      "createdAt": "2026-09-04T11:51:43.073Z"
+    },
+    {
+      "id": "log_1788522643069_pmo1o",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick Developer API for @slyyutus",
+      "createdAt": "2026-09-04T11:50:43.069Z"
+    },
+    {
+      "id": "log_1788522583075_qm95i",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick Developer API for @slyyutus",
+      "createdAt": "2026-09-04T11:49:43.075Z"
+    },
+    {
+      "id": "log_1788522523091_zksxa",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick Developer API for @slyyutus",
+      "createdAt": "2026-09-04T11:48:43.091Z"
+    },
+    {
+      "id": "log_1788522463073_a0stg",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick Developer API for @slyyutus",
+      "createdAt": "2026-09-04T11:47:43.073Z"
+    },
+    {
+      "id": "log_1788522403085_69efd",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick Developer API for @slyyutus",
+      "createdAt": "2026-09-04T11:46:43.085Z"
+    },
+    {
+      "id": "log_1788522343074_5bdeo",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick Developer API for @slyyutus",
+      "createdAt": "2026-09-04T11:45:43.074Z"
+    },
+    {
+      "id": "log_1788522283079_gv84g",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick Developer API for @slyyutus",
+      "createdAt": "2026-09-04T11:44:43.079Z"
+    },
+    {
+      "id": "log_1788522224591_nm13z",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick Developer API for @slyyutus",
+      "createdAt": "2026-09-04T11:43:44.591Z"
+    },
+    {
+      "id": "log_1788522222596_jzadi",
+      "level": "info",
+      "module": "TRACKER",
+      "message": "Live channel sync service started.",
+      "createdAt": "2026-09-04T11:43:42.596Z"
+    },
+    {
+      "id": "log_boot_01",
+      "level": "info",
+      "module": "DATABASE",
+      "message": "Initialized clean database with official Slyyutus Kick channel profile.",
+      "createdAt": "2026-09-04T11:43:42.473Z"
+    },
+    {
+      "id": "log_boot_02",
+      "level": "success",
+      "module": "LEAGUE_ENGINE",
+      "message": "Active Season set to 09-26 (September 2026).",
+      "createdAt": "2026-09-04T11:43:42.473Z"
+    }
+  ],
+  "subscriptionEvents": [],
+  "adminKickUserId": "16282003"
+}
