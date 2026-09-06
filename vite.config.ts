@@ -1,4 +1,4 @@
-﻿import tailwindcss from '@tailwindcss/vite';
+import tailwindcss from '@tailwindcss/vite';
 import react from '@vitejs/plugin-react';
 import path from 'path';
 import {defineConfig} from 'vite';
@@ -17,7 +17,7 @@ export default defineConfig(() => {
       hmr: process.env.DISABLE_HMR === 'true' ? false : { protocol: 'wss', clientPort: 443 },
       // Disable file watching when DISABLE_HMR is true to save CPU during agent edits.
       watch: process.env.DISABLE_HMR === 'true' ? null : {},
-      allowedHosts: ['.ngrok-free.dev', '.ngrok-free.app', '.ngrok.io'],
+      allowedHosts: true as const,
 
     },
   };
