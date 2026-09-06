@@ -297,7 +297,7 @@ export async function fetchAdminOverview(): Promise<AdminOverviewData> {
 
 export async function updateAdminPointRules(rules: Record<string, number>): Promise<void> {
   for (const [ruleKey, pointValue] of Object.entries(rules)) {
-    await fetch(`${API_BASE}/admin/point-rules`, {
+    await apiFetch(`${API_BASE}/admin/point-rules`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ ruleKey, pointValue })
@@ -306,7 +306,7 @@ export async function updateAdminPointRules(rules: Record<string, number>): Prom
 }
 
 export async function finalizeSeason(seasonId: string): Promise<any> {
-  const res = await fetch(`${API_BASE}/admin/finalize-season`, {
+  const res = await apiFetch(`${API_BASE}/admin/finalize-season`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ seasonId })
@@ -319,7 +319,7 @@ export async function finalizeSeason(seasonId: string): Promise<any> {
 }
 
 export async function updateAdminUserPoints(kickUserId: string, pointsAdjustment: number, reason?: string): Promise<any> {
-  const res = await fetch(`${API_BASE}/admin/adjust-points`, {
+  const res = await apiFetch(`${API_BASE}/admin/adjust-points`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ kickUserId, pointsAdjustment, reason })
@@ -329,7 +329,7 @@ export async function updateAdminUserPoints(kickUserId: string, pointsAdjustment
 }
 
 export async function awardAdminBadge(kickUserId: string, badgeCode: string): Promise<any> {
-  const res = await fetch(`${API_BASE}/admin/award-badge`, {
+  const res = await apiFetch(`${API_BASE}/admin/award-badge`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ kickUserId, badgeCode })
@@ -345,7 +345,7 @@ export async function dispatchSimulatorEvent(event: {
   giftCount?: number;
 }): Promise<any> {
   const mappedType = event.type === 'chat' ? 'CHAT' : event.type === 'subscription' ? 'SUB' : 'GIFT';
-  const res = await fetch(`${API_BASE}/admin/test-event`, {
+  const res = await apiFetch(`${API_BASE}/admin/test-event`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
@@ -359,12 +359,12 @@ export async function dispatchSimulatorEvent(event: {
 }
 
 export async function syncKickChannelStats(): Promise<any> {
-  const res = await fetch(`${API_BASE}/admin/trigger-sync`, { method: 'POST' });
+  const res = await apiFetch(`${API_BASE}/admin/trigger-sync`, { method: 'POST' });
   return await res.json();
 }
 
 export async function updateChannelStats(data: Partial<ChannelStats>): Promise<any> {
-  const res = await fetch(`${API_BASE}/admin/update-channel`, {
+  const res = await apiFetch(`${API_BASE}/admin/update-channel`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(data)

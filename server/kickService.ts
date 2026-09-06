@@ -1,4 +1,4 @@
-﻿import './env.js';
+import './env.js';
 import { db, DBStream } from './db.js';
 
 export interface KickChannelApiResponse {
@@ -200,6 +200,31 @@ export class KickService {
     } catch (err: any) {
       console.error('[Kick API] Error fetching user profile:', err.message);
       db.addSystemLog('error', 'KICK_OAUTH', `Exception fetching user: ${err.message}`);
+      return null;
+    }
+  }
+
+  /**
+   * Fetches real avatar directly from Kick's public user endpoint
+   */
+  public async fetchKickUserAvatar(username: string, userId?: string): Promise<string | null> {
+    try {
+      const res = await fetch(`https://kick.com/api/v1/users/${encodeURIComponent(username)}`, {
+        headers: {
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)',
+          'Accept': 'application/json'
+        }
+      });
+      if (!res.ok) return null;
+      const data = await res.json();
+      const s3Url = data.profilepic;
+      if (!s3Url) return null;
+      const match = s3Url.match(/amazonaws\.com\/(images\/user\/\d+\/profile_image\/conversion\/[^?]+)/);
+      if (match) {
+        return `https://files.kick.com/${match[1]}`;
+      }
+      return s3Url.split('?')[0];
+    } catch {
       return null;
     }
   }

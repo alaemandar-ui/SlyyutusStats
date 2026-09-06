@@ -5,6 +5,7 @@ import { MyStatsResponse, ChatMessage } from '../types';
 import { BadgeItem } from '../components/BadgeItem';
 import { StatCard } from '../components/StatCard';
 import { LoadingSkeleton } from '../components/LoadingSkeleton';
+import { UserAvatar } from '../components/UserAvatar';
 import { 
   User, 
   Trophy, 
@@ -112,10 +113,9 @@ export const MyStatsPage: React.FC<{ navigate: (route: string) => void }> = ({ n
       {/* Header */}
       <div className="flex flex-col sm:flex-row items-center sm:items-start justify-between gap-6 border-b border-zinc-800/80 pb-6">
         <div className="flex items-center gap-4 text-center sm:text-left">
-          <img
+          <UserAvatar
             src={profileUser.avatarUrl}
-            alt={profileUser.username}
-            referrerPolicy="no-referrer"
+            username={profileUser.username}
             className="w-16 h-16 rounded-2xl object-cover border-2 border-amber-400/60 shadow-lg"
           />
           <div>

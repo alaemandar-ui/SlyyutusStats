@@ -4,6 +4,7 @@ import { fetchChannelStats, fetchCurrentLeague, fetchVods } from '../lib/api';
 import { StatCard } from '../components/StatCard';
 import { BadgeItem } from '../components/BadgeItem';
 import { LoadingSkeleton } from '../components/LoadingSkeleton';
+import { UserAvatar } from '../components/UserAvatar';
 import { 
   Users, 
   Crown, 
@@ -78,10 +79,9 @@ export const HomePage: React.FC<{ navigate: (route: string) => void }> = ({ navi
           <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6 text-center sm:text-left">
             <div className="relative group shrink-0">
               <div className="w-28 h-28 sm:w-32 sm:h-32 rounded-full border-4 border-[#D4AF37] overflow-hidden shadow-[0_0_30px_rgba(212,175,55,0.25)] bg-[#1A1A1A]">
-                <img
+                <UserAvatar
                   src={channel.avatarUrl}
-                  alt={channel.username}
-                  referrerPolicy="no-referrer"
+                  username={channel.username}
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -238,10 +238,10 @@ export const HomePage: React.FC<{ navigate: (route: string) => void }> = ({ navi
               </div>
               <div className="text-center space-y-3">
                 <div className="relative inline-block">
-                  <img
+                  <UserAvatar
                     src={topThree[1].avatarUrl}
-                    alt={topThree[1].username}
-                    referrerPolicy="no-referrer"
+                    username={topThree[1].username}
+                    userId={topThree[1].kickUserId}
                     className="w-18 h-18 rounded-full mx-auto object-cover border-2 border-gray-400 shadow-md"
                   />
                 </div>
@@ -277,10 +277,10 @@ export const HomePage: React.FC<{ navigate: (route: string) => void }> = ({ navi
               <div className="text-center space-y-3">
                 <div className="relative inline-block">
                   <div className="w-22 h-22 rounded-full mx-auto p-1 bg-gradient-to-tr from-[#D4AF37] to-[#FFD700] shadow-[0_0_25px_rgba(212,175,55,0.4)]">
-                    <img
+                    <UserAvatar
                       src={topThree[0].avatarUrl}
-                      alt={topThree[0].username}
-                      referrerPolicy="no-referrer"
+                      username={topThree[0].username}
+                      userId={topThree[0].kickUserId}
                       className="w-full h-full rounded-full object-cover"
                     />
                   </div>
@@ -322,10 +322,10 @@ export const HomePage: React.FC<{ navigate: (route: string) => void }> = ({ navi
               </div>
               <div className="text-center space-y-3">
                 <div className="relative inline-block">
-                  <img
+                  <UserAvatar
                     src={topThree[2].avatarUrl}
-                    alt={topThree[2].username}
-                    referrerPolicy="no-referrer"
+                    username={topThree[2].username}
+                    userId={topThree[2].kickUserId}
                     className="w-18 h-18 rounded-full mx-auto object-cover border-2 border-[#CD7F32] shadow-md"
                   />
                 </div>
@@ -388,6 +388,10 @@ export const HomePage: React.FC<{ navigate: (route: string) => void }> = ({ navi
                     <img
                       src={vod.thumbnailUrl || 'https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800&auto=format&fit=crop&q=80'}
                       alt={vod.title}
+                      referrerPolicy="no-referrer"
+                      onError={(e) => {
+                        (e.target as HTMLImageElement).src = 'https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800&auto=format&fit=crop&q=80';
+                      }}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                     <div className="absolute top-2 left-2 px-2 py-0.5 rounded-sm bg-black/80 text-[9px] font-bold uppercase tracking-wider text-[#D4AF37] border border-[#D4AF37]/30">

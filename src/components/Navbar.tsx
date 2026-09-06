@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useAuth } from '../context/AuthContext';
+import { UserAvatar } from './UserAvatar';
 import { 
   Trophy, 
   BarChart3, 
@@ -56,9 +57,11 @@ export const Navbar: React.FC<NavbarProps> = ({ currentRoute, navigate, channelL
               onClick={() => handleNav('home')}
               className="flex items-center gap-3 text-left group focus:outline-none"
             >
-              <div className="w-7 h-7 sm:w-8 sm:h-8 bg-gradient-to-tr from-[#D4AF37] to-[#FFD700] rounded-sm transform rotate-45 shadow-[0_0_15px_rgba(212,175,55,0.4)] flex items-center justify-center shrink-0">
-                <span className="transform -rotate-45 font-black text-black text-xs sm:text-sm select-none">S</span>
-              </div>
+              <img
+                src="/logo.png"
+                alt="Slyyutus Stats Logo"
+                className="w-8 h-8 sm:w-9 sm:h-9 object-contain shrink-0 filter drop-shadow-[0_0_10px_rgba(212,175,55,0.4)] group-hover:scale-105 transition-transform"
+              />
               <div>
                 <span className="text-lg sm:text-xl font-black tracking-tighter text-[#D4AF37] group-hover:text-[#FFD700] transition-colors leading-none block">
                   SLYYUTUS<span className="text-white">.STATS</span>
@@ -144,10 +147,10 @@ export const Navbar: React.FC<NavbarProps> = ({ currentRoute, navigate, channelL
                   onClick={() => setUserDropdownOpen(!userDropdownOpen)}
                   className="flex items-center gap-2.5 p-1.5 pr-3 rounded-sm bg-[#111] border border-[#D4AF37]/20 hover:border-[#D4AF37] transition-all focus:outline-none"
                 >
-                  <img
+                  <UserAvatar
                     src={user.avatarUrl}
-                    alt={user.username}
-                    referrerPolicy="no-referrer"
+                    username={user.username}
+                    userId={user.kickUserId}
                     className="w-7 h-7 rounded-sm object-cover border border-[#D4AF37]/40"
                   />
                   <div className="text-left">
@@ -283,10 +286,10 @@ export const Navbar: React.FC<NavbarProps> = ({ currentRoute, navigate, channelL
             {isAuthenticated && user ? (
               <div className="flex items-center justify-between bg-zinc-900/80 p-3 rounded-xl border border-zinc-800">
                 <div className="flex items-center gap-3">
-                  <img
+                  <UserAvatar
                     src={user.avatarUrl}
-                    alt={user.username}
-                    referrerPolicy="no-referrer"
+                    username={user.username}
+                    userId={user.kickUserId}
                     className="w-9 h-9 rounded-lg border border-amber-400/30"
                   />
                   <div>

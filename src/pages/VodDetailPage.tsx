@@ -3,6 +3,7 @@ import { StreamVod, VodChatterRanking, ChatMessage } from '../types';
 import { fetchVodDetail } from '../lib/api';
 import { BadgeItem } from '../components/BadgeItem';
 import { LoadingSkeleton } from '../components/LoadingSkeleton';
+import { UserAvatar } from '../components/UserAvatar';
 import { 
   Video, 
   Eye, 
@@ -214,10 +215,10 @@ export const VodDetailPage: React.FC<VodDetailPageProps> = ({ streamId, navigate
                             onClick={() => navigate(`user/${r.username}`)}
                             className="flex items-center gap-3 cursor-pointer group"
                           >
-                            <img
+                            <UserAvatar
                               src={r.avatarUrl}
-                              alt={r.username}
-                              referrerPolicy="no-referrer"
+                              username={r.username}
+                              userId={r.kickUserId}
                               className="w-8 h-8 rounded-lg object-cover border border-zinc-700 group-hover:border-amber-400 transition-colors"
                             />
                             <div>
@@ -309,10 +310,10 @@ export const VodDetailPage: React.FC<VodDetailPageProps> = ({ streamId, navigate
 
               return (
                 <div key={msg.messageId} className="p-4 hover:bg-zinc-900/40 transition-colors flex items-start gap-3.5">
-                  <img
-                    src={msg.avatarUrl || `https://api.dicebear.com/7.x/bottts/svg?seed=${msg.username}`}
-                    alt={msg.username}
-                    referrerPolicy="no-referrer"
+                  <UserAvatar
+                    src={msg.avatarUrl}
+                    username={msg.username}
+                    userId={msg.kickUserId}
                     className="w-8 h-8 rounded-lg object-cover border border-zinc-700 shrink-0 mt-0.5"
                   />
                   <div className="flex-1 min-w-0 space-y-1">

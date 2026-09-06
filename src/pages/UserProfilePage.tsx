@@ -4,6 +4,7 @@ import { fetchUserProfile, fetchUserChatHistory } from '../lib/api';
 import { BadgeItem } from '../components/BadgeItem';
 import { StatCard } from '../components/StatCard';
 import { LoadingSkeleton } from '../components/LoadingSkeleton';
+import { UserAvatar } from '../components/UserAvatar';
 import { 
   User, 
   Trophy, 
@@ -122,10 +123,10 @@ export const UserProfilePage: React.FC<UserProfilePageProps> = ({ username, navi
         <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6">
           <div className="relative">
             <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-2xl p-[2px] bg-gradient-to-tr from-amber-400 to-amber-600 shadow-2xl">
-              <img
+              <UserAvatar
                 src={user.avatarUrl}
-                alt={user.username}
-                referrerPolicy="no-referrer"
+                username={user.username}
+                userId={user.kickUserId}
                 className="w-full h-full object-cover rounded-[14px]"
               />
             </div>

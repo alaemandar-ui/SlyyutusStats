@@ -3,6 +3,7 @@ import { LeagueSeason, LeagueRankingEntry } from '../types';
 import { fetchCurrentLeague } from '../lib/api';
 import { BadgeItem } from '../components/BadgeItem';
 import { LoadingSkeleton } from '../components/LoadingSkeleton';
+import { UserAvatar } from '../components/UserAvatar';
 import { 
   Trophy, 
   Search, 
@@ -127,10 +128,10 @@ export const LeaguePage: React.FC<{ navigate: (route: string) => void }> = ({ na
               </div>
               <div className="text-center space-y-3">
                 <div className="relative inline-block">
-                  <img
+                  <UserAvatar
                     src={topThree[1].avatarUrl}
-                    alt={topThree[1].username}
-                    referrerPolicy="no-referrer"
+                    username={topThree[1].username}
+                    userId={topThree[1].kickUserId}
                     className="w-18 h-18 rounded-full mx-auto object-cover border-2 border-gray-400 shadow-md"
                   />
                 </div>
@@ -164,10 +165,10 @@ export const LeaguePage: React.FC<{ navigate: (route: string) => void }> = ({ na
               <div className="text-center space-y-3">
                 <div className="relative inline-block">
                   <div className="w-22 h-22 rounded-full mx-auto p-1 bg-gradient-to-tr from-[#D4AF37] to-[#FFD700] shadow-[0_0_25px_rgba(212,175,55,0.4)]">
-                    <img
+                    <UserAvatar
                       src={topThree[0].avatarUrl}
-                      alt={topThree[0].username}
-                      referrerPolicy="no-referrer"
+                      username={topThree[0].username}
+                      userId={topThree[0].kickUserId}
                       className="w-full h-full rounded-full object-cover"
                     />
                   </div>
@@ -207,10 +208,10 @@ export const LeaguePage: React.FC<{ navigate: (route: string) => void }> = ({ na
               </div>
               <div className="text-center space-y-3">
                 <div className="relative inline-block">
-                  <img
+                  <UserAvatar
                     src={topThree[2].avatarUrl}
-                    alt={topThree[2].username}
-                    referrerPolicy="no-referrer"
+                    username={topThree[2].username}
+                    userId={topThree[2].kickUserId}
                     className="w-18 h-18 rounded-full mx-auto object-cover border-2 border-[#CD7F32] shadow-md"
                   />
                 </div>
@@ -328,10 +329,10 @@ export const LeaguePage: React.FC<{ navigate: (route: string) => void }> = ({ na
                             onClick={() => navigate(`user/${entry.username}`)}
                             className="flex items-center gap-3 cursor-pointer group"
                           >
-                            <img
+                            <UserAvatar
                               src={entry.avatarUrl}
-                              alt={entry.username}
-                              referrerPolicy="no-referrer"
+                              username={entry.username}
+                              userId={entry.kickUserId}
                               className="w-8 h-8 rounded-sm object-cover border border-[#D4AF37]/30 group-hover:border-[#D4AF37] transition-colors"
                             />
                             <div>

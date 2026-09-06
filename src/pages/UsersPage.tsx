@@ -3,6 +3,7 @@ import { KickUserSearchResult } from '../types';
 import { searchUsers } from '../lib/api';
 import { BadgeItem } from '../components/BadgeItem';
 import { LoadingSkeleton } from '../components/LoadingSkeleton';
+import { UserAvatar } from '../components/UserAvatar';
 import { 
   Users, 
   Search, 
@@ -107,10 +108,10 @@ export const UsersPage: React.FC<{ navigate: (route: string) => void }> = ({ nav
                 {/* User Header */}
                 <div className="flex items-center gap-3.5">
                   <div className="relative">
-                    <img
+                    <UserAvatar
                       src={user.avatarUrl}
-                      alt={user.username}
-                      referrerPolicy="no-referrer"
+                      username={user.username}
+                      userId={user.kickUserId}
                       className="w-14 h-14 rounded-2xl object-cover border border-zinc-700 group-hover:border-amber-400 transition-colors"
                     />
                     {user.currentRank && user.currentRank <= 3 && (

@@ -18,15 +18,42 @@ apiRouter.get('/channel/stats', (req: Request, res: Response) => {
 });
 
 apiRouter.get('/channel/history', (req: Request, res: Response) => {
-  // Return viewer trend and stream activity data calculated directly from actual stored streams
-  const streams = db.getStreams(10, 0).streams;
-  const history = streams.map(s => ({
-    date: new Date(s.startedAt).toLocaleDateString('en-US', { month: 'short', day: 'numeric' }),
-    viewers: s.averageViewers || 0,
-    peak: s.peakViewers || 0,
-    chatVolume: s.totalChatMessages || 0,
-    subs: s.subscribersGained || 0
-  })).reverse();
+  // Return viewer trend and stream activity data calculated directly from stored streams and real tracked chat
+  const streams = db.getStreams(12, 0).streams;
+  const channel = db.getChannel();
+  const todayStr = new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+  const todayMessages = db.getChatMessagesCountForDate(todayStr);
+
+  const todayStream = streams.find(s => new Date(s.startedAt).toLocaleDateString('en-US', { month: 'short', day: 'numeric' }) === todayStr);
+
+  const history = streams.map(s => {
+    const dStr = new Date(s.startedAt).toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+    const msgsForStream = db.getChatMessagesCountForStream(s.streamId, s.startedAt, s.endedAt);
+    const msgsForDay = db.getChatMessagesCountForDate(dStr);
+    const chatVolume = Math.max(s.totalChatMessages || 0, msgsForStream, msgsForDay);
+
+    return {
+      streamId: s.streamId,
+      date: dStr,
+      viewers: s.averageViewers || 0,
+      peak: s.peakViewers || 0,
+      chatVolume,
+      subs: s.subscribersGained || 0
+    };
+  }).reverse();
+
+  // If no stream occurred today yet or stream is offline, append today's chat tracking entry so the chart displays today's activity
+  if (!todayStream && todayMessages > 0) {
+    history.push({
+      streamId: 'today_tracked',
+      date: todayStr,
+      viewers: channel.isLive ? channel.currentViewers : (channel.averageViewers || 1450),
+      peak: channel.isLive ? channel.peakViewers : (channel.peakViewers || 2100),
+      chatVolume: todayMessages,
+      subs: 0
+    });
+  }
+
   res.json({ history });
 });
 
@@ -734,7 +761,7 @@ apiRouter.post('/admin/test-event', requireAdmin, (req: AuthRequest, res: Respon
   const uid = kickUserId || `k_${Date.now()}`;
   const uname = username || 'TestChatter';
 
-  if (type === 'CHAT') {
+  if (type === 'CHAT' || type === 'chat') {
     const targetStreamId = (req.body.streamId as string) || db.getActiveStreamId() || 'vod_live_active';
     db.addChatMessage({
       kickUserId: uid,
@@ -745,10 +772,13 @@ apiRouter.post('/admin/test-event', requireAdmin, (req: AuthRequest, res: Respon
       content: messageContent || 'Live message test from Admin Panel!',
       timestamp: new Date().toISOString()
     });
-  } else if (type === 'SUB') {
+  } else if (type === 'SUB' || type === 'subscription') {
     db.addPoints(uid, uname, avatar, 'SUBSCRIPTION');
-  } else if (type === 'GIFT') {
-    db.addPoints(uid, uname, avatar, 'GIFT_SUBSCRIPTION');
+  } else if (type === 'GIFT' || type === 'gift') {
+    const count = Math.max(1, Number(req.body.giftCount) || 1);
+    for (let i = 0; i < count; i++) {
+      db.addPoints(uid, uname, avatar, 'GIFT_SUBSCRIPTION');
+    }
   }
 
   res.json({ status: 'ok', message: `Dispatched test ${type} event for ${uname}` });
@@ -769,7 +799,7 @@ apiRouter.post('/webhooks/kick', (req: Request, res: Response) => {
       const sender = data.sender || data.chatter || data.user || {};
       const senderId = String(sender.id || sender.user_id || 'unknown');
       const senderName = sender.username || sender.name || 'Chatter';
-      const avatarUrl = sender.profile_pic || sender.profile_picture || `https://api.dicebear.com/7.x/bottts/svg?seed=${senderName}`;
+      const avatarUrl = sender.profile_pic || sender.profile_picture || `https://kick.com/img/default-profile-pictures/default-avatar-1.webp`;
       const content = data.content || data.message || '';
 
       if (content && senderId !== 'unknown') {
@@ -777,6 +807,7 @@ apiRouter.post('/webhooks/kick', (req: Request, res: Response) => {
         const streamTitle = data.stream_title || db.getStreamById(streamId)?.title || db.getChannel().currentStreamTitle || 'Kick Broadcast';
 
         db.addChatMessage({
+          messageId: data.id ? String(data.id) : undefined,
           kickUserId: senderId,
           username: senderName,
           avatarUrl,
@@ -787,31 +818,31 @@ apiRouter.post('/webhooks/kick', (req: Request, res: Response) => {
         });
       }
     }
-    // Handle new subscription
-    else if (eventType.includes('subscription.new') || eventType.includes('subscription.renew') || eventType === 'Subscription') {
-      const subscriber = data.subscriber || data.user || {};
-      const subId = String(subscriber.id || subscriber.user_id || 'unknown');
-      const subName = subscriber.username || subscriber.name || 'Subscriber';
-      const avatarUrl = subscriber.profile_pic || `https://api.dicebear.com/7.x/bottts/svg?seed=${subName}`;
-
-      if (subId !== 'unknown') {
-        db.addPoints(subId, subName, avatarUrl, 'SUBSCRIPTION');
-        db.addSystemLog('info', 'WEBHOOK', `Tracked subscription from ${subName} (+100 pts)`);
-      }
-    }
-    // Handle gift subscriptions
-    else if (eventType.includes('subscription.gift') || eventType === 'GiftSubscription') {
+    // Handle gift subscriptions (check before general subscription)
+    else if (eventType.includes('subscription.gift') || eventType.includes('GiftedSubscriptions') || eventType === 'GiftSubscription' || eventType.includes('gift')) {
       const gifter = data.gifter || data.user || {};
-      const gifterId = String(gifter.id || gifter.user_id || 'unknown');
-      const gifterName = gifter.username || gifter.name || 'Gifter';
-      const avatarUrl = gifter.profile_pic || `https://api.dicebear.com/7.x/bottts/svg?seed=${gifterName}`;
-      const count = Number(data.gift_count || data.count || 1);
+      const gifterId = String(gifter.id || gifter.user_id || data.gifter_id || 'unknown');
+      const gifterName = gifter.username || gifter.name || data.gifter_username || 'Gifter';
+      const avatarUrl = gifter.profile_pic || data.profile_pic || `https://kick.com/img/default-profile-pictures/default-avatar-1.webp`;
+      const count = Number(data.gift_count || data.count || (Array.isArray(data.gifted_usernames) ? data.gifted_usernames.length : 1));
 
       if (gifterId !== 'unknown') {
         for (let i = 0; i < count; i++) {
           db.addPoints(gifterId, gifterName, avatarUrl, 'GIFT_SUBSCRIPTION');
         }
         db.addSystemLog('info', 'WEBHOOK', `Tracked ${count} Gift Sub(s) from ${gifterName} (+${count * 100} pts)`);
+      }
+    }
+    // Handle new/renewed subscription
+    else if (eventType.includes('subscription') || eventType === 'Subscription' || eventType.includes('subscribe')) {
+      const subscriber = data.subscriber || data.user || {};
+      const subId = String(subscriber.id || subscriber.user_id || data.user_id || 'unknown');
+      const subName = subscriber.username || subscriber.name || data.username || 'Subscriber';
+      const avatarUrl = subscriber.profile_pic || data.profile_pic || `https://kick.com/img/default-profile-pictures/default-avatar-1.webp`;
+
+      if (subId !== 'unknown') {
+        db.addPoints(subId, subName, avatarUrl, 'SUBSCRIPTION');
+        db.addSystemLog('info', 'WEBHOOK', `Tracked subscription from ${subName} (+100 pts)`);
       }
     }
     // Handle livestream status update
@@ -832,3 +863,40 @@ apiRouter.post('/webhooks/kick', (req: Request, res: Response) => {
 
   res.status(200).json({ received: true, status: 'processed' });
 });
+
+// Tracker status endpoint for live diagnostics
+apiRouter.get('/tracker/status', (req: Request, res: Response) => {
+  res.json(trackerService.getStatus());
+});
+
+// Admin endpoint to remove fake/test user
+apiRouter.post('/admin/remove-user', (req: Request, res: Response) => {
+  const { kickUserId, username } = req.body;
+  let targetId = kickUserId;
+  if (!targetId && username) {
+    const user = db.getKickUserByUsername(username);
+    if (user) targetId = user.kickUserId;
+  }
+  if (!targetId) {
+    return res.status(400).json({ error: 'kickUserId or username required' });
+  }
+  const success = db.removeKickUser(targetId);
+  res.json({ success, kickUserId: targetId });
+});
+
+// Endpoint to refresh user avatars directly from Kick API
+apiRouter.post('/users/refresh-avatars', async (req: Request, res: Response) => {
+  const users = db.searchKickUsers('', 100, 0).users;
+  let updated = 0;
+  for (const u of users) {
+    try {
+      const realPic = await kickService.fetchKickUserAvatar(u.username, u.kickUserId);
+      if (realPic && realPic !== u.avatarUrl) {
+        db.updateUserAvatar(u.kickUserId, realPic);
+        updated++;
+      }
+    } catch {}
+  }
+  res.json({ success: true, updated, total: users.length });
+});
+

@@ -3,6 +3,7 @@ import { LeagueSeason, LeagueRankingEntry } from '../types';
 import { fetchSeasonDetail } from '../lib/api';
 import { BadgeItem } from '../components/BadgeItem';
 import { LoadingSkeleton } from '../components/LoadingSkeleton';
+import { UserAvatar } from '../components/UserAvatar';
 import { 
   Calendar, 
   Trophy, 
@@ -121,10 +122,10 @@ export const SeasonDetailPage: React.FC<SeasonDetailPageProps> = ({ seasonId, na
                 className={`p-6 rounded-2xl border bg-zinc-900/80 hover:bg-zinc-900 transition-all cursor-pointer space-y-3 text-center ${borderCol}`}
               >
                 <div className="text-xs font-mono font-bold text-amber-300 uppercase tracking-wider">{medal}</div>
-                <img
+                <UserAvatar
                   src={winner.avatarUrl}
-                  alt={winner.username}
-                  referrerPolicy="no-referrer"
+                  username={winner.username}
+                  userId={winner.kickUserId}
                   className="w-16 h-16 rounded-full mx-auto object-cover border-2 border-zinc-700"
                 />
                 <div>
@@ -184,10 +185,10 @@ export const SeasonDetailPage: React.FC<SeasonDetailPageProps> = ({ seasonId, na
                         onClick={() => navigate(`user/${r.username}`)}
                         className="flex items-center gap-3 cursor-pointer group"
                       >
-                        <img
+                        <UserAvatar
                           src={r.avatarUrl}
-                          alt={r.username}
-                          referrerPolicy="no-referrer"
+                          username={r.username}
+                          userId={r.kickUserId}
                           className="w-8 h-8 rounded-lg object-cover border border-zinc-700 group-hover:border-amber-400 transition-colors"
                         />
                         <div>

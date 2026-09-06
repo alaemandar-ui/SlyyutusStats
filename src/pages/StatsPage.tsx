@@ -175,10 +175,10 @@ export const StatsPage: React.FC = () => {
                 <Zap className="w-4 h-4 text-amber-400" />
                 <span>Chat Activity Volume</span>
               </h3>
-              <p className="text-xs text-zinc-500 font-mono">Total messages sent per stream</p>
+              <p className="text-xs text-zinc-500 font-mono">Historical chat activity across streams & dates</p>
             </div>
-            <span className="text-[11px] font-mono px-2 py-0.5 rounded bg-zinc-800 text-zinc-300">
-              League Engine
+            <span className="text-[11px] font-mono px-2 py-0.5 rounded bg-zinc-800 text-amber-400/90 border border-amber-500/20">
+              Real Tracked Chat
             </span>
           </div>
 
@@ -191,6 +191,8 @@ export const StatsPage: React.FC = () => {
                   <YAxis stroke="#71717A" fontSize={11} />
                   <Tooltip
                     contentStyle={{ backgroundColor: '#09090b', borderColor: '#3f3f46', borderRadius: '8px', color: '#fff', fontSize: '12px' }}
+                    formatter={(value: any) => [`${Number(value).toLocaleString()} messages`, 'Chat Activity']}
+                    labelFormatter={(label: any) => `Timeline: ${label}`}
                   />
                   <Bar dataKey="chatVolume" name="Chat Messages" fill="#D4AF37" radius={[4, 4, 0, 0]} />
                 </BarChart>
@@ -204,7 +206,7 @@ export const StatsPage: React.FC = () => {
           <div className="flex items-center justify-center gap-6 text-xs font-mono text-zinc-400">
             <div className="flex items-center gap-2">
               <span className="w-2.5 h-2.5 rounded-full bg-amber-500" />
-              <span>Tracked Messages</span>
+              <span>Historical Tracked Messages</span>
             </div>
           </div>
         </div>

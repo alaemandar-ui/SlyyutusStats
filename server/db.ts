@@ -417,7 +417,13 @@ class Database {
       this.data.kickUsers.push(user);
     } else {
       user.username = username; // Update if username changed
-      if (avatarUrl) user.avatarUrl = avatarUrl;
+      if (avatarUrl && !avatarUrl.includes('default-medium.webp')) {
+        const isCurrentCustom = user.avatarUrl && user.avatarUrl.includes('/profile_image/conversion/') && !user.avatarUrl.includes('default');
+        const isNewGeneric = avatarUrl.includes('default-avatar') || avatarUrl.includes('dicebear');
+        if (!isCurrentCustom || !isNewGeneric) {
+          user.avatarUrl = avatarUrl;
+        }
+      }
       user.lastActiveAt = now;
       if (isTestUser) {
         user.isTest = true;
@@ -439,6 +445,41 @@ class Database {
     const total = filtered.length;
     const users = filtered.slice(offset, offset + limit);
     return { users, total };
+  }
+
+  public updateUserAvatar(kickUserId: string, avatarUrl: string): boolean {
+    const user = this.data.kickUsers.find(u => u.kickUserId === kickUserId);
+    if (!user) return false;
+    user.avatarUrl = avatarUrl;
+    // Also update cached avatar in recent messages
+    this.data.chatMessages.forEach(m => {
+      if (m.kickUserId === kickUserId) {
+        m.avatarUrl = avatarUrl;
+      }
+    });
+    this.save();
+    return true;
+  }
+
+  public removeKickUser(kickUserId: string): boolean {
+    const originalLen = this.data.kickUsers.length;
+    this.data.kickUsers = this.data.kickUsers.filter(u => u.kickUserId !== kickUserId);
+    this.data.leaguePoints = this.data.leaguePoints.filter(p => p.kickUserId !== kickUserId);
+    this.data.chatMessages = this.data.chatMessages.filter(m => m.kickUserId !== kickUserId);
+    this.save();
+    return this.data.kickUsers.length < originalLen;
+  }
+
+  public reload(): void {
+    if (fs.existsSync(DB_FILE_PATH)) {
+      try {
+        const raw = fs.readFileSync(DB_FILE_PATH, 'utf-8');
+        this.data = JSON.parse(raw);
+        console.log('[DB] Reloaded database from disk.');
+      } catch (err) {
+        console.error('[DB] Failed to reload:', err);
+      }
+    }
   }
 
   // --- Seasons ---
@@ -525,9 +566,15 @@ class Database {
     } else if (type === 'SUBSCRIPTION') {
       pointRecord.subsCount += 1;
       user.totalSubs += 1;
+      if (!isTestFlag && this.data.channel) {
+        this.data.channel.subscribersCount = (this.data.channel.subscribersCount || 0) + 1;
+      }
     } else if (type === 'GIFT_SUBSCRIPTION') {
       pointRecord.giftsCount += 1;
       user.totalGifts += 1;
+      if (!isTestFlag && this.data.channel) {
+        this.data.channel.subscribersCount = (this.data.channel.subscribersCount || 0) + 1;
+      }
     }
 
     user.lastActiveAt = now;
@@ -743,12 +790,34 @@ class Database {
   }
 
   // --- Chat Messages ---
-  public addChatMessage(msg: Omit<DBChatMessage, 'messageId' | 'pointsAwarded'>): DBChatMessage {
+  public addChatMessage(msg: Omit<DBChatMessage, 'messageId' | 'pointsAwarded'> & { messageId?: string }): DBChatMessage {
     const pointValue = this.getPointRule('CHAT_MESSAGE');
     const isTest = Boolean(msg.isTest || (msg.username && msg.username.toLowerCase().startsWith('test')));
+
+    // Deduplication check 1: Exact messageId
+    if (msg.messageId) {
+      const existing = this.data.chatMessages.find(m => m.messageId === msg.messageId);
+      if (existing) {
+        return existing;
+      }
+    }
+
+    // Deduplication check 2: Same user, exact content, within 5 seconds timestamp
+    const msgTime = new Date(msg.timestamp).getTime();
+    if (!isNaN(msgTime)) {
+      const existingFuzzy = this.data.chatMessages.find(m => 
+        m.kickUserId === msg.kickUserId && 
+        m.content === msg.content && 
+        Math.abs(new Date(m.timestamp).getTime() - msgTime) < 5000
+      );
+      if (existingFuzzy) {
+        return existingFuzzy;
+      }
+    }
+
     const newMsg: DBChatMessage = {
       ...msg,
-      messageId: `msg_${Date.now()}_${Math.random().toString(36).substring(2, 7)}`,
+      messageId: msg.messageId || `msg_${Date.now()}_${Math.random().toString(36).substring(2, 7)}`,
       channelId: msg.channelId || this.data.channel.id,
       pointsAwarded: pointValue,
       isTest
@@ -826,6 +895,31 @@ class Database {
 
   public getActiveStreamId(): string {
     return this.getCurrentLiveStream()?.streamId || '';
+  }
+
+  public getChatMessagesCountForStream(streamId: string, startedAt?: string, endedAt?: string): number {
+    const directMatches = this.data.chatMessages.filter(m => !m.isTest && m.streamId === streamId).length;
+    if (directMatches > 0) return directMatches;
+
+    if (startedAt) {
+      const startTime = new Date(startedAt).getTime();
+      const endTime = endedAt ? new Date(endedAt).getTime() : startTime + 6 * 3600 * 1000;
+      const timeMatches = this.data.chatMessages.filter(m => {
+        if (m.isTest) return false;
+        const msgTime = new Date(m.timestamp).getTime();
+        return msgTime >= startTime && msgTime <= endTime;
+      }).length;
+      if (timeMatches > 0) return timeMatches;
+    }
+    return 0;
+  }
+
+  public getChatMessagesCountForDate(dateStr: string): number {
+    return this.data.chatMessages.filter(m => {
+      if (m.isTest) return false;
+      const formatted = new Date(m.timestamp).toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+      return formatted === dateStr || m.timestamp.startsWith(dateStr);
+    }).length;
   }
 
   public getChatMessages(limit: number = 50, offset: number = 0): { messages: DBChatMessage[]; total: number } {

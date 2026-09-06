@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { fetchChatAnalytics } from '../lib/api';
 import { ChatMessage } from '../types';
 import { LoadingSkeleton } from '../components/LoadingSkeleton';
+import { UserAvatar } from '../components/UserAvatar';
 import { 
   MessageSquare, 
   Users, 
@@ -158,9 +159,10 @@ export const ChatPage: React.FC<{ navigate: (route: string) => void }> = ({ navi
                     <span className="text-xs font-mono font-bold text-gray-500 w-5 text-center">
                       #{idx + 1}
                     </span>
-                    <img
+                    <UserAvatar
                       src={chatter.avatarUrl}
-                      alt={chatter.username}
+                      username={chatter.username}
+                      userId={chatter.kickUserId}
                       className="w-8 h-8 rounded-full border border-white/10 group-hover:border-[#D4AF37] transition-all object-cover"
                     />
                     <div>
@@ -213,9 +215,10 @@ export const ChatPage: React.FC<{ navigate: (route: string) => void }> = ({ navi
             ) : (
               data.recentMessages.map((msg) => (
                 <div key={msg.messageId} className="py-3 px-2 hover:bg-white/[0.02] transition-colors flex items-start gap-3">
-                  <img
+                  <UserAvatar
                     src={msg.avatarUrl}
-                    alt={msg.username}
+                    username={msg.username}
+                    userId={msg.kickUserId}
                     onClick={() => navigate(`user/${msg.username}`)}
                     className="w-7 h-7 rounded-full border border-white/10 shrink-0 mt-0.5 cursor-pointer hover:border-[#D4AF37] transition-all object-cover"
                   />
