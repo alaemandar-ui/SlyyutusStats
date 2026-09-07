@@ -218,12 +218,18 @@ export class KickService {
       if (!res.ok) return null;
       const data = await res.json();
       const s3Url = data.profilepic;
-      if (!s3Url) return null;
-      const match = s3Url.match(/amazonaws\.com\/(images\/user\/\d+\/profile_image\/conversion\/[^?]+)/);
-      if (match) {
-        return `https://files.kick.com/${match[1]}`;
+      if (s3Url) {
+        const match = s3Url.match(/amazonaws\.com\/(images\/user\/\d+\/profile_image\/conversion\/[^?]+)/);
+        if (match) {
+          return `https://files.kick.com/${match[1]}`;
+        }
+        return s3Url.split('?')[0];
       }
-      return s3Url.split('?')[0];
+      if (data.id) {
+        const idx = (Math.abs(Number(data.id)) % 8) + 1;
+        return `https://files.kick.com/images/user/${data.id}/profile_image/conversion/default${idx}-fullsize.webp`;
+      }
+      return null;
     } catch {
       return null;
     }
@@ -405,6 +411,10 @@ export class KickService {
             : (v.slug ? `https://kick.com/video/${v.slug}` : `https://kick.com/${channelSlug}`);
           const thumb = v.thumbnail?.src || '';
 
+          const existingStream = db.getStreamById(String(v.id));
+          const existingChatCount = existingStream?.totalChatMessages || 0;
+          const existingSubsCount = existingStream?.subscribersGained || 0;
+
           realStreams.push({
             streamId: String(v.id),
             title: v.session_title || 'Untitled Stream',
@@ -414,8 +424,8 @@ export class KickService {
             durationSeconds: durationSec,
             averageViewers: avgViewers,
             peakViewers: peakViewers,
-            subscribersGained: 0,
-            totalChatMessages: 0,
+            subscribersGained: existingSubsCount,
+            totalChatMessages: existingChatCount,
             vodUrl,
             thumbnailUrl: thumb,
             isLive: Boolean(v.is_live),

@@ -393,7 +393,7 @@ export class TrackerService {
       const avatarUrl = subscriber.profile_pic || 
         payload.profile_pic || 
         (existingUser?.avatarUrl && !existingUser.avatarUrl.includes('default-medium.webp') ? existingUser.avatarUrl : null) ||
-        `https://kick.com/img/default-profile-pictures/default-avatar-1.webp`;
+        (subId && /^\d+$/.test(subId) ? `https://files.kick.com/images/user/${subId}/profile_image/conversion/default1-fullsize.webp` : `https://files.kick.com/images/default_avatars/avatar_1.png`);
 
       db.addPoints(subId, subName, avatarUrl, 'SUBSCRIPTION');
       console.log(`[Tracker] Live subscription from ${subName} (+100 pts)`);
@@ -415,7 +415,7 @@ export class TrackerService {
       const avatarUrl = gifter.profile_pic || 
         payload.profile_pic || 
         (existingUser?.avatarUrl && !existingUser.avatarUrl.includes('default-medium.webp') ? existingUser.avatarUrl : null) ||
-        `https://kick.com/img/default-profile-pictures/default-avatar-1.webp`;
+        (gifterId && /^\d+$/.test(gifterId) ? `https://files.kick.com/images/user/${gifterId}/profile_image/conversion/default1-fullsize.webp` : `https://files.kick.com/images/default_avatars/avatar_1.png`);
       
       const count = Array.isArray(payload.gifted_usernames)
         ? payload.gifted_usernames.length

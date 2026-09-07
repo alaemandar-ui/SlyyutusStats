@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import logoImg from '../assets/images/logo.png';
 import { useAuth } from '../context/AuthContext';
 import { UserAvatar } from './UserAvatar';
 import { 
@@ -58,9 +59,9 @@ export const Navbar: React.FC<NavbarProps> = ({ currentRoute, navigate, channelL
               className="flex items-center gap-3 text-left group focus:outline-none"
             >
               <img
-                src="/logo.png"
-                alt="Slyyutus Stats Logo"
-                className="w-8 h-8 sm:w-9 sm:h-9 object-contain shrink-0 filter drop-shadow-[0_0_10px_rgba(212,175,55,0.4)] group-hover:scale-105 transition-transform"
+                src={logoImg}
+                alt="SLYYUTUS STATS"
+                className="w-9 h-9 sm:w-10 sm:h-10 rounded-md object-contain shrink-0 filter drop-shadow-[0_0_12px_rgba(212,175,55,0.45)] group-hover:scale-105 transition-transform"
               />
               <div>
                 <span className="text-lg sm:text-xl font-black tracking-tighter text-[#D4AF37] group-hover:text-[#FFD700] transition-colors leading-none block">

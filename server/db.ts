@@ -586,6 +586,11 @@ class Database {
     return { pointsAwarded, totalPoints: pointRecord.points };
   }
 
+  public getLeaguePoints(kickUserId: string, seasonId?: string): DBLeaguePoints | undefined {
+    const sId = seasonId || this.getActiveSeason().seasonId;
+    return this.data.leaguePoints.find(p => p.kickUserId === kickUserId && p.seasonId === sId);
+  }
+
   public getLeagueRankings(seasonId: string, query?: string, limit: number = 25, offset: number = 0): { rankings: any[]; total: number; topThree: any[] } {
     const season = this.getSeason(seasonId);
     if (!season) {
@@ -719,7 +724,15 @@ class Database {
   public upsertStream(stream: DBStream): void {
     const idx = this.data.streams.findIndex(s => s.streamId === stream.streamId);
     if (idx >= 0) {
-      this.data.streams[idx] = { ...this.data.streams[idx], ...stream };
+      const existing = this.data.streams[idx];
+      const mergedTotalChat = (stream.totalChatMessages && stream.totalChatMessages > 0) ? stream.totalChatMessages : (existing.totalChatMessages || 0);
+      const mergedSubs = (stream.subscribersGained && stream.subscribersGained > 0) ? stream.subscribersGained : (existing.subscribersGained || 0);
+      this.data.streams[idx] = { 
+        ...existing, 
+        ...stream,
+        totalChatMessages: mergedTotalChat,
+        subscribersGained: mergedSubs
+      };
     } else {
       this.data.streams.push(stream);
     }
@@ -730,7 +743,15 @@ class Database {
     for (const s of streams) {
       const idx = this.data.streams.findIndex(item => item.streamId === s.streamId);
       if (idx >= 0) {
-        this.data.streams[idx] = { ...this.data.streams[idx], ...s };
+        const existing = this.data.streams[idx];
+        const mergedTotalChat = (s.totalChatMessages && s.totalChatMessages > 0) ? s.totalChatMessages : (existing.totalChatMessages || 0);
+        const mergedSubs = (s.subscribersGained && s.subscribersGained > 0) ? s.subscribersGained : (existing.subscribersGained || 0);
+        this.data.streams[idx] = { 
+          ...existing, 
+          ...s,
+          totalChatMessages: mergedTotalChat,
+          subscribersGained: mergedSubs
+        };
       } else {
         this.data.streams.push(s);
       }
@@ -917,8 +938,10 @@ class Database {
   public getChatMessagesCountForDate(dateStr: string): number {
     return this.data.chatMessages.filter(m => {
       if (m.isTest) return false;
-      const formatted = new Date(m.timestamp).toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
-      return formatted === dateStr || m.timestamp.startsWith(dateStr);
+      const d = new Date(m.timestamp);
+      const formatted = d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+      const iso = d.toISOString().slice(0, 10);
+      return formatted === dateStr || iso === dateStr || m.timestamp.startsWith(dateStr);
     }).length;
   }
 
