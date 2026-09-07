@@ -33,8 +33,8 @@
       "avatarUrl": "https://files.kick.com/images/user/40562106/profile_image/conversion/default6-fullsize.webp",
       "bio": "Member of Slyyutus Kick Community",
       "firstSeenAt": "2026-09-05T17:20:53.893Z",
-      "lastActiveAt": "2026-09-05T17:20:53.936Z",
-      "totalMessages": 3,
+      "lastActiveAt": "2026-09-07T12:42:03.158Z",
+      "totalMessages": 5,
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
@@ -111,8 +111,8 @@
       "avatarUrl": "https://files.kick.com/images/user/38431381/profile_image/conversion/067ea324-2ba4-468d-a3b8-2878384b152f-fullsize.webp",
       "bio": "Member of Slyyutus Kick Community",
       "firstSeenAt": "2026-09-05T18:05:39.330Z",
-      "lastActiveAt": "2026-09-05T18:05:39.330Z",
-      "totalMessages": 1,
+      "lastActiveAt": "2026-09-07T12:42:03.098Z",
+      "totalMessages": 4,
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
@@ -241,8 +241,8 @@
       "avatarUrl": "https://kick.com/img/default-profile-pictures/default-avatar-5.webp",
       "bio": "Member of Slyyutus Kick Community",
       "firstSeenAt": "2026-09-06T12:39:12.232Z",
-      "lastActiveAt": "2026-09-06T12:39:12.232Z",
-      "totalMessages": 1,
+      "lastActiveAt": "2026-09-07T12:42:03.139Z",
+      "totalMessages": 5,
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
@@ -299,6 +299,45 @@
       "totalGifts": 0,
       "isVerified": false,
       "isTest": false
+    },
+    {
+      "kickUserId": "25592000",
+      "username": "itsvmed",
+      "avatarUrl": "https://kick.com/img/default-profile-pictures/default-avatar-7.webp",
+      "bio": "Member of Slyyutus Kick Community",
+      "firstSeenAt": "2026-09-07T12:42:03.142Z",
+      "lastActiveAt": "2026-09-07T12:42:03.142Z",
+      "totalMessages": 1,
+      "totalSubs": 0,
+      "totalGifts": 0,
+      "isVerified": false,
+      "isTest": false
+    },
+    {
+      "kickUserId": "42846243",
+      "username": "ILYAS_7_7_7",
+      "avatarUrl": "https://files.kick.com/images/user/42846243/profile_image/conversion/50b775b3-4d20-408f-827d-30a584d8909b-fullsize.webp",
+      "bio": "Member of Slyyutus Kick Community",
+      "firstSeenAt": "2026-09-07T12:42:03.144Z",
+      "lastActiveAt": "2026-09-07T12:42:03.144Z",
+      "totalMessages": 1,
+      "totalSubs": 0,
+      "totalGifts": 0,
+      "isVerified": false,
+      "isTest": false
+    },
+    {
+      "kickUserId": "110390844",
+      "username": "pitchoo_amd",
+      "avatarUrl": "https://kick.com/img/default-profile-pictures/default-avatar-8.webp",
+      "bio": "Member of Slyyutus Kick Community",
+      "firstSeenAt": "2026-09-07T12:42:03.152Z",
+      "lastActiveAt": "2026-09-07T12:42:03.157Z",
+      "totalMessages": 4,
+      "totalSubs": 0,
+      "totalGifts": 0,
+      "isVerified": false,
+      "isTest": false
     }
   ],
   "channel": {
@@ -308,9 +347,9 @@
     "userId": 231626,
     "avatarUrl": "https://files.kick.com/images/user/231626/profile_image/conversion/b39d4d71-93ab-4563-ad7a-b054e4fdd90a-fullsize.webp",
     "bannerUrl": "https://files.kick.com/images/channel/229384/banner_image/868e7c21-4096-40a2-90ef-8b4d933bc1dd",
-    "bio": "Moroccan Streamer !\nGamer ! GODAIM",
-    "followersCount": 26243,
-    "subscribersCount": 65,
+    "bio": "Moroccan Streamer ! Gamer ! GODAIM",
+    "followersCount": 26284,
+    "subscribersCount": 63,
     "totalViews": 0,
     "isLive": false,
     "currentViewers": 0,
@@ -319,12 +358,12 @@
     "totalStreams": 0,
     "currentStreamTitle": "",
     "currentStreamCategory": "",
-    "lastUpdated": "2026-09-06T13:04:44.007Z"
+    "lastUpdated": "2026-09-07T12:43:54.701Z"
   },
   "streams": [
     {
       "streamId": "125483810",
-      "title": "\ud83d\udc51 CasperX The Goat - PES TOURNEMENT \ud83d\udc9a! DAY 25/365 \ud83d\udc51 '' NEW SUB ALERT ''",
+      "title": "👑 CasperX The Goat - PES TOURNEMENT 💚! DAY 25/365 👑 '' NEW SUB ALERT ''",
       "category": "Just Chatting",
       "startedAt": "2026-09-03T19:04:08.000Z",
       "endedAt": "2026-09-04T02:46:16.000Z",
@@ -332,15 +371,15 @@
       "averageViewers": 1360,
       "peakViewers": 1658,
       "subscribersGained": 0,
-      "totalChatMessages": 2840,
+      "totalChatMessages": 0,
       "vodUrl": "https://kick.com/video/05604d53-7a8f-478c-ad1d-eb2a9dd85323",
       "thumbnailUrl": "https://images.kick.com/video_thumbnails/VcbHiZyXVlnu/aRohgJueuHzY/720.webp",
       "isLive": false,
-      "views": 10526
+      "views": 10532
     },
     {
       "streamId": "125325948",
-      "title": "\ud83d\udc51 CasperX Illegal Experience \ud83d\udc9a! DAY 24/365 \ud83d\udc51 '' NEW SUB ALERT ''",
+      "title": "👑 CasperX Illegal Experience 💚! DAY 24/365 👑 '' NEW SUB ALERT ''",
       "category": "Grand Theft Auto V (GTA)",
       "startedAt": "2026-09-02T19:02:45.000Z",
       "endedAt": "2026-09-03T01:11:11.000Z",
@@ -348,15 +387,15 @@
       "averageViewers": 1352,
       "peakViewers": 1649,
       "subscribersGained": 0,
-      "totalChatMessages": 2450,
+      "totalChatMessages": 0,
       "vodUrl": "https://kick.com/video/eb9b8dcf-6ef1-4580-8b2f-1437072e15e2",
       "thumbnailUrl": "https://images.kick.com/video_thumbnails/VcbHiZyXVlnu/p0eU72c5khw0/720.webp",
       "isLive": false,
-      "views": 11293
+      "views": 11302
     },
     {
       "streamId": "125155625",
-      "title": "\ud83d\udc51 CasperX Illegal Experience \ud83d\udc9a! DAY 23/365 \ud83d\udc51 '' NEW SUB ALERT ''",
+      "title": "👑 CasperX Illegal Experience 💚! DAY 23/365 👑 '' NEW SUB ALERT ''",
       "category": "Just Chatting",
       "startedAt": "2026-09-01T17:35:47.000Z",
       "endedAt": "2026-09-01T22:28:49.000Z",
@@ -364,7 +403,7 @@
       "averageViewers": 1993,
       "peakViewers": 2431,
       "subscribersGained": 0,
-      "totalChatMessages": 3120,
+      "totalChatMessages": 0,
       "vodUrl": "https://kick.com/video/05d0eb39-bd30-483b-b418-2f82ca0f346b",
       "thumbnailUrl": "https://images.kick.com/video_thumbnails/VcbHiZyXVlnu/j6XBBqP54qiM/720.webp",
       "isLive": false,
@@ -372,7 +411,7 @@
     },
     {
       "streamId": "125013750",
-      "title": "\ud83d\udc51 CasperX N3ass d Z \ud83d\udc9a! DAY 21/365 \ud83d\udc51 '' NEW SUB ALERT ''",
+      "title": "👑 CasperX N3ass d Z 💚! DAY 21/365 👑 '' NEW SUB ALERT ''",
       "category": "Just Chatting",
       "startedAt": "2026-08-31T19:02:30.000Z",
       "endedAt": "2026-09-01T02:52:59.000Z",
@@ -380,15 +419,15 @@
       "averageViewers": 1628,
       "peakViewers": 1985,
       "subscribersGained": 0,
-      "totalChatMessages": 2280,
+      "totalChatMessages": 0,
       "vodUrl": "https://kick.com/video/4e698399-cda3-4e61-b56c-8be12e370859",
       "thumbnailUrl": "https://images.kick.com/video_thumbnails/VcbHiZyXVlnu/iFR5BQ09RCUv/720.webp",
       "isLive": false,
-      "views": 10950
+      "views": 10952
     },
     {
       "streamId": "124857848",
-      "title": "\ud83d\udc51 CasperX  \ud83d\udc9a! DAY 21/365 \ud83d\udc51 '' NEW SUB ALERT ''",
+      "title": "👑 CasperX  💚! DAY 21/365 👑 '' NEW SUB ALERT ''",
       "category": "Grand Theft Auto V (GTA)",
       "startedAt": "2026-08-30T18:50:57.000Z",
       "endedAt": "2026-08-31T00:58:04.000Z",
@@ -396,7 +435,7 @@
       "averageViewers": 1443,
       "peakViewers": 1760,
       "subscribersGained": 0,
-      "totalChatMessages": 2950,
+      "totalChatMessages": 0,
       "vodUrl": "https://kick.com/video/4a5f6ef4-b8ed-40c3-84dc-798a54262f58",
       "thumbnailUrl": "https://images.kick.com/video_thumbnails/VcbHiZyXVlnu/R8kWpDpTPoYQ/720.webp",
       "isLive": false,
@@ -404,7 +443,7 @@
     },
     {
       "streamId": "124681320",
-      "title": "\ud83d\udc51 CasperX Lben Mission   \ud83d\udc9a! DAY 20/365 \ud83d\udc51 '' NEW SUB ALERT ''",
+      "title": "👑 CasperX Lben Mission   💚! DAY 20/365 👑 '' NEW SUB ALERT ''",
       "category": "Grand Theft Auto V (GTA)",
       "startedAt": "2026-08-29T17:58:44.000Z",
       "endedAt": "2026-08-30T03:31:18.000Z",
@@ -412,15 +451,15 @@
       "averageViewers": 1634,
       "peakViewers": 1993,
       "subscribersGained": 0,
-      "totalChatMessages": 2640,
+      "totalChatMessages": 0,
       "vodUrl": "https://kick.com/video/c74264f1-4875-44b4-9147-ab5fabc3a2e5",
       "thumbnailUrl": "https://images.kick.com/video_thumbnails/VcbHiZyXVlnu/v2qcO1lI5V5a/720.webp",
       "isLive": false,
-      "views": 11072
+      "views": 11074
     },
     {
       "streamId": "124512550",
-      "title": "\ud83d\udc51 CasperX  \ud83d\udc9a! DAY 19/365 \ud83d\udc51 '' NEW SUB ALERT ''",
+      "title": "👑 CasperX  💚! DAY 19/365 👑 '' NEW SUB ALERT ''",
       "category": "Grand Theft Auto V (GTA)",
       "startedAt": "2026-08-28T18:07:06.000Z",
       "endedAt": "2026-08-29T03:07:47.000Z",
@@ -428,15 +467,15 @@
       "averageViewers": 1624,
       "peakViewers": 1981,
       "subscribersGained": 0,
-      "totalChatMessages": 1890,
+      "totalChatMessages": 0,
       "vodUrl": "https://kick.com/video/1fcb2229-a4b7-4852-bb6d-1626cfabb94f",
       "thumbnailUrl": "https://images.kick.com/video_thumbnails/VcbHiZyXVlnu/6KO9v2DBreUh/720.webp",
       "isLive": false,
-      "views": 10871
+      "views": 10873
     },
     {
       "streamId": "124353112",
-      "title": "\ud83d\udc51 GTA 6 x Netflix \ud83d\udc9a! DAY 18/365 \ud83d\udc51 '' NEW SUB ALERT ''",
+      "title": "👑 GTA 6 x Netflix 💚! DAY 18/365 👑 '' NEW SUB ALERT ''",
       "category": "Grand Theft Auto V (GTA)",
       "startedAt": "2026-08-27T18:32:12.000Z",
       "endedAt": "2026-08-28T00:29:39.000Z",
@@ -444,7 +483,7 @@
       "averageViewers": 1684,
       "peakViewers": 2054,
       "subscribersGained": 0,
-      "totalChatMessages": 3410,
+      "totalChatMessages": 0,
       "vodUrl": "https://kick.com/video/2b4e98fd-13cf-4499-a910-53838ea9e673",
       "thumbnailUrl": "https://images.kick.com/video_thumbnails/VcbHiZyXVlnu/JYhkKovzkklM/720.webp",
       "isLive": false,
@@ -452,7 +491,7 @@
     },
     {
       "streamId": "124177014",
-      "title": "\ud83d\udc51 CasperX -16k Kighandiro liha \ud83d\udc9a! DAY 17/365 \ud83d\udc51 '' NEW SUB ALERT ''",
+      "title": "👑 CasperX -16k Kighandiro liha 💚! DAY 17/365 👑 '' NEW SUB ALERT ''",
       "category": "Just Chatting",
       "startedAt": "2026-08-26T16:58:34.000Z",
       "endedAt": "2026-08-27T01:20:48.000Z",
@@ -460,7 +499,7 @@
       "averageViewers": 1594,
       "peakViewers": 1944,
       "subscribersGained": 0,
-      "totalChatMessages": 2750,
+      "totalChatMessages": 0,
       "vodUrl": "https://kick.com/video/17f2bfb1-de9e-4839-922f-7f4e680d1f88",
       "thumbnailUrl": "https://images.kick.com/video_thumbnails/VcbHiZyXVlnu/IH6u9n72SxjM/720.webp",
       "isLive": false,
@@ -468,7 +507,7 @@
     },
     {
       "streamId": "124030826",
-      "title": "\ud83d\udc51 CasperX Datni 3ini \ud83d\udc9a! DAY 16/365 \ud83d\udc51",
+      "title": "👑 CasperX Datni 3ini 💚! DAY 16/365 👑",
       "category": "Just Chatting",
       "startedAt": "2026-08-25T18:29:04.000Z",
       "endedAt": "2026-08-26T01:01:44.000Z",
@@ -476,7 +515,7 @@
       "averageViewers": 1824,
       "peakViewers": 2224,
       "subscribersGained": 0,
-      "totalChatMessages": 2320,
+      "totalChatMessages": 0,
       "vodUrl": "https://kick.com/video/4bace416-038b-406d-b568-f92bf10b2890",
       "thumbnailUrl": "https://images.kick.com/video_thumbnails/VcbHiZyXVlnu/YycQeBNxs5ij/720.webp",
       "isLive": false,
@@ -484,7 +523,7 @@
     },
     {
       "streamId": "123891936",
-      "title": "\ud83d\udc51 CasperX  \ud83d\udc9a! DAY 15/365 \ud83d\udc51",
+      "title": "👑 CasperX  💚! DAY 15/365 👑",
       "category": "Grand Theft Auto V (GTA)",
       "startedAt": "2026-08-24T21:00:21.000Z",
       "endedAt": "2026-08-25T03:04:22.000Z",
@@ -492,7 +531,7 @@
       "averageViewers": 1310,
       "peakViewers": 1598,
       "subscribersGained": 0,
-      "totalChatMessages": 3050,
+      "totalChatMessages": 0,
       "vodUrl": "https://kick.com/video/71f26d26-e36b-4531-aa65-e9aa5e03cc01",
       "thumbnailUrl": "https://images.kick.com/video_thumbnails/VcbHiZyXVlnu/2aHRvLvSigLU/720.webp",
       "isLive": false,
@@ -500,7 +539,7 @@
     },
     {
       "streamId": "123547819",
-      "title": "\ud83d\udc51 CasperX  \ud83d\udc9a! DAY 14/365 \ud83d\udc51",
+      "title": "👑 CasperX  💚! DAY 14/365 👑",
       "category": "Grand Theft Auto V (GTA)",
       "startedAt": "2026-08-22T18:25:02.000Z",
       "endedAt": "2026-08-22T22:01:32.000Z",
@@ -508,7 +547,7 @@
       "averageViewers": 1346,
       "peakViewers": 1641,
       "subscribersGained": 0,
-      "totalChatMessages": 2580,
+      "totalChatMessages": 0,
       "vodUrl": "https://kick.com/video/b0dec6cf-a7c0-4b9c-b500-68be34401f86",
       "thumbnailUrl": "https://images.kick.com/video_thumbnails/VcbHiZyXVlnu/PUUv7atIFs62/720.webp",
       "isLive": false,
@@ -516,7 +555,7 @@
     },
     {
       "streamId": "123242569",
-      "title": "\ud83d\udc51 CasperX Hunting \ud83d\udc9a! DAY 12/365 \ud83d\udc51",
+      "title": "👑 CasperX Hunting 💚! DAY 12/365 👑",
       "category": "Grand Theft Auto V (GTA)",
       "startedAt": "2026-08-20T20:50:27.000Z",
       "endedAt": "2026-08-21T00:00:10.000Z",
@@ -524,7 +563,7 @@
       "averageViewers": 1297,
       "peakViewers": 1582,
       "subscribersGained": 0,
-      "totalChatMessages": 2110,
+      "totalChatMessages": 0,
       "vodUrl": "https://kick.com/video/b6e97db6-7d40-4e80-8d43-7b262270ae7a",
       "thumbnailUrl": "https://images.kick.com/video_thumbnails/VcbHiZyXVlnu/Sg9IyYnZ5BFB/720.webp",
       "isLive": false,
@@ -532,7 +571,7 @@
     },
     {
       "streamId": "123077406",
-      "title": "\ud83d\udc51 CasperX\ud83d\udc9a! DAY 12/365 \ud83d\udc51",
+      "title": "👑 CasperX💚! DAY 12/365 👑",
       "category": "Grand Theft Auto V (GTA)",
       "startedAt": "2026-08-19T19:54:00.000Z",
       "endedAt": "2026-08-19T22:53:12.000Z",
@@ -540,7 +579,7 @@
       "averageViewers": 1296,
       "peakViewers": 1580,
       "subscribersGained": 0,
-      "totalChatMessages": 1940,
+      "totalChatMessages": 0,
       "vodUrl": "https://kick.com/video/b9ca6f1f-fef4-4529-a2ce-9a896126ee4b",
       "thumbnailUrl": "https://images.kick.com/video_thumbnails/VcbHiZyXVlnu/rDGVUPlj3N12/720.webp",
       "isLive": false,
@@ -548,7 +587,7 @@
     },
     {
       "streamId": "122906412",
-      "title": "\ud83d\udc51 MACHI SHORT ROBINET TSSED\ud83d\udc9a! DAY 11/365 \ud83d\udc51",
+      "title": "👑 MACHI SHORT ROBINET TSSED💚! DAY 11/365 👑",
       "category": "Grand Theft Auto V (GTA)",
       "startedAt": "2026-08-18T18:50:31.000Z",
       "endedAt": "2026-08-18T23:02:19.000Z",
@@ -556,7 +595,7 @@
       "averageViewers": 1483,
       "peakViewers": 1808,
       "subscribersGained": 0,
-      "totalChatMessages": 2800,
+      "totalChatMessages": 0,
       "vodUrl": "https://kick.com/video/996e3f8b-f0aa-44fe-91dd-ab70629626f6",
       "thumbnailUrl": "https://images.kick.com/video_thumbnails/VcbHiZyXVlnu/BIAO8ByyimVG/720.webp",
       "isLive": false,
@@ -564,7 +603,7 @@
     },
     {
       "streamId": "122728488",
-      "title": "\ud83d\udc51 SHORT ROBINET AYTSSED\ud83d\udc9a !21 (BIG) TIPS? \ud83d\udc9a! DAY 10/365 \ud83d\udc51",
+      "title": "👑 SHORT ROBINET AYTSSED💚 !21 (BIG) TIPS? 💚! DAY 10/365 👑",
       "category": "Just Chatting",
       "startedAt": "2026-08-17T17:24:56.000Z",
       "endedAt": "2026-08-17T18:36:26.000Z",
@@ -572,7 +611,7 @@
       "averageViewers": 1830,
       "peakViewers": 2232,
       "subscribersGained": 0,
-      "totalChatMessages": 2400,
+      "totalChatMessages": 0,
       "vodUrl": "https://kick.com/video/baf6fca3-7894-4aa2-9cd2-504ff99b156b",
       "thumbnailUrl": "https://images.kick.com/video_thumbnails/VcbHiZyXVlnu/dtYBp1U7qERg/720.webp",
       "isLive": false,
@@ -580,7 +619,7 @@
     },
     {
       "streamId": "122587832",
-      "title": "\ud83d\udc51 SHORT \ud83d\udc9a !21 (BIG) TIPS? \ud83d\udc9a! DAY 10/365 \ud83d\udc51",
+      "title": "👑 SHORT 💚 !21 (BIG) TIPS? 💚! DAY 10/365 👑",
       "category": "Just Chatting",
       "startedAt": "2026-08-16T18:43:21.000Z",
       "endedAt": "2026-08-16T20:24:15.000Z",
@@ -588,7 +627,7 @@
       "averageViewers": 1498,
       "peakViewers": 1827,
       "subscribersGained": 0,
-      "totalChatMessages": 3100,
+      "totalChatMessages": 0,
       "vodUrl": "https://kick.com/video/7b285a5c-0a8d-4c86-a5bb-51f5f97fb8c0",
       "thumbnailUrl": "https://images.kick.com/video_thumbnails/VcbHiZyXVlnu/fROCXjsawJ4k/720.webp",
       "isLive": false,
@@ -596,7 +635,7 @@
     },
     {
       "streamId": "122400111",
-      "title": "\ud83d\udc51 LONG STREAM 7it SEBT \ud83d\udc9a !21 (BIG) TIPS? \ud83d\udc9a! DAY 10/365 \ud83d\udc51",
+      "title": "👑 LONG STREAM 7it SEBT 💚 !21 (BIG) TIPS? 💚! DAY 10/365 👑",
       "category": "Grand Theft Auto V (GTA)",
       "startedAt": "2026-08-15T16:25:01.000Z",
       "endedAt": "2026-08-15T23:31:20.000Z",
@@ -604,7 +643,7 @@
       "averageViewers": 1530,
       "peakViewers": 1866,
       "subscribersGained": 0,
-      "totalChatMessages": 2200,
+      "totalChatMessages": 0,
       "vodUrl": "https://kick.com/video/320de977-f579-4cef-97e1-f4f75a855ece",
       "thumbnailUrl": "https://images.kick.com/video_thumbnails/VcbHiZyXVlnu/PM03JbEVA690/720.webp",
       "isLive": false,
@@ -612,7 +651,7 @@
     },
     {
       "streamId": "122252718",
-      "title": "\ud83d\udc51 CasperX \ud83d\udc9a !21 (BIG) TIPS? \ud83d\udc9a! DAY 9/365 \ud83d\udc51",
+      "title": "👑 CasperX 💚 !21 (BIG) TIPS? 💚! DAY 9/365 👑",
       "category": "Just Chatting",
       "startedAt": "2026-08-14T18:25:46.000Z",
       "endedAt": "2026-08-14T20:39:19.000Z",
@@ -620,7 +659,7 @@
       "averageViewers": 1790,
       "peakViewers": 2183,
       "subscribersGained": 0,
-      "totalChatMessages": 2700,
+      "totalChatMessages": 0,
       "vodUrl": "https://kick.com/video/a51fe715-c8f4-4c10-a030-f897e1ab3521",
       "thumbnailUrl": "https://images.kick.com/video_thumbnails/VcbHiZyXVlnu/cxSAt6XVN9Am/720.webp",
       "isLive": false,
@@ -628,7 +667,7 @@
     },
     {
       "streamId": "122084899",
-      "title": "\ud83d\udc51 CasperX \ud83d\udc9a !21 (BIG) \ud83d\udc9a! DAY 8/365 \ud83d\udc51",
+      "title": "👑 CasperX 💚 !21 (BIG) 💚! DAY 8/365 👑",
       "category": "Grand Theft Auto V (GTA)",
       "startedAt": "2026-08-13T17:27:26.000Z",
       "endedAt": "2026-08-13T23:43:21.000Z",
@@ -636,15 +675,15 @@
       "averageViewers": 1470,
       "peakViewers": 1793,
       "subscribersGained": 0,
-      "totalChatMessages": 2500,
+      "totalChatMessages": 0,
       "vodUrl": "https://kick.com/video/e750bf74-e55d-4acc-9fe9-8640640c11c6",
       "thumbnailUrl": "https://images.kick.com/video_thumbnails/VcbHiZyXVlnu/naSOKNBaJsev/720.webp",
       "isLive": false,
-      "views": 24152
+      "views": 24157
     },
     {
       "streamId": "121799080",
-      "title": "\ud83d\udc51 CasperX \ud83d\udc9a Just Chatting then RP \ud83d\udc9a! DAY 7/365 \ud83d\udc51",
+      "title": "👑 CasperX 💚 Just Chatting then RP 💚! DAY 7/365 👑",
       "category": "Grand Theft Auto V (GTA)",
       "startedAt": "2026-08-11T21:27:56.000Z",
       "endedAt": "2026-08-12T00:08:37.000Z",
@@ -652,7 +691,7 @@
       "averageViewers": 1506,
       "peakViewers": 1836,
       "subscribersGained": 0,
-      "totalChatMessages": 2300,
+      "totalChatMessages": 0,
       "vodUrl": "https://kick.com/video/8a58f33b-6d29-4002-9627-875dae65d0af",
       "thumbnailUrl": "https://images.kick.com/video_thumbnails/VcbHiZyXVlnu/d4c3NaoH84O3/720.webp",
       "isLive": false,
@@ -660,7 +699,7 @@
     },
     {
       "streamId": "121639046",
-      "title": "\ud83d\udc51 Kolshy dyal allah ! \ud83d\udc9a Just Chatting then RP \ud83d\udc9a! DAY 6/365 \ud83d\udc51",
+      "title": "👑 Kolshy dyal allah ! 💚 Just Chatting then RP 💚! DAY 6/365 👑",
       "category": "Just Chatting",
       "startedAt": "2026-08-10T20:56:28.000Z",
       "endedAt": "2026-08-10T22:17:43.000Z",
@@ -668,7 +707,7 @@
       "averageViewers": 1468,
       "peakViewers": 1790,
       "subscribersGained": 0,
-      "totalChatMessages": 2900,
+      "totalChatMessages": 0,
       "vodUrl": "https://kick.com/video/54475012-abea-4c50-8c69-ae6be82bb808",
       "thumbnailUrl": "https://images.kick.com/video_thumbnails/VcbHiZyXVlnu/2SU7TGQX0aYf/720.webp",
       "isLive": false,
@@ -676,7 +715,7 @@
     },
     {
       "streamId": "121152556",
-      "title": "\ud83d\udc51 BACK TO STREAM ! \ud83d\udc9a ASC 3 road to Immo lyoum \ud83d\udc9a! DAY 5/365 \ud83d\udc51",
+      "title": "👑 BACK TO STREAM ! 💚 ASC 3 road to Immo lyoum 💚! DAY 5/365 👑",
       "category": "Just Chatting",
       "startedAt": "2026-08-07T20:48:56.000Z",
       "endedAt": "2026-08-07T23:46:35.000Z",
@@ -692,7 +731,7 @@
     },
     {
       "streamId": "125659897",
-      "title": "\ud83d\udc51 CasperX Hmida lghfla\ud83d\udc9a! DAY 26/365 \ud83d\udc51 '' NEW SUB ALERT ''",
+      "title": "👑 CasperX Hmida lghfla💚! DAY 26/365 👑 '' NEW SUB ALERT ''",
       "category": "Grand Theft Auto V (GTA)",
       "startedAt": "2026-09-04T20:11:52.000Z",
       "endedAt": "2026-09-05T03:33:00.000Z",
@@ -700,15 +739,15 @@
       "averageViewers": 1609,
       "peakViewers": 1962,
       "subscribersGained": 0,
-      "totalChatMessages": 2600,
+      "totalChatMessages": 0,
       "vodUrl": "https://kick.com/video/226f8305-71b8-488e-aad7-b38b8c5b43ce",
       "thumbnailUrl": "https://images.kick.com/video_thumbnails/VcbHiZyXVlnu/SGUKzzZFcPOV/720.webp",
       "isLive": false,
-      "views": 10313
+      "views": 10319
     },
     {
       "streamId": "125836373",
-      "title": "\ud83d\udc51 CasperX L7chaychi\ud83d\udc9a! DAY 27/365 \ud83d\udc51 '' NEW SUB ALERT ''",
+      "title": "👑 CasperX L7chaychi💚! DAY 27/365 👑 '' NEW SUB ALERT ''",
       "category": "Grand Theft Auto V (GTA)",
       "startedAt": "2026-09-05T20:46:03.000Z",
       "endedAt": "2026-09-05T21:26:09.000Z",
@@ -716,11 +755,27 @@
       "averageViewers": 1378,
       "peakViewers": 1680,
       "subscribersGained": 0,
-      "totalChatMessages": 2400,
+      "totalChatMessages": 0,
       "vodUrl": "https://kick.com/video/c1ed9bf3-d89b-40e8-bb7b-8ed12c284336",
       "thumbnailUrl": "https://images.kick.com/video_thumbnails/VcbHiZyXVlnu/YHINnevmbfPe/720.webp",
       "isLive": false,
-      "views": 9310
+      "views": 9318
+    },
+    {
+      "streamId": "126007558",
+      "title": "👑 Marathon Slython SUBATHON💚! DAY 28/365 👑 '' NEW SUB ALERT ''",
+      "category": "Grand Theft Auto V (GTA)",
+      "startedAt": "2026-09-06T20:38:41.000Z",
+      "endedAt": "2026-09-07T03:59:55.000Z",
+      "durationSeconds": 26474,
+      "averageViewers": 1318,
+      "peakViewers": 1607,
+      "subscribersGained": 0,
+      "totalChatMessages": 0,
+      "vodUrl": "https://kick.com/video/d8fc2ac7-f3cf-4019-9e85-1b3ab9100d5a",
+      "thumbnailUrl": "https://images.kick.com/video_thumbnails/VcbHiZyXVlnu/8i8gsi2g0M9N/720.webp",
+      "isLive": false,
+      "views": 11434
     }
   ],
   "chatMessages": [
@@ -730,7 +785,7 @@
       "avatarUrl": "https://api.dicebear.com/7.x/bottts/svg?seed=ApexLegend99",
       "streamId": "125483810",
       "streamTitle": "Kick Broadcast",
-      "content": "SLYYUTUS KINGDOM ON TOP! \ud83d\udd25\ud83d\udd25",
+      "content": "SLYYUTUS KINGDOM ON TOP! 🔥🔥",
       "timestamp": "2026-09-05T17:00:26.014Z",
       "messageId": "msg_1788627626017_3hmas",
       "channelId": "chan_slyyutus_01",
@@ -1269,6 +1324,201 @@
       "channelId": "chan_slyyutus_01",
       "pointsAwarded": 1,
       "isTest": false
+    },
+    {
+      "messageId": "4d002e9b-4760-4b44-a527-5370c02452b0",
+      "kickUserId": "38431381",
+      "username": "Veltron_exe",
+      "avatarUrl": "https://files.kick.com/images/user/38431381/profile_image/conversion/067ea324-2ba4-468d-a3b8-2878384b152f-fullsize.webp",
+      "streamId": "125836373",
+      "streamTitle": "👑 CasperX L7chaychi💚! DAY 27/365 👑 '' NEW SUB ALERT ''",
+      "content": "[emote:5756602:NugTime]",
+      "timestamp": "2026-09-07T04:00:21Z",
+      "channelId": "chan_slyyutus_01",
+      "pointsAwarded": 1,
+      "isTest": false
+    },
+    {
+      "messageId": "4d57f475-5dab-4494-92a6-5d85ecb00b61",
+      "kickUserId": "66307387",
+      "username": "1234saaad",
+      "avatarUrl": "https://kick.com/img/default-profile-pictures/default-avatar-5.webp",
+      "streamId": "125836373",
+      "streamTitle": "👑 CasperX L7chaychi💚! DAY 27/365 👑 '' NEW SUB ALERT ''",
+      "content": "[emote:39402:Flowie]",
+      "timestamp": "2026-09-07T04:00:22Z",
+      "channelId": "chan_slyyutus_01",
+      "pointsAwarded": 1,
+      "isTest": false
+    },
+    {
+      "messageId": "55c8f34f-b602-4b67-b13d-3d8e91033762",
+      "kickUserId": "66307387",
+      "username": "1234saaad",
+      "avatarUrl": "https://kick.com/img/default-profile-pictures/default-avatar-5.webp",
+      "streamId": "125836373",
+      "streamTitle": "👑 CasperX L7chaychi💚! DAY 27/365 👑 '' NEW SUB ALERT ''",
+      "content": "[emote:6031946:oxslyahok]",
+      "timestamp": "2026-09-07T04:00:22Z",
+      "channelId": "chan_slyyutus_01",
+      "pointsAwarded": 1,
+      "isTest": false
+    },
+    {
+      "messageId": "24f83abc-6504-422e-80b9-653979056fb7",
+      "kickUserId": "66307387",
+      "username": "1234saaad",
+      "avatarUrl": "https://kick.com/img/default-profile-pictures/default-avatar-5.webp",
+      "streamId": "125836373",
+      "streamTitle": "👑 CasperX L7chaychi💚! DAY 27/365 👑 '' NEW SUB ALERT ''",
+      "content": "[emote:6031982:oxslyw]",
+      "timestamp": "2026-09-07T04:00:23Z",
+      "channelId": "chan_slyyutus_01",
+      "pointsAwarded": 1,
+      "isTest": false
+    },
+    {
+      "messageId": "22c223b2-ea4d-452c-86fe-7adfe56037a1",
+      "kickUserId": "38431381",
+      "username": "Veltron_exe",
+      "avatarUrl": "https://files.kick.com/images/user/38431381/profile_image/conversion/067ea324-2ba4-468d-a3b8-2878384b152f-fullsize.webp",
+      "streamId": "125836373",
+      "streamTitle": "👑 CasperX L7chaychi💚! DAY 27/365 👑 '' NEW SUB ALERT ''",
+      "content": "[emote:5756602:NugTime]",
+      "timestamp": "2026-09-07T04:00:29Z",
+      "channelId": "chan_slyyutus_01",
+      "pointsAwarded": 1,
+      "isTest": false
+    },
+    {
+      "messageId": "36a20051-7f0d-4a10-9279-e664979da9af",
+      "kickUserId": "38431381",
+      "username": "Veltron_exe",
+      "avatarUrl": "https://files.kick.com/images/user/38431381/profile_image/conversion/067ea324-2ba4-468d-a3b8-2878384b152f-fullsize.webp",
+      "streamId": "125836373",
+      "streamTitle": "👑 CasperX L7chaychi💚! DAY 27/365 👑 '' NEW SUB ALERT ''",
+      "content": "[emote:6031982:oxslyw]",
+      "timestamp": "2026-09-07T04:00:30Z",
+      "channelId": "chan_slyyutus_01",
+      "pointsAwarded": 1,
+      "isTest": false
+    },
+    {
+      "messageId": "fff988d1-a0a5-46d5-8009-445fc869a62d",
+      "kickUserId": "66307387",
+      "username": "1234saaad",
+      "avatarUrl": "https://kick.com/img/default-profile-pictures/default-avatar-5.webp",
+      "streamId": "125836373",
+      "streamTitle": "👑 CasperX L7chaychi💚! DAY 27/365 👑 '' NEW SUB ALERT ''",
+      "content": "[emote:39265:EDMusiC]",
+      "timestamp": "2026-09-07T04:00:31Z",
+      "channelId": "chan_slyyutus_01",
+      "pointsAwarded": 1,
+      "isTest": false
+    },
+    {
+      "messageId": "f7733d2b-7ab8-4b8f-a1be-daca47c9f86f",
+      "kickUserId": "25592000",
+      "username": "itsvmed",
+      "avatarUrl": "https://kick.com/img/default-profile-pictures/default-avatar-7.webp",
+      "streamId": "125836373",
+      "streamTitle": "👑 CasperX L7chaychi💚! DAY 27/365 👑 '' NEW SUB ALERT ''",
+      "content": "[emote:5748007:collectiblesGoldenW]",
+      "timestamp": "2026-09-07T04:02:06Z",
+      "channelId": "chan_slyyutus_01",
+      "pointsAwarded": 1,
+      "isTest": false
+    },
+    {
+      "messageId": "dd3c5a66-c68c-4494-847f-7acdece5189f",
+      "kickUserId": "42846243",
+      "username": "ILYAS_7_7_7",
+      "avatarUrl": "https://files.kick.com/images/user/42846243/profile_image/conversion/50b775b3-4d20-408f-827d-30a584d8909b-fullsize.webp",
+      "streamId": "125836373",
+      "streamTitle": "👑 CasperX L7chaychi💚! DAY 27/365 👑 '' NEW SUB ALERT ''",
+      "content": "[emote:6031946:oxslyahok]",
+      "timestamp": "2026-09-07T08:44:02Z",
+      "channelId": "chan_slyyutus_01",
+      "pointsAwarded": 1,
+      "isTest": false
+    },
+    {
+      "messageId": "44a75647-d72b-46a8-a9b1-1601bb934420",
+      "kickUserId": "110390844",
+      "username": "pitchoo_amd",
+      "avatarUrl": "https://kick.com/img/default-profile-pictures/default-avatar-8.webp",
+      "streamId": "125836373",
+      "streamTitle": "👑 CasperX L7chaychi💚! DAY 27/365 👑 '' NEW SUB ALERT ''",
+      "content": "[emote:6031946:oxslyahok]",
+      "timestamp": "2026-09-07T09:11:31Z",
+      "channelId": "chan_slyyutus_01",
+      "pointsAwarded": 1,
+      "isTest": false
+    },
+    {
+      "messageId": "96b6d656-f671-49d2-929d-37ea930f128d",
+      "kickUserId": "110390844",
+      "username": "pitchoo_amd",
+      "avatarUrl": "https://kick.com/img/default-profile-pictures/default-avatar-8.webp",
+      "streamId": "125836373",
+      "streamTitle": "👑 CasperX L7chaychi💚! DAY 27/365 👑 '' NEW SUB ALERT ''",
+      "content": "[emote:6031982:oxslyw]",
+      "timestamp": "2026-09-07T09:11:37Z",
+      "channelId": "chan_slyyutus_01",
+      "pointsAwarded": 1,
+      "isTest": false
+    },
+    {
+      "messageId": "c2e7abe4-0062-44ff-adb5-25f25d815cef",
+      "kickUserId": "110390844",
+      "username": "pitchoo_amd",
+      "avatarUrl": "https://kick.com/img/default-profile-pictures/default-avatar-8.webp",
+      "streamId": "125836373",
+      "streamTitle": "👑 CasperX L7chaychi💚! DAY 27/365 👑 '' NEW SUB ALERT ''",
+      "content": "[emote:5748048:collectiblesAware]",
+      "timestamp": "2026-09-07T09:11:45Z",
+      "channelId": "chan_slyyutus_01",
+      "pointsAwarded": 1,
+      "isTest": false
+    },
+    {
+      "messageId": "6fd823a3-86dd-488e-97b2-887a69e70063",
+      "kickUserId": "110390844",
+      "username": "pitchoo_amd",
+      "avatarUrl": "https://kick.com/img/default-profile-pictures/default-avatar-8.webp",
+      "streamId": "125836373",
+      "streamTitle": "👑 CasperX L7chaychi💚! DAY 27/365 👑 '' NEW SUB ALERT ''",
+      "content": "[emote:5748029:collectiblesOneGuy][emote:5748045:collectiblesAYOOO]",
+      "timestamp": "2026-09-07T09:11:49Z",
+      "channelId": "chan_slyyutus_01",
+      "pointsAwarded": 1,
+      "isTest": false
+    },
+    {
+      "messageId": "e7be7a60-80ee-42cf-9afb-302fba6ec405",
+      "kickUserId": "40562106",
+      "username": "sniper_0808",
+      "avatarUrl": "https://files.kick.com/images/user/40562106/profile_image/conversion/default6-fullsize.webp",
+      "streamId": "125836373",
+      "streamTitle": "👑 CasperX L7chaychi💚! DAY 27/365 👑 '' NEW SUB ALERT ''",
+      "content": "[emote:37225:KEKLEO]",
+      "timestamp": "2026-09-07T12:28:15Z",
+      "channelId": "chan_slyyutus_01",
+      "pointsAwarded": 1,
+      "isTest": false
+    },
+    {
+      "messageId": "f5f58f73-f4c0-4c28-897d-432a38577736",
+      "kickUserId": "40562106",
+      "username": "sniper_0808",
+      "avatarUrl": "https://files.kick.com/images/user/40562106/profile_image/conversion/default6-fullsize.webp",
+      "streamId": "125836373",
+      "streamTitle": "👑 CasperX L7chaychi💚! DAY 27/365 👑 '' NEW SUB ALERT ''",
+      "content": "[emote:6031982:oxslyw]",
+      "timestamp": "2026-09-07T12:28:15Z",
+      "channelId": "chan_slyyutus_01",
+      "pointsAwarded": 1,
+      "isTest": false
     }
   ],
   "leagueSeasons": [
@@ -1279,8 +1529,8 @@
       "endDate": "2026-09-30T23:59:59.000Z",
       "isActive": true,
       "isFinalized": false,
-      "totalParticipants": 25,
-      "totalPointsDistributed": 742
+      "totalParticipants": 28,
+      "totalPointsDistributed": 757
     }
   ],
   "leaguePoints": [
@@ -1300,12 +1550,12 @@
       "id": "lp_09-26_40562106",
       "seasonId": "09-26",
       "kickUserId": "40562106",
-      "points": 3,
-      "messagesCount": 3,
+      "points": 5,
+      "messagesCount": 5,
       "subsCount": 0,
       "giftsCount": 0,
       "firstScoreAchievedAt": "2026-09-05T17:20:53.893Z",
-      "lastPointAwardedAt": "2026-09-05T17:20:53.936Z",
+      "lastPointAwardedAt": "2026-09-07T12:42:03.158Z",
       "isTest": false
     },
     {
@@ -1384,12 +1634,12 @@
       "id": "lp_09-26_38431381",
       "seasonId": "09-26",
       "kickUserId": "38431381",
-      "points": 1,
-      "messagesCount": 1,
+      "points": 4,
+      "messagesCount": 4,
       "subsCount": 0,
       "giftsCount": 0,
       "firstScoreAchievedAt": "2026-09-05T18:05:39.330Z",
-      "lastPointAwardedAt": "2026-09-05T18:05:39.330Z",
+      "lastPointAwardedAt": "2026-09-07T12:42:03.098Z",
       "isTest": false
     },
     {
@@ -1504,12 +1754,12 @@
       "id": "lp_09-26_66307387",
       "seasonId": "09-26",
       "kickUserId": "66307387",
-      "points": 1,
-      "messagesCount": 1,
+      "points": 5,
+      "messagesCount": 5,
       "subsCount": 0,
       "giftsCount": 0,
       "firstScoreAchievedAt": "2026-09-06T12:39:12.232Z",
-      "lastPointAwardedAt": "2026-09-06T12:39:12.232Z",
+      "lastPointAwardedAt": "2026-09-07T12:42:03.139Z",
       "isTest": false
     },
     {
@@ -1558,6 +1808,42 @@
       "giftsCount": 0,
       "firstScoreAchievedAt": "2026-09-06T12:39:12.233Z",
       "lastPointAwardedAt": "2026-09-06T12:39:12.233Z",
+      "isTest": false
+    },
+    {
+      "id": "lp_09-26_25592000",
+      "seasonId": "09-26",
+      "kickUserId": "25592000",
+      "points": 1,
+      "messagesCount": 1,
+      "subsCount": 0,
+      "giftsCount": 0,
+      "firstScoreAchievedAt": "2026-09-07T12:42:03.142Z",
+      "lastPointAwardedAt": "2026-09-07T12:42:03.142Z",
+      "isTest": false
+    },
+    {
+      "id": "lp_09-26_42846243",
+      "seasonId": "09-26",
+      "kickUserId": "42846243",
+      "points": 1,
+      "messagesCount": 1,
+      "subsCount": 0,
+      "giftsCount": 0,
+      "firstScoreAchievedAt": "2026-09-07T12:42:03.144Z",
+      "lastPointAwardedAt": "2026-09-07T12:42:03.144Z",
+      "isTest": false
+    },
+    {
+      "id": "lp_09-26_110390844",
+      "seasonId": "09-26",
+      "kickUserId": "110390844",
+      "points": 4,
+      "messagesCount": 4,
+      "subsCount": 0,
+      "giftsCount": 0,
+      "firstScoreAchievedAt": "2026-09-07T12:42:03.152Z",
+      "lastPointAwardedAt": "2026-09-07T12:42:03.157Z",
       "isTest": false
     }
   ],
@@ -1780,6 +2066,48 @@
       "kickUserId": "30144675",
       "messageCount": 1,
       "rankInVod": 23
+    },
+    {
+      "id": "vcs_125836373_38431381",
+      "streamId": "125836373",
+      "kickUserId": "38431381",
+      "messageCount": 3,
+      "rankInVod": 3
+    },
+    {
+      "id": "vcs_125836373_66307387",
+      "streamId": "125836373",
+      "kickUserId": "66307387",
+      "messageCount": 4,
+      "rankInVod": 1
+    },
+    {
+      "id": "vcs_125836373_25592000",
+      "streamId": "125836373",
+      "kickUserId": "25592000",
+      "messageCount": 1,
+      "rankInVod": 5
+    },
+    {
+      "id": "vcs_125836373_42846243",
+      "streamId": "125836373",
+      "kickUserId": "42846243",
+      "messageCount": 1,
+      "rankInVod": 6
+    },
+    {
+      "id": "vcs_125836373_110390844",
+      "streamId": "125836373",
+      "kickUserId": "110390844",
+      "messageCount": 4,
+      "rankInVod": 2
+    },
+    {
+      "id": "vcs_125836373_40562106",
+      "streamId": "125836373",
+      "kickUserId": "40562106",
+      "messageCount": 2,
+      "rankInVod": 4
     }
   ],
   "pointRules": [
@@ -1787,22 +2115,1058 @@
       "ruleKey": "CHAT_MESSAGE",
       "pointValue": 1,
       "description": "1 point per valid chat message in live stream",
-      "updatedAt": "2026-09-06T12:54:40.923Z"
+      "updatedAt": "2026-09-07T12:43:52.711Z"
     },
     {
       "ruleKey": "SUBSCRIPTION",
       "pointValue": 100,
       "description": "100 points for subscribing to Slyyutus",
-      "updatedAt": "2026-09-06T12:54:40.923Z"
+      "updatedAt": "2026-09-07T12:43:52.712Z"
     },
     {
       "ruleKey": "GIFT_SUBSCRIPTION",
       "pointValue": 100,
       "description": "100 points per gift subscription to the community",
-      "updatedAt": "2026-09-06T12:54:40.923Z"
+      "updatedAt": "2026-09-07T12:43:52.712Z"
     }
   ],
   "systemLogs": [
+    {
+      "id": "log_1788785034702_6caru",
+      "level": "error",
+      "module": "KICK_EVENTS",
+      "message": "Cannot subscribe to webhook events: no app access token.",
+      "createdAt": "2026-09-07T12:43:54.702Z"
+    },
+    {
+      "id": "log_1788785034701_qy2q5",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26284 followers, 63 subs, 25 real streams.",
+      "createdAt": "2026-09-07T12:43:54.701Z"
+    },
+    {
+      "id": "log_1788785034658_7t4eb",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @sniper_0808: \"[emote:37225:KEKLEO]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:43:54.658Z"
+    },
+    {
+      "id": "log_1788785034658_dhdq9",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @sniper_0808: \"[emote:6031982:oxslyw]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:43:54.658Z"
+    },
+    {
+      "id": "log_1788785034633_i4gwc",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @ILYAS_7_7_7: \"[emote:6031946:oxslyahok]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:43:54.633Z"
+    },
+    {
+      "id": "log_1788785034633_3chtw",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @ILYAS_7_7_7: \"[emote:6031946:oxslyahok]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:43:54.633Z"
+    },
+    {
+      "id": "log_1788785034633_pgiv0",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @ILYAS_7_7_7: \"[emote:6031946:oxslyahok]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:43:54.633Z"
+    },
+    {
+      "id": "log_1788785034633_gkued",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @ILYAS_7_7_7: \"[emote:6031946:oxslyahok]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:43:54.633Z"
+    },
+    {
+      "id": "log_1788785034631_q0cmt",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @Veltron_exe: \"[emote:6031982:oxslyw]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:43:54.631Z"
+    },
+    {
+      "id": "log_1788785034630_0cjfe",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @Veltron_exe: \"[emote:5756602:NugTime]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:43:54.630Z"
+    },
+    {
+      "id": "log_1788785034630_519r5",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @Veltron_exe: \"[emote:5756602:NugTime]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:43:54.630Z"
+    },
+    {
+      "id": "log_1788785034628_fgx3y",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @1234saaad: \"[emote:6031946:oxslyahok]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:43:54.628Z"
+    },
+    {
+      "id": "log_1788785034140_q7r5j",
+      "level": "success",
+      "module": "TRACKER",
+      "message": "Kick WebSocket connected. Subscribing to chatroom 229380.",
+      "createdAt": "2026-09-07T12:43:54.140Z"
+    },
+    {
+      "id": "log_1788785032799_seog8",
+      "level": "info",
+      "module": "TRACKER",
+      "message": "Starting Kick real-time tracking service with WebSocket & API fallback.",
+      "createdAt": "2026-09-07T12:43:52.799Z"
+    },
+    {
+      "id": "log_1788784994220_tcvla",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26186 followers, 63 subs, 25 real streams.",
+      "createdAt": "2026-09-07T12:43:14.221Z"
+    },
+    {
+      "id": "log_1788784989904_uldnm",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @sniper_0808: \"[emote:37225:KEKLEO]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:43:09.904Z"
+    },
+    {
+      "id": "log_1788784989904_6b0pg",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @sniper_0808: \"[emote:6031982:oxslyw]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:43:09.904Z"
+    },
+    {
+      "id": "log_1788784989900_jzmkh",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @ILYAS_7_7_7: \"[emote:6031946:oxslyahok]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:43:09.900Z"
+    },
+    {
+      "id": "log_1788784989900_i87bn",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @ILYAS_7_7_7: \"[emote:6031946:oxslyahok]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:43:09.900Z"
+    },
+    {
+      "id": "log_1788784989900_y4uxj",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @ILYAS_7_7_7: \"[emote:6031946:oxslyahok]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:43:09.900Z"
+    },
+    {
+      "id": "log_1788784989900_5kkyc",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @ILYAS_7_7_7: \"[emote:6031946:oxslyahok]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:43:09.900Z"
+    },
+    {
+      "id": "log_1788784989897_oi4tf",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @Veltron_exe: \"[emote:6031982:oxslyw]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:43:09.897Z"
+    },
+    {
+      "id": "log_1788784989895_9ay5h",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @Veltron_exe: \"[emote:5756602:NugTime]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:43:09.895Z"
+    },
+    {
+      "id": "log_1788784989895_0rde3",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @Veltron_exe: \"[emote:5756602:NugTime]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:43:09.895Z"
+    },
+    {
+      "id": "log_1788784989894_7n29f",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @1234saaad: \"[emote:6031946:oxslyahok]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:43:09.894Z"
+    },
+    {
+      "id": "log_1788784984756_p9zby",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @sniper_0808: \"[emote:37225:KEKLEO]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:43:04.756Z"
+    },
+    {
+      "id": "log_1788784984756_ae4lo",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @sniper_0808: \"[emote:6031982:oxslyw]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:43:04.756Z"
+    },
+    {
+      "id": "log_1788784984750_z01bn",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @ILYAS_7_7_7: \"[emote:6031946:oxslyahok]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:43:04.750Z"
+    },
+    {
+      "id": "log_1788784984750_owb58",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @ILYAS_7_7_7: \"[emote:6031946:oxslyahok]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:43:04.750Z"
+    },
+    {
+      "id": "log_1788784984750_c0r7p",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @ILYAS_7_7_7: \"[emote:6031946:oxslyahok]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:43:04.750Z"
+    },
+    {
+      "id": "log_1788784984750_iavd7",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @ILYAS_7_7_7: \"[emote:6031946:oxslyahok]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:43:04.750Z"
+    },
+    {
+      "id": "log_1788784984749_gz72x",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @Veltron_exe: \"[emote:6031982:oxslyw]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:43:04.749Z"
+    },
+    {
+      "id": "log_1788784984748_eqzom",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @Veltron_exe: \"[emote:5756602:NugTime]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:43:04.748Z"
+    },
+    {
+      "id": "log_1788784984748_p89cv",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @Veltron_exe: \"[emote:5756602:NugTime]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:43:04.748Z"
+    },
+    {
+      "id": "log_1788784984747_ia3x9",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @1234saaad: \"[emote:6031946:oxslyahok]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:43:04.747Z"
+    },
+    {
+      "id": "log_1788784950883_45cj1",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @sniper_0808: \"[emote:37225:KEKLEO]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:30.883Z"
+    },
+    {
+      "id": "log_1788784950882_xhhc3",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @sniper_0808: \"[emote:6031982:oxslyw]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:30.882Z"
+    },
+    {
+      "id": "log_1788784950882_9h9eb",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @ILYAS_7_7_7: \"[emote:6031946:oxslyahok]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:30.882Z"
+    },
+    {
+      "id": "log_1788784950882_mkich",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @ILYAS_7_7_7: \"[emote:6031946:oxslyahok]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:30.882Z"
+    },
+    {
+      "id": "log_1788784950882_j21sf",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @ILYAS_7_7_7: \"[emote:6031946:oxslyahok]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:30.882Z"
+    },
+    {
+      "id": "log_1788784950882_88xq7",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @ILYAS_7_7_7: \"[emote:6031946:oxslyahok]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:30.882Z"
+    },
+    {
+      "id": "log_1788784950882_qdwqd",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @Veltron_exe: \"[emote:6031982:oxslyw]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:30.882Z"
+    },
+    {
+      "id": "log_1788784950882_b02x8",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @Veltron_exe: \"[emote:5756602:NugTime]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:30.882Z"
+    },
+    {
+      "id": "log_1788784950882_q6w8i",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @Veltron_exe: \"[emote:5756602:NugTime]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:30.882Z"
+    },
+    {
+      "id": "log_1788784950881_nvxut",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @1234saaad: \"[emote:6031946:oxslyahok]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:30.881Z"
+    },
+    {
+      "id": "log_1788784947880_bn9nb",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @sniper_0808: \"[emote:37225:KEKLEO]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:27.880Z"
+    },
+    {
+      "id": "log_1788784947880_y3def",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @sniper_0808: \"[emote:6031982:oxslyw]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:27.880Z"
+    },
+    {
+      "id": "log_1788784947879_ydd5m",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @ILYAS_7_7_7: \"[emote:6031946:oxslyahok]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:27.879Z"
+    },
+    {
+      "id": "log_1788784947879_pj863",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @ILYAS_7_7_7: \"[emote:6031946:oxslyahok]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:27.879Z"
+    },
+    {
+      "id": "log_1788784947879_y8m54",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @ILYAS_7_7_7: \"[emote:6031946:oxslyahok]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:27.879Z"
+    },
+    {
+      "id": "log_1788784947879_ffje2",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @ILYAS_7_7_7: \"[emote:6031946:oxslyahok]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:27.879Z"
+    },
+    {
+      "id": "log_1788784947879_b7t99",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @Veltron_exe: \"[emote:6031982:oxslyw]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:27.879Z"
+    },
+    {
+      "id": "log_1788784947879_m9lbu",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @Veltron_exe: \"[emote:5756602:NugTime]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:27.879Z"
+    },
+    {
+      "id": "log_1788784947879_v9mem",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @Veltron_exe: \"[emote:5756602:NugTime]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:27.879Z"
+    },
+    {
+      "id": "log_1788784947878_xyu6m",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @1234saaad: \"[emote:6031946:oxslyahok]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:27.878Z"
+    },
+    {
+      "id": "log_1788784945801_g9ycn",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @sniper_0808: \"[emote:37225:KEKLEO]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:25.801Z"
+    },
+    {
+      "id": "log_1788784945801_c5utu",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @sniper_0808: \"[emote:6031982:oxslyw]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:25.801Z"
+    },
+    {
+      "id": "log_1788784945800_xjih1",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @ILYAS_7_7_7: \"[emote:6031946:oxslyahok]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:25.800Z"
+    },
+    {
+      "id": "log_1788784945800_okn03",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @ILYAS_7_7_7: \"[emote:6031946:oxslyahok]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:25.800Z"
+    },
+    {
+      "id": "log_1788784945800_m37lv",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @ILYAS_7_7_7: \"[emote:6031946:oxslyahok]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:25.800Z"
+    },
+    {
+      "id": "log_1788784945800_v430q",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @ILYAS_7_7_7: \"[emote:6031946:oxslyahok]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:25.800Z"
+    },
+    {
+      "id": "log_1788784945800_r9gms",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @Veltron_exe: \"[emote:6031982:oxslyw]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:25.800Z"
+    },
+    {
+      "id": "log_1788784945799_9641v",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @Veltron_exe: \"[emote:5756602:NugTime]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:25.799Z"
+    },
+    {
+      "id": "log_1788784945799_b7wi6",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @Veltron_exe: \"[emote:5756602:NugTime]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:25.799Z"
+    },
+    {
+      "id": "log_1788784945799_owclz",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @1234saaad: \"[emote:6031946:oxslyahok]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:25.799Z"
+    },
+    {
+      "id": "log_1788784941892_3m9qw",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @sniper_0808: \"[emote:37225:KEKLEO]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:21.892Z"
+    },
+    {
+      "id": "log_1788784941892_glgrr",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @sniper_0808: \"[emote:6031982:oxslyw]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:21.892Z"
+    },
+    {
+      "id": "log_1788784941891_3daql",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @ILYAS_7_7_7: \"[emote:6031946:oxslyahok]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:21.891Z"
+    },
+    {
+      "id": "log_1788784941891_clkox",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @ILYAS_7_7_7: \"[emote:6031946:oxslyahok]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:21.891Z"
+    },
+    {
+      "id": "log_1788784941891_stc9h",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @ILYAS_7_7_7: \"[emote:6031946:oxslyahok]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:21.891Z"
+    },
+    {
+      "id": "log_1788784941891_1ssxq",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @ILYAS_7_7_7: \"[emote:6031946:oxslyahok]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:21.891Z"
+    },
+    {
+      "id": "log_1788784941889_40soe",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @Veltron_exe: \"[emote:6031982:oxslyw]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:21.889Z"
+    },
+    {
+      "id": "log_1788784941888_31w0q",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @Veltron_exe: \"[emote:5756602:NugTime]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:21.888Z"
+    },
+    {
+      "id": "log_1788784941887_pxk0p",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @Veltron_exe: \"[emote:5756602:NugTime]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:21.887Z"
+    },
+    {
+      "id": "log_1788784941886_8l30w",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @1234saaad: \"[emote:6031946:oxslyahok]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:21.886Z"
+    },
+    {
+      "id": "log_1788784938879_0776n",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @sniper_0808: \"[emote:37225:KEKLEO]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:18.879Z"
+    },
+    {
+      "id": "log_1788784938879_9fu8y",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @sniper_0808: \"[emote:6031982:oxslyw]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:18.879Z"
+    },
+    {
+      "id": "log_1788784938879_xiped",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @ILYAS_7_7_7: \"[emote:6031946:oxslyahok]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:18.879Z"
+    },
+    {
+      "id": "log_1788784938879_mrdrn",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @ILYAS_7_7_7: \"[emote:6031946:oxslyahok]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:18.879Z"
+    },
+    {
+      "id": "log_1788784938879_7egw5",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @ILYAS_7_7_7: \"[emote:6031946:oxslyahok]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:18.879Z"
+    },
+    {
+      "id": "log_1788784938879_8u0js",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @ILYAS_7_7_7: \"[emote:6031946:oxslyahok]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:18.879Z"
+    },
+    {
+      "id": "log_1788784938879_7w4ka",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @Veltron_exe: \"[emote:6031982:oxslyw]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:18.879Z"
+    },
+    {
+      "id": "log_1788784938879_qx04n",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @Veltron_exe: \"[emote:5756602:NugTime]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:18.879Z"
+    },
+    {
+      "id": "log_1788784938878_fpto2",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @Veltron_exe: \"[emote:5756602:NugTime]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:18.878Z"
+    },
+    {
+      "id": "log_1788784938878_zsut7",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @1234saaad: \"[emote:6031946:oxslyahok]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:18.878Z"
+    },
+    {
+      "id": "log_1788784935880_kt5wy",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @sniper_0808: \"[emote:37225:KEKLEO]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:15.880Z"
+    },
+    {
+      "id": "log_1788784935880_9da1e",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @sniper_0808: \"[emote:6031982:oxslyw]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:15.880Z"
+    },
+    {
+      "id": "log_1788784935879_nuub4",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @ILYAS_7_7_7: \"[emote:6031946:oxslyahok]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:15.879Z"
+    },
+    {
+      "id": "log_1788784935879_2p0pq",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @ILYAS_7_7_7: \"[emote:6031946:oxslyahok]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:15.879Z"
+    },
+    {
+      "id": "log_1788784935879_5e7uo",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @ILYAS_7_7_7: \"[emote:6031946:oxslyahok]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:15.879Z"
+    },
+    {
+      "id": "log_1788784935879_l7eet",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @ILYAS_7_7_7: \"[emote:6031946:oxslyahok]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:15.879Z"
+    },
+    {
+      "id": "log_1788784935879_ay2p7",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @Veltron_exe: \"[emote:6031982:oxslyw]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:15.879Z"
+    },
+    {
+      "id": "log_1788784935878_gdn36",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @Veltron_exe: \"[emote:5756602:NugTime]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:15.878Z"
+    },
+    {
+      "id": "log_1788784935878_tlv74",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @Veltron_exe: \"[emote:5756602:NugTime]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:15.878Z"
+    },
+    {
+      "id": "log_1788784935878_u732s",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @1234saaad: \"[emote:6031946:oxslyahok]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:15.878Z"
+    },
+    {
+      "id": "log_1788784934244_mvb29",
+      "level": "error",
+      "module": "KICK_EVENTS",
+      "message": "Cannot subscribe to webhook events: no app access token.",
+      "createdAt": "2026-09-07T12:42:14.244Z"
+    },
+    {
+      "id": "log_1788784934244_kk45a",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26284 followers, 63 subs, 25 real streams.",
+      "createdAt": "2026-09-07T12:42:14.244Z"
+    },
+    {
+      "id": "log_1788784933879_8w30e",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @sniper_0808: \"[emote:37225:KEKLEO]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:13.879Z"
+    },
+    {
+      "id": "log_1788784933879_mdz3j",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @sniper_0808: \"[emote:6031982:oxslyw]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:13.879Z"
+    },
+    {
+      "id": "log_1788784933873_1mqpe",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @ILYAS_7_7_7: \"[emote:6031946:oxslyahok]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:13.873Z"
+    },
+    {
+      "id": "log_1788784933873_qeylc",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @ILYAS_7_7_7: \"[emote:6031946:oxslyahok]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:13.873Z"
+    },
+    {
+      "id": "log_1788784933873_4cczg",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @ILYAS_7_7_7: \"[emote:6031946:oxslyahok]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:13.873Z"
+    },
+    {
+      "id": "log_1788784933873_v0rof",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @ILYAS_7_7_7: \"[emote:6031946:oxslyahok]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:13.873Z"
+    },
+    {
+      "id": "log_1788784933872_q5ucq",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @Veltron_exe: \"[emote:6031982:oxslyw]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:13.872Z"
+    },
+    {
+      "id": "log_1788784933869_fpmsv",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @Veltron_exe: \"[emote:5756602:NugTime]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:13.869Z"
+    },
+    {
+      "id": "log_1788784933868_yd4vc",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @Veltron_exe: \"[emote:5756602:NugTime]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:13.868Z"
+    },
+    {
+      "id": "log_1788784933864_zokdp",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @1234saaad: \"[emote:6031946:oxslyahok]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:13.864Z"
+    },
+    {
+      "id": "log_1788784933839_1wgsx",
+      "level": "success",
+      "module": "TRACKER",
+      "message": "Kick WebSocket connected. Subscribing to chatroom 229380.",
+      "createdAt": "2026-09-07T12:42:13.839Z"
+    },
+    {
+      "id": "log_1788784931885_m4hua",
+      "level": "info",
+      "module": "TRACKER",
+      "message": "Starting Kick real-time tracking service with WebSocket & API fallback.",
+      "createdAt": "2026-09-07T12:42:11.885Z"
+    },
+    {
+      "id": "log_1788784925304_lllci",
+      "level": "error",
+      "module": "KICK_EVENTS",
+      "message": "Cannot subscribe to webhook events: no app access token.",
+      "createdAt": "2026-09-07T12:42:05.304Z"
+    },
+    {
+      "id": "log_1788784925304_hdj2f",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26284 followers, 63 subs, 25 real streams.",
+      "createdAt": "2026-09-07T12:42:05.304Z"
+    },
+    {
+      "id": "log_1788784925296_qp34f",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @sniper_0808: \"[emote:37225:KEKLEO]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:05.296Z"
+    },
+    {
+      "id": "log_1788784925296_nv0w8",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @sniper_0808: \"[emote:6031982:oxslyw]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:05.296Z"
+    },
+    {
+      "id": "log_1788784925295_ynqok",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @ILYAS_7_7_7: \"[emote:6031946:oxslyahok]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:05.295Z"
+    },
+    {
+      "id": "log_1788784925295_i4ya1",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @ILYAS_7_7_7: \"[emote:6031946:oxslyahok]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:05.295Z"
+    },
+    {
+      "id": "log_1788784925295_wpqzy",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @ILYAS_7_7_7: \"[emote:6031946:oxslyahok]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:05.295Z"
+    },
+    {
+      "id": "log_1788784925295_e9vbi",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @ILYAS_7_7_7: \"[emote:6031946:oxslyahok]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:05.295Z"
+    },
+    {
+      "id": "log_1788784925295_gjp5s",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @Veltron_exe: \"[emote:6031982:oxslyw]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:05.295Z"
+    },
+    {
+      "id": "log_1788784925295_t0t6c",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @Veltron_exe: \"[emote:5756602:NugTime]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:05.295Z"
+    },
+    {
+      "id": "log_1788784925295_z75hu",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @Veltron_exe: \"[emote:5756602:NugTime]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:05.295Z"
+    },
+    {
+      "id": "log_1788784925294_l6n0w",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @1234saaad: \"[emote:6031946:oxslyahok]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:05.294Z"
+    },
+    {
+      "id": "log_1788784923158_g7ru7",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @sniper_0808: \"[emote:37225:KEKLEO]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:03.158Z"
+    },
+    {
+      "id": "log_1788784923158_0ra3h",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @sniper_0808: \"[emote:6031982:oxslyw]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:03.158Z"
+    },
+    {
+      "id": "log_1788784923158_3qxkb",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @sniper_0808: \"[emote:6031982:oxslyw]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:03.158Z"
+    },
+    {
+      "id": "log_1788784923158_0z605",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @sniper_0808: \"[emote:37225:KEKLEO]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:03.158Z"
+    },
+    {
+      "id": "log_1788784923157_gg3fp",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @pitchoo_amd: \"[emote:5748029:collectiblesOneGuy][emote\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:03.157Z"
+    },
+    {
+      "id": "log_1788784923156_r3zql",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @pitchoo_amd: \"[emote:5748048:collectiblesAware]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:03.156Z"
+    },
+    {
+      "id": "log_1788784923153_kaf7v",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @pitchoo_amd: \"[emote:6031982:oxslyw]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:03.153Z"
+    },
+    {
+      "id": "log_1788784923152_lm5ny",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @pitchoo_amd: \"[emote:6031946:oxslyahok]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:03.152Z"
+    },
+    {
+      "id": "log_1788784923151_waxy6",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @ILYAS_7_7_7: \"[emote:6031946:oxslyahok]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:03.151Z"
+    },
+    {
+      "id": "log_1788784923150_1oika",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @ILYAS_7_7_7: \"[emote:6031946:oxslyahok]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:03.150Z"
+    },
+    {
+      "id": "log_1788784923148_n1j2w",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @ILYAS_7_7_7: \"[emote:6031946:oxslyahok]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:03.148Z"
+    },
+    {
+      "id": "log_1788784923147_pqhfa",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @ILYAS_7_7_7: \"[emote:6031946:oxslyahok]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:03.147Z"
+    },
+    {
+      "id": "log_1788784923145_vb1xw",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @ILYAS_7_7_7: \"[emote:6031946:oxslyahok]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:03.145Z"
+    },
+    {
+      "id": "log_1788784923142_fu8hi",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @itsvmed: \"[emote:5748007:collectiblesGoldenW]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:03.142Z"
+    },
+    {
+      "id": "log_1788784923139_wmrpj",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @Veltron_exe: \"[emote:6031982:oxslyw]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:03.139Z"
+    },
+    {
+      "id": "log_1788784923139_hgfs9",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @1234saaad: \"[emote:39265:EDMusiC]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:03.139Z"
+    },
+    {
+      "id": "log_1788784923098_5zujt",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @Veltron_exe: \"[emote:6031982:oxslyw]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:03.098Z"
+    },
+    {
+      "id": "log_1788784923098_fjwdo",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @Veltron_exe: \"[emote:5756602:NugTime]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:03.098Z"
+    },
+    {
+      "id": "log_1788784923098_8tjbs",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @Veltron_exe: \"[emote:5756602:NugTime]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:03.098Z"
+    },
+    {
+      "id": "log_1788784923097_4epnq",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @Veltron_exe: \"[emote:5756602:NugTime]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:03.097Z"
+    },
+    {
+      "id": "log_1788784923097_3uw9n",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @1234saaad: \"[emote:6031982:oxslyw]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:03.097Z"
+    },
+    {
+      "id": "log_1788784923089_qbymf",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @1234saaad: \"[emote:6031946:oxslyahok]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:03.089Z"
+    },
+    {
+      "id": "log_1788784923087_jmvzu",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @1234saaad: \"[emote:6031946:oxslyahok]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:03.087Z"
+    },
+    {
+      "id": "log_1788784923086_z9dnk",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @1234saaad: \"[emote:39402:Flowie]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:03.086Z"
+    },
+    {
+      "id": "log_1788784923085_qncr9",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @Veltron_exe: \"[emote:5756602:NugTime]\" (+1 pt)",
+      "createdAt": "2026-09-07T12:42:03.085Z"
+    },
+    {
+      "id": "log_1788784923082_6zaqk",
+      "level": "success",
+      "module": "TRACKER",
+      "message": "Kick WebSocket connected. Subscribing to chatroom 229380.",
+      "createdAt": "2026-09-07T12:42:03.082Z"
+    },
+    {
+      "id": "log_1788784921152_lpedr",
+      "level": "info",
+      "module": "TRACKER",
+      "message": "Starting Kick real-time tracking service with WebSocket & API fallback.",
+      "createdAt": "2026-09-07T12:42:01.152Z"
+    },
     {
       "id": "log_1788699884008_colk7",
       "level": "success",
@@ -4266,1021 +5630,6 @@
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
       "createdAt": "2026-09-06T12:47:48.863Z"
-    },
-    {
-      "id": "log_1788698865017_t9r7z",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:47:45.017Z"
-    },
-    {
-      "id": "log_1788698862019_9y3fr",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:47:42.019Z"
-    },
-    {
-      "id": "log_1788698859015_xy5x1",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:47:39.015Z"
-    },
-    {
-      "id": "log_1788698856954_0zumj",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:47:36.954Z"
-    },
-    {
-      "id": "log_1788698853014_4dafi",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:47:33.014Z"
-    },
-    {
-      "id": "log_1788698850015_mwnr0",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:47:30.015Z"
-    },
-    {
-      "id": "log_1788698847013_9s0oe",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:47:27.013Z"
-    },
-    {
-      "id": "log_1788698844242_1m3db",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:47:24.242Z"
-    },
-    {
-      "id": "log_1788698841011_gh894",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:47:21.011Z"
-    },
-    {
-      "id": "log_1788698838013_hp2l4",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:47:18.013Z"
-    },
-    {
-      "id": "log_1788698835018_vsfvw",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:47:15.018Z"
-    },
-    {
-      "id": "log_1788698832236_wrxi4",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:47:12.236Z"
-    },
-    {
-      "id": "log_1788698829012_8n7w8",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:47:09.012Z"
-    },
-    {
-      "id": "log_1788698826011_8ddio",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:47:06.011Z"
-    },
-    {
-      "id": "log_1788698823010_lndur",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:47:03.010Z"
-    },
-    {
-      "id": "log_1788698820884_44blt",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:47:00.884Z"
-    },
-    {
-      "id": "log_1788698819921_2geio",
-      "level": "success",
-      "module": "CHANNEL_SYNC",
-      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26243 followers, 65 subs, 25 real streams.",
-      "createdAt": "2026-09-06T12:46:59.921Z"
-    },
-    {
-      "id": "log_1788698817007_2lzf7",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:46:57.007Z"
-    },
-    {
-      "id": "log_1788698814004_bqppx",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:46:54.004Z"
-    },
-    {
-      "id": "log_1788698811003_ga3cj",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:46:51.003Z"
-    },
-    {
-      "id": "log_1788698808897_274pb",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:46:48.897Z"
-    },
-    {
-      "id": "log_1788698805002_cb2gd",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:46:45.002Z"
-    },
-    {
-      "id": "log_1788698802003_e4wt4",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:46:42.003Z"
-    },
-    {
-      "id": "log_1788698799000_luedq",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:46:39.000Z"
-    },
-    {
-      "id": "log_1788698796899_ti4hj",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:46:36.899Z"
-    },
-    {
-      "id": "log_1788698793000_fwmpf",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:46:33.000Z"
-    },
-    {
-      "id": "log_1788698789998_c7zvo",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:46:29.998Z"
-    },
-    {
-      "id": "log_1788698786998_ubbkd",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:46:26.998Z"
-    },
-    {
-      "id": "log_1788698784914_486uo",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:46:24.914Z"
-    },
-    {
-      "id": "log_1788698781000_2u1g0",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:46:21.000Z"
-    },
-    {
-      "id": "log_1788698777999_3pb0u",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:46:17.999Z"
-    },
-    {
-      "id": "log_1788698774997_c68mr",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:46:14.997Z"
-    },
-    {
-      "id": "log_1788698772211_qaz92",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:46:12.211Z"
-    },
-    {
-      "id": "log_1788698768994_7y3hf",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:46:08.994Z"
-    },
-    {
-      "id": "log_1788698765993_nwpar",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:46:05.993Z"
-    },
-    {
-      "id": "log_1788698763003_p2y4n",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:46:03.003Z"
-    },
-    {
-      "id": "log_1788698760214_bu9q8",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:46:00.214Z"
-    },
-    {
-      "id": "log_1788698758028_37n3r",
-      "level": "success",
-      "module": "CHANNEL_SYNC",
-      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26243 followers, 65 subs, 25 real streams.",
-      "createdAt": "2026-09-06T12:45:58.028Z"
-    },
-    {
-      "id": "log_1788698756990_x948j",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:45:56.990Z"
-    },
-    {
-      "id": "log_1788698753989_ecodm",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:45:53.989Z"
-    },
-    {
-      "id": "log_1788698750992_wg6q1",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:45:50.992Z"
-    },
-    {
-      "id": "log_1788698748945_ex6kn",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:45:48.945Z"
-    },
-    {
-      "id": "log_1788698744991_ue2uy",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:45:44.991Z"
-    },
-    {
-      "id": "log_1788698741989_jqdcs",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:45:41.989Z"
-    },
-    {
-      "id": "log_1788698738988_r0xhv",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:45:38.988Z"
-    },
-    {
-      "id": "log_1788698736980_eaiv9",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:45:36.980Z"
-    },
-    {
-      "id": "log_1788698732986_135qv",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:45:32.986Z"
-    },
-    {
-      "id": "log_1788698729987_qicze",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:45:29.987Z"
-    },
-    {
-      "id": "log_1788698726988_muiav",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:45:26.988Z"
-    },
-    {
-      "id": "log_1788698724889_d0eek",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:45:24.889Z"
-    },
-    {
-      "id": "log_1788698720984_1ggw0",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:45:20.984Z"
-    },
-    {
-      "id": "log_1788698717983_4yny6",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:45:17.983Z"
-    },
-    {
-      "id": "log_1788698714986_j64g7",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:45:14.986Z"
-    },
-    {
-      "id": "log_1788698712832_n6uaz",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:45:12.832Z"
-    },
-    {
-      "id": "log_1788698708981_1ocpk",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:45:08.981Z"
-    },
-    {
-      "id": "log_1788698705983_z2se9",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:45:05.983Z"
-    },
-    {
-      "id": "log_1788698702983_97yss",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:45:02.983Z"
-    },
-    {
-      "id": "log_1788698700224_miko4",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:45:00.225Z"
-    },
-    {
-      "id": "log_1788698699729_aeqki",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @M4ND4R_x: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-06T12:44:59.729Z"
-    },
-    {
-      "id": "log_1788698697999_jnvzs",
-      "level": "success",
-      "module": "CHANNEL_SYNC",
-      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26243 followers, 65 subs, 25 real streams.",
-      "createdAt": "2026-09-06T12:44:57.999Z"
-    },
-    {
-      "id": "log_1788698696978_gazxn",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:44:56.978Z"
-    },
-    {
-      "id": "log_1788698693979_ubswz",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:44:53.979Z"
-    },
-    {
-      "id": "log_1788698690979_ozh6x",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:44:50.979Z"
-    },
-    {
-      "id": "log_1788698688199_0b1pc",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:44:48.199Z"
-    },
-    {
-      "id": "log_1788698684980_49f0w",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:44:44.980Z"
-    },
-    {
-      "id": "log_1788698681972_3nqrb",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:44:41.972Z"
-    },
-    {
-      "id": "log_1788698678975_afcwk",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:44:38.975Z"
-    },
-    {
-      "id": "log_1788698676830_lwx7n",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:44:36.830Z"
-    },
-    {
-      "id": "log_1788698672973_c5j5h",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:44:32.973Z"
-    },
-    {
-      "id": "log_1788698669970_kk7bw",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:44:29.970Z"
-    },
-    {
-      "id": "log_1788698666970_fzz13",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:44:26.970Z"
-    },
-    {
-      "id": "log_1788698664344_gaac6",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:44:24.344Z"
-    },
-    {
-      "id": "log_1788698660970_uuwvc",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:44:20.970Z"
-    },
-    {
-      "id": "log_1788698657971_anzdt",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:44:17.971Z"
-    },
-    {
-      "id": "log_1788698654975_z42gy",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:44:14.975Z"
-    },
-    {
-      "id": "log_1788698652810_006wm",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:44:12.810Z"
-    },
-    {
-      "id": "log_1788698648970_t21is",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:44:08.970Z"
-    },
-    {
-      "id": "log_1788698645969_hc2gx",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:44:05.969Z"
-    },
-    {
-      "id": "log_1788698642970_grk63",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:44:02.970Z"
-    },
-    {
-      "id": "log_1788698640826_k0ov6",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:44:00.826Z"
-    },
-    {
-      "id": "log_1788698637996_p7076",
-      "level": "success",
-      "module": "CHANNEL_SYNC",
-      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26243 followers, 65 subs, 25 real streams.",
-      "createdAt": "2026-09-06T12:43:57.996Z"
-    },
-    {
-      "id": "log_1788698636972_nbz8e",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:43:56.972Z"
-    },
-    {
-      "id": "log_1788698633967_ygcin",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:43:53.967Z"
-    },
-    {
-      "id": "log_1788698630966_n8i7y",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:43:50.966Z"
-    },
-    {
-      "id": "log_1788698628800_mtm7r",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:43:48.800Z"
-    },
-    {
-      "id": "log_1788698624967_3jyc1",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:43:44.967Z"
-    },
-    {
-      "id": "log_1788698621964_e3oc0",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:43:41.964Z"
-    },
-    {
-      "id": "log_1788698618966_ithaa",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:43:38.966Z"
-    },
-    {
-      "id": "log_1788698616892_cb66j",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:43:36.892Z"
-    },
-    {
-      "id": "log_1788698612964_tgr0w",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:43:32.964Z"
-    },
-    {
-      "id": "log_1788698609967_9ddmb",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:43:29.967Z"
-    },
-    {
-      "id": "log_1788698606967_93y4h",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:43:26.967Z"
-    },
-    {
-      "id": "log_1788698604854_te18m",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:43:24.854Z"
-    },
-    {
-      "id": "log_1788698600962_0docg",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:43:20.962Z"
-    },
-    {
-      "id": "log_1788698597962_lnwwu",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:43:17.962Z"
-    },
-    {
-      "id": "log_1788698594964_vckht",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:43:14.964Z"
-    },
-    {
-      "id": "log_1788698592842_fqjob",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:43:12.842Z"
-    },
-    {
-      "id": "log_1788698588961_gefl4",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:43:08.961Z"
-    },
-    {
-      "id": "log_1788698585963_z5rmb",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:43:05.963Z"
-    },
-    {
-      "id": "log_1788698582961_vxmha",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:43:02.961Z"
-    },
-    {
-      "id": "log_1788698580205_efov8",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:43:00.205Z"
-    },
-    {
-      "id": "log_1788698579418_sqr0i",
-      "level": "success",
-      "module": "CHANNEL_SYNC",
-      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26243 followers, 65 subs, 25 real streams.",
-      "createdAt": "2026-09-06T12:42:59.418Z"
-    },
-    {
-      "id": "log_1788698576961_ns2vc",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:42:56.961Z"
-    },
-    {
-      "id": "log_1788698573958_ihcen",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:42:53.958Z"
-    },
-    {
-      "id": "log_1788698570957_tigi8",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:42:50.957Z"
-    },
-    {
-      "id": "log_1788698568942_5axhu",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:42:48.942Z"
-    },
-    {
-      "id": "log_1788698564959_zg7z0",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:42:44.959Z"
-    },
-    {
-      "id": "log_1788698561955_2j68d",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:42:41.955Z"
-    },
-    {
-      "id": "log_1788698558953_fzq9v",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:42:38.953Z"
-    },
-    {
-      "id": "log_1788698556207_465uz",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:42:36.207Z"
-    },
-    {
-      "id": "log_1788698552960_vwpr2",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:42:32.960Z"
-    },
-    {
-      "id": "log_1788698549953_l73gz",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:42:29.953Z"
-    },
-    {
-      "id": "log_1788698546953_3v358",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:42:26.953Z"
-    },
-    {
-      "id": "log_1788698544195_9fg08",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:42:24.195Z"
-    },
-    {
-      "id": "log_1788698540954_xut5s",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:42:20.954Z"
-    },
-    {
-      "id": "log_1788698537952_yyp60",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:42:17.952Z"
-    },
-    {
-      "id": "log_1788698534961_3qjt6",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:42:14.961Z"
-    },
-    {
-      "id": "log_1788698532834_a1r9y",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:42:12.834Z"
-    },
-    {
-      "id": "log_1788698528954_4mn9y",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:42:08.954Z"
-    },
-    {
-      "id": "log_1788698525952_q0oxs",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:42:05.952Z"
-    },
-    {
-      "id": "log_1788698522953_c63em",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:42:02.953Z"
-    },
-    {
-      "id": "log_1788698520197_wvyr4",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:42:00.197Z"
-    },
-    {
-      "id": "log_1788698518375_xqig8",
-      "level": "success",
-      "module": "CHANNEL_SYNC",
-      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26243 followers, 65 subs, 25 real streams.",
-      "createdAt": "2026-09-06T12:41:58.375Z"
-    },
-    {
-      "id": "log_1788698516949_hcnj8",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:41:56.949Z"
-    },
-    {
-      "id": "log_1788698513949_bykby",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:41:53.949Z"
-    },
-    {
-      "id": "log_1788698510947_ypu0x",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:41:50.947Z"
-    },
-    {
-      "id": "log_1788698508940_n135x",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:41:48.940Z"
-    },
-    {
-      "id": "log_1788698504952_a5p7g",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:41:44.952Z"
-    },
-    {
-      "id": "log_1788698501948_sipo6",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:41:41.948Z"
-    },
-    {
-      "id": "log_1788698500096_2ipzr",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @M4ND4R_x: \"[emote:5748085:collectiblesPETTHEMODS]\" (+1 pt)",
-      "createdAt": "2026-09-06T12:41:40.096Z"
-    },
-    {
-      "id": "log_1788698498945_smnx7",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:41:38.945Z"
-    },
-    {
-      "id": "log_1788698496813_326h9",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:41:36.813Z"
-    },
-    {
-      "id": "log_1788698492947_jh7md",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:41:32.947Z"
-    },
-    {
-      "id": "log_1788698489946_dn8wl",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:41:29.946Z"
-    },
-    {
-      "id": "log_1788698486948_398ns",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:41:26.948Z"
-    },
-    {
-      "id": "log_1788698484193_x7y07",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:41:24.193Z"
-    },
-    {
-      "id": "log_1788698480942_x8fo5",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:41:20.942Z"
-    },
-    {
-      "id": "log_1788698477940_azlug",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:41:17.940Z"
-    },
-    {
-      "id": "log_1788698474942_v8z4m",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:41:14.942Z"
-    },
-    {
-      "id": "log_1788698472888_gj2fa",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:41:12.888Z"
-    },
-    {
-      "id": "log_1788698468939_pd4ye",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:41:08.939Z"
-    },
-    {
-      "id": "log_1788698465942_k04cn",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:41:05.942Z"
-    },
-    {
-      "id": "log_1788698462938_0y6r0",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:41:02.938Z"
-    },
-    {
-      "id": "log_1788698460773_pwhck",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @yaya098: \"3LACH 9TA3   MCHIT NJIB MANAKOL L9ITO 9T\" (+1 pt)",
-      "createdAt": "2026-09-06T12:41:00.773Z"
-    },
-    {
-      "id": "log_1788698458010_kuuov",
-      "level": "success",
-      "module": "CHANNEL_SYNC",
-      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26243 followers, 65 subs, 25 real streams.",
-      "createdAt": "2026-09-06T12:40:58.010Z"
     }
   ],
   "subscriptionEvents": [],
