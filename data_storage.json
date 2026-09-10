@@ -7,8 +7,8 @@
       "avatarUrl": "https://files.kick.com/images/user/16282003/profile_image/conversion/e723cae9-87bf-4ace-9991-8239c070a90d-fullsize.webp",
       "bio": "Member of Slyyutus Kick Community",
       "firstSeenAt": "2026-09-05T16:58:13.693Z",
-      "lastActiveAt": "2026-09-07T13:02:28.285Z",
-      "totalMessages": 7,
+      "lastActiveAt": "2026-09-10T15:38:16.922Z",
+      "totalMessages": 8,
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
@@ -462,8 +462,8 @@
       "avatarUrl": "https://files.kick.com/images/user/104278800/profile_image/conversion/7b9325ea-9cc7-4442-97fd-c1a63d09ccab-fullsize.webp",
       "bio": "Member of Slyyutus Kick Community",
       "firstSeenAt": "2026-09-10T14:50:36.716Z",
-      "lastActiveAt": "2026-09-10T14:50:36.716Z",
-      "totalMessages": 1,
+      "lastActiveAt": "2026-09-10T15:43:10.771Z",
+      "totalMessages": 2,
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
@@ -478,7 +478,7 @@
     "avatarUrl": "https://files.kick.com/images/user/231626/profile_image/conversion/b39d4d71-93ab-4563-ad7a-b054e4fdd90a-fullsize.webp",
     "bannerUrl": "https://files.kick.com/images/channel/229384/banner_image/868e7c21-4096-40a2-90ef-8b4d933bc1dd",
     "bio": "Moroccan Streamer ! Gamer ! GODAIM",
-    "followersCount": 26456,
+    "followersCount": 26457,
     "subscribersCount": 63,
     "totalViews": 0,
     "isLive": false,
@@ -488,7 +488,7 @@
     "totalStreams": 0,
     "currentStreamTitle": "",
     "currentStreamCategory": "",
-    "lastUpdated": "2026-09-10T15:10:53.862Z"
+    "lastUpdated": "2026-09-10T15:53:07.064Z"
   },
   "streams": [
     {
@@ -943,7 +943,7 @@
       "averageViewers": 1902,
       "peakViewers": 2319,
       "subscribersGained": 3,
-      "totalChatMessages": 0,
+      "totalChatMessages": 2,
       "vodUrl": "https://kick.com/video/6f6a58cc-876c-4ed4-8a46-f3c38907612c",
       "thumbnailUrl": "https://images.kick.com/video_thumbnails/VcbHiZyXVlnu/W84diQJSPclp/720.webp",
       "isLive": false,
@@ -981,7 +981,7 @@
       "vodUrl": "https://kick.com/video/d6ee02c7-d8ce-481c-85cd-2616925fccbd",
       "thumbnailUrl": "https://images.kick.com/video_thumbnails/VcbHiZyXVlnu/anDNSgxnXvaa/720.webp",
       "isLive": false,
-      "views": 12324,
+      "views": 12326,
       "subsGained": 3
     }
   ],
@@ -1960,6 +1960,32 @@
       "channelId": "chan_slyyutus_01",
       "pointsAwarded": 1,
       "isTest": false
+    },
+    {
+      "messageId": "1a513592-dc01-4592-8f49-9a49e55cd3c1",
+      "kickUserId": "16282003",
+      "username": "M4ND4R_x",
+      "avatarUrl": "https://files.kick.com/images/user/16282003/profile_image/conversion/e723cae9-87bf-4ace-9991-8239c070a90d-fullsize.webp",
+      "streamId": "126474841",
+      "streamTitle": "👑 Wa LKhdma Lkhdma Lkhdma💚! DAY 31/365 👑 '' NEW SUB ALERT ''",
+      "content": "hh",
+      "timestamp": "2026-09-10T15:24:20Z",
+      "channelId": "chan_slyyutus_01",
+      "pointsAwarded": 1,
+      "isTest": false
+    },
+    {
+      "messageId": "82766ddc-5ed6-46b7-b122-0f729392d510",
+      "kickUserId": "104278800",
+      "username": "ALPHA_1K",
+      "avatarUrl": "https://files.kick.com/images/user/104278800/profile_image/conversion/7b9325ea-9cc7-4442-97fd-c1a63d09ccab-fullsize.webp",
+      "streamId": "126474841",
+      "streamTitle": "👑 Wa LKhdma Lkhdma Lkhdma💚! DAY 31/365 👑 '' NEW SUB ALERT ''",
+      "content": "SCRIPT LI DAYRIN RAH L7WA",
+      "timestamp": "2026-09-10T15:43:10+00:00",
+      "channelId": "chan_slyyutus_01",
+      "pointsAwarded": 1,
+      "isTest": false
     }
   ],
   "leagueSeasons": [
@@ -1971,7 +1997,7 @@
       "isActive": true,
       "isFinalized": false,
       "totalParticipants": 38,
-      "totalPointsDistributed": 775
+      "totalPointsDistributed": 777
     }
   ],
   "leaguePoints": [
@@ -2003,12 +2029,12 @@
       "id": "lp_09-26_16282003",
       "seasonId": "09-26",
       "kickUserId": "16282003",
-      "points": 7,
-      "messagesCount": 7,
+      "points": 8,
+      "messagesCount": 8,
       "subsCount": 0,
       "giftsCount": 0,
       "firstScoreAchievedAt": "2026-09-05T17:36:04.945Z",
-      "lastPointAwardedAt": "2026-09-07T13:02:28.285Z",
+      "lastPointAwardedAt": "2026-09-10T15:38:16.922Z",
       "isTest": false
     },
     {
@@ -2399,12 +2425,12 @@
       "id": "lp_09-26_104278800",
       "seasonId": "09-26",
       "kickUserId": "104278800",
-      "points": 1,
-      "messagesCount": 1,
+      "points": 2,
+      "messagesCount": 2,
       "subsCount": 0,
       "giftsCount": 0,
       "firstScoreAchievedAt": "2026-09-10T14:50:36.716Z",
-      "lastPointAwardedAt": "2026-09-10T14:50:36.716Z",
+      "lastPointAwardedAt": "2026-09-10T15:43:10.771Z",
       "isTest": false
     }
   ],
@@ -2760,6 +2786,20 @@
       "kickUserId": "104278800",
       "messageCount": 1,
       "rankInVod": 13
+    },
+    {
+      "id": "vcs_126474841_16282003",
+      "streamId": "126474841",
+      "kickUserId": "16282003",
+      "messageCount": 1,
+      "rankInVod": 1
+    },
+    {
+      "id": "vcs_126474841_104278800",
+      "streamId": "126474841",
+      "kickUserId": "104278800",
+      "messageCount": 1,
+      "rankInVod": 2
     }
   ],
   "pointRules": [
@@ -2767,3521 +2807,3521 @@
       "ruleKey": "CHAT_MESSAGE",
       "pointValue": 1,
       "description": "1 point per valid chat message in live stream",
-      "updatedAt": "2026-09-10T15:10:49.449Z"
+      "updatedAt": "2026-09-10T15:48:59.788Z"
     },
     {
       "ruleKey": "SUBSCRIPTION",
       "pointValue": 100,
       "description": "100 points for subscribing to Slyyutus",
-      "updatedAt": "2026-09-10T15:10:49.449Z"
+      "updatedAt": "2026-09-10T15:48:59.789Z"
     },
     {
       "ruleKey": "GIFT_SUBSCRIPTION",
       "pointValue": 100,
       "description": "100 points per gift subscription to the community",
-      "updatedAt": "2026-09-10T15:10:49.449Z"
+      "updatedAt": "2026-09-10T15:48:59.789Z"
     }
   ],
   "systemLogs": [
     {
-      "id": "log_1789053055638_6f5gm",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @MounirAz: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:10:55.638Z"
-    },
-    {
-      "id": "log_1789053055638_p08vt",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @M4rcusS8: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:10:55.638Z"
-    },
-    {
-      "id": "log_1789053055638_6e4x8",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @blachholl: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:10:55.638Z"
-    },
-    {
-      "id": "log_1789053055638_1v8ty",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:10:55.638Z"
-    },
-    {
-      "id": "log_1789053055638_138sd",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:10:55.638Z"
-    },
-    {
-      "id": "log_1789053055638_d63o7",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:10:55.638Z"
-    },
-    {
-      "id": "log_1789053055638_9znp1",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:10:55.638Z"
-    },
-    {
-      "id": "log_1789053055638_wrrgi",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:10:55.638Z"
-    },
-    {
-      "id": "log_1789053055638_8qsaa",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:10:55.638Z"
-    },
-    {
-      "id": "log_1789053053862_sygsg",
-      "level": "error",
-      "module": "KICK_EVENTS",
-      "message": "Cannot subscribe to webhook events: no app access token.",
-      "createdAt": "2026-09-10T15:10:53.862Z"
-    },
-    {
-      "id": "log_1789053053862_552nl",
+      "id": "log_1789055587064_mes98",
       "level": "success",
       "module": "CHANNEL_SYNC",
-      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26456 followers, 63 subs, 27 real streams.",
-      "createdAt": "2026-09-10T15:10:53.862Z"
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26457 followers, 63 subs, 27 real streams.",
+      "createdAt": "2026-09-10T15:53:07.064Z"
     },
     {
-      "id": "log_1789053052098_oezwi",
-      "level": "success",
-      "module": "TRACKER",
-      "message": "Kick WebSocket connected. Subscribing to chatroom 229380.",
-      "createdAt": "2026-09-10T15:10:52.098Z"
-    },
-    {
-      "id": "log_1789053051762_rc3df",
+      "id": "log_1789055585636_v9k37",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @MounirAz: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:10:51.762Z"
+      "createdAt": "2026-09-10T15:53:05.636Z"
     },
     {
-      "id": "log_1789053051762_blvwu",
+      "id": "log_1789055585636_x7gsn",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @M4rcusS8: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:10:51.762Z"
+      "createdAt": "2026-09-10T15:53:05.636Z"
     },
     {
-      "id": "log_1789053051762_d3hbz",
+      "id": "log_1789055585636_ma1ut",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @blachholl: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:10:51.762Z"
+      "createdAt": "2026-09-10T15:53:05.636Z"
     },
     {
-      "id": "log_1789053051761_1go7h",
+      "id": "log_1789055585636_h6ktr",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:10:51.761Z"
+      "createdAt": "2026-09-10T15:53:05.636Z"
     },
     {
-      "id": "log_1789053051761_cbp4b",
+      "id": "log_1789055585636_rniup",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:10:51.761Z"
+      "createdAt": "2026-09-10T15:53:05.636Z"
     },
     {
-      "id": "log_1789053051761_6sohz",
+      "id": "log_1789055585636_cqc2c",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:10:51.761Z"
+      "createdAt": "2026-09-10T15:53:05.636Z"
     },
     {
-      "id": "log_1789053051761_unj4c",
+      "id": "log_1789055585636_2mnyf",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:10:51.761Z"
+      "createdAt": "2026-09-10T15:53:05.636Z"
     },
     {
-      "id": "log_1789053051761_b6lwu",
+      "id": "log_1789055585636_p3733",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:10:51.761Z"
+      "createdAt": "2026-09-10T15:53:05.636Z"
     },
     {
-      "id": "log_1789053051761_sp6t3",
+      "id": "log_1789055585636_vxjaq",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:10:51.761Z"
+      "createdAt": "2026-09-10T15:53:05.636Z"
     },
     {
-      "id": "log_1789053049520_yobyd",
-      "level": "info",
-      "module": "TRACKER",
-      "message": "Starting Kick real-time tracking service with WebSocket & API fallback.",
-      "createdAt": "2026-09-10T15:10:49.520Z"
-    },
-    {
-      "id": "log_1789052998613_rvvux",
-      "level": "success",
-      "module": "CHANNEL_SYNC",
-      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26456 followers, 63 subs, 27 real streams.",
-      "createdAt": "2026-09-10T15:09:58.613Z"
-    },
-    {
-      "id": "log_1789052998376_zv3sn",
+      "id": "log_1789055582648_0z7j2",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @MounirAz: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:58.376Z"
+      "createdAt": "2026-09-10T15:53:02.648Z"
     },
     {
-      "id": "log_1789052998376_nyzjr",
+      "id": "log_1789055582648_ziet4",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @M4rcusS8: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:58.376Z"
+      "createdAt": "2026-09-10T15:53:02.648Z"
     },
     {
-      "id": "log_1789052998376_d0mvx",
+      "id": "log_1789055582648_zf83u",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @blachholl: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:58.376Z"
+      "createdAt": "2026-09-10T15:53:02.648Z"
     },
     {
-      "id": "log_1789052998376_gppyc",
+      "id": "log_1789055582648_3p0ha",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:58.376Z"
+      "createdAt": "2026-09-10T15:53:02.648Z"
     },
     {
-      "id": "log_1789052998376_p9cf6",
+      "id": "log_1789055582648_yhqgz",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:58.376Z"
+      "createdAt": "2026-09-10T15:53:02.648Z"
     },
     {
-      "id": "log_1789052998376_8gwhh",
+      "id": "log_1789055582647_ph6d7",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:58.376Z"
+      "createdAt": "2026-09-10T15:53:02.647Z"
     },
     {
-      "id": "log_1789052998376_9b0re",
+      "id": "log_1789055582647_t4xso",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:58.376Z"
+      "createdAt": "2026-09-10T15:53:02.647Z"
     },
     {
-      "id": "log_1789052998376_i1x9o",
+      "id": "log_1789055582647_ow6vc",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:58.376Z"
+      "createdAt": "2026-09-10T15:53:02.647Z"
     },
     {
-      "id": "log_1789052998376_92fj2",
+      "id": "log_1789055582647_f9x1e",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:58.376Z"
+      "createdAt": "2026-09-10T15:53:02.647Z"
     },
     {
-      "id": "log_1789052994862_mp3cm",
+      "id": "log_1789055581263_041tq",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @MounirAz: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:54.862Z"
+      "createdAt": "2026-09-10T15:53:01.263Z"
     },
     {
-      "id": "log_1789052994862_holxt",
+      "id": "log_1789055581263_jggvo",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @M4rcusS8: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:54.862Z"
+      "createdAt": "2026-09-10T15:53:01.263Z"
     },
     {
-      "id": "log_1789052994862_kymw8",
+      "id": "log_1789055581263_jm0i4",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @blachholl: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:54.862Z"
+      "createdAt": "2026-09-10T15:53:01.263Z"
     },
     {
-      "id": "log_1789052994862_j8qbv",
+      "id": "log_1789055581263_va1cm",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:54.862Z"
+      "createdAt": "2026-09-10T15:53:01.263Z"
     },
     {
-      "id": "log_1789052994862_ttp4q",
+      "id": "log_1789055581263_r1zvt",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:54.862Z"
+      "createdAt": "2026-09-10T15:53:01.263Z"
     },
     {
-      "id": "log_1789052994862_5iiqf",
+      "id": "log_1789055581263_cx7xm",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:54.862Z"
+      "createdAt": "2026-09-10T15:53:01.263Z"
     },
     {
-      "id": "log_1789052994862_mgbe0",
+      "id": "log_1789055581263_2vii2",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:54.862Z"
+      "createdAt": "2026-09-10T15:53:01.263Z"
     },
     {
-      "id": "log_1789052994862_xx5f7",
+      "id": "log_1789055581262_9j5uk",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:54.862Z"
+      "createdAt": "2026-09-10T15:53:01.262Z"
     },
     {
-      "id": "log_1789052994862_88alo",
+      "id": "log_1789055581262_in932",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:54.862Z"
+      "createdAt": "2026-09-10T15:53:01.262Z"
     },
     {
-      "id": "log_1789052991897_ufx83",
+      "id": "log_1789055578295_2ys5r",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @MounirAz: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:51.897Z"
+      "createdAt": "2026-09-10T15:52:58.295Z"
     },
     {
-      "id": "log_1789052991897_143du",
+      "id": "log_1789055578295_w3dop",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @M4rcusS8: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:51.897Z"
+      "createdAt": "2026-09-10T15:52:58.295Z"
     },
     {
-      "id": "log_1789052991897_eeofv",
+      "id": "log_1789055578295_lmazm",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @blachholl: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:51.897Z"
+      "createdAt": "2026-09-10T15:52:58.295Z"
     },
     {
-      "id": "log_1789052991897_4m5mb",
+      "id": "log_1789055578295_6ifbj",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:51.897Z"
+      "createdAt": "2026-09-10T15:52:58.295Z"
     },
     {
-      "id": "log_1789052991897_7wrgc",
+      "id": "log_1789055578295_1pk2y",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:51.897Z"
+      "createdAt": "2026-09-10T15:52:58.295Z"
     },
     {
-      "id": "log_1789052991897_97l1s",
+      "id": "log_1789055578295_9r4m8",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:51.897Z"
+      "createdAt": "2026-09-10T15:52:58.295Z"
     },
     {
-      "id": "log_1789052991897_xaej0",
+      "id": "log_1789055578295_m9ft9",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:51.897Z"
+      "createdAt": "2026-09-10T15:52:58.295Z"
     },
     {
-      "id": "log_1789052991897_8zmgq",
+      "id": "log_1789055578295_7gt2z",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:51.897Z"
+      "createdAt": "2026-09-10T15:52:58.295Z"
     },
     {
-      "id": "log_1789052991897_k5y0z",
+      "id": "log_1789055578295_dgsnh",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:51.897Z"
+      "createdAt": "2026-09-10T15:52:58.295Z"
     },
     {
-      "id": "log_1789052988861_xhg6f",
+      "id": "log_1789055574324_6t36s",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @MounirAz: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:48.861Z"
+      "createdAt": "2026-09-10T15:52:54.324Z"
     },
     {
-      "id": "log_1789052988861_73mrl",
+      "id": "log_1789055574324_69urf",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @M4rcusS8: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:48.861Z"
+      "createdAt": "2026-09-10T15:52:54.324Z"
     },
     {
-      "id": "log_1789052988861_6srml",
+      "id": "log_1789055574324_qqqh5",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @blachholl: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:48.861Z"
+      "createdAt": "2026-09-10T15:52:54.324Z"
     },
     {
-      "id": "log_1789052988861_mjd2m",
+      "id": "log_1789055574324_xojrg",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:48.861Z"
+      "createdAt": "2026-09-10T15:52:54.324Z"
     },
     {
-      "id": "log_1789052988861_p2nn5",
+      "id": "log_1789055574324_8jdvb",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:48.861Z"
+      "createdAt": "2026-09-10T15:52:54.324Z"
     },
     {
-      "id": "log_1789052988861_1bwgl",
+      "id": "log_1789055574324_yy515",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:48.861Z"
+      "createdAt": "2026-09-10T15:52:54.324Z"
     },
     {
-      "id": "log_1789052988861_8fvmy",
+      "id": "log_1789055574324_v03je",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:48.861Z"
+      "createdAt": "2026-09-10T15:52:54.324Z"
     },
     {
-      "id": "log_1789052988861_tna3s",
+      "id": "log_1789055574324_cklsk",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:48.861Z"
+      "createdAt": "2026-09-10T15:52:54.324Z"
     },
     {
-      "id": "log_1789052988860_6ur4t",
+      "id": "log_1789055574324_c9xk6",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:48.860Z"
+      "createdAt": "2026-09-10T15:52:54.324Z"
     },
     {
-      "id": "log_1789052986719_h9x39",
+      "id": "log_1789055573639_te60h",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @MounirAz: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:46.719Z"
+      "createdAt": "2026-09-10T15:52:53.639Z"
     },
     {
-      "id": "log_1789052986719_u10b8",
+      "id": "log_1789055573639_gihkk",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @M4rcusS8: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:46.719Z"
+      "createdAt": "2026-09-10T15:52:53.639Z"
     },
     {
-      "id": "log_1789052986719_d52k1",
+      "id": "log_1789055573639_eovay",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @blachholl: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:46.719Z"
+      "createdAt": "2026-09-10T15:52:53.639Z"
     },
     {
-      "id": "log_1789052986719_wknas",
+      "id": "log_1789055573639_jd0hq",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:46.719Z"
+      "createdAt": "2026-09-10T15:52:53.639Z"
     },
     {
-      "id": "log_1789052986719_3h81h",
+      "id": "log_1789055573639_ln1pw",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:46.719Z"
+      "createdAt": "2026-09-10T15:52:53.639Z"
     },
     {
-      "id": "log_1789052986719_jkxfc",
+      "id": "log_1789055573639_h30f9",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:46.719Z"
+      "createdAt": "2026-09-10T15:52:53.639Z"
     },
     {
-      "id": "log_1789052986719_ogb3p",
+      "id": "log_1789055573639_dgagb",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:46.719Z"
+      "createdAt": "2026-09-10T15:52:53.639Z"
     },
     {
-      "id": "log_1789052986719_kut1e",
+      "id": "log_1789055573639_bqlbu",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:46.719Z"
+      "createdAt": "2026-09-10T15:52:53.639Z"
     },
     {
-      "id": "log_1789052986719_me77g",
+      "id": "log_1789055573639_0d4gk",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:46.719Z"
+      "createdAt": "2026-09-10T15:52:53.639Z"
     },
     {
-      "id": "log_1789052982861_n3hy2",
+      "id": "log_1789055570655_yc1ex",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @MounirAz: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:42.861Z"
+      "createdAt": "2026-09-10T15:52:50.655Z"
     },
     {
-      "id": "log_1789052982861_4vrge",
+      "id": "log_1789055570655_15v7u",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @M4rcusS8: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:42.861Z"
+      "createdAt": "2026-09-10T15:52:50.655Z"
     },
     {
-      "id": "log_1789052982861_o3px4",
+      "id": "log_1789055570655_2a9g2",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @blachholl: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:42.861Z"
+      "createdAt": "2026-09-10T15:52:50.655Z"
     },
     {
-      "id": "log_1789052982861_vsfln",
+      "id": "log_1789055570655_bjd0w",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:42.861Z"
+      "createdAt": "2026-09-10T15:52:50.655Z"
     },
     {
-      "id": "log_1789052982861_lzvzh",
+      "id": "log_1789055570655_d01zt",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:42.861Z"
+      "createdAt": "2026-09-10T15:52:50.655Z"
     },
     {
-      "id": "log_1789052982861_iomrg",
+      "id": "log_1789055570655_otug0",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:42.861Z"
+      "createdAt": "2026-09-10T15:52:50.655Z"
     },
     {
-      "id": "log_1789052982861_rettb",
+      "id": "log_1789055570655_tpkdr",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:42.861Z"
+      "createdAt": "2026-09-10T15:52:50.655Z"
     },
     {
-      "id": "log_1789052982861_hbe31",
+      "id": "log_1789055570655_7n4qy",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:42.861Z"
+      "createdAt": "2026-09-10T15:52:50.655Z"
     },
     {
-      "id": "log_1789052982861_zrh0k",
+      "id": "log_1789055570655_4sr1v",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:42.861Z"
+      "createdAt": "2026-09-10T15:52:50.655Z"
     },
     {
-      "id": "log_1789052979868_ls7ht",
+      "id": "log_1789055567117_xb0pj",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @MounirAz: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:39.868Z"
+      "createdAt": "2026-09-10T15:52:47.117Z"
     },
     {
-      "id": "log_1789052979868_h232z",
+      "id": "log_1789055567117_gbfsn",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @M4rcusS8: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:39.868Z"
+      "createdAt": "2026-09-10T15:52:47.117Z"
     },
     {
-      "id": "log_1789052979868_gtyj2",
+      "id": "log_1789055567117_4boy0",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @blachholl: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:39.868Z"
+      "createdAt": "2026-09-10T15:52:47.117Z"
     },
     {
-      "id": "log_1789052979868_v08jy",
+      "id": "log_1789055567117_p50sd",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:39.868Z"
+      "createdAt": "2026-09-10T15:52:47.117Z"
     },
     {
-      "id": "log_1789052979868_07k9b",
+      "id": "log_1789055567117_i1v5r",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:39.868Z"
+      "createdAt": "2026-09-10T15:52:47.117Z"
     },
     {
-      "id": "log_1789052979868_azsx7",
+      "id": "log_1789055567117_btoeu",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:39.868Z"
+      "createdAt": "2026-09-10T15:52:47.117Z"
     },
     {
-      "id": "log_1789052979868_1j8on",
+      "id": "log_1789055567117_yejpk",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:39.868Z"
+      "createdAt": "2026-09-10T15:52:47.117Z"
     },
     {
-      "id": "log_1789052979868_01oli",
+      "id": "log_1789055567117_oa013",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:39.868Z"
+      "createdAt": "2026-09-10T15:52:47.117Z"
     },
     {
-      "id": "log_1789052979868_lsdjq",
+      "id": "log_1789055567117_l60eh",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:39.868Z"
+      "createdAt": "2026-09-10T15:52:47.117Z"
     },
     {
-      "id": "log_1789052976875_odlqm",
+      "id": "log_1789055563711_joj91",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @MounirAz: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:36.875Z"
+      "createdAt": "2026-09-10T15:52:43.711Z"
     },
     {
-      "id": "log_1789052976875_s8vxz",
+      "id": "log_1789055563711_10oqq",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @M4rcusS8: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:36.875Z"
+      "createdAt": "2026-09-10T15:52:43.711Z"
     },
     {
-      "id": "log_1789052976875_egu10",
+      "id": "log_1789055563711_ctv8r",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @blachholl: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:36.875Z"
+      "createdAt": "2026-09-10T15:52:43.711Z"
     },
     {
-      "id": "log_1789052976875_g4m3z",
+      "id": "log_1789055563711_vclif",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:36.875Z"
+      "createdAt": "2026-09-10T15:52:43.711Z"
     },
     {
-      "id": "log_1789052976874_he3t1",
+      "id": "log_1789055563711_p1b47",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:36.874Z"
+      "createdAt": "2026-09-10T15:52:43.711Z"
     },
     {
-      "id": "log_1789052976874_ccfkx",
+      "id": "log_1789055563711_sw4ox",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:36.874Z"
+      "createdAt": "2026-09-10T15:52:43.711Z"
     },
     {
-      "id": "log_1789052976874_erm8r",
+      "id": "log_1789055563711_sr2m6",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:36.874Z"
+      "createdAt": "2026-09-10T15:52:43.711Z"
     },
     {
-      "id": "log_1789052976874_cxq80",
+      "id": "log_1789055563711_nokq8",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:36.874Z"
+      "createdAt": "2026-09-10T15:52:43.711Z"
     },
     {
-      "id": "log_1789052976874_9zp1a",
+      "id": "log_1789055563711_jrpe7",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:36.874Z"
+      "createdAt": "2026-09-10T15:52:43.711Z"
     },
     {
-      "id": "log_1789052973852_7mgke",
+      "id": "log_1789055560717_uf8xb",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @MounirAz: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:33.852Z"
+      "createdAt": "2026-09-10T15:52:40.717Z"
     },
     {
-      "id": "log_1789052973852_y2mlw",
+      "id": "log_1789055560717_4knfc",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @M4rcusS8: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:33.852Z"
+      "createdAt": "2026-09-10T15:52:40.717Z"
     },
     {
-      "id": "log_1789052973852_r1cm6",
+      "id": "log_1789055560717_7kj6p",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @blachholl: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:33.852Z"
+      "createdAt": "2026-09-10T15:52:40.717Z"
     },
     {
-      "id": "log_1789052973852_nao64",
+      "id": "log_1789055560717_g9i39",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:33.852Z"
+      "createdAt": "2026-09-10T15:52:40.717Z"
     },
     {
-      "id": "log_1789052973852_fiauw",
+      "id": "log_1789055560717_vm2qy",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:33.852Z"
+      "createdAt": "2026-09-10T15:52:40.717Z"
     },
     {
-      "id": "log_1789052973852_rxq39",
+      "id": "log_1789055560717_ibx4o",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:33.852Z"
+      "createdAt": "2026-09-10T15:52:40.717Z"
     },
     {
-      "id": "log_1789052973852_os6zn",
+      "id": "log_1789055560717_lvx7f",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:33.852Z"
+      "createdAt": "2026-09-10T15:52:40.717Z"
     },
     {
-      "id": "log_1789052973852_kvqt7",
+      "id": "log_1789055560717_azzv1",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:33.852Z"
+      "createdAt": "2026-09-10T15:52:40.717Z"
     },
     {
-      "id": "log_1789052973852_n1ceg",
+      "id": "log_1789055560717_o4p7p",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:33.852Z"
+      "createdAt": "2026-09-10T15:52:40.717Z"
     },
     {
-      "id": "log_1789052970854_zcmjr",
+      "id": "log_1789055558609_wpxnp",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @MounirAz: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:30.854Z"
+      "createdAt": "2026-09-10T15:52:38.609Z"
     },
     {
-      "id": "log_1789052970854_i54vd",
+      "id": "log_1789055558609_rjjhh",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @M4rcusS8: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:30.854Z"
+      "createdAt": "2026-09-10T15:52:38.609Z"
     },
     {
-      "id": "log_1789052970854_td0ba",
+      "id": "log_1789055558609_cfy7j",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @blachholl: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:30.854Z"
+      "createdAt": "2026-09-10T15:52:38.609Z"
     },
     {
-      "id": "log_1789052970854_1raqa",
+      "id": "log_1789055558609_8lmw9",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:30.854Z"
+      "createdAt": "2026-09-10T15:52:38.609Z"
     },
     {
-      "id": "log_1789052970854_waf04",
+      "id": "log_1789055558609_qb7q8",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:30.854Z"
+      "createdAt": "2026-09-10T15:52:38.609Z"
     },
     {
-      "id": "log_1789052970854_26ar1",
+      "id": "log_1789055558609_v77wx",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:30.854Z"
+      "createdAt": "2026-09-10T15:52:38.609Z"
     },
     {
-      "id": "log_1789052970854_579sb",
+      "id": "log_1789055558609_6d6wf",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:30.854Z"
+      "createdAt": "2026-09-10T15:52:38.609Z"
     },
     {
-      "id": "log_1789052970854_ckusf",
+      "id": "log_1789055558609_jairn",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:30.854Z"
+      "createdAt": "2026-09-10T15:52:38.609Z"
     },
     {
-      "id": "log_1789052970854_jk6a1",
+      "id": "log_1789055558609_o741q",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:30.854Z"
+      "createdAt": "2026-09-10T15:52:38.609Z"
     },
     {
-      "id": "log_1789052967853_oyx7u",
+      "id": "log_1789055553359_3xfi1",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @MounirAz: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:27.853Z"
+      "createdAt": "2026-09-10T15:52:33.359Z"
     },
     {
-      "id": "log_1789052967853_l099g",
+      "id": "log_1789055553359_am46f",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @M4rcusS8: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:27.853Z"
+      "createdAt": "2026-09-10T15:52:33.359Z"
     },
     {
-      "id": "log_1789052967853_f34lx",
+      "id": "log_1789055553359_rocft",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @blachholl: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:27.853Z"
+      "createdAt": "2026-09-10T15:52:33.359Z"
     },
     {
-      "id": "log_1789052967853_v1e0b",
+      "id": "log_1789055553359_te33y",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:27.853Z"
+      "createdAt": "2026-09-10T15:52:33.359Z"
     },
     {
-      "id": "log_1789052967853_mpg7g",
+      "id": "log_1789055553359_4w6ws",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:27.853Z"
+      "createdAt": "2026-09-10T15:52:33.359Z"
     },
     {
-      "id": "log_1789052967853_g4moi",
+      "id": "log_1789055553359_d55k5",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:27.853Z"
+      "createdAt": "2026-09-10T15:52:33.359Z"
     },
     {
-      "id": "log_1789052967853_1yxoj",
+      "id": "log_1789055553359_8qa09",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:27.853Z"
+      "createdAt": "2026-09-10T15:52:33.359Z"
     },
     {
-      "id": "log_1789052967853_ih0ie",
+      "id": "log_1789055553359_yrv93",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:27.853Z"
+      "createdAt": "2026-09-10T15:52:33.359Z"
     },
     {
-      "id": "log_1789052967853_smbif",
+      "id": "log_1789055553358_q3vfv",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:27.853Z"
+      "createdAt": "2026-09-10T15:52:33.358Z"
     },
     {
-      "id": "log_1789052964849_xbuft",
+      "id": "log_1789055550395_d6i8x",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @MounirAz: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:24.849Z"
+      "createdAt": "2026-09-10T15:52:30.395Z"
     },
     {
-      "id": "log_1789052964849_sa7z4",
+      "id": "log_1789055550395_v3s0i",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @M4rcusS8: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:24.849Z"
+      "createdAt": "2026-09-10T15:52:30.395Z"
     },
     {
-      "id": "log_1789052964849_zslf4",
+      "id": "log_1789055550395_73uig",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @blachholl: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:24.849Z"
+      "createdAt": "2026-09-10T15:52:30.395Z"
     },
     {
-      "id": "log_1789052964849_y23je",
+      "id": "log_1789055550395_xfs6q",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:24.849Z"
+      "createdAt": "2026-09-10T15:52:30.395Z"
     },
     {
-      "id": "log_1789052964849_rtioc",
+      "id": "log_1789055550395_d3t88",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:24.849Z"
+      "createdAt": "2026-09-10T15:52:30.395Z"
     },
     {
-      "id": "log_1789052964849_uux8g",
+      "id": "log_1789055550395_61j2q",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:24.849Z"
+      "createdAt": "2026-09-10T15:52:30.395Z"
     },
     {
-      "id": "log_1789052964849_wo5e4",
+      "id": "log_1789055550395_j2fyz",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:24.849Z"
+      "createdAt": "2026-09-10T15:52:30.395Z"
     },
     {
-      "id": "log_1789052964849_rt49f",
+      "id": "log_1789055550395_azozq",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:24.849Z"
+      "createdAt": "2026-09-10T15:52:30.395Z"
     },
     {
-      "id": "log_1789052964849_q80pd",
+      "id": "log_1789055550395_sf29e",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:24.849Z"
+      "createdAt": "2026-09-10T15:52:30.395Z"
     },
     {
-      "id": "log_1789052961856_6tj23",
+      "id": "log_1789055547267_8yhlf",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @MounirAz: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:21.856Z"
+      "createdAt": "2026-09-10T15:52:27.267Z"
     },
     {
-      "id": "log_1789052961856_u8h7p",
+      "id": "log_1789055547267_7fepd",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @M4rcusS8: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:21.856Z"
+      "createdAt": "2026-09-10T15:52:27.267Z"
     },
     {
-      "id": "log_1789052961856_x7rzm",
+      "id": "log_1789055547267_8y7ri",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @blachholl: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:21.856Z"
+      "createdAt": "2026-09-10T15:52:27.267Z"
     },
     {
-      "id": "log_1789052961856_1exql",
+      "id": "log_1789055547267_j5in2",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:21.856Z"
+      "createdAt": "2026-09-10T15:52:27.267Z"
     },
     {
-      "id": "log_1789052961856_h9uai",
+      "id": "log_1789055547267_2wfy0",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:21.856Z"
+      "createdAt": "2026-09-10T15:52:27.267Z"
     },
     {
-      "id": "log_1789052961856_rw9mf",
+      "id": "log_1789055547267_hte0o",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:21.856Z"
+      "createdAt": "2026-09-10T15:52:27.267Z"
     },
     {
-      "id": "log_1789052961856_fdi7i",
+      "id": "log_1789055547267_n1x37",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:21.856Z"
+      "createdAt": "2026-09-10T15:52:27.267Z"
     },
     {
-      "id": "log_1789052961855_sdgp9",
+      "id": "log_1789055547267_fovy9",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:21.855Z"
+      "createdAt": "2026-09-10T15:52:27.267Z"
     },
     {
-      "id": "log_1789052961855_l21nq",
+      "id": "log_1789055547267_n24hs",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:21.855Z"
+      "createdAt": "2026-09-10T15:52:27.267Z"
     },
     {
-      "id": "log_1789052958853_koscu",
+      "id": "log_1789055544412_gqe4i",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @MounirAz: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:18.853Z"
+      "createdAt": "2026-09-10T15:52:24.412Z"
     },
     {
-      "id": "log_1789052958853_fvlcx",
+      "id": "log_1789055544412_256fd",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @M4rcusS8: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:18.853Z"
+      "createdAt": "2026-09-10T15:52:24.412Z"
     },
     {
-      "id": "log_1789052958853_6nsdc",
+      "id": "log_1789055544412_jywkz",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @blachholl: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:18.853Z"
+      "createdAt": "2026-09-10T15:52:24.412Z"
     },
     {
-      "id": "log_1789052958853_aq4g8",
+      "id": "log_1789055544412_9vhn8",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:18.853Z"
+      "createdAt": "2026-09-10T15:52:24.412Z"
     },
     {
-      "id": "log_1789052958853_53vit",
+      "id": "log_1789055544412_hozbn",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:18.853Z"
+      "createdAt": "2026-09-10T15:52:24.412Z"
     },
     {
-      "id": "log_1789052958852_g9guj",
+      "id": "log_1789055544412_rsee0",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:18.852Z"
+      "createdAt": "2026-09-10T15:52:24.412Z"
     },
     {
-      "id": "log_1789052958852_e4ywr",
+      "id": "log_1789055544412_ga48h",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:18.852Z"
+      "createdAt": "2026-09-10T15:52:24.412Z"
     },
     {
-      "id": "log_1789052958852_nq8om",
+      "id": "log_1789055544412_5hugj",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:18.852Z"
+      "createdAt": "2026-09-10T15:52:24.412Z"
     },
     {
-      "id": "log_1789052958852_sv4by",
+      "id": "log_1789055544412_kajhw",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:18.852Z"
+      "createdAt": "2026-09-10T15:52:24.412Z"
     },
     {
-      "id": "log_1789052955866_v0gvr",
+      "id": "log_1789055541715_48obt",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @MounirAz: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:15.866Z"
+      "createdAt": "2026-09-10T15:52:21.715Z"
     },
     {
-      "id": "log_1789052955866_chyiq",
+      "id": "log_1789055541715_rbdhy",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @M4rcusS8: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:15.866Z"
+      "createdAt": "2026-09-10T15:52:21.715Z"
     },
     {
-      "id": "log_1789052955866_f0ow9",
+      "id": "log_1789055541714_lnkuf",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @blachholl: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:15.866Z"
+      "createdAt": "2026-09-10T15:52:21.714Z"
     },
     {
-      "id": "log_1789052955866_68s4k",
+      "id": "log_1789055541714_zeun7",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:15.866Z"
+      "createdAt": "2026-09-10T15:52:21.714Z"
     },
     {
-      "id": "log_1789052955866_xh8gb",
+      "id": "log_1789055541714_29j1m",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:15.866Z"
+      "createdAt": "2026-09-10T15:52:21.714Z"
     },
     {
-      "id": "log_1789052955866_7gntq",
+      "id": "log_1789055541713_e4wr9",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:15.866Z"
+      "createdAt": "2026-09-10T15:52:21.713Z"
     },
     {
-      "id": "log_1789052955866_7lrrd",
+      "id": "log_1789055541713_85frn",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:15.866Z"
+      "createdAt": "2026-09-10T15:52:21.713Z"
     },
     {
-      "id": "log_1789052955866_6mw8x",
+      "id": "log_1789055541713_jslu9",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:15.866Z"
+      "createdAt": "2026-09-10T15:52:21.713Z"
     },
     {
-      "id": "log_1789052955865_2ibfy",
+      "id": "log_1789055541713_3agop",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:15.865Z"
+      "createdAt": "2026-09-10T15:52:21.713Z"
     },
     {
-      "id": "log_1789052953101_nyi43",
+      "id": "log_1789055538308_ib7ss",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @MounirAz: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:13.101Z"
+      "createdAt": "2026-09-10T15:52:18.308Z"
     },
     {
-      "id": "log_1789052953100_1t3ry",
+      "id": "log_1789055538308_cy4zf",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @M4rcusS8: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:13.100Z"
+      "createdAt": "2026-09-10T15:52:18.308Z"
     },
     {
-      "id": "log_1789052953100_ev74u",
+      "id": "log_1789055538308_56jj5",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @blachholl: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:13.100Z"
+      "createdAt": "2026-09-10T15:52:18.308Z"
     },
     {
-      "id": "log_1789052953100_l8yvi",
+      "id": "log_1789055538308_9w2ps",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:13.100Z"
+      "createdAt": "2026-09-10T15:52:18.308Z"
     },
     {
-      "id": "log_1789052953100_bpdup",
+      "id": "log_1789055538308_1gtdi",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:13.100Z"
+      "createdAt": "2026-09-10T15:52:18.308Z"
     },
     {
-      "id": "log_1789052953100_h6l19",
+      "id": "log_1789055538307_rtewo",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:13.100Z"
+      "createdAt": "2026-09-10T15:52:18.307Z"
     },
     {
-      "id": "log_1789052953100_xtmp4",
+      "id": "log_1789055538307_c1ic0",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:13.100Z"
+      "createdAt": "2026-09-10T15:52:18.307Z"
     },
     {
-      "id": "log_1789052953100_v1npx",
+      "id": "log_1789055538307_soy3j",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:13.100Z"
+      "createdAt": "2026-09-10T15:52:18.307Z"
     },
     {
-      "id": "log_1789052953100_9jhmp",
+      "id": "log_1789055538307_5r7sk",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:13.100Z"
+      "createdAt": "2026-09-10T15:52:18.307Z"
     },
     {
-      "id": "log_1789052949852_k59hn",
+      "id": "log_1789055535339_v9qh5",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @MounirAz: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:09.852Z"
+      "createdAt": "2026-09-10T15:52:15.339Z"
     },
     {
-      "id": "log_1789052949852_u9bha",
+      "id": "log_1789055535339_lx677",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @M4rcusS8: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:09.852Z"
+      "createdAt": "2026-09-10T15:52:15.339Z"
     },
     {
-      "id": "log_1789052949852_tik1i",
+      "id": "log_1789055535339_fn8hr",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @blachholl: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:09.852Z"
+      "createdAt": "2026-09-10T15:52:15.339Z"
     },
     {
-      "id": "log_1789052949852_y34e1",
+      "id": "log_1789055535339_pwyzt",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:09.852Z"
+      "createdAt": "2026-09-10T15:52:15.339Z"
     },
     {
-      "id": "log_1789052949852_x1hu4",
+      "id": "log_1789055535339_k35yp",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:09.852Z"
+      "createdAt": "2026-09-10T15:52:15.339Z"
     },
     {
-      "id": "log_1789052949852_l6wea",
+      "id": "log_1789055535339_exna5",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:09.852Z"
+      "createdAt": "2026-09-10T15:52:15.339Z"
     },
     {
-      "id": "log_1789052949852_gzlxk",
+      "id": "log_1789055535339_z2mb5",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:09.852Z"
+      "createdAt": "2026-09-10T15:52:15.339Z"
     },
     {
-      "id": "log_1789052949852_n9wyq",
+      "id": "log_1789055535339_rbc5f",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:09.852Z"
+      "createdAt": "2026-09-10T15:52:15.339Z"
     },
     {
-      "id": "log_1789052949852_zljff",
+      "id": "log_1789055535339_kvfll",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:09.852Z"
+      "createdAt": "2026-09-10T15:52:15.339Z"
     },
     {
-      "id": "log_1789052946847_ylqh6",
+      "id": "log_1789055532363_4e9pq",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @MounirAz: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:06.847Z"
+      "createdAt": "2026-09-10T15:52:12.363Z"
     },
     {
-      "id": "log_1789052946847_xp94i",
+      "id": "log_1789055532363_gn8t8",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @M4rcusS8: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:06.847Z"
+      "createdAt": "2026-09-10T15:52:12.363Z"
     },
     {
-      "id": "log_1789052946846_4syc2",
+      "id": "log_1789055532363_k1liq",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @blachholl: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:06.846Z"
+      "createdAt": "2026-09-10T15:52:12.363Z"
     },
     {
-      "id": "log_1789052946846_kh69c",
+      "id": "log_1789055532362_jia4e",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:06.846Z"
+      "createdAt": "2026-09-10T15:52:12.362Z"
     },
     {
-      "id": "log_1789052946846_vijae",
+      "id": "log_1789055532362_qq6ix",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:06.846Z"
+      "createdAt": "2026-09-10T15:52:12.362Z"
     },
     {
-      "id": "log_1789052946846_i0edo",
+      "id": "log_1789055532362_hyuy2",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:06.846Z"
+      "createdAt": "2026-09-10T15:52:12.362Z"
     },
     {
-      "id": "log_1789052946846_gqvif",
+      "id": "log_1789055532362_lv0ze",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:06.846Z"
+      "createdAt": "2026-09-10T15:52:12.362Z"
     },
     {
-      "id": "log_1789052946846_is7xn",
+      "id": "log_1789055532362_d3ewj",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:06.846Z"
+      "createdAt": "2026-09-10T15:52:12.362Z"
     },
     {
-      "id": "log_1789052946846_45gcn",
+      "id": "log_1789055532362_63uhy",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:06.846Z"
+      "createdAt": "2026-09-10T15:52:12.362Z"
     },
     {
-      "id": "log_1789052943848_eysxg",
+      "id": "log_1789055530084_4jwaw",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @MounirAz: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:03.848Z"
+      "createdAt": "2026-09-10T15:52:10.084Z"
     },
     {
-      "id": "log_1789052943848_je307",
+      "id": "log_1789055530084_0t9q3",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @M4rcusS8: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:03.848Z"
+      "createdAt": "2026-09-10T15:52:10.084Z"
     },
     {
-      "id": "log_1789052943848_ol708",
+      "id": "log_1789055530084_kudnf",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @blachholl: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:03.848Z"
+      "createdAt": "2026-09-10T15:52:10.084Z"
     },
     {
-      "id": "log_1789052943848_ubgu3",
+      "id": "log_1789055530084_1rhul",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:03.848Z"
+      "createdAt": "2026-09-10T15:52:10.084Z"
     },
     {
-      "id": "log_1789052943848_tj4np",
+      "id": "log_1789055530084_9scys",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:03.848Z"
+      "createdAt": "2026-09-10T15:52:10.084Z"
     },
     {
-      "id": "log_1789052943848_bubtk",
+      "id": "log_1789055530084_rshwp",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:03.848Z"
+      "createdAt": "2026-09-10T15:52:10.084Z"
     },
     {
-      "id": "log_1789052943848_05hlj",
+      "id": "log_1789055530084_51865",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:03.848Z"
+      "createdAt": "2026-09-10T15:52:10.084Z"
     },
     {
-      "id": "log_1789052943848_bv5vf",
+      "id": "log_1789055530084_tfhhg",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:03.848Z"
+      "createdAt": "2026-09-10T15:52:10.084Z"
     },
     {
-      "id": "log_1789052943848_ykad1",
+      "id": "log_1789055530084_spq1i",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:03.848Z"
+      "createdAt": "2026-09-10T15:52:10.084Z"
     },
     {
-      "id": "log_1789052941661_k185k",
+      "id": "log_1789055526081_xfeww",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @MounirAz: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:01.661Z"
+      "createdAt": "2026-09-10T15:52:06.081Z"
     },
     {
-      "id": "log_1789052941661_b591k",
+      "id": "log_1789055526081_mtp0c",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @M4rcusS8: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:01.661Z"
+      "createdAt": "2026-09-10T15:52:06.081Z"
     },
     {
-      "id": "log_1789052941661_c6y7x",
+      "id": "log_1789055526081_f0gtv",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @blachholl: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:01.661Z"
+      "createdAt": "2026-09-10T15:52:06.081Z"
     },
     {
-      "id": "log_1789052941661_b9tmc",
+      "id": "log_1789055526081_ya34d",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:01.661Z"
+      "createdAt": "2026-09-10T15:52:06.081Z"
     },
     {
-      "id": "log_1789052941661_jx9vu",
+      "id": "log_1789055526081_v6tnz",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:01.661Z"
+      "createdAt": "2026-09-10T15:52:06.081Z"
     },
     {
-      "id": "log_1789052941661_458z6",
+      "id": "log_1789055526081_avvx5",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:01.661Z"
+      "createdAt": "2026-09-10T15:52:06.081Z"
     },
     {
-      "id": "log_1789052941661_hixia",
+      "id": "log_1789055526081_7tlnh",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:01.661Z"
+      "createdAt": "2026-09-10T15:52:06.081Z"
     },
     {
-      "id": "log_1789052941661_en757",
+      "id": "log_1789055526081_wdeqf",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:01.661Z"
+      "createdAt": "2026-09-10T15:52:06.081Z"
     },
     {
-      "id": "log_1789052941661_8k2sd",
+      "id": "log_1789055526081_kll1y",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:09:01.661Z"
+      "createdAt": "2026-09-10T15:52:06.081Z"
     },
     {
-      "id": "log_1789052938574_pothd",
+      "id": "log_1789055525663_vvha3",
       "level": "success",
       "module": "CHANNEL_SYNC",
-      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26456 followers, 63 subs, 27 real streams.",
-      "createdAt": "2026-09-10T15:08:58.574Z"
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26457 followers, 63 subs, 27 real streams.",
+      "createdAt": "2026-09-10T15:52:05.663Z"
     },
     {
-      "id": "log_1789052937851_pyscr",
+      "id": "log_1789055523123_oe8ox",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @MounirAz: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:57.851Z"
+      "createdAt": "2026-09-10T15:52:03.123Z"
     },
     {
-      "id": "log_1789052937851_pynn5",
+      "id": "log_1789055523123_n5h6t",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @M4rcusS8: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:57.851Z"
+      "createdAt": "2026-09-10T15:52:03.123Z"
     },
     {
-      "id": "log_1789052937851_r6xg9",
+      "id": "log_1789055523123_wit6p",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @blachholl: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:57.851Z"
+      "createdAt": "2026-09-10T15:52:03.123Z"
     },
     {
-      "id": "log_1789052937851_r39ux",
+      "id": "log_1789055523123_tkvnw",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:57.851Z"
+      "createdAt": "2026-09-10T15:52:03.123Z"
     },
     {
-      "id": "log_1789052937851_ng7vd",
+      "id": "log_1789055523123_9w3r9",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:57.851Z"
+      "createdAt": "2026-09-10T15:52:03.123Z"
     },
     {
-      "id": "log_1789052937851_tzrt4",
+      "id": "log_1789055523123_8bqpb",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:57.851Z"
+      "createdAt": "2026-09-10T15:52:03.123Z"
     },
     {
-      "id": "log_1789052937851_t27ns",
+      "id": "log_1789055523123_w1p4s",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:57.851Z"
+      "createdAt": "2026-09-10T15:52:03.123Z"
     },
     {
-      "id": "log_1789052937851_wbjq6",
+      "id": "log_1789055523123_06hzy",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:57.851Z"
+      "createdAt": "2026-09-10T15:52:03.123Z"
     },
     {
-      "id": "log_1789052937851_jgy23",
+      "id": "log_1789055523123_wau1o",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:57.851Z"
+      "createdAt": "2026-09-10T15:52:03.123Z"
     },
     {
-      "id": "log_1789052934853_fq1ul",
+      "id": "log_1789055522638_mm3nk",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @MounirAz: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:54.853Z"
+      "createdAt": "2026-09-10T15:52:02.638Z"
     },
     {
-      "id": "log_1789052934853_dvrfh",
+      "id": "log_1789055522638_ypzej",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @M4rcusS8: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:54.853Z"
+      "createdAt": "2026-09-10T15:52:02.638Z"
     },
     {
-      "id": "log_1789052934853_wt2pe",
+      "id": "log_1789055522638_ljcvi",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @blachholl: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:54.853Z"
+      "createdAt": "2026-09-10T15:52:02.638Z"
     },
     {
-      "id": "log_1789052934853_c9e01",
+      "id": "log_1789055522638_hiimr",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:54.853Z"
+      "createdAt": "2026-09-10T15:52:02.638Z"
     },
     {
-      "id": "log_1789052934853_qboc7",
+      "id": "log_1789055522638_7pyhx",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:54.853Z"
+      "createdAt": "2026-09-10T15:52:02.638Z"
     },
     {
-      "id": "log_1789052934853_ucn72",
+      "id": "log_1789055522638_wpvx5",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:54.853Z"
+      "createdAt": "2026-09-10T15:52:02.638Z"
     },
     {
-      "id": "log_1789052934853_n7gyk",
+      "id": "log_1789055522638_rt8kw",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:54.853Z"
+      "createdAt": "2026-09-10T15:52:02.638Z"
     },
     {
-      "id": "log_1789052934853_zhogf",
+      "id": "log_1789055522638_6lv37",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:54.853Z"
+      "createdAt": "2026-09-10T15:52:02.638Z"
     },
     {
-      "id": "log_1789052934853_yh677",
+      "id": "log_1789055522638_5f1zs",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:54.853Z"
+      "createdAt": "2026-09-10T15:52:02.638Z"
     },
     {
-      "id": "log_1789052931870_y4k8x",
+      "id": "log_1789055519282_kc133",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @MounirAz: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:51.870Z"
+      "createdAt": "2026-09-10T15:51:59.282Z"
     },
     {
-      "id": "log_1789052931870_pg2ak",
+      "id": "log_1789055519282_ufjj8",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @M4rcusS8: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:51.870Z"
+      "createdAt": "2026-09-10T15:51:59.282Z"
     },
     {
-      "id": "log_1789052931870_r5xyq",
+      "id": "log_1789055519282_36b2f",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @blachholl: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:51.870Z"
+      "createdAt": "2026-09-10T15:51:59.282Z"
     },
     {
-      "id": "log_1789052931870_ry9vd",
+      "id": "log_1789055519282_iuk81",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:51.870Z"
+      "createdAt": "2026-09-10T15:51:59.282Z"
     },
     {
-      "id": "log_1789052931870_7z9mk",
+      "id": "log_1789055519281_69gqi",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:51.870Z"
+      "createdAt": "2026-09-10T15:51:59.281Z"
     },
     {
-      "id": "log_1789052931870_mw0uu",
+      "id": "log_1789055519281_awfho",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:51.870Z"
+      "createdAt": "2026-09-10T15:51:59.281Z"
     },
     {
-      "id": "log_1789052931870_udy4p",
+      "id": "log_1789055519281_u3wp0",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:51.870Z"
+      "createdAt": "2026-09-10T15:51:59.281Z"
     },
     {
-      "id": "log_1789052931870_rv2hc",
+      "id": "log_1789055519281_ucurd",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:51.870Z"
+      "createdAt": "2026-09-10T15:51:59.281Z"
     },
     {
-      "id": "log_1789052931870_5nbzg",
+      "id": "log_1789055519281_8h3rz",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:51.870Z"
+      "createdAt": "2026-09-10T15:51:59.281Z"
     },
     {
-      "id": "log_1789052929766_bz78i",
+      "id": "log_1789055514282_ggmbx",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @MounirAz: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:49.766Z"
+      "createdAt": "2026-09-10T15:51:54.282Z"
     },
     {
-      "id": "log_1789052929766_9mlse",
+      "id": "log_1789055514281_9bzpf",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @M4rcusS8: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:49.766Z"
+      "createdAt": "2026-09-10T15:51:54.281Z"
     },
     {
-      "id": "log_1789052929766_1uzhz",
+      "id": "log_1789055514281_foonz",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @blachholl: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:49.766Z"
+      "createdAt": "2026-09-10T15:51:54.281Z"
     },
     {
-      "id": "log_1789052929766_i3vuv",
+      "id": "log_1789055514281_qv57q",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:49.766Z"
+      "createdAt": "2026-09-10T15:51:54.281Z"
     },
     {
-      "id": "log_1789052929766_whmba",
+      "id": "log_1789055514281_13wvh",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:49.766Z"
+      "createdAt": "2026-09-10T15:51:54.281Z"
     },
     {
-      "id": "log_1789052929766_dq8um",
+      "id": "log_1789055514281_lbion",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:49.766Z"
+      "createdAt": "2026-09-10T15:51:54.281Z"
     },
     {
-      "id": "log_1789052929766_l2gnu",
+      "id": "log_1789055514281_58au0",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:49.766Z"
+      "createdAt": "2026-09-10T15:51:54.281Z"
     },
     {
-      "id": "log_1789052929766_8bl4e",
+      "id": "log_1789055514281_hl4rc",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:49.766Z"
+      "createdAt": "2026-09-10T15:51:54.281Z"
     },
     {
-      "id": "log_1789052929766_1ie3l",
+      "id": "log_1789055514281_irpfk",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:49.766Z"
+      "createdAt": "2026-09-10T15:51:54.281Z"
     },
     {
-      "id": "log_1789052925844_99b1r",
+      "id": "log_1789055511343_ltkfj",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @MounirAz: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:45.844Z"
+      "createdAt": "2026-09-10T15:51:51.343Z"
     },
     {
-      "id": "log_1789052925844_sxy6x",
+      "id": "log_1789055511343_awu5o",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @M4rcusS8: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:45.844Z"
+      "createdAt": "2026-09-10T15:51:51.343Z"
     },
     {
-      "id": "log_1789052925843_bacr6",
+      "id": "log_1789055511343_x78to",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @blachholl: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:45.843Z"
+      "createdAt": "2026-09-10T15:51:51.343Z"
     },
     {
-      "id": "log_1789052925843_wau8g",
+      "id": "log_1789055511343_y1ezj",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:45.843Z"
+      "createdAt": "2026-09-10T15:51:51.343Z"
     },
     {
-      "id": "log_1789052925843_9jihm",
+      "id": "log_1789055511343_tu2a7",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:45.843Z"
+      "createdAt": "2026-09-10T15:51:51.343Z"
     },
     {
-      "id": "log_1789052925843_633k0",
+      "id": "log_1789055511343_qpwvb",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:45.843Z"
+      "createdAt": "2026-09-10T15:51:51.343Z"
     },
     {
-      "id": "log_1789052925843_3zgw9",
+      "id": "log_1789055511343_aqgwu",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:45.843Z"
+      "createdAt": "2026-09-10T15:51:51.343Z"
     },
     {
-      "id": "log_1789052925843_j3i34",
+      "id": "log_1789055511343_mwt17",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:45.843Z"
+      "createdAt": "2026-09-10T15:51:51.343Z"
     },
     {
-      "id": "log_1789052925843_cdx3u",
+      "id": "log_1789055511343_afjwb",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:45.843Z"
+      "createdAt": "2026-09-10T15:51:51.343Z"
     },
     {
-      "id": "log_1789052922850_0vwnv",
+      "id": "log_1789055508494_6k6n2",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @MounirAz: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:42.850Z"
+      "createdAt": "2026-09-10T15:51:48.494Z"
     },
     {
-      "id": "log_1789052922850_eo858",
+      "id": "log_1789055508493_mjtxg",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @M4rcusS8: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:42.850Z"
+      "createdAt": "2026-09-10T15:51:48.493Z"
     },
     {
-      "id": "log_1789052922850_c7z35",
+      "id": "log_1789055508493_q1o1y",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @blachholl: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:42.850Z"
+      "createdAt": "2026-09-10T15:51:48.493Z"
     },
     {
-      "id": "log_1789052922850_q0393",
+      "id": "log_1789055508493_x7tzn",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:42.850Z"
+      "createdAt": "2026-09-10T15:51:48.493Z"
     },
     {
-      "id": "log_1789052922850_sbxeg",
+      "id": "log_1789055508493_gmz1j",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:42.850Z"
+      "createdAt": "2026-09-10T15:51:48.493Z"
     },
     {
-      "id": "log_1789052922850_krgxo",
+      "id": "log_1789055508493_oiqse",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:42.850Z"
+      "createdAt": "2026-09-10T15:51:48.493Z"
     },
     {
-      "id": "log_1789052922850_ctih0",
+      "id": "log_1789055508493_ul35h",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:42.850Z"
+      "createdAt": "2026-09-10T15:51:48.493Z"
     },
     {
-      "id": "log_1789052922850_kwr5y",
+      "id": "log_1789055508493_486qv",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:42.850Z"
+      "createdAt": "2026-09-10T15:51:48.493Z"
     },
     {
-      "id": "log_1789052922850_7kypq",
+      "id": "log_1789055508493_ru083",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:42.850Z"
+      "createdAt": "2026-09-10T15:51:48.493Z"
     },
     {
-      "id": "log_1789052919841_k8573",
+      "id": "log_1789055506358_tf8ig",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @MounirAz: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:39.841Z"
+      "createdAt": "2026-09-10T15:51:46.358Z"
     },
     {
-      "id": "log_1789052919841_05dae",
+      "id": "log_1789055506358_7hecu",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @M4rcusS8: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:39.841Z"
+      "createdAt": "2026-09-10T15:51:46.358Z"
     },
     {
-      "id": "log_1789052919841_akspf",
+      "id": "log_1789055506358_aydai",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @blachholl: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:39.841Z"
+      "createdAt": "2026-09-10T15:51:46.358Z"
     },
     {
-      "id": "log_1789052919841_jnvhq",
+      "id": "log_1789055506358_9mie0",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:39.841Z"
+      "createdAt": "2026-09-10T15:51:46.358Z"
     },
     {
-      "id": "log_1789052919841_uj01d",
+      "id": "log_1789055506358_9pufw",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:39.841Z"
+      "createdAt": "2026-09-10T15:51:46.358Z"
     },
     {
-      "id": "log_1789052919841_97b5b",
+      "id": "log_1789055506358_jekk6",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:39.841Z"
+      "createdAt": "2026-09-10T15:51:46.358Z"
     },
     {
-      "id": "log_1789052919841_7cnhi",
+      "id": "log_1789055506358_f5uy6",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:39.841Z"
+      "createdAt": "2026-09-10T15:51:46.358Z"
     },
     {
-      "id": "log_1789052919841_96tuu",
+      "id": "log_1789055506358_q8sa6",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:39.841Z"
+      "createdAt": "2026-09-10T15:51:46.358Z"
     },
     {
-      "id": "log_1789052919841_5c752",
+      "id": "log_1789055506358_p6f8d",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:39.841Z"
+      "createdAt": "2026-09-10T15:51:46.358Z"
     },
     {
-      "id": "log_1789052917714_7uysq",
+      "id": "log_1789055502679_spic1",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @MounirAz: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:37.714Z"
+      "createdAt": "2026-09-10T15:51:42.679Z"
     },
     {
-      "id": "log_1789052917714_p3ks3",
+      "id": "log_1789055502679_eu0rc",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @M4rcusS8: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:37.714Z"
+      "createdAt": "2026-09-10T15:51:42.679Z"
     },
     {
-      "id": "log_1789052917714_3drs5",
+      "id": "log_1789055502679_2n4rk",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @blachholl: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:37.714Z"
+      "createdAt": "2026-09-10T15:51:42.679Z"
     },
     {
-      "id": "log_1789052917714_7t6pi",
+      "id": "log_1789055502679_py8h2",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:37.714Z"
+      "createdAt": "2026-09-10T15:51:42.679Z"
     },
     {
-      "id": "log_1789052917714_xmc5y",
+      "id": "log_1789055502679_8bwil",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:37.714Z"
+      "createdAt": "2026-09-10T15:51:42.679Z"
     },
     {
-      "id": "log_1789052917714_oje3z",
+      "id": "log_1789055502679_thra2",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:37.714Z"
+      "createdAt": "2026-09-10T15:51:42.679Z"
     },
     {
-      "id": "log_1789052917714_ke4cj",
+      "id": "log_1789055502679_sknx9",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:37.714Z"
+      "createdAt": "2026-09-10T15:51:42.679Z"
     },
     {
-      "id": "log_1789052917714_qt5lk",
+      "id": "log_1789055502678_ccki2",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:37.714Z"
+      "createdAt": "2026-09-10T15:51:42.678Z"
     },
     {
-      "id": "log_1789052917714_gmbht",
+      "id": "log_1789055502678_qusts",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:37.714Z"
+      "createdAt": "2026-09-10T15:51:42.678Z"
     },
     {
-      "id": "log_1789052913853_2m5fx",
+      "id": "log_1789055499152_y4m7f",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @MounirAz: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:33.853Z"
+      "createdAt": "2026-09-10T15:51:39.152Z"
     },
     {
-      "id": "log_1789052913853_52exi",
+      "id": "log_1789055499152_q3we8",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @M4rcusS8: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:33.853Z"
+      "createdAt": "2026-09-10T15:51:39.152Z"
     },
     {
-      "id": "log_1789052913853_ph31u",
+      "id": "log_1789055499152_uilhz",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @blachholl: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:33.853Z"
+      "createdAt": "2026-09-10T15:51:39.152Z"
     },
     {
-      "id": "log_1789052913853_z2csd",
+      "id": "log_1789055499152_ow26m",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:33.853Z"
+      "createdAt": "2026-09-10T15:51:39.152Z"
     },
     {
-      "id": "log_1789052913853_sojzm",
+      "id": "log_1789055499152_sxd3g",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:33.853Z"
+      "createdAt": "2026-09-10T15:51:39.152Z"
     },
     {
-      "id": "log_1789052913853_z69p5",
+      "id": "log_1789055499152_excxn",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:33.853Z"
+      "createdAt": "2026-09-10T15:51:39.152Z"
     },
     {
-      "id": "log_1789052913853_n5q1k",
+      "id": "log_1789055499152_xp4xi",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:33.853Z"
+      "createdAt": "2026-09-10T15:51:39.152Z"
     },
     {
-      "id": "log_1789052913853_b6rx2",
+      "id": "log_1789055499152_f3mvz",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:33.853Z"
+      "createdAt": "2026-09-10T15:51:39.152Z"
     },
     {
-      "id": "log_1789052913853_lqpyg",
+      "id": "log_1789055499152_o3s8y",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:33.853Z"
+      "createdAt": "2026-09-10T15:51:39.152Z"
     },
     {
-      "id": "log_1789052910841_cm5i8",
+      "id": "log_1789055497645_h7m99",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @MounirAz: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:30.841Z"
+      "createdAt": "2026-09-10T15:51:37.645Z"
     },
     {
-      "id": "log_1789052910841_eijsd",
+      "id": "log_1789055497645_od0da",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @M4rcusS8: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:30.841Z"
+      "createdAt": "2026-09-10T15:51:37.645Z"
     },
     {
-      "id": "log_1789052910841_rhe9l",
+      "id": "log_1789055497645_fhfcw",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @blachholl: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:30.841Z"
+      "createdAt": "2026-09-10T15:51:37.645Z"
     },
     {
-      "id": "log_1789052910841_3xfob",
+      "id": "log_1789055497645_0q4q9",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:30.841Z"
+      "createdAt": "2026-09-10T15:51:37.645Z"
     },
     {
-      "id": "log_1789052910841_1ks1x",
+      "id": "log_1789055497645_3lty5",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:30.841Z"
+      "createdAt": "2026-09-10T15:51:37.645Z"
     },
     {
-      "id": "log_1789052910841_zfw65",
+      "id": "log_1789055497645_c6dzq",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:30.841Z"
+      "createdAt": "2026-09-10T15:51:37.645Z"
     },
     {
-      "id": "log_1789052910840_d43m0",
+      "id": "log_1789055497645_lzi1b",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:30.840Z"
+      "createdAt": "2026-09-10T15:51:37.645Z"
     },
     {
-      "id": "log_1789052910840_32vrb",
+      "id": "log_1789055497645_d5t3y",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:30.840Z"
+      "createdAt": "2026-09-10T15:51:37.645Z"
     },
     {
-      "id": "log_1789052910840_zheq6",
+      "id": "log_1789055497645_1fb36",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:30.840Z"
+      "createdAt": "2026-09-10T15:51:37.645Z"
     },
     {
-      "id": "log_1789052907837_npu27",
+      "id": "log_1789055493957_pp988",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @MounirAz: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:27.837Z"
+      "createdAt": "2026-09-10T15:51:33.957Z"
     },
     {
-      "id": "log_1789052907837_wzmuc",
+      "id": "log_1789055493957_cdnvj",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @M4rcusS8: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:27.837Z"
+      "createdAt": "2026-09-10T15:51:33.957Z"
     },
     {
-      "id": "log_1789052907837_vfa6z",
+      "id": "log_1789055493957_69w7x",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @blachholl: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:27.837Z"
+      "createdAt": "2026-09-10T15:51:33.957Z"
     },
     {
-      "id": "log_1789052907836_ldt9h",
+      "id": "log_1789055493957_w7x6x",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:27.836Z"
+      "createdAt": "2026-09-10T15:51:33.957Z"
     },
     {
-      "id": "log_1789052907836_k4dzg",
+      "id": "log_1789055493957_blq66",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:27.836Z"
+      "createdAt": "2026-09-10T15:51:33.957Z"
     },
     {
-      "id": "log_1789052907836_1ln9h",
+      "id": "log_1789055493957_yb5fw",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:27.836Z"
+      "createdAt": "2026-09-10T15:51:33.957Z"
     },
     {
-      "id": "log_1789052907836_k4hc4",
+      "id": "log_1789055493957_b58q8",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:27.836Z"
+      "createdAt": "2026-09-10T15:51:33.957Z"
     },
     {
-      "id": "log_1789052907836_lgm4p",
+      "id": "log_1789055493957_l4pem",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:27.836Z"
+      "createdAt": "2026-09-10T15:51:33.957Z"
     },
     {
-      "id": "log_1789052907836_jjf6f",
+      "id": "log_1789055493957_giljf",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:27.836Z"
+      "createdAt": "2026-09-10T15:51:33.957Z"
     },
     {
-      "id": "log_1789052905863_b0axy",
+      "id": "log_1789055490026_pj9wp",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @MounirAz: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:25.863Z"
+      "createdAt": "2026-09-10T15:51:30.026Z"
     },
     {
-      "id": "log_1789052905863_ribxh",
+      "id": "log_1789055490026_ps5zo",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @M4rcusS8: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:25.863Z"
+      "createdAt": "2026-09-10T15:51:30.026Z"
     },
     {
-      "id": "log_1789052905863_w5dew",
+      "id": "log_1789055490026_wsrgk",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @blachholl: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:25.863Z"
+      "createdAt": "2026-09-10T15:51:30.026Z"
     },
     {
-      "id": "log_1789052905863_9n9xh",
+      "id": "log_1789055490026_m52my",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:25.863Z"
+      "createdAt": "2026-09-10T15:51:30.026Z"
     },
     {
-      "id": "log_1789052905863_0ytqr",
+      "id": "log_1789055490026_dmic8",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:25.863Z"
+      "createdAt": "2026-09-10T15:51:30.026Z"
     },
     {
-      "id": "log_1789052905863_3v4is",
+      "id": "log_1789055490026_t069e",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:25.863Z"
+      "createdAt": "2026-09-10T15:51:30.026Z"
     },
     {
-      "id": "log_1789052905863_d8ldq",
+      "id": "log_1789055490026_kuq8v",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:25.863Z"
+      "createdAt": "2026-09-10T15:51:30.026Z"
     },
     {
-      "id": "log_1789052905863_fsxax",
+      "id": "log_1789055490026_6jml5",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:25.863Z"
+      "createdAt": "2026-09-10T15:51:30.026Z"
     },
     {
-      "id": "log_1789052905863_arkug",
+      "id": "log_1789055490026_8m7s6",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:25.863Z"
+      "createdAt": "2026-09-10T15:51:30.026Z"
     },
     {
-      "id": "log_1789052901835_mx2jd",
+      "id": "log_1789055487208_jsaa5",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @MounirAz: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:21.835Z"
+      "createdAt": "2026-09-10T15:51:27.208Z"
     },
     {
-      "id": "log_1789052901835_a49do",
+      "id": "log_1789055487208_5x304",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @M4rcusS8: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:21.835Z"
+      "createdAt": "2026-09-10T15:51:27.208Z"
     },
     {
-      "id": "log_1789052901835_b0b1o",
+      "id": "log_1789055487208_bw17q",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @blachholl: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:21.835Z"
+      "createdAt": "2026-09-10T15:51:27.208Z"
     },
     {
-      "id": "log_1789052901835_59q3z",
+      "id": "log_1789055487208_6446m",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:21.835Z"
+      "createdAt": "2026-09-10T15:51:27.208Z"
     },
     {
-      "id": "log_1789052901835_jsvs5",
+      "id": "log_1789055487208_48l3y",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:21.835Z"
+      "createdAt": "2026-09-10T15:51:27.208Z"
     },
     {
-      "id": "log_1789052901835_vxqj2",
+      "id": "log_1789055487208_5yoo6",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:21.835Z"
+      "createdAt": "2026-09-10T15:51:27.208Z"
     },
     {
-      "id": "log_1789052901835_w4ux6",
+      "id": "log_1789055487208_aefc5",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:21.835Z"
+      "createdAt": "2026-09-10T15:51:27.208Z"
     },
     {
-      "id": "log_1789052901834_c6roy",
+      "id": "log_1789055487208_odzez",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:21.834Z"
+      "createdAt": "2026-09-10T15:51:27.208Z"
     },
     {
-      "id": "log_1789052901834_hzqg3",
+      "id": "log_1789055487208_t9blt",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:21.834Z"
+      "createdAt": "2026-09-10T15:51:27.208Z"
     },
     {
-      "id": "log_1789052898839_54lm2",
+      "id": "log_1789055484027_g6t0w",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @MounirAz: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:18.839Z"
+      "createdAt": "2026-09-10T15:51:24.027Z"
     },
     {
-      "id": "log_1789052898839_12olq",
+      "id": "log_1789055484027_3upmy",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @M4rcusS8: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:18.839Z"
+      "createdAt": "2026-09-10T15:51:24.027Z"
     },
     {
-      "id": "log_1789052898839_3roio",
+      "id": "log_1789055484027_e0vfx",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @blachholl: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:18.839Z"
+      "createdAt": "2026-09-10T15:51:24.027Z"
     },
     {
-      "id": "log_1789052898839_x4f87",
+      "id": "log_1789055484027_inh2w",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:18.839Z"
+      "createdAt": "2026-09-10T15:51:24.027Z"
     },
     {
-      "id": "log_1789052898839_8k1yd",
+      "id": "log_1789055484027_c9rza",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:18.839Z"
+      "createdAt": "2026-09-10T15:51:24.027Z"
     },
     {
-      "id": "log_1789052898839_tc9zs",
+      "id": "log_1789055484026_8uvmn",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:18.839Z"
+      "createdAt": "2026-09-10T15:51:24.026Z"
     },
     {
-      "id": "log_1789052898839_l6xjp",
+      "id": "log_1789055484026_sjg8g",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:18.839Z"
+      "createdAt": "2026-09-10T15:51:24.026Z"
     },
     {
-      "id": "log_1789052898839_p1969",
+      "id": "log_1789055484026_abwne",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:18.839Z"
+      "createdAt": "2026-09-10T15:51:24.026Z"
     },
     {
-      "id": "log_1789052898839_ppp9o",
+      "id": "log_1789055484026_gw7oq",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:18.839Z"
+      "createdAt": "2026-09-10T15:51:24.026Z"
     },
     {
-      "id": "log_1789052895839_ccq2z",
+      "id": "log_1789055481423_tsa9i",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @MounirAz: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:15.839Z"
+      "createdAt": "2026-09-10T15:51:21.423Z"
     },
     {
-      "id": "log_1789052895839_5q57x",
+      "id": "log_1789055481423_tr84g",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @M4rcusS8: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:15.839Z"
+      "createdAt": "2026-09-10T15:51:21.423Z"
     },
     {
-      "id": "log_1789052895839_yvuee",
+      "id": "log_1789055481423_n4008",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @blachholl: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:15.839Z"
+      "createdAt": "2026-09-10T15:51:21.423Z"
     },
     {
-      "id": "log_1789052895839_vbnyq",
+      "id": "log_1789055481423_cc8bq",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:15.839Z"
+      "createdAt": "2026-09-10T15:51:21.423Z"
     },
     {
-      "id": "log_1789052895838_mytu6",
+      "id": "log_1789055481422_if9qt",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:15.838Z"
+      "createdAt": "2026-09-10T15:51:21.422Z"
     },
     {
-      "id": "log_1789052895833_k2qj4",
+      "id": "log_1789055481422_8egyg",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:15.833Z"
+      "createdAt": "2026-09-10T15:51:21.422Z"
     },
     {
-      "id": "log_1789052895833_vh1vk",
+      "id": "log_1789055481422_r543y",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:15.833Z"
+      "createdAt": "2026-09-10T15:51:21.422Z"
     },
     {
-      "id": "log_1789052895833_4rf21",
+      "id": "log_1789055481422_ec4uy",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:15.833Z"
+      "createdAt": "2026-09-10T15:51:21.422Z"
     },
     {
-      "id": "log_1789052895832_ai37l",
+      "id": "log_1789055481422_s8t2x",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:15.832Z"
+      "createdAt": "2026-09-10T15:51:21.422Z"
     },
     {
-      "id": "log_1789052892854_15q5m",
+      "id": "log_1789055478270_7q2g1",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @MounirAz: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:12.854Z"
+      "createdAt": "2026-09-10T15:51:18.270Z"
     },
     {
-      "id": "log_1789052892854_w8xik",
+      "id": "log_1789055478270_svxh4",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @M4rcusS8: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:12.854Z"
+      "createdAt": "2026-09-10T15:51:18.270Z"
     },
     {
-      "id": "log_1789052892854_rdtyk",
+      "id": "log_1789055478270_5dfi6",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @blachholl: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:12.854Z"
+      "createdAt": "2026-09-10T15:51:18.270Z"
     },
     {
-      "id": "log_1789052892854_6pull",
+      "id": "log_1789055478270_zsecp",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:12.854Z"
+      "createdAt": "2026-09-10T15:51:18.270Z"
     },
     {
-      "id": "log_1789052892854_539ag",
+      "id": "log_1789055478270_ynx3d",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:12.854Z"
+      "createdAt": "2026-09-10T15:51:18.270Z"
     },
     {
-      "id": "log_1789052892854_hxczx",
+      "id": "log_1789055478270_3xgz5",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:12.854Z"
+      "createdAt": "2026-09-10T15:51:18.270Z"
     },
     {
-      "id": "log_1789052892854_qivia",
+      "id": "log_1789055478270_pgp2h",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:12.854Z"
+      "createdAt": "2026-09-10T15:51:18.270Z"
     },
     {
-      "id": "log_1789052892854_5i1wu",
+      "id": "log_1789055478269_2bdse",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:12.854Z"
+      "createdAt": "2026-09-10T15:51:18.269Z"
     },
     {
-      "id": "log_1789052892854_82ytj",
+      "id": "log_1789055478269_76kjo",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:12.854Z"
+      "createdAt": "2026-09-10T15:51:18.269Z"
     },
     {
-      "id": "log_1789052889834_nx2kv",
+      "id": "log_1789055475297_nv3rw",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @MounirAz: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:09.834Z"
+      "createdAt": "2026-09-10T15:51:15.297Z"
     },
     {
-      "id": "log_1789052889834_n1j6a",
+      "id": "log_1789055475297_0wmsx",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @M4rcusS8: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:09.834Z"
+      "createdAt": "2026-09-10T15:51:15.297Z"
     },
     {
-      "id": "log_1789052889834_66mo1",
+      "id": "log_1789055475297_17s95",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @blachholl: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:09.834Z"
+      "createdAt": "2026-09-10T15:51:15.297Z"
     },
     {
-      "id": "log_1789052889834_adto8",
+      "id": "log_1789055475297_7yswf",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:09.834Z"
+      "createdAt": "2026-09-10T15:51:15.297Z"
     },
     {
-      "id": "log_1789052889834_f6e0s",
+      "id": "log_1789055475297_itto8",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:09.834Z"
+      "createdAt": "2026-09-10T15:51:15.297Z"
     },
     {
-      "id": "log_1789052889834_6yjye",
+      "id": "log_1789055475297_b057h",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:09.834Z"
+      "createdAt": "2026-09-10T15:51:15.297Z"
     },
     {
-      "id": "log_1789052889834_t31m5",
+      "id": "log_1789055475297_wngog",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:09.834Z"
+      "createdAt": "2026-09-10T15:51:15.297Z"
     },
     {
-      "id": "log_1789052889834_7ryce",
+      "id": "log_1789055475297_l4m7r",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:09.834Z"
+      "createdAt": "2026-09-10T15:51:15.297Z"
     },
     {
-      "id": "log_1789052889834_optrs",
+      "id": "log_1789055475297_8a2ky",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:09.834Z"
+      "createdAt": "2026-09-10T15:51:15.297Z"
     },
     {
-      "id": "log_1789052886832_dwe4i",
+      "id": "log_1789055472868_elo71",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @MounirAz: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:06.832Z"
+      "createdAt": "2026-09-10T15:51:12.868Z"
     },
     {
-      "id": "log_1789052886832_b2uqm",
+      "id": "log_1789055472868_0qotj",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @M4rcusS8: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:06.832Z"
+      "createdAt": "2026-09-10T15:51:12.868Z"
     },
     {
-      "id": "log_1789052886832_a8o3q",
+      "id": "log_1789055472868_cyyu3",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @blachholl: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:06.832Z"
+      "createdAt": "2026-09-10T15:51:12.868Z"
     },
     {
-      "id": "log_1789052886832_1uky3",
+      "id": "log_1789055472868_xslm3",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:06.832Z"
+      "createdAt": "2026-09-10T15:51:12.868Z"
     },
     {
-      "id": "log_1789052886832_gihcj",
+      "id": "log_1789055472867_51283",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:06.832Z"
+      "createdAt": "2026-09-10T15:51:12.867Z"
     },
     {
-      "id": "log_1789052886832_npkhk",
+      "id": "log_1789055472867_112gg",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:06.832Z"
+      "createdAt": "2026-09-10T15:51:12.867Z"
     },
     {
-      "id": "log_1789052886831_05mpp",
+      "id": "log_1789055472867_8rmeb",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:06.831Z"
+      "createdAt": "2026-09-10T15:51:12.867Z"
     },
     {
-      "id": "log_1789052886831_yh2dl",
+      "id": "log_1789055472867_cbcwo",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:06.831Z"
+      "createdAt": "2026-09-10T15:51:12.867Z"
     },
     {
-      "id": "log_1789052886831_nm8fq",
+      "id": "log_1789055472867_j8r50",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:06.831Z"
+      "createdAt": "2026-09-10T15:51:12.867Z"
     },
     {
-      "id": "log_1789052884091_mof4c",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @MounirAz: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:04.091Z"
-    },
-    {
-      "id": "log_1789052884090_c9pr2",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @M4rcusS8: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:04.090Z"
-    },
-    {
-      "id": "log_1789052884090_7jlni",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @blachholl: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:04.090Z"
-    },
-    {
-      "id": "log_1789052884090_f8r5a",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:04.090Z"
-    },
-    {
-      "id": "log_1789052884090_4lxb8",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:04.090Z"
-    },
-    {
-      "id": "log_1789052884090_ixn4g",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:04.090Z"
-    },
-    {
-      "id": "log_1789052884090_5slc2",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:04.090Z"
-    },
-    {
-      "id": "log_1789052884090_ye7k6",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:04.090Z"
-    },
-    {
-      "id": "log_1789052884090_3ep7x",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:04.090Z"
-    },
-    {
-      "id": "log_1789052880836_o0jdj",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @MounirAz: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:00.836Z"
-    },
-    {
-      "id": "log_1789052880836_cq735",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @M4rcusS8: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:00.836Z"
-    },
-    {
-      "id": "log_1789052880836_un651",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @blachholl: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:00.836Z"
-    },
-    {
-      "id": "log_1789052880836_hkgt4",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:00.836Z"
-    },
-    {
-      "id": "log_1789052880836_uwzmv",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:00.836Z"
-    },
-    {
-      "id": "log_1789052880836_qxio6",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:00.836Z"
-    },
-    {
-      "id": "log_1789052880836_kre2d",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:00.836Z"
-    },
-    {
-      "id": "log_1789052880836_81zu7",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:00.836Z"
-    },
-    {
-      "id": "log_1789052880836_te829",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:08:00.836Z"
-    },
-    {
-      "id": "log_1789052879780_er07m",
+      "id": "log_1789055471357_rjvm0",
       "level": "success",
       "module": "CHANNEL_SYNC",
-      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26456 followers, 63 subs, 27 real streams.",
-      "createdAt": "2026-09-10T15:07:59.780Z"
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26457 followers, 63 subs, 27 real streams.",
+      "createdAt": "2026-09-10T15:51:11.357Z"
     },
     {
-      "id": "log_1789052877836_mei1v",
+      "id": "log_1789055469263_aavbl",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @MounirAz: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:57.836Z"
+      "createdAt": "2026-09-10T15:51:09.263Z"
     },
     {
-      "id": "log_1789052877836_reymp",
+      "id": "log_1789055469263_7uwht",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @M4rcusS8: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:57.836Z"
+      "createdAt": "2026-09-10T15:51:09.263Z"
     },
     {
-      "id": "log_1789052877836_nnkrz",
+      "id": "log_1789055469263_1ubr2",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @blachholl: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:57.836Z"
+      "createdAt": "2026-09-10T15:51:09.263Z"
     },
     {
-      "id": "log_1789052877836_awzy9",
+      "id": "log_1789055469263_qlhxc",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:57.836Z"
+      "createdAt": "2026-09-10T15:51:09.263Z"
     },
     {
-      "id": "log_1789052877836_3sl46",
+      "id": "log_1789055469263_5nerm",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:57.836Z"
+      "createdAt": "2026-09-10T15:51:09.263Z"
     },
     {
-      "id": "log_1789052877836_9q2z0",
+      "id": "log_1789055469263_8bkux",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:57.836Z"
+      "createdAt": "2026-09-10T15:51:09.263Z"
     },
     {
-      "id": "log_1789052877836_xn470",
+      "id": "log_1789055469263_e7nwd",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:57.836Z"
+      "createdAt": "2026-09-10T15:51:09.263Z"
     },
     {
-      "id": "log_1789052877836_t4k0q",
+      "id": "log_1789055469263_fq8gl",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:57.836Z"
+      "createdAt": "2026-09-10T15:51:09.263Z"
     },
     {
-      "id": "log_1789052877836_dg62d",
+      "id": "log_1789055469263_9i7rx",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:57.836Z"
+      "createdAt": "2026-09-10T15:51:09.263Z"
     },
     {
-      "id": "log_1789052874830_p9w8j",
+      "id": "log_1789055465619_n0h1v",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @MounirAz: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:54.830Z"
+      "createdAt": "2026-09-10T15:51:05.619Z"
     },
     {
-      "id": "log_1789052874830_un5t7",
+      "id": "log_1789055465619_erkz6",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @M4rcusS8: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:54.830Z"
+      "createdAt": "2026-09-10T15:51:05.619Z"
     },
     {
-      "id": "log_1789052874830_z54su",
+      "id": "log_1789055465619_kz1b5",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @blachholl: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:54.830Z"
+      "createdAt": "2026-09-10T15:51:05.619Z"
     },
     {
-      "id": "log_1789052874830_bwt86",
+      "id": "log_1789055465619_9njiq",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:54.830Z"
+      "createdAt": "2026-09-10T15:51:05.619Z"
     },
     {
-      "id": "log_1789052874830_ad3uw",
+      "id": "log_1789055465619_nzyc5",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:54.830Z"
+      "createdAt": "2026-09-10T15:51:05.619Z"
     },
     {
-      "id": "log_1789052874830_y23fo",
+      "id": "log_1789055465619_hmfzl",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:54.830Z"
+      "createdAt": "2026-09-10T15:51:05.619Z"
     },
     {
-      "id": "log_1789052874830_3ewpi",
+      "id": "log_1789055465619_koqtm",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:54.830Z"
+      "createdAt": "2026-09-10T15:51:05.619Z"
     },
     {
-      "id": "log_1789052874830_nodvz",
+      "id": "log_1789055465619_2bliz",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:54.830Z"
+      "createdAt": "2026-09-10T15:51:05.619Z"
     },
     {
-      "id": "log_1789052874830_vjvdr",
+      "id": "log_1789055465619_j6udb",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:54.830Z"
+      "createdAt": "2026-09-10T15:51:05.619Z"
     },
     {
-      "id": "log_1789052872810_fot9w",
+      "id": "log_1789055462629_g5in3",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @MounirAz: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:52.810Z"
+      "createdAt": "2026-09-10T15:51:02.629Z"
     },
     {
-      "id": "log_1789052872810_nmqjb",
+      "id": "log_1789055462629_hbyv0",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @M4rcusS8: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:52.810Z"
+      "createdAt": "2026-09-10T15:51:02.629Z"
     },
     {
-      "id": "log_1789052872810_9jo1z",
+      "id": "log_1789055462629_c9xmu",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @blachholl: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:52.810Z"
+      "createdAt": "2026-09-10T15:51:02.629Z"
     },
     {
-      "id": "log_1789052872810_0hlyv",
+      "id": "log_1789055462629_lsvny",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:52.810Z"
+      "createdAt": "2026-09-10T15:51:02.629Z"
     },
     {
-      "id": "log_1789052872810_h1sd4",
+      "id": "log_1789055462629_l7pfy",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:52.810Z"
+      "createdAt": "2026-09-10T15:51:02.629Z"
     },
     {
-      "id": "log_1789052872810_rykeu",
+      "id": "log_1789055462629_e23bt",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:52.810Z"
+      "createdAt": "2026-09-10T15:51:02.629Z"
     },
     {
-      "id": "log_1789052872810_2rsu9",
+      "id": "log_1789055462629_v4epw",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:52.810Z"
+      "createdAt": "2026-09-10T15:51:02.629Z"
     },
     {
-      "id": "log_1789052872810_d31lt",
+      "id": "log_1789055462628_zeiag",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:52.810Z"
+      "createdAt": "2026-09-10T15:51:02.628Z"
     },
     {
-      "id": "log_1789052872810_ktgvu",
+      "id": "log_1789055462628_s4917",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:52.810Z"
+      "createdAt": "2026-09-10T15:51:02.628Z"
     },
     {
-      "id": "log_1789052868827_ox6o2",
+      "id": "log_1789055459965_c4zhf",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @MounirAz: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:48.827Z"
+      "createdAt": "2026-09-10T15:50:59.965Z"
     },
     {
-      "id": "log_1789052868826_lde2i",
+      "id": "log_1789055459965_ac6w7",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @M4rcusS8: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:48.826Z"
+      "createdAt": "2026-09-10T15:50:59.965Z"
     },
     {
-      "id": "log_1789052868826_81dy6",
+      "id": "log_1789055459965_9jh44",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @blachholl: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:48.826Z"
+      "createdAt": "2026-09-10T15:50:59.965Z"
     },
     {
-      "id": "log_1789052868826_vtvll",
+      "id": "log_1789055459965_wurs2",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:48.826Z"
+      "createdAt": "2026-09-10T15:50:59.965Z"
     },
     {
-      "id": "log_1789052868826_02j92",
+      "id": "log_1789055459965_wdpcn",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:48.826Z"
+      "createdAt": "2026-09-10T15:50:59.965Z"
     },
     {
-      "id": "log_1789052868826_vg7xr",
+      "id": "log_1789055459965_zsaaa",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:48.826Z"
+      "createdAt": "2026-09-10T15:50:59.965Z"
     },
     {
-      "id": "log_1789052868826_8mmzz",
+      "id": "log_1789055459965_ivauq",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:48.826Z"
+      "createdAt": "2026-09-10T15:50:59.965Z"
     },
     {
-      "id": "log_1789052868826_6g7tw",
+      "id": "log_1789055459965_lg65h",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:48.826Z"
+      "createdAt": "2026-09-10T15:50:59.965Z"
     },
     {
-      "id": "log_1789052868826_kuhf0",
+      "id": "log_1789055459964_ypxu6",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:48.826Z"
+      "createdAt": "2026-09-10T15:50:59.965Z"
     },
     {
-      "id": "log_1789052865834_x5f79",
+      "id": "log_1789055457539_i514s",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @MounirAz: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:45.834Z"
+      "createdAt": "2026-09-10T15:50:57.539Z"
     },
     {
-      "id": "log_1789052865834_eh8iw",
+      "id": "log_1789055457539_w0ffz",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @M4rcusS8: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:45.834Z"
+      "createdAt": "2026-09-10T15:50:57.539Z"
     },
     {
-      "id": "log_1789052865834_gax0z",
+      "id": "log_1789055457539_99tso",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @blachholl: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:45.834Z"
+      "createdAt": "2026-09-10T15:50:57.539Z"
     },
     {
-      "id": "log_1789052865834_wv6cs",
+      "id": "log_1789055457539_w9gjq",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:45.834Z"
+      "createdAt": "2026-09-10T15:50:57.539Z"
     },
     {
-      "id": "log_1789052865834_zwsm0",
+      "id": "log_1789055457539_7tz9t",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:45.834Z"
+      "createdAt": "2026-09-10T15:50:57.539Z"
     },
     {
-      "id": "log_1789052865834_lqg31",
+      "id": "log_1789055457539_8ki65",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:45.834Z"
+      "createdAt": "2026-09-10T15:50:57.539Z"
     },
     {
-      "id": "log_1789052865834_wcip8",
+      "id": "log_1789055457539_7681i",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:45.834Z"
+      "createdAt": "2026-09-10T15:50:57.539Z"
     },
     {
-      "id": "log_1789052865834_wrn97",
+      "id": "log_1789055457539_1f48s",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:45.834Z"
+      "createdAt": "2026-09-10T15:50:57.539Z"
     },
     {
-      "id": "log_1789052865834_35nba",
+      "id": "log_1789055457539_e5j0b",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:45.834Z"
+      "createdAt": "2026-09-10T15:50:57.539Z"
     },
     {
-      "id": "log_1789052862826_g114j",
+      "id": "log_1789055455649_1xkvz",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @MounirAz: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:42.826Z"
+      "createdAt": "2026-09-10T15:50:55.649Z"
     },
     {
-      "id": "log_1789052862826_6o0y6",
+      "id": "log_1789055455649_xwg0v",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @M4rcusS8: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:42.826Z"
+      "createdAt": "2026-09-10T15:50:55.649Z"
     },
     {
-      "id": "log_1789052862826_8kskh",
+      "id": "log_1789055455648_kaalu",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @blachholl: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:42.826Z"
+      "createdAt": "2026-09-10T15:50:55.648Z"
     },
     {
-      "id": "log_1789052862826_jiqup",
+      "id": "log_1789055455648_walvd",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:42.826Z"
+      "createdAt": "2026-09-10T15:50:55.648Z"
     },
     {
-      "id": "log_1789052862826_5em5u",
+      "id": "log_1789055455648_s5ow4",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:42.826Z"
+      "createdAt": "2026-09-10T15:50:55.648Z"
     },
     {
-      "id": "log_1789052862826_t8nzz",
+      "id": "log_1789055455648_wfc0h",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:42.826Z"
+      "createdAt": "2026-09-10T15:50:55.648Z"
     },
     {
-      "id": "log_1789052862826_1j1uo",
+      "id": "log_1789055455648_u7xiv",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:42.826Z"
+      "createdAt": "2026-09-10T15:50:55.648Z"
     },
     {
-      "id": "log_1789052862826_jom3n",
+      "id": "log_1789055455648_vlghh",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:42.826Z"
+      "createdAt": "2026-09-10T15:50:55.648Z"
     },
     {
-      "id": "log_1789052862826_kpb7l",
+      "id": "log_1789055455648_30xp1",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:42.826Z"
+      "createdAt": "2026-09-10T15:50:55.648Z"
     },
     {
-      "id": "log_1789052860732_5hm2w",
+      "id": "log_1789055451002_tutg0",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @MounirAz: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:40.732Z"
+      "createdAt": "2026-09-10T15:50:51.002Z"
     },
     {
-      "id": "log_1789052860732_g6hqq",
+      "id": "log_1789055451002_tddbn",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @M4rcusS8: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:40.732Z"
+      "createdAt": "2026-09-10T15:50:51.002Z"
     },
     {
-      "id": "log_1789052860732_hcoyp",
+      "id": "log_1789055451001_nmt0h",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @blachholl: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:40.732Z"
+      "createdAt": "2026-09-10T15:50:51.001Z"
     },
     {
-      "id": "log_1789052860732_huupm",
+      "id": "log_1789055451001_6pcag",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:40.732Z"
+      "createdAt": "2026-09-10T15:50:51.001Z"
     },
     {
-      "id": "log_1789052860732_sgfy8",
+      "id": "log_1789055451001_qrqrb",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:40.732Z"
+      "createdAt": "2026-09-10T15:50:51.001Z"
     },
     {
-      "id": "log_1789052860732_0xpop",
+      "id": "log_1789055451001_t1wa7",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:40.732Z"
+      "createdAt": "2026-09-10T15:50:51.001Z"
     },
     {
-      "id": "log_1789052860732_31e1y",
+      "id": "log_1789055451001_lhgd3",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:40.732Z"
+      "createdAt": "2026-09-10T15:50:51.001Z"
     },
     {
-      "id": "log_1789052860732_09k1s",
+      "id": "log_1789055451001_oottr",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:40.732Z"
+      "createdAt": "2026-09-10T15:50:51.001Z"
     },
     {
-      "id": "log_1789052860732_c37s4",
+      "id": "log_1789055451001_q9hen",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:40.732Z"
+      "createdAt": "2026-09-10T15:50:51.001Z"
     },
     {
-      "id": "log_1789052856824_g9tc6",
+      "id": "log_1789055448156_nvmn0",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @MounirAz: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:36.824Z"
+      "createdAt": "2026-09-10T15:50:48.156Z"
     },
     {
-      "id": "log_1789052856824_ly2q8",
+      "id": "log_1789055448156_79k4v",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @M4rcusS8: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:36.824Z"
+      "createdAt": "2026-09-10T15:50:48.156Z"
     },
     {
-      "id": "log_1789052856824_py41r",
+      "id": "log_1789055448156_rl7y9",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @blachholl: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:36.824Z"
+      "createdAt": "2026-09-10T15:50:48.156Z"
     },
     {
-      "id": "log_1789052856824_z55n0",
+      "id": "log_1789055448156_7d6ps",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:36.824Z"
+      "createdAt": "2026-09-10T15:50:48.156Z"
     },
     {
-      "id": "log_1789052856824_yqauy",
+      "id": "log_1789055448156_t8slc",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:36.824Z"
+      "createdAt": "2026-09-10T15:50:48.156Z"
     },
     {
-      "id": "log_1789052856824_e05xd",
+      "id": "log_1789055448156_4kc15",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:36.824Z"
+      "createdAt": "2026-09-10T15:50:48.156Z"
     },
     {
-      "id": "log_1789052856824_bkt3e",
+      "id": "log_1789055448156_ocbm7",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:36.824Z"
+      "createdAt": "2026-09-10T15:50:48.156Z"
     },
     {
-      "id": "log_1789052856824_4vbwj",
+      "id": "log_1789055448156_8gy0h",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:36.824Z"
+      "createdAt": "2026-09-10T15:50:48.156Z"
     },
     {
-      "id": "log_1789052856824_uftvp",
+      "id": "log_1789055448156_t6kyc",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:36.824Z"
+      "createdAt": "2026-09-10T15:50:48.156Z"
     },
     {
-      "id": "log_1789052853822_srril",
+      "id": "log_1789055445088_chrx8",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @MounirAz: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:33.822Z"
+      "createdAt": "2026-09-10T15:50:45.088Z"
     },
     {
-      "id": "log_1789052853822_mfg82",
+      "id": "log_1789055445088_xvr2x",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @M4rcusS8: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:33.822Z"
+      "createdAt": "2026-09-10T15:50:45.088Z"
     },
     {
-      "id": "log_1789052853822_cbi03",
+      "id": "log_1789055445088_9l9cj",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @blachholl: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:33.822Z"
+      "createdAt": "2026-09-10T15:50:45.088Z"
     },
     {
-      "id": "log_1789052853822_5b12r",
+      "id": "log_1789055445088_c6zx7",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:33.822Z"
+      "createdAt": "2026-09-10T15:50:45.088Z"
     },
     {
-      "id": "log_1789052853822_gzi6n",
+      "id": "log_1789055445088_c10vy",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:33.822Z"
+      "createdAt": "2026-09-10T15:50:45.088Z"
     },
     {
-      "id": "log_1789052853822_sgbii",
+      "id": "log_1789055445088_ieak9",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:33.822Z"
+      "createdAt": "2026-09-10T15:50:45.088Z"
     },
     {
-      "id": "log_1789052853821_d35ds",
+      "id": "log_1789055445088_k2s5r",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:33.821Z"
+      "createdAt": "2026-09-10T15:50:45.088Z"
     },
     {
-      "id": "log_1789052853821_miqdg",
+      "id": "log_1789055445088_axis6",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:33.821Z"
+      "createdAt": "2026-09-10T15:50:45.088Z"
     },
     {
-      "id": "log_1789052853821_i3728",
+      "id": "log_1789055445088_iwz3r",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:33.821Z"
+      "createdAt": "2026-09-10T15:50:45.088Z"
     },
     {
-      "id": "log_1789052850819_t9wka",
+      "id": "log_1789055442087_1n1b7",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @MounirAz: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:30.819Z"
+      "createdAt": "2026-09-10T15:50:42.087Z"
     },
     {
-      "id": "log_1789052850819_mfbud",
+      "id": "log_1789055442087_9hwzo",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @M4rcusS8: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:30.819Z"
+      "createdAt": "2026-09-10T15:50:42.087Z"
     },
     {
-      "id": "log_1789052850819_j48tn",
+      "id": "log_1789055442087_wwe5x",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @blachholl: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:30.819Z"
+      "createdAt": "2026-09-10T15:50:42.087Z"
     },
     {
-      "id": "log_1789052850819_9hvhf",
+      "id": "log_1789055442087_rkvjl",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:30.819Z"
+      "createdAt": "2026-09-10T15:50:42.087Z"
     },
     {
-      "id": "log_1789052850819_umwm8",
+      "id": "log_1789055442087_huci3",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:30.819Z"
+      "createdAt": "2026-09-10T15:50:42.087Z"
     },
     {
-      "id": "log_1789052850819_3g92p",
+      "id": "log_1789055442086_t5cfb",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:30.819Z"
+      "createdAt": "2026-09-10T15:50:42.086Z"
     },
     {
-      "id": "log_1789052850819_ot9wg",
+      "id": "log_1789055442086_do5sk",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:30.819Z"
+      "createdAt": "2026-09-10T15:50:42.086Z"
     },
     {
-      "id": "log_1789052850819_s11nu",
+      "id": "log_1789055442086_w9d97",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:30.819Z"
+      "createdAt": "2026-09-10T15:50:42.086Z"
     },
     {
-      "id": "log_1789052850819_rzqnv",
+      "id": "log_1789055442086_coa0v",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:30.819Z"
+      "createdAt": "2026-09-10T15:50:42.086Z"
     },
     {
-      "id": "log_1789052848735_fc43g",
+      "id": "log_1789055441844_9k06v",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @MounirAz: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:28.735Z"
+      "createdAt": "2026-09-10T15:50:41.844Z"
     },
     {
-      "id": "log_1789052848735_j5419",
+      "id": "log_1789055441844_ibdrv",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @M4rcusS8: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:28.735Z"
+      "createdAt": "2026-09-10T15:50:41.844Z"
     },
     {
-      "id": "log_1789052848735_vx61l",
+      "id": "log_1789055441844_uzrh3",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @blachholl: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:28.735Z"
+      "createdAt": "2026-09-10T15:50:41.844Z"
     },
     {
-      "id": "log_1789052848735_muzng",
+      "id": "log_1789055441844_h8p3k",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:28.735Z"
+      "createdAt": "2026-09-10T15:50:41.844Z"
     },
     {
-      "id": "log_1789052848735_bg4m3",
+      "id": "log_1789055441844_40q1n",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:28.735Z"
+      "createdAt": "2026-09-10T15:50:41.844Z"
     },
     {
-      "id": "log_1789052848735_nxb7h",
+      "id": "log_1789055441844_0g2d7",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:28.735Z"
+      "createdAt": "2026-09-10T15:50:41.844Z"
     },
     {
-      "id": "log_1789052848735_keipl",
+      "id": "log_1789055441844_jztb2",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:28.735Z"
+      "createdAt": "2026-09-10T15:50:41.844Z"
     },
     {
-      "id": "log_1789052848734_dn7jw",
+      "id": "log_1789055441844_0i5xm",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:28.734Z"
+      "createdAt": "2026-09-10T15:50:41.844Z"
     },
     {
-      "id": "log_1789052848734_bfhjz",
+      "id": "log_1789055441844_09fmb",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:28.734Z"
+      "createdAt": "2026-09-10T15:50:41.844Z"
     },
     {
-      "id": "log_1789052844824_boy3z",
+      "id": "log_1789055439981_flmow",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @MounirAz: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:24.824Z"
+      "createdAt": "2026-09-10T15:50:39.981Z"
     },
     {
-      "id": "log_1789052844824_ifrj1",
+      "id": "log_1789055439981_vaj6s",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @M4rcusS8: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:24.824Z"
+      "createdAt": "2026-09-10T15:50:39.981Z"
     },
     {
-      "id": "log_1789052844824_i33h7",
+      "id": "log_1789055439981_gxfrd",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @blachholl: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:24.824Z"
+      "createdAt": "2026-09-10T15:50:39.981Z"
     },
     {
-      "id": "log_1789052844824_zgk5b",
+      "id": "log_1789055439981_vgj27",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:24.824Z"
+      "createdAt": "2026-09-10T15:50:39.981Z"
     },
     {
-      "id": "log_1789052844824_4wa3u",
+      "id": "log_1789055439981_3k22a",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:24.824Z"
+      "createdAt": "2026-09-10T15:50:39.981Z"
     },
     {
-      "id": "log_1789052844824_f4s7t",
+      "id": "log_1789055439981_hpddd",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:24.824Z"
+      "createdAt": "2026-09-10T15:50:39.981Z"
     },
     {
-      "id": "log_1789052844824_n6x6m",
+      "id": "log_1789055439981_3psuk",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:24.824Z"
+      "createdAt": "2026-09-10T15:50:39.981Z"
     },
     {
-      "id": "log_1789052844824_n6bv8",
+      "id": "log_1789055439981_wcic8",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:24.824Z"
+      "createdAt": "2026-09-10T15:50:39.981Z"
     },
     {
-      "id": "log_1789052844824_z0ofu",
+      "id": "log_1789055439981_0oyfc",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:24.824Z"
+      "createdAt": "2026-09-10T15:50:39.981Z"
     },
     {
-      "id": "log_1789052841820_8j993",
+      "id": "log_1789055433655_mmvv7",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @MounirAz: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:21.820Z"
+      "createdAt": "2026-09-10T15:50:33.655Z"
     },
     {
-      "id": "log_1789052841820_od9tg",
+      "id": "log_1789055433655_rutom",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @M4rcusS8: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:21.820Z"
+      "createdAt": "2026-09-10T15:50:33.655Z"
     },
     {
-      "id": "log_1789052841820_3aenl",
+      "id": "log_1789055433655_8pekk",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @blachholl: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:21.820Z"
+      "createdAt": "2026-09-10T15:50:33.655Z"
     },
     {
-      "id": "log_1789052841820_4mjgt",
+      "id": "log_1789055433655_58udn",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:21.820Z"
+      "createdAt": "2026-09-10T15:50:33.655Z"
     },
     {
-      "id": "log_1789052841820_q6918",
+      "id": "log_1789055433655_as5oo",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:21.820Z"
+      "createdAt": "2026-09-10T15:50:33.655Z"
     },
     {
-      "id": "log_1789052841820_hkuc9",
+      "id": "log_1789055433655_ajcq2",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:21.820Z"
+      "createdAt": "2026-09-10T15:50:33.655Z"
     },
     {
-      "id": "log_1789052841820_bcehv",
+      "id": "log_1789055433655_glgvd",
       "level": "info",
       "module": "CHAT_TRACKER",
       "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-10T15:07:21.820Z"
+      "createdAt": "2026-09-10T15:50:33.655Z"
+    },
+    {
+      "id": "log_1789055433655_z7isk",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
+      "createdAt": "2026-09-10T15:50:33.655Z"
+    },
+    {
+      "id": "log_1789055433655_kqjc9",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
+      "createdAt": "2026-09-10T15:50:33.655Z"
+    },
+    {
+      "id": "log_1789055430132_m3ur4",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @MounirAz: \"[emote:37226:KEKW]\" (+1 pt)",
+      "createdAt": "2026-09-10T15:50:30.132Z"
+    },
+    {
+      "id": "log_1789055430131_6fte7",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @M4rcusS8: \"[emote:37226:KEKW]\" (+1 pt)",
+      "createdAt": "2026-09-10T15:50:30.131Z"
+    },
+    {
+      "id": "log_1789055430131_9frnd",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @blachholl: \"[emote:37226:KEKW]\" (+1 pt)",
+      "createdAt": "2026-09-10T15:50:30.131Z"
+    },
+    {
+      "id": "log_1789055430131_t9yn2",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
+      "createdAt": "2026-09-10T15:50:30.131Z"
+    },
+    {
+      "id": "log_1789055430131_197vw",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
+      "createdAt": "2026-09-10T15:50:30.131Z"
+    },
+    {
+      "id": "log_1789055430131_ioc32",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
+      "createdAt": "2026-09-10T15:50:30.131Z"
+    },
+    {
+      "id": "log_1789055430131_haxmo",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
+      "createdAt": "2026-09-10T15:50:30.131Z"
+    },
+    {
+      "id": "log_1789055430131_hs1qa",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
+      "createdAt": "2026-09-10T15:50:30.131Z"
+    },
+    {
+      "id": "log_1789055430131_k05em",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
+      "createdAt": "2026-09-10T15:50:30.131Z"
+    },
+    {
+      "id": "log_1789055427158_fcy34",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @MounirAz: \"[emote:37226:KEKW]\" (+1 pt)",
+      "createdAt": "2026-09-10T15:50:27.158Z"
+    },
+    {
+      "id": "log_1789055427158_6uuta",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @M4rcusS8: \"[emote:37226:KEKW]\" (+1 pt)",
+      "createdAt": "2026-09-10T15:50:27.158Z"
+    },
+    {
+      "id": "log_1789055427158_03dz9",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @blachholl: \"[emote:37226:KEKW]\" (+1 pt)",
+      "createdAt": "2026-09-10T15:50:27.158Z"
+    },
+    {
+      "id": "log_1789055427158_ea2mc",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
+      "createdAt": "2026-09-10T15:50:27.158Z"
+    },
+    {
+      "id": "log_1789055427158_vsi9y",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
+      "createdAt": "2026-09-10T15:50:27.158Z"
+    },
+    {
+      "id": "log_1789055427158_2dqfn",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
+      "createdAt": "2026-09-10T15:50:27.158Z"
+    },
+    {
+      "id": "log_1789055427158_yjxqk",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
+      "createdAt": "2026-09-10T15:50:27.158Z"
+    },
+    {
+      "id": "log_1789055427158_awo58",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
+      "createdAt": "2026-09-10T15:50:27.158Z"
+    },
+    {
+      "id": "log_1789055427158_v23uy",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
+      "createdAt": "2026-09-10T15:50:27.158Z"
+    },
+    {
+      "id": "log_1789055424465_uopii",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @MounirAz: \"[emote:37226:KEKW]\" (+1 pt)",
+      "createdAt": "2026-09-10T15:50:24.465Z"
+    },
+    {
+      "id": "log_1789055424465_13ium",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @M4rcusS8: \"[emote:37226:KEKW]\" (+1 pt)",
+      "createdAt": "2026-09-10T15:50:24.465Z"
+    },
+    {
+      "id": "log_1789055424465_aen4e",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @blachholl: \"[emote:37226:KEKW]\" (+1 pt)",
+      "createdAt": "2026-09-10T15:50:24.465Z"
+    },
+    {
+      "id": "log_1789055424465_1ycps",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
+      "createdAt": "2026-09-10T15:50:24.465Z"
+    },
+    {
+      "id": "log_1789055424465_pbbb8",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
+      "createdAt": "2026-09-10T15:50:24.465Z"
+    },
+    {
+      "id": "log_1789055424465_etu10",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
+      "createdAt": "2026-09-10T15:50:24.465Z"
+    },
+    {
+      "id": "log_1789055424465_duw4c",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @PSK_TAOUFIK: \"[emote:37226:KEKW]\" (+1 pt)",
+      "createdAt": "2026-09-10T15:50:24.465Z"
+    },
+    {
+      "id": "log_1789055424465_v1tbs",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
+      "createdAt": "2026-09-10T15:50:24.465Z"
+    },
+    {
+      "id": "log_1789055424465_07bfi",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @Ibrahim1q: \"[emote:37226:KEKW]\" (+1 pt)",
+      "createdAt": "2026-09-10T15:50:24.465Z"
+    },
+    {
+      "id": "log_1789055423872_w1nm5",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @MounirAz: \"[emote:37226:KEKW]\" (+1 pt)",
+      "createdAt": "2026-09-10T15:50:23.872Z"
+    },
+    {
+      "id": "log_1789055423872_wbek3",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @M4rcusS8: \"[emote:37226:KEKW]\" (+1 pt)",
+      "createdAt": "2026-09-10T15:50:23.872Z"
     }
   ],
   "subscriptionEvents": [
@@ -7147,90 +7187,5 @@
     }
   ],
   "adminKickUserId": "16282003",
-  "miniGameScores": [
-    {
-      "id": "mgs_seed_01",
-      "gameId": "lockpicking",
-      "userId": "240182",
-      "username": "ApexLegend99",
-      "avatarUrl": "https://files.kick.com/images/default_avatars/avatar_3.png",
-      "score": 950,
-      "timeSeconds": 6.4,
-      "difficulty": "hard",
-      "success": true,
-      "createdAt": "2026-09-10T11:10:56.144Z"
-    },
-    {
-      "id": "mgs_seed_02",
-      "gameId": "hacking",
-      "userId": "238190",
-      "username": "CasperX_Fan",
-      "avatarUrl": "https://files.kick.com/images/default_avatars/avatar_1.png",
-      "score": 890,
-      "timeSeconds": 8.1,
-      "difficulty": "hard",
-      "success": true,
-      "createdAt": "2026-09-10T08:10:56.144Z"
-    },
-    {
-      "id": "mgs_seed_03",
-      "gameId": "wires",
-      "userId": "239102",
-      "username": "MoroccanSniper",
-      "avatarUrl": "https://files.kick.com/images/default_avatars/avatar_2.png",
-      "score": 920,
-      "timeSeconds": 7.2,
-      "difficulty": "medium",
-      "success": true,
-      "createdAt": "2026-09-10T03:10:56.144Z"
-    },
-    {
-      "id": "mgs_seed_04",
-      "gameId": "safecracking",
-      "userId": "242901",
-      "username": "GodAim_Jr",
-      "avatarUrl": "https://files.kick.com/images/default_avatars/avatar_5.png",
-      "score": 880,
-      "timeSeconds": 11.5,
-      "difficulty": "hard",
-      "success": true,
-      "createdAt": "2026-09-09T21:10:56.144Z"
-    },
-    {
-      "id": "mgs_seed_05",
-      "gameId": "keypad",
-      "userId": "243881",
-      "username": "Casawi_Gamer",
-      "avatarUrl": "https://files.kick.com/images/default_avatars/avatar_6.png",
-      "score": 960,
-      "timeSeconds": 4.8,
-      "difficulty": "medium",
-      "success": true,
-      "createdAt": "2026-09-09T15:10:56.144Z"
-    },
-    {
-      "id": "mgs_seed_06",
-      "gameId": "memory",
-      "userId": "244190",
-      "username": "Tanger_Warrior",
-      "avatarUrl": "https://files.kick.com/images/default_avatars/avatar_7.png",
-      "score": 910,
-      "timeSeconds": 8.9,
-      "difficulty": "hard",
-      "success": true,
-      "createdAt": "2026-09-09T09:10:56.144Z"
-    },
-    {
-      "id": "mgs_seed_07",
-      "gameId": "signal",
-      "userId": "245812",
-      "username": "Yassine_Pro",
-      "avatarUrl": "https://files.kick.com/images/default_avatars/avatar_8.png",
-      "score": 870,
-      "timeSeconds": 9.3,
-      "difficulty": "medium",
-      "success": true,
-      "createdAt": "2026-09-09T03:10:56.144Z"
-    }
-  ]
+  "miniGameScores": []
 }

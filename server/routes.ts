@@ -982,6 +982,16 @@ apiRouter.post('/webhooks/kick', (req: Request, res: Response) => {
 });
 
 // --- Mini Games Leaderboard & Scoring ---
+apiRouter.get('/minigames/dashboard', (req: Request, res: Response) => {
+  const stats = db.getMiniGameDashboardStats();
+  res.json({
+    status: 'ok',
+    ...stats,
+    recentActivity: stats.recentResults,
+    playerRankings: stats.topRankedPlayers
+  });
+});
+
 apiRouter.get('/minigames/leaderboard', (req: Request, res: Response) => {
   const gameId = req.query.gameId as string;
   const difficulty = req.query.difficulty as string;
@@ -1005,15 +1015,25 @@ apiRouter.get('/minigames/user-stats', (req: Request, res: Response) => {
   }
 
   if (!userId) {
-    return res.status(400).json({ error: 'userId or authentication required.' });
+    // If not logged in and no user requested, default to guest
+    userId = 'guest';
   }
 
   const stats = db.getUserMiniGameStats(userId);
   res.json(stats);
 });
 
+apiRouter.post('/admin/minigames/purge-test-data', requireAdmin, (req: Request, res: Response) => {
+  const result = db.purgeTestMiniGameData();
+  res.json({
+    status: 'ok',
+    message: `Purged ${result.purgedCount} test/seed mini game scores. Clean database records: ${result.remainingCount}`,
+    ...result
+  });
+});
+
 apiRouter.post('/minigames/submit', (req: Request, res: Response) => {
-  let { gameId, score, timeSeconds, difficulty, success, username, avatarUrl, userId } = req.body;
+  let { gameId, gameTitle, score, timeSeconds, accuracy, difficulty, gameMode, success, username, avatarUrl, userId } = req.body;
 
   // Prefer session user if logged in
   const authHeader = req.headers.authorization;
@@ -1037,33 +1057,66 @@ apiRouter.post('/minigames/submit', (req: Request, res: Response) => {
     avatarUrl = `https://api.dicebear.com/7.x/bottts/svg?seed=${username}`;
   }
 
-  const validGames = ['lockpicking', 'hacking', 'wires', 'safecracking', 'keypad', 'memory', 'signal'];
+  const validGames = [
+    'logic_grid',
+    'pattern_decoder',
+    'sequence_master',
+    'cipher_puzzle',
+    'difficult_quiz',
+    'precision_timing',
+    'multi_task',
+    'arcade_shooter'
+  ];
+
   if (!validGames.includes(gameId)) {
     return res.status(400).json({ error: `Invalid gameId. Must be one of: ${validGames.join(', ')}` });
   }
 
-  const scoreNum = Math.max(0, parseInt(score) || 0);
-  const timeNum = Math.max(0.1, parseFloat(timeSeconds) || 10);
-  const diff = ['easy', 'medium', 'hard'].includes(difficulty) ? difficulty : 'medium';
+  // Server-side score validation and sanity thresholds
+  let scoreNum = Math.max(0, parseInt(score) || 0);
+  // Cap max score to prevent spoofing
+  const maxScoreCaps: Record<string, number> = {
+    logic_grid: 2500,
+    pattern_decoder: 2500,
+    sequence_master: 2500,
+    cipher_puzzle: 2500,
+    difficult_quiz: 3500,
+    precision_timing: 3000,
+    multi_task: 4000,
+    arcade_shooter: 6000
+  };
+  const cap = maxScoreCaps[gameId] || 5000;
+  if (scoreNum > cap) {
+    scoreNum = cap;
+  }
+
+  const timeNum = Math.max(0.5, parseFloat(timeSeconds) || 5);
+  const diff = ['easy', 'medium', 'hard', 'expert'].includes(difficulty) ? difficulty : 'medium';
+  const accNum = typeof accuracy === 'number' ? Math.min(100, Math.max(0, accuracy)) : (typeof accuracy === 'string' ? Math.min(100, Math.max(0, parseFloat(accuracy) || 0)) : undefined);
 
   const record = db.saveMiniGameScore({
     gameId,
+    gameTitle,
     userId,
     username,
     avatarUrl,
     score: scoreNum,
     timeSeconds: timeNum,
-    difficulty: diff,
+    accuracy: accNum,
+    difficulty: diff as any,
+    gameMode: typeof gameMode === 'string' ? gameMode : undefined,
     success: Boolean(success)
   });
 
   const updatedLeaderboard = db.getMiniGameLeaderboard(gameId, diff, 10);
+  const userStats = db.getUserMiniGameStats(userId);
 
   res.json({
     status: 'ok',
     success: true,
-    record,
-    leaderboard: updatedLeaderboard.leaderboard
+    score: record,
+    leaderboard: updatedLeaderboard.leaderboard,
+    userStats
   });
 });
 

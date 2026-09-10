@@ -170,13 +170,16 @@ export interface DBPointRule {
 
 export interface DBMiniGameScore {
   id: string;
-  gameId: string; // 'lockpicking' | 'hacking' | 'wires' | 'safecracking' | 'keypad' | 'memory' | 'signal'
+  gameId: string; // 'logic_grid' | 'pattern_decoder' | 'sequence_master' | 'cipher_puzzle' | 'difficult_quiz' | 'precision_timing' | 'multi_task' | 'arcade_shooter'
+  gameTitle?: string;
   userId: string;
   username: string;
   avatarUrl: string;
   score: number;
   timeSeconds: number;
-  difficulty: 'easy' | 'medium' | 'hard';
+  accuracy?: number; // 0 - 100%
+  difficulty: 'easy' | 'medium' | 'hard' | 'expert';
+  gameMode?: string;
   success: boolean;
   createdAt: string;
 }
@@ -244,6 +247,9 @@ class Database {
         }
         if (!this.data.miniGameScores) {
           this.data.miniGameScores = [];
+        } else {
+          // Clean out any test/seed mini-game scores to ensure leaderboards start clean with real gameplay only
+          this.purgeTestMiniGameData();
         }
         if (!this.data.userBadges) {
           this.data.userBadges = [];
@@ -561,7 +567,7 @@ class Database {
     return this.data.leaguePoints.find(p => p.seasonId === seasonId && p.kickUserId === kickUserId);
   }
 
-  public addPoints(kickUserId: string, username: string, avatarUrl: string, type: 'CHAT_MESSAGE' | 'SUBSCRIPTION' | 'GIFT_SUBSCRIPTION', customPoints?: number, isTest: boolean = false): { pointsAwarded: number; totalPoints: number } {
+  public addPoints(kickUserId: string, username: string, avatarUrl: string, type: 'CHAT_MESSAGE' | 'SUBSCRIPTION' | 'GIFT_SUBSCRIPTION' | 'MINI_GAME_WIN', customPoints?: number, isTest: boolean = false): { pointsAwarded: number; totalPoints: number } {
     const isTestFlag = isTest || username.toLowerCase().startsWith('test') || kickUserId.startsWith('k_test') || kickUserId.startsWith('test_');
     const user = this.ensureKickUser(kickUserId, username, avatarUrl, isTestFlag);
     const activeSeason = this.getActiveSeason();
@@ -1408,30 +1414,184 @@ class Database {
   }
 
   // --- Mini Games Leaderboard & Scores ---
+  public static readonly MINI_GAMES_CATALOG = [
+    { id: 'logic_grid', title: 'Neural Grid Matrix', category: 'puzzle', description: 'Deduce correct operator-sector-tech combinations through logic clues.' },
+    { id: 'pattern_decoder', title: 'Pattern Decoder', category: 'puzzle', description: 'Decode complex algorithmic, geometric, and modular sequences.' },
+    { id: 'sequence_master', title: 'Sequence Master', category: 'puzzle', description: 'Reproduce growing multi-tier glyph and directional memory matrices.' },
+    { id: 'cipher_puzzle', title: 'Cipher Decoder', category: 'puzzle', description: 'Cryptographic terminal deciphering encrypted intelligence with algorithmic clues.' },
+    { id: 'difficult_quiz', title: 'Apex Intellect Trivia', category: 'quiz', description: '13-category difficult general knowledge quiz with multipliers and streak bonuses.' },
+    { id: 'precision_timing', title: 'Oscillation Calibrator', category: 'skill', description: 'Lock in oscillating lasers within dynamic sub-millisecond target zones.' },
+    { id: 'multi_task', title: 'Cognitive Overload', category: 'skill', description: 'Multitask simultaneous drone lane balance, Stroop tests, and countdown defusal.' },
+    { id: 'arcade_shooter', title: 'Holo-Range Assault', category: 'arcade', description: 'High-speed holographic target shooter with combo multipliers and accuracy tracking.' }
+  ];
+
   public saveMiniGameScore(score: Omit<DBMiniGameScore, 'id' | 'createdAt'>): DBMiniGameScore {
     if (!this.data.miniGameScores) {
       this.data.miniGameScores = [];
     }
 
+    const catalogItem = Database.MINI_GAMES_CATALOG.find(g => g.id === score.gameId);
+    const gameTitle = score.gameTitle || (catalogItem ? catalogItem.title : score.gameId);
+
     const fullScore: DBMiniGameScore = {
       id: `mgs_${Date.now()}_${Math.random().toString(36).substr(2, 6)}`,
       ...score,
+      gameTitle,
+      accuracy: typeof score.accuracy === 'number' ? Math.min(100, Math.max(0, Math.round(score.accuracy * 10) / 10)) : undefined,
       createdAt: new Date().toISOString()
     };
 
     this.data.miniGameScores.push(fullScore);
-    this.addSystemLog('info', 'MINI_GAMES', `Recorded score for ${score.username} in ${score.gameId} (${score.difficulty}): ${score.score} pts (${score.timeSeconds}s)`);
+
+    // Also award League activity points if user is authenticated or known
+    if (score.userId && !score.userId.startsWith('guest_') && score.success) {
+      const pointAward = score.difficulty === 'expert' ? 30 : score.difficulty === 'hard' ? 25 : score.difficulty === 'medium' ? 15 : 10;
+      this.addPoints(score.userId, score.username, score.avatarUrl, 'MINI_GAME_WIN', pointAward);
+    }
+
+    this.addSystemLog('info', 'MINI_GAMES', `Recorded score for ${score.username} in ${gameTitle} (${score.difficulty}): ${score.score} pts (${score.timeSeconds}s, ${fullScore.accuracy ?? 100}% acc)`);
     this.save();
     return fullScore;
   }
 
-  public getMiniGameLeaderboard(gameId?: string, difficulty?: string, limit: number = 50) {
-    if (!this.data.miniGameScores || this.data.miniGameScores.length === 0) {
-      this.seedInitialMiniGameScores();
+  public getMiniGameDashboardStats() {
+    const allScores = this.data.miniGameScores || [];
+    const wins = allScores.filter(s => s.success);
+
+    // Unique players
+    const uniqueUserIds = new Set(allScores.map(s => s.userId));
+    const totalPlayers = uniqueUserIds.size;
+    const totalGamesPlayed = allScores.length;
+    const totalWins = wins.length;
+
+    // Highest score and fastest time
+    const highestScore = wins.length > 0 ? Math.max(...wins.map(s => s.score)) : 0;
+    const fastestCompletionTime = wins.length > 0 ? Math.min(...wins.map(s => s.timeSeconds)) : 0;
+
+    // Per-game statistics breakdown
+    const perGameStats = Database.MINI_GAMES_CATALOG.map(game => {
+      const gScores = allScores.filter(s => s.gameId === game.id);
+      const gWins = gScores.filter(s => s.success);
+      const gHighest = gWins.length > 0 ? Math.max(...gWins.map(s => s.score)) : 0;
+      const gFastest = gWins.length > 0 ? Math.min(...gWins.map(s => s.timeSeconds)) : 0;
+      const gAvgScore = gWins.length > 0 ? Math.round(gWins.reduce((sum, s) => sum + s.score, 0) / gWins.length) : 0;
+      const gTopScore = gWins.slice().sort((a, b) => b.score - a.score)[0];
+
+      return {
+        gameId: game.id,
+        title: game.title,
+        category: game.category,
+        description: game.description,
+        totalPlays: gScores.length,
+        totalWins: gWins.length,
+        highestScore: gHighest,
+        fastestTime: gFastest,
+        averageScore: gAvgScore,
+        topPlayer: gTopScore ? {
+          username: gTopScore.username,
+          avatarUrl: gTopScore.avatarUrl,
+          score: gTopScore.score
+        } : null
+      };
+    });
+
+    // Top ranked players across all games (aggregated)
+    const playerMap = new Map<string, {
+      userId: string;
+      username: string;
+      avatarUrl: string;
+      totalWins: number;
+      totalPlays: number;
+      bestScore: number;
+      totalPoints: number;
+      fastestTime: number;
+      favoriteGame: string;
+    }>();
+
+    const userGameCounts = new Map<string, Map<string, number>>();
+
+    for (const s of allScores) {
+      if (!userGameCounts.has(s.userId)) userGameCounts.set(s.userId, new Map());
+      const counts = userGameCounts.get(s.userId)!;
+      counts.set(s.gameId, (counts.get(s.gameId) || 0) + 1);
+
+      let p = playerMap.get(s.userId);
+      if (!p) {
+        p = {
+          userId: s.userId,
+          username: s.username,
+          avatarUrl: s.avatarUrl,
+          totalWins: s.success ? 1 : 0,
+          totalPlays: 1,
+          bestScore: s.score,
+          totalPoints: s.score,
+          fastestTime: s.success ? s.timeSeconds : 9999,
+          favoriteGame: s.gameId
+        };
+        playerMap.set(s.userId, p);
+      } else {
+        p.totalPlays += 1;
+        p.totalPoints += s.score;
+        if (s.success) {
+          p.totalWins += 1;
+          if (s.score > p.bestScore) p.bestScore = s.score;
+          if (s.timeSeconds < p.fastestTime) p.fastestTime = s.timeSeconds;
+        }
+      }
     }
 
-    const scores = (this.data.miniGameScores || []).filter(s => s.success);
-    let filtered = scores;
+    // Assign favorite game
+    for (const [userId, p] of playerMap.entries()) {
+      const counts = userGameCounts.get(userId);
+      if (counts) {
+        let maxCount = 0;
+        let fav = p.favoriteGame;
+        for (const [gId, count] of counts.entries()) {
+          if (count > maxCount) {
+            maxCount = count;
+            fav = gId;
+          }
+        }
+        const found = Database.MINI_GAMES_CATALOG.find(c => c.id === fav);
+        p.favoriteGame = found ? found.title : fav;
+      }
+    }
+
+    const topRankedPlayers = Array.from(playerMap.values())
+      .sort((a, b) => b.totalPoints - a.totalPoints || b.bestScore - a.bestScore)
+      .slice(0, 10)
+      .map((p, idx) => ({
+        rank: idx + 1,
+        ...p
+      }));
+
+    // Recent results (latest 20)
+    const recentResults = allScores
+      .slice(-20)
+      .reverse()
+      .map(s => {
+        const catItem = Database.MINI_GAMES_CATALOG.find(g => g.id === s.gameId);
+        return {
+          ...s,
+          gameTitle: s.gameTitle || (catItem ? catItem.title : s.gameId)
+        };
+      });
+
+    return {
+      totalPlayers,
+      totalGamesPlayed,
+      totalWins,
+      highestScore,
+      fastestCompletionTime,
+      recentResults,
+      perGameStats,
+      topRankedPlayers,
+      catalog: Database.MINI_GAMES_CATALOG
+    };
+  }
+
+  public getMiniGameLeaderboard(gameId?: string, difficulty?: string, limit: number = 50) {
+    let filtered = (this.data.miniGameScores || []).filter(s => s.success);
 
     if (gameId && gameId !== 'all') {
       filtered = filtered.filter(s => s.gameId === gameId);
@@ -1440,184 +1600,179 @@ class Database {
       filtered = filtered.filter(s => s.difficulty === difficulty);
     }
 
-    // Aggregate user bests
-    const userMap = new Map<string, {
-      userId: string;
-      username: string;
-      avatarUrl: string;
-      bestScore: number;
-      fastestTime: number;
-      totalWins: number;
-      lastPlayedAt: string;
-      favoriteGame: string;
-      difficulty: string;
-    }>();
+    // Rank individual best runs: Highest score, then lowest time, then highest accuracy
+    const sortedRuns = filtered
+      .slice()
+      .sort((a, b) => {
+        if (b.score !== a.score) return b.score - a.score;
+        if (a.timeSeconds !== b.timeSeconds) return a.timeSeconds - b.timeSeconds;
+        return (b.accuracy || 100) - (a.accuracy || 100);
+      });
 
-    for (const s of filtered) {
-      const existing = userMap.get(s.userId);
-      if (!existing) {
-        userMap.set(s.userId, {
-          userId: s.userId,
-          username: s.username,
-          avatarUrl: s.avatarUrl,
-          bestScore: s.score,
-          fastestTime: s.timeSeconds,
-          totalWins: 1,
-          lastPlayedAt: s.createdAt,
-          favoriteGame: s.gameId,
-          difficulty: s.difficulty
-        });
-      } else {
-        existing.totalWins += 1;
-        if (s.score > existing.bestScore) existing.bestScore = s.score;
-        if (s.timeSeconds < existing.fastestTime) existing.fastestTime = s.timeSeconds;
-        if (s.createdAt > existing.lastPlayedAt) existing.lastPlayedAt = s.createdAt;
+    // Also build unique user leaderboard (best run per user)
+    const userBestMap = new Map<string, DBMiniGameScore>();
+    for (const run of sortedRuns) {
+      if (!userBestMap.has(run.userId)) {
+        userBestMap.set(run.userId, run);
       }
     }
 
-    // Rank players: Highest best score, then lowest fastest time
-    const leaderboard = Array.from(userMap.values())
-      .sort((a, b) => b.bestScore - a.bestScore || a.fastestTime - b.fastestTime)
+    const leaderboard = Array.from(userBestMap.values())
       .slice(0, limit)
-      .map((entry, index) => ({
-        rank: index + 1,
-        ...entry
-      }));
+      .map((entry, index) => {
+        const cat = Database.MINI_GAMES_CATALOG.find(g => g.id === entry.gameId);
+        return {
+          rank: index + 1,
+          id: entry.id,
+          userId: entry.userId,
+          username: entry.username,
+          avatarUrl: entry.avatarUrl,
+          gameId: entry.gameId,
+          gameTitle: entry.gameTitle || (cat ? cat.title : entry.gameId),
+          score: entry.score,
+          timeSeconds: entry.timeSeconds,
+          accuracy: entry.accuracy ?? 100,
+          difficulty: entry.difficulty,
+          gameMode: entry.gameMode || 'Standard',
+          date: entry.createdAt,
+          createdAt: entry.createdAt
+        };
+      });
+
+    // All individual top runs (for detailed historical ranking table)
+    const topRuns = sortedRuns
+      .slice(0, limit)
+      .map((entry, index) => {
+        const cat = Database.MINI_GAMES_CATALOG.find(g => g.id === entry.gameId);
+        return {
+          rank: index + 1,
+          id: entry.id,
+          userId: entry.userId,
+          username: entry.username,
+          avatarUrl: entry.avatarUrl,
+          gameId: entry.gameId,
+          gameTitle: entry.gameTitle || (cat ? cat.title : entry.gameId),
+          score: entry.score,
+          timeSeconds: entry.timeSeconds,
+          accuracy: entry.accuracy ?? 100,
+          difficulty: entry.difficulty,
+          gameMode: entry.gameMode || 'Standard',
+          date: entry.createdAt,
+          createdAt: entry.createdAt
+        };
+      });
 
     return {
       gameId: gameId || 'all',
       difficulty: difficulty || 'all',
       leaderboard,
-      totalEntries: userMap.size,
+      topRuns,
+      totalEntries: filtered.length,
       recentScores: (this.data.miniGameScores || []).slice(-15).reverse()
     };
   }
 
   public getUserMiniGameStats(userId: string) {
-    if (!this.data.miniGameScores || this.data.miniGameScores.length === 0) {
-      this.seedInitialMiniGameScores();
-    }
-
     const allUserScores = (this.data.miniGameScores || []).filter(s => s.userId === userId);
     const wins = allUserScores.filter(s => s.success);
-    
-    const games = ['lockpicking', 'hacking', 'wires', 'safecracking', 'keypad', 'memory', 'signal'];
-    const perGame: Record<string, { bestScore: number; fastestTime: number; wins: number; attempts: number }> = {};
-    
-    games.forEach(g => {
-      const gameScores = allUserScores.filter(s => s.gameId === g);
-      const gameWins = gameScores.filter(s => s.success);
-      perGame[g] = {
-        bestScore: gameWins.length > 0 ? Math.max(...gameWins.map(s => s.score)) : 0,
-        fastestTime: gameWins.length > 0 ? Math.min(...gameWins.map(s => s.timeSeconds)) : 0,
-        wins: gameWins.length,
-        attempts: gameScores.length
+
+    const totalAttempts = allUserScores.length;
+    const totalWins = wins.length;
+    const winRate = totalAttempts > 0 ? Math.round((totalWins / totalAttempts) * 100) : 0;
+    const bestScore = wins.length > 0 ? Math.max(...wins.map(s => s.score)) : 0;
+    const averageScore = wins.length > 0 ? Math.round(wins.reduce((sum, s) => sum + s.score, 0) / wins.length) : 0;
+    const fastestWinTime = wins.length > 0 ? Math.min(...wins.map(s => s.timeSeconds)) : 0;
+
+    // Per-game breakdown across all catalog games
+    const perGame: Record<string, {
+      title: string;
+      category: string;
+      bestScore: number;
+      fastestTime: number;
+      wins: number;
+      attempts: number;
+      averageAccuracy: number;
+    }> = {};
+
+    Database.MINI_GAMES_CATALOG.forEach(g => {
+      const gScores = allUserScores.filter(s => s.gameId === g.id);
+      const gWins = gScores.filter(s => s.success);
+      const accList = gWins.filter(w => typeof w.accuracy === 'number').map(w => w.accuracy!);
+      const avgAcc = accList.length > 0 ? Math.round(accList.reduce((a, b) => a + b, 0) / accList.length) : 100;
+
+      perGame[g.id] = {
+        title: g.title,
+        category: g.category,
+        bestScore: gWins.length > 0 ? Math.max(...gWins.map(s => s.score)) : 0,
+        fastestTime: gWins.length > 0 ? Math.min(...gWins.map(s => s.timeSeconds)) : 0,
+        wins: gWins.length,
+        attempts: gScores.length,
+        averageAccuracy: avgAcc
       };
+    });
+
+    // Favorite & highest-performing game
+    let favoriteGame = 'Neural Grid Matrix';
+    let highestPerformingGame = 'Neural Grid Matrix';
+    let maxAttempts = -1;
+    let maxBestScore = -1;
+
+    Object.entries(perGame).forEach(([gId, stat]) => {
+      if (stat.attempts > maxAttempts) {
+        maxAttempts = stat.attempts;
+        favoriteGame = stat.title;
+      }
+      if (stat.bestScore > maxBestScore) {
+        maxBestScore = stat.bestScore;
+        highestPerformingGame = stat.title;
+      }
     });
 
     return {
       userId,
-      totalAttempts: allUserScores.length,
-      totalWins: wins.length,
-      overallBestScore: wins.length > 0 ? Math.max(...wins.map(s => s.score)) : 0,
-      fastestWinTime: wins.length > 0 ? Math.min(...wins.map(s => s.timeSeconds)) : 0,
-      perGame
+      totalAttempts,
+      totalWins,
+      winRate,
+      bestScore,
+      averageScore,
+      bestCompletionTime: fastestWinTime,
+      fastestWinTime,
+      favoriteGame,
+      highestPerformingGame,
+      perGame,
+      recentActivity: allUserScores.slice(-10).reverse()
     };
   }
 
   /**
-   * Seeds initial competitive leaderboard scores from active community members
+   * Purges all test, demo, dummy, or seed mini-game records from the database
+   * so the leaderboard starts completely clean with only real users and real gameplay.
    */
-  public seedInitialMiniGameScores(): void {
-    if (this.data.miniGameScores && this.data.miniGameScores.length > 0) return;
+  public purgeTestMiniGameData(): { purgedCount: number; remainingCount: number } {
+    if (!this.data.miniGameScores) {
+      this.data.miniGameScores = [];
+      return { purgedCount: 0, remainingCount: 0 };
+    }
 
-    this.data.miniGameScores = [
-      {
-        id: 'mgs_seed_01',
-        gameId: 'lockpicking',
-        userId: '240182',
-        username: 'ApexLegend99',
-        avatarUrl: 'https://files.kick.com/images/default_avatars/avatar_3.png',
-        score: 950,
-        timeSeconds: 6.4,
-        difficulty: 'hard',
-        success: true,
-        createdAt: new Date(Date.now() - 3600000 * 4).toISOString()
-      },
-      {
-        id: 'mgs_seed_02',
-        gameId: 'hacking',
-        userId: '238190',
-        username: 'CasperX_Fan',
-        avatarUrl: 'https://files.kick.com/images/default_avatars/avatar_1.png',
-        score: 890,
-        timeSeconds: 8.1,
-        difficulty: 'hard',
-        success: true,
-        createdAt: new Date(Date.now() - 3600000 * 7).toISOString()
-      },
-      {
-        id: 'mgs_seed_03',
-        gameId: 'wires',
-        userId: '239102',
-        username: 'MoroccanSniper',
-        avatarUrl: 'https://files.kick.com/images/default_avatars/avatar_2.png',
-        score: 920,
-        timeSeconds: 7.2,
-        difficulty: 'medium',
-        success: true,
-        createdAt: new Date(Date.now() - 3600000 * 12).toISOString()
-      },
-      {
-        id: 'mgs_seed_04',
-        gameId: 'safecracking',
-        userId: '242901',
-        username: 'GodAim_Jr',
-        avatarUrl: 'https://files.kick.com/images/default_avatars/avatar_5.png',
-        score: 880,
-        timeSeconds: 11.5,
-        difficulty: 'hard',
-        success: true,
-        createdAt: new Date(Date.now() - 3600000 * 18).toISOString()
-      },
-      {
-        id: 'mgs_seed_05',
-        gameId: 'keypad',
-        userId: '243881',
-        username: 'Casawi_Gamer',
-        avatarUrl: 'https://files.kick.com/images/default_avatars/avatar_6.png',
-        score: 960,
-        timeSeconds: 4.8,
-        difficulty: 'medium',
-        success: true,
-        createdAt: new Date(Date.now() - 3600000 * 24).toISOString()
-      },
-      {
-        id: 'mgs_seed_06',
-        gameId: 'memory',
-        userId: '244190',
-        username: 'Tanger_Warrior',
-        avatarUrl: 'https://files.kick.com/images/default_avatars/avatar_7.png',
-        score: 910,
-        timeSeconds: 8.9,
-        difficulty: 'hard',
-        success: true,
-        createdAt: new Date(Date.now() - 3600000 * 30).toISOString()
-      },
-      {
-        id: 'mgs_seed_07',
-        gameId: 'signal',
-        userId: '245812',
-        username: 'Yassine_Pro',
-        avatarUrl: 'https://files.kick.com/images/default_avatars/avatar_8.png',
-        score: 870,
-        timeSeconds: 9.3,
-        difficulty: 'medium',
-        success: true,
-        createdAt: new Date(Date.now() - 3600000 * 36).toISOString()
-      }
-    ];
-    this.saveSync();
+    const priorCount = this.data.miniGameScores.length;
+    this.data.miniGameScores = this.data.miniGameScores.filter(s => {
+      if (!s.id) return false;
+      // Strip mock/seed IDs
+      if (s.id.startsWith('mgs_seed_')) return false;
+      // Strip legacy test games from previous iterations
+      if (['lockpicking', 'hacking', 'wires', 'safecracking', 'keypad', 'memory', 'signal'].includes(s.gameId)) return false;
+      // Strip explicit test users/players
+      if (s.userId && (s.userId.startsWith('test_') || s.userId.startsWith('k_test') || s.userId.startsWith('dummy_'))) return false;
+      if (s.username && (s.username.toLowerCase().startsWith('test') || s.username.toLowerCase().includes('dummy') || s.username.toLowerCase().includes('demo_user') || s.username.toLowerCase().includes('fake_user'))) return false;
+      return true;
+    });
+
+    const purgedCount = priorCount - this.data.miniGameScores.length;
+    if (purgedCount > 0) {
+      this.addSystemLog('info', 'MINI_GAMES', `Purged ${purgedCount} test/seed mini-game records. Remaining clean records: ${this.data.miniGameScores.length}`);
+      this.saveSync();
+    }
+    return { purgedCount, remainingCount: this.data.miniGameScores.length };
   }
 
   // --- Initial Seed Data ---

@@ -375,6 +375,70 @@ export async function fetchBadgesCatalog(): Promise<Badge[]> {
 }
 
 // Mini-games API
+export interface MiniGameDashboardData {
+  status: string;
+  totalPlayers: number;
+  totalGamesPlayed: number;
+  totalWins: number;
+  highestScore: number;
+  fastestCompletionTime: number;
+  recentResults: Array<{
+    id: string;
+    gameId: string;
+    gameTitle?: string;
+    userId: string;
+    username: string;
+    avatarUrl: string;
+    score: number;
+    timeSeconds: number;
+    accuracy?: number;
+    difficulty: 'easy' | 'medium' | 'hard' | 'expert';
+    gameMode?: string;
+    success: boolean;
+    createdAt: string;
+  }>;
+  perGameStats: Array<{
+    gameId: string;
+    title: string;
+    category: string;
+    description: string;
+    totalPlays: number;
+    totalWins: number;
+    highestScore: number;
+    fastestTime: number;
+    averageScore: number;
+    topPlayer: {
+      username: string;
+      avatarUrl: string;
+      score: number;
+    } | null;
+  }>;
+  topRankedPlayers: Array<{
+    rank: number;
+    userId: string;
+    username: string;
+    avatarUrl: string;
+    totalWins: number;
+    totalPlays: number;
+    bestScore: number;
+    totalPoints: number;
+    fastestTime: number;
+    favoriteGame: string;
+  }>;
+  catalog: Array<{
+    id: string;
+    title: string;
+    category: string;
+    description: string;
+  }>;
+}
+
+export async function fetchMiniGameDashboard(): Promise<MiniGameDashboardData> {
+  const res = await fetch(`${API_BASE}/minigames/dashboard`);
+  if (!res.ok) throw new Error('Failed to fetch mini game dashboard');
+  return await res.json();
+}
+
 export async function fetchMiniGameLeaderboard(gameId?: string, difficulty?: string): Promise<{
   gameId: string;
   difficulty: string;
@@ -383,12 +447,29 @@ export async function fetchMiniGameLeaderboard(gameId?: string, difficulty?: str
     userId: string;
     username: string;
     avatarUrl: string;
-    bestScore: number;
-    fastestTime: number;
-    totalWins: number;
-    lastPlayedAt: string;
-    favoriteGame: string;
+    gameId: string;
+    gameTitle: string;
+    score: number;
+    timeSeconds: number;
+    accuracy?: number;
     difficulty: string;
+    gameMode?: string;
+    date: string;
+  }>;
+  topRuns: Array<{
+    rank: number;
+    id: string;
+    userId: string;
+    username: string;
+    avatarUrl: string;
+    gameId: string;
+    gameTitle: string;
+    score: number;
+    timeSeconds: number;
+    accuracy?: number;
+    difficulty: string;
+    gameMode?: string;
+    date: string;
   }>;
   totalEntries: number;
   recentScores: any[];
@@ -412,9 +493,12 @@ export async function fetchUserMiniGameStats(userId?: string): Promise<any> {
 
 export async function submitMiniGameScore(data: {
   gameId: string;
+  gameTitle?: string;
   score: number;
   timeSeconds: number;
-  difficulty: 'easy' | 'medium' | 'hard';
+  accuracy?: number;
+  difficulty: 'easy' | 'medium' | 'hard' | 'expert';
+  gameMode?: string;
   success: boolean;
   username?: string;
   avatarUrl?: string;
