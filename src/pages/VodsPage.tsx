@@ -14,7 +14,8 @@ import {
   ChevronLeft,
   ChevronRight,
   Sparkles,
-  Play
+  Play,
+  Zap
 } from 'lucide-react';
 
 export const VodsPage: React.FC<{ navigate: (route: string) => void }> = ({ navigate }) => {
@@ -153,10 +154,16 @@ export const VodsPage: React.FC<{ navigate: (route: string) => void }> = ({ navi
                   <span className="text-zinc-400">
                     Peak: <strong className="text-zinc-200">{(stream.peakViewers || 0).toLocaleString()}</strong>
                   </span>
-                  <span className="text-amber-400 font-bold flex items-center gap-1">
-                    <MessageSquare className="w-3.5 h-3.5" />
-                    {(stream.totalChatMessages || 0).toLocaleString()} messages
-                  </span>
+                  <div className="flex items-center gap-3">
+                    <span className="text-emerald-400 font-bold flex items-center gap-1" title="Subscriptions gained during this VOD">
+                      <Zap className="w-3 h-3 text-emerald-400" />
+                      +{stream.subsGained ?? stream.subscribersGained ?? 0} subs
+                    </span>
+                    <span className="text-amber-400 font-bold flex items-center gap-1">
+                      <MessageSquare className="w-3.5 h-3.5" />
+                      {(stream.totalChatMessages || 0).toLocaleString()}
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>

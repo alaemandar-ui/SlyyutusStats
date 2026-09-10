@@ -1,5 +1,6 @@
 import React from 'react';
 import { Trophy, ShieldCheck, Activity, ExternalLink, Flame } from 'lucide-react';
+import logoImg from '../assets/images/logo.png';
 
 export const Footer: React.FC<{ navigate: (route: string) => void }> = ({ navigate }) => {
   return (
@@ -9,10 +10,14 @@ export const Footer: React.FC<{ navigate: (route: string) => void }> = ({ naviga
           
           {/* Brand Info */}
           <div className="space-y-3 md:col-span-2">
-            <div className="flex items-center gap-2">
-              <div className="w-7 h-7 rounded-lg bg-amber-500 flex items-center justify-center font-heading font-black text-sm text-zinc-950">
-                S
-              </div>
+            <div className="flex items-center gap-2.5">
+              <img
+                id="footer-brand-logo"
+                src={logoImg}
+                alt="SLYYUTUS.STATS"
+                referrerPolicy="no-referrer"
+                className="w-8 h-8 rounded-md object-contain shrink-0 filter drop-shadow-[0_0_10px_rgba(212,175,55,0.4)]"
+              />
               <span className="font-heading font-extrabold text-base tracking-wider text-zinc-100">
                 SLYYUTUS<span className="text-amber-400">.STATS</span>
               </span>
@@ -39,6 +44,11 @@ export const Footer: React.FC<{ navigate: (route: string) => void }> = ({ naviga
               <li>
                 <button onClick={() => navigate('league')} className="hover:text-amber-300 transition-colors">
                   Monthly Chatters League
+                </button>
+              </li>
+              <li>
+                <button onClick={() => navigate('minigames')} className="hover:text-amber-300 transition-colors">
+                  Mini Games Arena & Leaderboard
                 </button>
               </li>
               <li>

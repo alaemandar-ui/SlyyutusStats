@@ -10,7 +10,16 @@ interface BadgeItemProps {
 }
 
 export const BadgeItem: React.FC<BadgeItemProps> = ({ badgeAward, badge: directBadge, size = 'md', showDetails = true }) => {
-  const badge = badgeAward?.badge || directBadge;
+  const rawAward = badgeAward as any;
+  const badge: Badge | undefined = badgeAward?.badge || directBadge || (rawAward ? {
+    badgeId: rawAward.badgeId || rawAward.id || 'badge',
+    title: rawAward.badgeTitle || rawAward.title || rawAward.badgeId || 'Honorary Badge',
+    description: rawAward.badgeDescription || rawAward.description || 'Special Community Recognition',
+    iconType: rawAward.iconType || 'award',
+    badgeTier: rawAward.badgeTier || 'gold',
+    permanent: true
+  } : undefined);
+
   if (!badge) return null;
 
   const getTierColors = (tier: string) => {

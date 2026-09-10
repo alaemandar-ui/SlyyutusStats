@@ -18,6 +18,7 @@ import { UserProfilePage } from './pages/UserProfilePage';
 import { MyStatsPage } from './pages/MyStatsPage';
 import { LoginPage } from './pages/LoginPage';
 import { AdminPage } from './pages/AdminPage';
+import { MiniGamesPage } from './pages/MiniGamesPage';
 import { fetchChannelStats } from './lib/api';
 import { ChannelStats } from './types';
 
@@ -100,6 +101,9 @@ export default function App() {
     }
     if (currentRoute === 'admin') {
       return <AdminPage navigate={navigate} />;
+    }
+    if (currentRoute === 'minigames' || currentRoute === 'games') {
+      return <MiniGamesPage navigate={navigate} />;
     }
 
     return <HomePage navigate={navigate} />;

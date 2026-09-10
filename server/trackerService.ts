@@ -395,8 +395,18 @@ export class TrackerService {
         (existingUser?.avatarUrl && !existingUser.avatarUrl.includes('default-medium.webp') ? existingUser.avatarUrl : null) ||
         (subId && /^\d+$/.test(subId) ? `https://files.kick.com/images/user/${subId}/profile_image/conversion/default1-fullsize.webp` : `https://files.kick.com/images/default_avatars/avatar_1.png`);
 
-      db.addPoints(subId, subName, avatarUrl, 'SUBSCRIPTION');
-      console.log(`[Tracker] Live subscription from ${subName} (+100 pts)`);
+      const streamId = db.getActiveStreamId() || db.getStreams(1, 0).streams[0]?.streamId;
+      db.addSubscriptionEvent({
+        kickUserId: subId,
+        username: subName,
+        avatarUrl,
+        type: 'SUBSCRIPTION',
+        streamId,
+        pointsAwarded: 100,
+        timestamp: new Date().toISOString()
+      });
+
+      console.log(`[Tracker] Live subscription from ${subName} (+100 pts) associated with VOD ${streamId || 'active'}`);
       db.addSystemLog('success', 'TRACKER', `Real-time subscription tracked from ${subName} (+100 pts)`);
     } catch (err: any) {
       console.error('[Tracker] Error processing subscription:', err.message);
@@ -422,8 +432,17 @@ export class TrackerService {
         : Number(payload.gift_count || payload.count || 1);
 
       if (gifterId !== 'unknown') {
+        const streamId = db.getActiveStreamId() || db.getStreams(1, 0).streams[0]?.streamId;
         for (let i = 0; i < count; i++) {
-          db.addPoints(gifterId, gifterName, avatarUrl, 'GIFT_SUBSCRIPTION');
+          db.addSubscriptionEvent({
+            kickUserId: gifterId,
+            username: gifterName,
+            avatarUrl,
+            type: 'GIFT_SUBSCRIPTION',
+            streamId,
+            pointsAwarded: 100,
+            timestamp: new Date().toISOString()
+          });
         }
         console.log(`[Tracker] Live gift subs: ${count} from ${gifterName} (+${count * 100} pts)`);
         db.addSystemLog('success', 'TRACKER', `Tracked ${count} Gift Sub(s) from ${gifterName} (+${count * 100} pts)`);

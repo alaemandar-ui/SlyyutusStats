@@ -4,7 +4,7 @@ import { db } from './db.js';
 import { kickService } from './kickService.js';
 import { LeagueEngine } from './leagueEngine.js';
 import { trackerService } from './trackerService.js';
-import { AuthRequest, generateToken, requireAdmin, requireAuth } from './auth.js';
+import { AuthRequest, generateToken, requireAdmin, requireAuth, verifyToken } from './auth.js';
 
 export const apiRouter = express.Router();
 
@@ -406,8 +406,11 @@ apiRouter.get('/vods', (req: Request, res: Response) => {
         messageCount: r.messageCount
       };
     });
+    const subCount = s.subscribersGained ?? (s as any).subsGained ?? 0;
     return {
       ...s,
+      subsGained: subCount,
+      subscribersGained: subCount,
       topChatters
     };
   });
@@ -436,9 +439,14 @@ apiRouter.get('/vod/:streamId', (req: Request, res: Response) => {
   });
 
   const chatData = db.getStreamChatMessages(streamId, 300, 0);
+  const subCount = stream.subscribersGained ?? (stream as any).subsGained ?? 0;
 
   res.json({
-    stream,
+    stream: {
+      ...stream,
+      subsGained: subCount,
+      subscribersGained: subCount
+    },
     chatterRankings: fullRankings,
     rankings: fullRankings,
     totalChatters: fullRankings.length,
@@ -701,14 +709,70 @@ apiRouter.post('/admin/finalize-season', requireAdmin, (req: AuthRequest, res: R
   res.json({ status: 'ok', message: `Season ${seasonId} successfully finalized and badges awarded.` });
 });
 
+// --- Badges Endpoints ---
+apiRouter.get('/badges', (req: Request, res: Response) => {
+  res.json({ badges: db.getBadges() });
+});
+
+apiRouter.get('/admin/badges/catalog', (req: Request, res: Response) => {
+  res.json({ status: 'ok', catalog: db.getBadges() });
+});
+
+apiRouter.get('/admin/badges/awarded', requireAdmin, (req: AuthRequest, res: Response) => {
+  const awarded = db.getAllUserBadges();
+  res.json({ awarded, total: awarded.length });
+});
+
 apiRouter.post('/admin/award-badge', requireAdmin, (req: AuthRequest, res: Response) => {
-  const { kickUserId, badgeCode, seasonId, streamId, rankPosition } = req.body;
-  if (!kickUserId || !badgeCode) {
-    return res.status(400).json({ error: 'kickUserId and badgeCode required' });
+  const { kickUserId, badgeCode, badgeId, seasonId, streamId, rankPosition } = req.body;
+  const targetBadge = badgeCode || badgeId;
+  if (!kickUserId || !targetBadge) {
+    return res.status(400).json({ error: 'kickUserId and badgeCode or badgeId are required.' });
   }
 
-  const award = db.awardBadge(kickUserId, badgeCode, { seasonId, streamId, rankPosition });
-  res.json({ status: 'ok', award });
+  const award = db.awardBadge(String(kickUserId).trim(), String(targetBadge).trim(), { seasonId, streamId, rankPosition });
+  if (!award) {
+    return res.status(400).json({ error: `Could not assign badge '${targetBadge}'. Please verify recipient ID.` });
+  }
+
+  const allBadges = db.getBadges();
+  const badgeDef = allBadges.find(b => b.badgeId === award.badgeId);
+  const recipient = db.getKickUserById(award.kickUserId);
+
+  res.json({ 
+    status: 'ok', 
+    success: true, 
+    award: {
+      ...award,
+      badge: badgeDef
+    },
+    message: `Badge '${badgeDef?.title || 'Honorary Badge'}' successfully awarded to @${recipient?.username || award.kickUserId}!` 
+  });
+});
+
+apiRouter.post('/admin/revoke-badge', requireAdmin, (req: AuthRequest, res: Response) => {
+  const { awardId, id, badgeId } = req.body;
+  const targetId = awardId || id || badgeId;
+  if (!targetId) {
+    return res.status(400).json({ error: 'Awarded badge ID is required to revoke.' });
+  }
+
+  const success = db.revokeBadge(String(targetId));
+  if (!success) {
+    return res.status(404).json({ error: 'Awarded badge record not found.' });
+  }
+
+  res.json({ status: 'ok', success: true, message: 'Badge successfully revoked.' });
+});
+
+apiRouter.post('/admin/recalculate-vod-subs', requireAdmin, (req: AuthRequest, res: Response) => {
+  const result = db.recalculateStreamSubscriptions();
+  res.json({ 
+    status: 'ok', 
+    success: true, 
+    ...result, 
+    message: `Recalculated subscriptions for ${result.streamsUpdated} VODs (${result.totalSubsTracked} subs attributed).` 
+  });
 });
 
 apiRouter.get('/admin/logs', requireAdmin, (req: AuthRequest, res: Response) => {
@@ -790,11 +854,29 @@ apiRouter.post('/admin/test-event', requireAdmin, (req: AuthRequest, res: Respon
       timestamp: new Date().toISOString()
     });
   } else if (type === 'SUB' || type === 'subscription') {
-    db.addPoints(uid, uname, avatar, 'SUBSCRIPTION');
+    const targetStreamId = (req.body.streamId as string) || db.getActiveStreamId();
+    db.addSubscriptionEvent({
+      kickUserId: uid,
+      username: uname,
+      avatarUrl: avatar,
+      type: 'SUBSCRIPTION',
+      streamId: targetStreamId,
+      pointsAwarded: 100,
+      timestamp: new Date().toISOString()
+    });
   } else if (type === 'GIFT' || type === 'gift') {
     const count = Math.max(1, Number(req.body.giftCount) || 1);
+    const targetStreamId = (req.body.streamId as string) || db.getActiveStreamId();
     for (let i = 0; i < count; i++) {
-      db.addPoints(uid, uname, avatar, 'GIFT_SUBSCRIPTION');
+      db.addSubscriptionEvent({
+        kickUserId: uid,
+        username: uname,
+        avatarUrl: avatar,
+        type: 'GIFT_SUBSCRIPTION',
+        streamId: targetStreamId,
+        pointsAwarded: 100,
+        timestamp: new Date().toISOString()
+      });
     }
   }
 
@@ -844,8 +926,17 @@ apiRouter.post('/webhooks/kick', (req: Request, res: Response) => {
       const count = Number(data.gift_count || data.count || (Array.isArray(data.gifted_usernames) ? data.gifted_usernames.length : 1));
 
       if (gifterId !== 'unknown') {
+        const streamId = String(data.stream_id || data.livestream_id || db.getActiveStreamId() || '');
         for (let i = 0; i < count; i++) {
-          db.addPoints(gifterId, gifterName, avatarUrl, 'GIFT_SUBSCRIPTION');
+          db.addSubscriptionEvent({
+            kickUserId: gifterId,
+            username: gifterName,
+            avatarUrl,
+            type: 'GIFT_SUBSCRIPTION',
+            streamId: streamId || undefined,
+            pointsAwarded: 100,
+            timestamp: data.created_at || new Date().toISOString()
+          });
         }
         db.addSystemLog('info', 'WEBHOOK', `Tracked ${count} Gift Sub(s) from ${gifterName} (+${count * 100} pts)`);
       }
@@ -858,7 +949,16 @@ apiRouter.post('/webhooks/kick', (req: Request, res: Response) => {
       const avatarUrl = subscriber.profile_pic || data.profile_pic || `https://files.kick.com/images/default_avatars/avatar_1.png`;
 
       if (subId !== 'unknown') {
-        db.addPoints(subId, subName, avatarUrl, 'SUBSCRIPTION');
+        const streamId = String(data.stream_id || data.livestream_id || db.getActiveStreamId() || '');
+        db.addSubscriptionEvent({
+          kickUserId: subId,
+          username: subName,
+          avatarUrl,
+          type: 'SUBSCRIPTION',
+          streamId: streamId || undefined,
+          pointsAwarded: 100,
+          timestamp: data.created_at || new Date().toISOString()
+        });
         db.addSystemLog('info', 'WEBHOOK', `Tracked subscription from ${subName} (+100 pts)`);
       }
     }
@@ -879,6 +979,92 @@ apiRouter.post('/webhooks/kick', (req: Request, res: Response) => {
   }
 
   res.status(200).json({ received: true, status: 'processed' });
+});
+
+// --- Mini Games Leaderboard & Scoring ---
+apiRouter.get('/minigames/leaderboard', (req: Request, res: Response) => {
+  const gameId = req.query.gameId as string;
+  const difficulty = req.query.difficulty as string;
+  const limit = Math.min(100, Math.max(1, parseInt(req.query.limit as string) || 50));
+
+  const data = db.getMiniGameLeaderboard(gameId, difficulty, limit);
+  res.json(data);
+});
+
+apiRouter.get('/minigames/user-stats', (req: Request, res: Response) => {
+  let userId = req.query.userId as string;
+  if (!userId) {
+    const authHeader = req.headers.authorization;
+    if (authHeader && authHeader.startsWith('Bearer ')) {
+      const token = authHeader.split(' ')[1];
+      const sessionUser = verifyToken(token);
+      if (sessionUser) {
+        userId = sessionUser.kickUserId;
+      }
+    }
+  }
+
+  if (!userId) {
+    return res.status(400).json({ error: 'userId or authentication required.' });
+  }
+
+  const stats = db.getUserMiniGameStats(userId);
+  res.json(stats);
+});
+
+apiRouter.post('/minigames/submit', (req: Request, res: Response) => {
+  let { gameId, score, timeSeconds, difficulty, success, username, avatarUrl, userId } = req.body;
+
+  // Prefer session user if logged in
+  const authHeader = req.headers.authorization;
+  if (authHeader && authHeader.startsWith('Bearer ')) {
+    const token = authHeader.split(' ')[1];
+    const sessionUser = verifyToken(token);
+    if (sessionUser) {
+      userId = sessionUser.kickUserId;
+      username = sessionUser.username;
+      avatarUrl = sessionUser.avatarUrl;
+    }
+  }
+
+  if (!userId) {
+    userId = `guest_${Math.random().toString(36).substr(2, 6)}`;
+  }
+  if (!username) {
+    username = `Operator_${userId.slice(-4)}`;
+  }
+  if (!avatarUrl) {
+    avatarUrl = `https://api.dicebear.com/7.x/bottts/svg?seed=${username}`;
+  }
+
+  const validGames = ['lockpicking', 'hacking', 'wires', 'safecracking', 'keypad', 'memory', 'signal'];
+  if (!validGames.includes(gameId)) {
+    return res.status(400).json({ error: `Invalid gameId. Must be one of: ${validGames.join(', ')}` });
+  }
+
+  const scoreNum = Math.max(0, parseInt(score) || 0);
+  const timeNum = Math.max(0.1, parseFloat(timeSeconds) || 10);
+  const diff = ['easy', 'medium', 'hard'].includes(difficulty) ? difficulty : 'medium';
+
+  const record = db.saveMiniGameScore({
+    gameId,
+    userId,
+    username,
+    avatarUrl,
+    score: scoreNum,
+    timeSeconds: timeNum,
+    difficulty: diff,
+    success: Boolean(success)
+  });
+
+  const updatedLeaderboard = db.getMiniGameLeaderboard(gameId, diff, 10);
+
+  res.json({
+    status: 'ok',
+    success: true,
+    record,
+    leaderboard: updatedLeaderboard.leaderboard
+  });
 });
 
 // Tracker status endpoint for live diagnostics

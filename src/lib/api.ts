@@ -334,7 +334,101 @@ export async function awardAdminBadge(kickUserId: string, badgeCode: string): Pr
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ kickUserId, badgeCode })
   });
-  if (!res.ok) throw new Error('Failed to award badge');
+  if (!res.ok) {
+    const err = await res.json().catch(() => ({}));
+    throw new Error(err.error || 'Failed to award badge');
+  }
+  return await res.json();
+}
+
+export async function revokeAdminBadge(awardId: string): Promise<any> {
+  const res = await apiFetch(`${API_BASE}/admin/revoke-badge`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ awardId })
+  });
+  if (!res.ok) {
+    const err = await res.json().catch(() => ({}));
+    throw new Error(err.error || 'Failed to revoke badge');
+  }
+  return await res.json();
+}
+
+export async function fetchAwardedBadges(): Promise<any[]> {
+  const res = await apiFetch(`${API_BASE}/admin/badges/awarded`);
+  if (!res.ok) return [];
+  const data = await res.json();
+  return data.awarded || [];
+}
+
+export async function recalculateVodSubs(): Promise<any> {
+  const res = await apiFetch(`${API_BASE}/admin/recalculate-vod-subs`, { method: 'POST' });
+  if (!res.ok) throw new Error('Failed to recalculate VOD subscriptions');
+  return await res.json();
+}
+
+export async function fetchBadgesCatalog(): Promise<Badge[]> {
+  const res = await apiFetch(`${API_BASE}/badges`);
+  if (!res.ok) return [];
+  const data = await res.json();
+  return data.badges || [];
+}
+
+// Mini-games API
+export async function fetchMiniGameLeaderboard(gameId?: string, difficulty?: string): Promise<{
+  gameId: string;
+  difficulty: string;
+  leaderboard: Array<{
+    rank: number;
+    userId: string;
+    username: string;
+    avatarUrl: string;
+    bestScore: number;
+    fastestTime: number;
+    totalWins: number;
+    lastPlayedAt: string;
+    favoriteGame: string;
+    difficulty: string;
+  }>;
+  totalEntries: number;
+  recentScores: any[];
+}> {
+  const params = new URLSearchParams();
+  if (gameId && gameId !== 'all') params.append('gameId', gameId);
+  if (difficulty && difficulty !== 'all') params.append('difficulty', difficulty);
+
+  const res = await fetch(`${API_BASE}/minigames/leaderboard?${params.toString()}`);
+  if (!res.ok) throw new Error('Failed to fetch mini game leaderboard');
+  return await res.json();
+}
+
+export async function fetchUserMiniGameStats(userId?: string): Promise<any> {
+  const params = new URLSearchParams();
+  if (userId) params.append('userId', userId);
+  const res = await apiFetch(`${API_BASE}/minigames/user-stats?${params.toString()}`);
+  if (!res.ok) return null;
+  return await res.json();
+}
+
+export async function submitMiniGameScore(data: {
+  gameId: string;
+  score: number;
+  timeSeconds: number;
+  difficulty: 'easy' | 'medium' | 'hard';
+  success: boolean;
+  username?: string;
+  avatarUrl?: string;
+  userId?: string;
+}): Promise<any> {
+  const res = await apiFetch(`${API_BASE}/minigames/submit`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(data)
+  });
+  if (!res.ok) {
+    const err = await res.json().catch(() => ({}));
+    throw new Error(err.error || 'Failed to submit score');
+  }
   return await res.json();
 }
 

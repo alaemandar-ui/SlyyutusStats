@@ -19,7 +19,8 @@ import {
   ExternalLink,
   Sparkles,
   Award,
-  Play
+  Play,
+  Zap
 } from 'lucide-react';
 
 export const HomePage: React.FC<{ navigate: (route: string) => void }> = ({ navigate }) => {
@@ -418,6 +419,10 @@ export const HomePage: React.FC<{ navigate: (route: string) => void }> = ({ navi
                       <span className="flex items-center gap-1 font-bold">
                         <Eye className="w-3.5 h-3.5 text-gray-500" />
                         {(vod.views || 0).toLocaleString()} VIEWS
+                      </span>
+                      <span className="flex items-center gap-1 text-emerald-400 font-bold">
+                        <Zap className="w-3 h-3" />
+                        +{vod.subsGained ?? vod.subscribersGained ?? 0} SUBS
                       </span>
                       <span className="flex items-center gap-1 text-[#D4AF37] font-bold">
                         <MessageSquare className="w-3.5 h-3.5" />

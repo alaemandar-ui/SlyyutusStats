@@ -12,22 +12,14 @@ async function startServer() {
   const app = express();
   const server = http.createServer(app);
 
-  // 1. Identify AI Studio dev sandbox vs Cloud Run / production deployment
-  const isAiStudioSandbox = Boolean(process.env.APPLET_ID && process.env.NODE_ENV !== 'production');
-  const isProduction = !isAiStudioSandbox || process.env.NODE_ENV === 'production' || Boolean(process.argv[1] && process.argv[1].includes('dist'));
-
-  if (isProduction && !process.env.NODE_ENV) {
-    process.env.NODE_ENV = 'production';
-  }
+  // 1. Identify production mode vs dev mode
+  const isProduction = process.env.NODE_ENV === 'production';
 
   // 2. Resolve listening PORT:
-  // In AI Studio sandbox development: port 3000 is required by the dev nginx reverse-proxy.
-  // In Cloud Run deployment (and production containers): listen directly on process.env.PORT (Cloud Run default 8080).
-  const PORT = isAiStudioSandbox 
-    ? 3000 
-    : (process.env.PORT ? parseInt(process.env.PORT, 10) : 8080);
+  // Port 3000 is required for AI Studio sandbox. In production/Cloud Run, listen on process.env.PORT || 3000.
+  const PORT = process.env.PORT ? parseInt(process.env.PORT, 10) : 3000;
 
-  console.log(`[SLYYUTUS.STATS] Starting server... (isAiStudioSandbox: ${isAiStudioSandbox}, isProduction: ${isProduction}, PORT: ${PORT})`);
+  console.log(`[SLYYUTUS.STATS] Starting server... (isProduction: ${isProduction}, PORT: ${PORT})`);
 
   // Middlewares
   app.use(express.json());
@@ -75,7 +67,7 @@ async function startServer() {
     const vite = await createViteServer({
       server: {
         middlewareMode: true,
-        hmr: { server }
+        hmr: process.env.DISABLE_HMR === 'true' ? false : { server }
       },
       appType: 'spa',
     });
