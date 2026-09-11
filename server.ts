@@ -15,9 +15,8 @@ async function startServer() {
   // 1. Identify production mode vs dev mode
   const isProduction = process.env.NODE_ENV === 'production';
 
-  // 2. Resolve listening PORT:
-  // Port 3000 is required for AI Studio sandbox. In production/Cloud Run, listen on process.env.PORT || 3000.
-  const PORT = process.env.PORT ? parseInt(process.env.PORT, 10) : 3000;
+  // 2. Resolve listening PORT (Port 3000 is required for AI Studio)
+  const PORT = 3000;
 
   console.log(`[SLYYUTUS.STATS] Starting server... (isProduction: ${isProduction}, PORT: ${PORT})`);
 
@@ -94,22 +93,6 @@ async function startServer() {
   server.listen(PORT, '0.0.0.0', () => {
     console.log(`[SLYYUTUS.STATS] Server listening on http://0.0.0.0:${PORT} (Production: ${isProduction})`);
   });
-
-  // If running in production on a custom Cloud Run PORT (e.g. 8080), also bind port 3000 if available
-  if (PORT !== 3000) {
-    try {
-      const secondaryServer = http.createServer(app);
-      secondaryServer.on('error', (err: any) => {
-        // Safe to ignore if port 3000 is occupied or not allowed
-        console.log(`[SLYYUTUS.STATS] Secondary port 3000 not bound (${err.code || err.message})`);
-      });
-      secondaryServer.listen(3000, '0.0.0.0', () => {
-        console.log(`[SLYYUTUS.STATS] Secondary listener also active on http://0.0.0.0:3000`);
-      });
-    } catch {
-      // Ignore secondary listener errors
-    }
-  }
 }
 
 startServer().catch((err) => {

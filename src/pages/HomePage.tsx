@@ -87,11 +87,11 @@ export const HomePage: React.FC<{ navigate: (route: string) => void }> = ({ navi
         {/* Angled Light Sweep / Sheen */}
         <div className="absolute -inset-x-32 top-0 h-full bg-gradient-to-r from-transparent via-[#D4AF37]/[0.05] to-transparent -skew-x-12 pointer-events-none" />
 
-        {/* Goated Watermark Background (Stylized Crown + Typography) */}
+        {/* Stats Watermark Background (Stylized Crown + Typography) */}
         <div className="absolute right-0 top-1/2 -translate-y-1/2 flex items-center gap-4 opacity-[0.06] pointer-events-none select-none pr-4 sm:pr-8">
           <Crown className="w-48 h-48 sm:w-64 sm:h-64 text-[#D4AF37] stroke-[1.2]" />
-          <div className="text-[90px] sm:text-[140px] lg:text-[180px] font-black text-[#D4AF37] leading-none tracking-tighter">
-            GOAT
+          <div className="text-[90px] sm:text-[140px] lg:text-[180px] font-black text-[#D4AF37] leading-none tracking-tighter uppercase">
+            STATS
           </div>
         </div>
 
@@ -126,7 +126,7 @@ export const HomePage: React.FC<{ navigate: (route: string) => void }> = ({ navi
                 </h1>
                 <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-sm text-[10px] font-black tracking-widest uppercase bg-gradient-to-r from-[#FFD700] to-[#D4AF37] text-black shadow-[0_0_12px_rgba(212,175,55,0.4)]">
                   <Crown className="w-3 h-3 text-black" />
-                  GOAT VERIFIED
+                  VERIFIED
                 </span>
               </div>
               <p className="text-xs text-[#D4AF37] font-bold uppercase tracking-widest flex items-center justify-center sm:justify-start gap-2">
