@@ -63,10 +63,27 @@ export const SeasonDetailPage: React.FC<SeasonDetailPageProps> = ({ seasonId, na
 
   const totalPages = Math.ceil(total / PAGE_SIZE) || 1;
 
-  if (loading && !season) {
+  if (loading) {
     return (
       <div className="max-w-7xl mx-auto px-4 py-8 space-y-6">
         <LoadingSkeleton rows={6} />
+      </div>
+    );
+  }
+
+  if (!season) {
+    return (
+      <div className="max-w-7xl mx-auto px-4 py-16 text-center space-y-4">
+        <Calendar className="w-16 h-16 text-zinc-600 mx-auto" />
+        <h2 className="text-2xl font-black font-heading text-zinc-200 uppercase tracking-tight">Season Not Found</h2>
+        <p className="text-sm text-zinc-500 font-mono">The requested season archive "{seasonId}" could not be located in our database.</p>
+        <button
+          onClick={() => navigate('seasons')}
+          className="inline-flex items-center gap-2 px-4 py-2 rounded-sm bg-[#D4AF37] text-black font-bold text-xs uppercase hover:bg-[#FFD700] transition-colors"
+        >
+          <ArrowLeft className="w-4 h-4" />
+          <span>Back to Seasons Archive</span>
+        </button>
       </div>
     );
   }

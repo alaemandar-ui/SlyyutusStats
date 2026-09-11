@@ -53,10 +53,28 @@ export const VodDetailPage: React.FC<VodDetailPageProps> = ({ streamId, navigate
     loadVod();
   }, [streamId]);
 
-  if (loading || !stream) {
+  if (loading) {
     return (
       <div className="max-w-7xl mx-auto px-4 py-8 space-y-6">
         <LoadingSkeleton type="profile" />
+        <LoadingSkeleton rows={4} />
+      </div>
+    );
+  }
+
+  if (!stream) {
+    return (
+      <div className="max-w-7xl mx-auto px-4 py-16 text-center space-y-4">
+        <Video className="w-16 h-16 text-zinc-600 mx-auto" />
+        <h2 className="text-2xl font-black font-heading text-zinc-200 uppercase tracking-tight">Stream Record Not Found</h2>
+        <p className="text-sm text-zinc-500 font-mono">The requested stream VOD "{streamId}" could not be located in our archive.</p>
+        <button
+          onClick={() => navigate('vods')}
+          className="inline-flex items-center gap-2 px-4 py-2 rounded-sm bg-[#D4AF37] text-black font-bold text-xs uppercase hover:bg-[#FFD700] transition-colors"
+        >
+          <ArrowLeft className="w-4 h-4" />
+          <span>Back to VODs Archive</span>
+        </button>
       </div>
     );
   }

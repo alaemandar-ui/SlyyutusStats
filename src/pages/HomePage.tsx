@@ -20,7 +20,9 @@ import {
   Sparkles,
   Award,
   Play,
-  Zap
+  Zap,
+  BadgeCheck,
+  BarChart3
 } from 'lucide-react';
 
 export const HomePage: React.FC<{ navigate: (route: string) => void }> = ({ navigate }) => {
@@ -87,9 +89,9 @@ export const HomePage: React.FC<{ navigate: (route: string) => void }> = ({ navi
         {/* Angled Light Sweep / Sheen */}
         <div className="absolute -inset-x-32 top-0 h-full bg-gradient-to-r from-transparent via-[#D4AF37]/[0.05] to-transparent -skew-x-12 pointer-events-none" />
 
-        {/* Stats Watermark Background (Stylized Crown + Typography) */}
+        {/* Stats Watermark Background (Stylized BarChart + Typography) */}
         <div className="absolute right-0 top-1/2 -translate-y-1/2 flex items-center gap-4 opacity-[0.06] pointer-events-none select-none pr-4 sm:pr-8">
-          <Crown className="w-48 h-48 sm:w-64 sm:h-64 text-[#D4AF37] stroke-[1.2]" />
+          <BarChart3 className="w-44 h-44 sm:w-60 sm:h-60 text-[#D4AF37] stroke-[1.2]" />
           <div className="text-[90px] sm:text-[140px] lg:text-[180px] font-black text-[#D4AF37] leading-none tracking-tighter uppercase">
             STATS
           </div>
@@ -124,8 +126,8 @@ export const HomePage: React.FC<{ navigate: (route: string) => void }> = ({ navi
                 <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tighter uppercase leading-none text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]">
                   {channel.username}
                 </h1>
-                <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-sm text-[10px] font-black tracking-widest uppercase bg-gradient-to-r from-[#FFD700] to-[#D4AF37] text-black shadow-[0_0_12px_rgba(212,175,55,0.4)]">
-                  <Crown className="w-3 h-3 text-black" />
+                <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-sm text-[10px] font-black tracking-widest uppercase bg-gradient-to-r from-[#FFD700] to-[#D4AF37] text-black shadow-[0_0_12px_rgba(212,175,55,0.4)]">
+                  <BadgeCheck className="w-3.5 h-3.5 text-black stroke-[2.5]" />
                   VERIFIED
                 </span>
               </div>
