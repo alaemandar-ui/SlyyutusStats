@@ -984,11 +984,45 @@ apiRouter.post('/webhooks/kick', (req: Request, res: Response) => {
 // --- Mini Games Leaderboard & Scoring ---
 apiRouter.get('/minigames/dashboard', (req: Request, res: Response) => {
   const stats = db.getMiniGameDashboardStats();
+  
+  // Also attach userStats if authenticated or userId provided
+  let userStats = null;
+  let userId = req.query.userId as string;
+  let username = req.query.username as string;
+
+  if (!userId && (req as any).user) {
+    userId = (req as any).user.kickUserId;
+    username = (req as any).user.username;
+  }
+
+  const authHeader = req.headers.authorization;
+  if (!userId && authHeader && authHeader.startsWith('Bearer ')) {
+    const token = authHeader.split(' ')[1];
+    const sessionUser = verifyToken(token);
+    if (sessionUser) {
+      userId = sessionUser.kickUserId;
+      username = sessionUser.username;
+    }
+  }
+
+  if (!userId && req.cookies?.auth_token) {
+    const sessionUser = verifyToken(req.cookies.auth_token);
+    if (sessionUser) {
+      userId = sessionUser.kickUserId;
+      username = sessionUser.username;
+    }
+  }
+
+  if (userId || username) {
+    userStats = db.getUserMiniGameStats(userId || '', username);
+  }
+
   res.json({
     status: 'ok',
     ...stats,
     recentActivity: stats.recentResults,
-    playerRankings: stats.topRankedPlayers
+    playerRankings: stats.topRankedPlayers,
+    userStats
   });
 });
 
@@ -1003,24 +1037,50 @@ apiRouter.get('/minigames/leaderboard', (req: Request, res: Response) => {
 
 apiRouter.get('/minigames/user-stats', (req: Request, res: Response) => {
   let userId = req.query.userId as string;
-  if (!userId) {
-    const authHeader = req.headers.authorization;
-    if (authHeader && authHeader.startsWith('Bearer ')) {
-      const token = authHeader.split(' ')[1];
-      const sessionUser = verifyToken(token);
-      if (sessionUser) {
-        userId = sessionUser.kickUserId;
-      }
+  let username = req.query.username as string;
+
+  if (!userId && (req as any).user) {
+    userId = (req as any).user.kickUserId;
+    if (!username) username = (req as any).user.username;
+  }
+
+  const authHeader = req.headers.authorization;
+  if (!userId && authHeader && authHeader.startsWith('Bearer ')) {
+    const token = authHeader.split(' ')[1];
+    const sessionUser = verifyToken(token);
+    if (sessionUser) {
+      userId = sessionUser.kickUserId;
+      if (!username) username = sessionUser.username;
     }
   }
 
-  if (!userId) {
-    // If not logged in and no user requested, default to guest
+  if (!userId && req.cookies?.auth_token) {
+    const sessionUser = verifyToken(req.cookies.auth_token);
+    if (sessionUser) {
+      userId = sessionUser.kickUserId;
+      if (!username) username = sessionUser.username;
+    }
+  }
+
+  if (!userId && !username) {
     userId = 'guest';
   }
 
-  const stats = db.getUserMiniGameStats(userId);
-  res.json(stats);
+  const dbUser = (userId && userId !== 'guest' ? db.getKickUserById(userId) : undefined) || 
+                 (username ? db.getKickUserByUsername(username) : undefined);
+  if (dbUser && !username) {
+    username = dbUser.username;
+  }
+
+  const stats = db.getUserMiniGameStats(userId || '', username);
+  if (dbUser && dbUser.avatarUrl && (!stats.avatarUrl || stats.avatarUrl.includes('dicebear'))) {
+    stats.avatarUrl = dbUser.avatarUrl;
+  }
+  res.json({
+    status: 'ok',
+    stats,
+    ...stats
+  });
 });
 
 apiRouter.post('/admin/minigames/purge-test-data', requireAdmin, (req: Request, res: Response) => {
@@ -1032,29 +1092,67 @@ apiRouter.post('/admin/minigames/purge-test-data', requireAdmin, (req: Request, 
   });
 });
 
-apiRouter.post('/minigames/submit', (req: Request, res: Response) => {
-  let { gameId, gameTitle, score, timeSeconds, accuracy, difficulty, gameMode, success, username, avatarUrl, userId } = req.body;
-
-  // Prefer session user if logged in
-  const authHeader = req.headers.authorization;
-  if (authHeader && authHeader.startsWith('Bearer ')) {
-    const token = authHeader.split(' ')[1];
-    const sessionUser = verifyToken(token);
-    if (sessionUser) {
-      userId = sessionUser.kickUserId;
-      username = sessionUser.username;
-      avatarUrl = sessionUser.avatarUrl;
-    }
+// Protect game-start session initialization - requires active Kick authentication
+apiRouter.post('/minigames/start', requireAuth, (req: AuthRequest, res: Response) => {
+  if (!req.user) {
+    return res.status(401).json({ error: 'Please log in to play games.', requiresAuth: true });
   }
 
-  if (!userId) {
-    userId = `guest_${Math.random().toString(36).substr(2, 6)}`;
+  const { gameId, difficulty = 'medium' } = req.body;
+  const validGames = [
+    'logic_grid',
+    'pattern_decoder',
+    'sequence_master',
+    'cipher_puzzle',
+    'difficult_quiz',
+    'precision_timing',
+    'multi_task',
+    'arcade_shooter'
+  ];
+
+  if (gameId && !validGames.includes(gameId)) {
+    return res.status(400).json({ error: `Invalid gameId. Must be one of: ${validGames.join(', ')}` });
   }
-  if (!username) {
-    username = `Operator_${userId.slice(-4)}`;
+
+  const dbUser = db.getKickUserById(req.user.kickUserId) || db.getKickUserByUsername(req.user.username);
+  const sessionId = `sess_${Date.now()}_${Math.random().toString(36).substring(2, 9)}`;
+
+  res.json({
+    status: 'ok',
+    success: true,
+    sessionId,
+    gameId,
+    difficulty,
+    user: {
+      kickUserId: req.user.kickUserId,
+      username: req.user.username,
+      avatarUrl: dbUser?.avatarUrl || req.user.avatarUrl
+    },
+    startedAt: new Date().toISOString()
+  });
+});
+
+// Protect score-submission API on the backend - requires active Kick authentication
+apiRouter.post('/minigames/submit', requireAuth, (req: AuthRequest, res: Response) => {
+  if (!req.user) {
+    return res.status(401).json({ error: 'Please log in to play games.', requiresAuth: true });
   }
+
+  let { gameId, gameTitle, score, timeSeconds, accuracy, difficulty, gameMode, success } = req.body;
+
+  // Strict session user identity - prevent spoofing
+  const userId = req.user.kickUserId;
+  let username = req.user.username;
+  let avatarUrl = req.user.avatarUrl;
+
+  const dbUser = db.getKickUserById(userId) || db.getKickUserByUsername(username);
+  if (dbUser) {
+    if (dbUser.username) username = dbUser.username;
+    if (dbUser.avatarUrl) avatarUrl = dbUser.avatarUrl;
+  }
+
   if (!avatarUrl) {
-    avatarUrl = `https://api.dicebear.com/7.x/bottts/svg?seed=${username}`;
+    avatarUrl = `https://api.dicebear.com/7.x/bottts/svg?seed=${encodeURIComponent(username)}`;
   }
 
   const validGames = [
@@ -1109,7 +1207,7 @@ apiRouter.post('/minigames/submit', (req: Request, res: Response) => {
   });
 
   const updatedLeaderboard = db.getMiniGameLeaderboard(gameId, diff, 10);
-  const userStats = db.getUserMiniGameStats(userId);
+  const userStats = db.getUserMiniGameStats(userId, username);
 
   res.json({
     status: 'ok',

@@ -483,11 +483,29 @@ export async function fetchMiniGameLeaderboard(gameId?: string, difficulty?: str
   return await res.json();
 }
 
-export async function fetchUserMiniGameStats(userId?: string): Promise<any> {
+export async function fetchUserMiniGameStats(userId?: string, username?: string): Promise<any> {
   const params = new URLSearchParams();
   if (userId) params.append('userId', userId);
+  if (username) params.append('username', username);
   const res = await apiFetch(`${API_BASE}/minigames/user-stats?${params.toString()}`);
   if (!res.ok) return null;
+  const json = await res.json();
+  return json?.stats || json;
+}
+
+export async function startMiniGameSession(data: {
+  gameId: string;
+  difficulty?: 'easy' | 'medium' | 'hard' | 'expert';
+}): Promise<any> {
+  const res = await apiFetch(`${API_BASE}/minigames/start`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(data)
+  });
+  if (!res.ok) {
+    const err = await res.json().catch(() => ({}));
+    throw new Error(err.error || 'Please log in to play games.');
+  }
   return await res.json();
 }
 
@@ -511,7 +529,7 @@ export async function submitMiniGameScore(data: {
   });
   if (!res.ok) {
     const err = await res.json().catch(() => ({}));
-    throw new Error(err.error || 'Failed to submit score');
+    throw new Error(err.error || 'Please log in to play games.');
   }
   return await res.json();
 }

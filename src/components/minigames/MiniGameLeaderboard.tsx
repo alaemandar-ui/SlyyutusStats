@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { UserAvatar } from '../UserAvatar';
 import { fetchMiniGameLeaderboard } from '../../lib/api';
-import { Trophy, Medal, Award, Clock, Target, Calendar, Filter, Sparkles, Flame, CheckCircle2 } from 'lucide-react';
+import { Trophy, Medal, Award, Clock, Target, Calendar, Filter, Sparkles, CheckCircle2 } from 'lucide-react';
 
 interface Props {
   selectedGameId?: string;
@@ -16,15 +16,15 @@ export const MiniGameLeaderboard: React.FC<Props> = ({ selectedGameId = 'all', o
   const [loading, setLoading] = useState<boolean>(true);
 
   const GAME_OPTIONS = [
-    { id: 'all', label: 'All Disciplines' },
-    { id: 'arcade_shooter', label: 'Holo-Range Assault' },
+    { id: 'all', label: 'All Operations' },
     { id: 'logic_grid', label: 'Neural Grid Matrix' },
-    { id: 'difficult_quiz', label: 'Apex Intellect Trivia' },
-    { id: 'precision_timing', label: 'Oscillation Calibrator' },
     { id: 'pattern_decoder', label: 'Pattern Decoder' },
     { id: 'sequence_master', label: 'Sequence Master' },
     { id: 'cipher_puzzle', label: 'Cipher Decoder' },
-    { id: 'multi_task', label: 'Cognitive Overload' }
+    { id: 'difficult_quiz', label: 'Apex Intellect Trivia' },
+    { id: 'precision_timing', label: 'Oscillation Calibrator' },
+    { id: 'multi_task', label: 'Cognitive Overload' },
+    { id: 'arcade_shooter', label: 'Holo-Range Assault' }
   ];
 
   const DIFF_OPTIONS = [
@@ -54,55 +54,57 @@ export const MiniGameLeaderboard: React.FC<Props> = ({ selectedGameId = 'all', o
   const entries = viewMode === 'users' ? data?.leaderboard || [] : data?.topRuns || [];
 
   return (
-    <div className="bg-[#0e1217] border border-[#232936] rounded-2xl p-6 text-white shadow-xl">
+    <div className="rounded-xl border border-[#D4AF37]/30 bg-[#111] p-6 text-white shadow-[0_0_25px_rgba(212,175,55,0.08)]">
       {/* Header */}
-      <div className="flex flex-wrap items-center justify-between gap-4 border-b border-[#232936] pb-4 mb-6">
+      <div className="flex flex-wrap items-center justify-between gap-4 border-b border-zinc-800 pb-5 mb-6">
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400">
-            <Trophy className="w-5 h-5" />
+          <div className="w-12 h-12 rounded-xl bg-[#D4AF37]/10 border border-[#D4AF37]/30 flex items-center justify-center text-[#D4AF37] shadow-[0_0_15px_rgba(212,175,55,0.2)]">
+            <Trophy className="w-6 h-6" />
           </div>
           <div>
-            <h3 className="text-xl font-bold text-white flex items-center gap-2">
-              Official Leaderboard & Rankings
-              <span className="text-xs px-2.5 py-0.5 rounded-full bg-[#00ff88]/10 text-[#00ff88] border border-[#00ff88]/30 font-mono">
-                Verified DB Records
+            <h3 className="text-xl sm:text-2xl font-black font-heading text-white flex items-center gap-2.5">
+              <span>Official Leaderboard & Rankings</span>
+              <span className="text-[10px] px-2.5 py-0.5 rounded-full bg-[#D4AF37]/15 text-[#FFD700] border border-[#D4AF37]/40 font-mono uppercase">
+                Verified Records
               </span>
             </h3>
-            <p className="text-xs text-gray-400">Real verified player records, completion times, and competitive point rankings</p>
+            <p className="text-xs font-mono text-zinc-400 mt-0.5">
+              Live database records, completion times, and competitive point rankings
+            </p>
           </div>
         </div>
 
         {/* View mode toggle */}
-        <div className="flex items-center bg-[#161c24] p-1 rounded-xl border border-[#232936]">
+        <div className="flex items-center bg-[#1A1A1A] p-1 rounded-lg border border-zinc-800">
           <button
             onClick={() => setViewMode('users')}
-            className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all ${
+            className={`px-3.5 py-1.5 rounded-md text-xs font-heading font-extrabold uppercase tracking-wider transition-all ${
               viewMode === 'users'
-                ? 'bg-gradient-to-r from-[#00ff88]/20 to-cyan-500/20 text-[#00ff88] border border-[#00ff88]/40 shadow-sm'
-                : 'text-gray-400 hover:text-white'
+                ? 'bg-[#D4AF37] text-black shadow-sm'
+                : 'text-zinc-400 hover:text-white'
             }`}
           >
             Player Standings
           </button>
           <button
             onClick={() => setViewMode('runs')}
-            className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all ${
+            className={`px-3.5 py-1.5 rounded-md text-xs font-heading font-extrabold uppercase tracking-wider transition-all ${
               viewMode === 'runs'
-                ? 'bg-gradient-to-r from-[#00ff88]/20 to-cyan-500/20 text-[#00ff88] border border-[#00ff88]/40 shadow-sm'
-                : 'text-gray-400 hover:text-white'
+                ? 'bg-[#D4AF37] text-black shadow-sm'
+                : 'text-zinc-400 hover:text-white'
             }`}
           >
-            All Top Runs
+            Top Clearances
           </button>
         </div>
       </div>
 
       {/* Filter Controls */}
-      <div className="flex flex-wrap items-center justify-between gap-4 mb-6 bg-[#121720] border border-[#232936] p-4 rounded-xl">
-        <div className="flex flex-wrap items-center gap-2">
-          <span className="text-xs text-gray-400 flex items-center gap-1.5 mr-2">
-            <Filter className="w-3.5 h-3.5 text-gray-500" />
-            Game:
+      <div className="flex flex-wrap items-center justify-between gap-4 mb-6 bg-[#161616] border border-zinc-800 p-4 rounded-xl">
+        <div className="flex flex-wrap items-center gap-2.5">
+          <span className="text-xs font-mono text-zinc-400 flex items-center gap-1.5 mr-1">
+            <Filter className="w-3.5 h-3.5 text-[#D4AF37]" />
+            Operation:
           </span>
           <select
             value={activeGame}
@@ -110,7 +112,7 @@ export const MiniGameLeaderboard: React.FC<Props> = ({ selectedGameId = 'all', o
               setActiveGame(e.target.value);
               if (onSelectGame) onSelectGame(e.target.value);
             }}
-            className="bg-[#161c26] border border-[#232936] text-white text-xs rounded-lg px-3 py-1.5 outline-none focus:border-[#00ff88]"
+            className="bg-[#111] border border-zinc-700 text-white text-xs rounded-lg px-3 py-1.5 outline-none focus:border-[#D4AF37] font-mono cursor-pointer"
           >
             {GAME_OPTIONS.map(opt => (
               <option key={opt.id} value={opt.id}>{opt.label}</option>
@@ -119,15 +121,15 @@ export const MiniGameLeaderboard: React.FC<Props> = ({ selectedGameId = 'all', o
         </div>
 
         <div className="flex flex-wrap items-center gap-2">
-          <span className="text-xs text-gray-400 mr-2">Difficulty Tier:</span>
+          <span className="text-xs font-mono text-zinc-400 mr-1">Difficulty Tier:</span>
           {DIFF_OPTIONS.map(d => (
             <button
               key={d.id}
               onClick={() => setActiveDiff(d.id)}
-              className={`px-2.5 py-1 rounded-lg text-xs font-medium transition-all ${
+              className={`px-2.5 py-1 rounded-md text-xs font-mono uppercase transition-all ${
                 activeDiff === d.id
-                  ? 'bg-amber-500/20 text-amber-300 border border-amber-500/40'
-                  : 'bg-[#161c26] text-gray-400 hover:text-white border border-[#232936]'
+                  ? 'bg-[#D4AF37]/20 text-[#FFD700] border border-[#D4AF37]/50 font-bold'
+                  : 'bg-[#111] text-zinc-400 hover:text-white border border-zinc-800'
               }`}
             >
               {d.label}
@@ -136,11 +138,11 @@ export const MiniGameLeaderboard: React.FC<Props> = ({ selectedGameId = 'all', o
         </div>
       </div>
 
-      {/* Table */}
+      {/* Leaderboard Table: Rank | Player | Game | Score | Time | Date */}
       <div className="overflow-x-auto">
         <table className="w-full text-left text-xs">
           <thead>
-            <tr className="border-b border-[#232936] text-gray-400 uppercase tracking-wider pb-3 font-semibold">
+            <tr className="border-b border-zinc-800 text-zinc-400 uppercase tracking-wider pb-3 font-mono text-[11px]">
               <th className="py-3 px-3 w-16">Rank</th>
               <th className="py-3 px-3">Player</th>
               <th className="py-3 px-3">Game</th>
@@ -150,18 +152,24 @@ export const MiniGameLeaderboard: React.FC<Props> = ({ selectedGameId = 'all', o
               <th className="py-3 px-3 text-right">Date</th>
             </tr>
           </thead>
-          <tbody className="divide-y divide-[#232936]/50">
+          <tbody className="divide-y divide-zinc-800/60 font-mono">
             {loading ? (
               <tr>
-                <td colSpan={7} className="py-12 text-center text-gray-500">
-                  <div className="inline-block w-6 h-6 border-2 border-[#00ff88] border-t-transparent rounded-full animate-spin mb-2"></div>
-                  <p>Retrieving secure competitive database records...</p>
+                <td colSpan={7} className="py-12 text-center text-zinc-400">
+                  <div className="inline-block w-6 h-6 border-2 border-[#D4AF37] border-t-transparent rounded-full animate-spin mb-2"></div>
+                  <p className="font-mono text-xs text-zinc-500">Retrieving official competitive records...</p>
                 </td>
               </tr>
             ) : entries.length === 0 ? (
               <tr>
-                <td colSpan={7} className="py-10 text-center text-gray-400">
-                  No verified records found for this combination. Be the first to establish a high score!
+                <td colSpan={7} className="py-12 text-center text-zinc-400">
+                  <div className="max-w-sm mx-auto space-y-2">
+                    <Trophy className="w-8 h-8 text-zinc-600 mx-auto" />
+                    <p className="text-sm font-bold text-white">No Verified Records Found</p>
+                    <p className="text-xs text-zinc-500">
+                      Be the first player to establish a record in this discipline!
+                    </p>
+                  </div>
                 </td>
               </tr>
             ) : (
@@ -173,14 +181,14 @@ export const MiniGameLeaderboard: React.FC<Props> = ({ selectedGameId = 'all', o
                 return (
                   <tr
                     key={entry.id || `${entry.userId}_${index}`}
-                    className={`hover:bg-[#151c27] transition-colors ${
-                      isTop1 ? 'bg-amber-500/5' : isTop2 ? 'bg-slate-400/5' : isTop3 ? 'bg-amber-700/5' : ''
+                    className={`hover:bg-zinc-900/60 transition-colors ${
+                      isTop1 ? 'bg-[#D4AF37]/5' : isTop2 ? 'bg-slate-400/5' : isTop3 ? 'bg-amber-700/5' : ''
                     }`}
                   >
                     {/* Rank */}
-                    <td className="py-3 px-3 font-mono font-bold">
+                    <td className="py-3 px-3 font-bold">
                       {isTop1 ? (
-                        <div className="w-7 h-7 rounded-lg bg-amber-500/20 border border-amber-500/50 flex items-center justify-center text-amber-300">
+                        <div className="w-7 h-7 rounded-lg bg-[#D4AF37]/20 border border-[#D4AF37]/60 flex items-center justify-center text-[#FFD700]">
                           <Trophy className="w-4 h-4" />
                         </div>
                       ) : isTop2 ? (
@@ -192,7 +200,7 @@ export const MiniGameLeaderboard: React.FC<Props> = ({ selectedGameId = 'all', o
                           <Award className="w-4 h-4" />
                         </div>
                       ) : (
-                        <span className="text-gray-400 ml-2">#{entry.rank}</span>
+                        <span className="text-zinc-500 ml-2 font-mono">#{entry.rank}</span>
                       )}
                     </td>
 
@@ -200,41 +208,43 @@ export const MiniGameLeaderboard: React.FC<Props> = ({ selectedGameId = 'all', o
                     <td className="py-3 px-3">
                       <div className="flex items-center gap-2.5">
                         <UserAvatar
-                          username={entry.username}
+                          src={entry.avatarUrl}
                           avatarUrl={entry.avatarUrl}
+                          username={entry.username}
+                          userId={entry.userId}
                           size="sm"
                         />
                         <div>
-                          <span className="font-bold text-white block">{entry.username}</span>
-                          <span className="text-[10px] text-gray-500 font-mono">UID: {entry.userId.slice(-6)}</span>
+                          <span className="font-bold text-white block font-sans">{entry.username}</span>
+                          <span className="text-[10px] text-zinc-500 font-mono">ID: {entry.userId?.slice(-6) || 'active'}</span>
                         </div>
                       </div>
                     </td>
 
                     {/* Game */}
-                    <td className="py-3 px-3 font-medium text-gray-200">
+                    <td className="py-3 px-3 font-medium text-zinc-200">
                       <div>
-                        <span className="font-medium text-white">{entry.gameTitle || entry.gameId}</span>
+                        <span className="font-bold text-white font-sans">{entry.gameTitle || entry.gameId}</span>
                         {entry.gameMode && (
-                          <span className="text-[10px] text-gray-500 block font-mono">Mode: {entry.gameMode}</span>
+                          <span className="text-[10px] text-zinc-500 block font-mono">Mode: {entry.gameMode}</span>
                         )}
                       </div>
                     </td>
 
                     {/* Score */}
                     <td className="py-3 px-3 text-right">
-                      <span className="font-mono font-bold text-base text-[#00ff88]">
-                        {entry.score || entry.bestScore}
+                      <span className="font-mono font-bold text-base text-[#FFD700]">
+                        {(entry.score || entry.bestScore || 0).toLocaleString()}
                       </span>
-                      <span className="text-[10px] text-gray-500 block">pts</span>
+                      <span className="text-[10px] text-zinc-500 block">pts</span>
                     </td>
 
                     {/* Time */}
-                    <td className="py-3 px-3 text-right font-mono text-gray-300">
+                    <td className="py-3 px-3 text-right text-zinc-300">
                       {(entry.timeSeconds || entry.fastestTime)?.toFixed(1)}s
                     </td>
 
-                    {/* Difficulty */}
+                    {/* Tier */}
                     <td className="py-3 px-3 text-center">
                       <span className={`text-[10px] uppercase font-mono px-2 py-0.5 rounded border ${
                         entry.difficulty === 'expert' ? 'bg-purple-500/20 text-purple-300 border-purple-500/40' :
@@ -242,13 +252,13 @@ export const MiniGameLeaderboard: React.FC<Props> = ({ selectedGameId = 'all', o
                         entry.difficulty === 'medium' ? 'bg-cyan-500/20 text-cyan-300 border-cyan-500/40' :
                         'bg-emerald-500/20 text-emerald-300 border-emerald-500/40'
                       }`}>
-                        {entry.difficulty}
+                        {entry.difficulty || 'standard'}
                       </span>
                     </td>
 
                     {/* Date */}
-                    <td className="py-3 px-3 text-right text-gray-400 font-mono text-[11px]">
-                      {entry.date ? new Date(entry.date).toLocaleDateString() : 'Recent'}
+                    <td className="py-3 px-3 text-right text-zinc-400 font-mono text-[11px]">
+                      {entry.createdAt || entry.date ? new Date(entry.createdAt || entry.date).toLocaleDateString() : 'Recent'}
                     </td>
                   </tr>
                 );

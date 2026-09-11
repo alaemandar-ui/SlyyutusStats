@@ -58,10 +58,16 @@ export const LoginPage: React.FC<{ navigate: (route: string) => void }> = ({ nav
         <p className="text-sm font-mono text-zinc-400">
           You are currently authenticated as <strong className="text-[#D4AF37]">{user.username}</strong> ({user.role.toUpperCase()}).
         </p>
-        <div className="pt-2 flex justify-center gap-4">
+        <div className="pt-2 flex flex-wrap justify-center gap-3">
+          <button
+            onClick={() => navigate('minigames')}
+            className="px-6 py-2.5 rounded-xl bg-[#D4AF37] text-zinc-950 font-heading font-bold uppercase text-xs hover:bg-[#FFD700] transition-all shadow-lg flex items-center gap-2"
+          >
+            <span>Play Games</span>
+          </button>
           <button
             onClick={() => navigate('my-stats')}
-            className="px-6 py-2.5 rounded-xl bg-[#D4AF37] text-zinc-950 font-heading font-bold uppercase text-xs hover:bg-[#FFD700] transition-all shadow-lg"
+            className="px-6 py-2.5 rounded-xl bg-zinc-900 text-zinc-200 border border-zinc-700 font-heading font-bold uppercase text-xs hover:bg-zinc-800 transition-all"
           >
             Go to My Stats
           </button>

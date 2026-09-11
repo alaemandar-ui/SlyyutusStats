@@ -1433,9 +1433,17 @@ class Database {
     const catalogItem = Database.MINI_GAMES_CATALOG.find(g => g.id === score.gameId);
     const gameTitle = score.gameTitle || (catalogItem ? catalogItem.title : score.gameId);
 
+    // Resolve real user record if known to guarantee real Kick avatar
+    const realUser = (score.userId ? this.getKickUserById(score.userId) : undefined) ||
+                     (score.username ? this.getKickUserByUsername(score.username) : undefined);
+    const resolvedUsername = realUser?.username || score.username;
+    const resolvedAvatar = realUser?.avatarUrl || score.avatarUrl || `https://api.dicebear.com/7.x/bottts/svg?seed=${encodeURIComponent(resolvedUsername)}`;
+
     const fullScore: DBMiniGameScore = {
       id: `mgs_${Date.now()}_${Math.random().toString(36).substr(2, 6)}`,
       ...score,
+      username: resolvedUsername,
+      avatarUrl: resolvedAvatar,
       gameTitle,
       accuracy: typeof score.accuracy === 'number' ? Math.min(100, Math.max(0, Math.round(score.accuracy * 10) / 10)) : undefined,
       createdAt: new Date().toISOString()
@@ -1446,7 +1454,7 @@ class Database {
     // Also award League activity points if user is authenticated or known
     if (score.userId && !score.userId.startsWith('guest_') && score.success) {
       const pointAward = score.difficulty === 'expert' ? 30 : score.difficulty === 'hard' ? 25 : score.difficulty === 'medium' ? 15 : 10;
-      this.addPoints(score.userId, score.username, score.avatarUrl, 'MINI_GAME_WIN', pointAward);
+      this.addPoints(score.userId, resolvedUsername, resolvedAvatar, 'MINI_GAME_WIN', pointAward);
     }
 
     this.addSystemLog('info', 'MINI_GAMES', `Recorded score for ${score.username} in ${gameTitle} (${score.difficulty}): ${score.score} pts (${score.timeSeconds}s, ${fullScore.accuracy ?? 100}% acc)`);
@@ -1485,14 +1493,28 @@ class Database {
         totalPlays: gScores.length,
         totalWins: gWins.length,
         highestScore: gHighest,
+        highScore: gHighest,
         fastestTime: gFastest,
+        bestTime: gFastest,
         averageScore: gAvgScore,
-        topPlayer: gTopScore ? {
-          username: gTopScore.username,
-          avatarUrl: gTopScore.avatarUrl,
-          score: gTopScore.score
-        } : null
+        topPlayer: gTopScore ? (() => {
+          const realUser = this.getKickUserById(gTopScore.userId) || this.getKickUserByUsername(gTopScore.username);
+          const resolvedUsername = realUser?.username || gTopScore.username;
+          const resolvedAvatar = realUser?.avatarUrl || gTopScore.avatarUrl || `https://api.dicebear.com/7.x/bottts/svg?seed=${encodeURIComponent(resolvedUsername)}`;
+          return {
+            userId: gTopScore.userId,
+            username: resolvedUsername,
+            avatarUrl: resolvedAvatar,
+            score: gTopScore.score
+          };
+        })() : null
       };
+    });
+
+    // Also build a map by gameId for direct object lookups
+    const perGameMap: Record<string, any> = {};
+    perGameStats.forEach(st => {
+      perGameMap[st.gameId] = st;
     });
 
     // Top ranked players across all games (aggregated)
@@ -1517,10 +1539,14 @@ class Database {
 
       let p = playerMap.get(s.userId);
       if (!p) {
+        const realUser = this.getKickUserById(s.userId) || this.getKickUserByUsername(s.username);
+        const resolvedUsername = realUser?.username || s.username;
+        const resolvedAvatar = realUser?.avatarUrl || s.avatarUrl || `https://api.dicebear.com/7.x/bottts/svg?seed=${encodeURIComponent(resolvedUsername)}`;
+
         p = {
           userId: s.userId,
-          username: s.username,
-          avatarUrl: s.avatarUrl,
+          username: resolvedUsername,
+          avatarUrl: resolvedAvatar,
           totalWins: s.success ? 1 : 0,
           totalPlays: 1,
           bestScore: s.score,
@@ -1560,10 +1586,15 @@ class Database {
     const topRankedPlayers = Array.from(playerMap.values())
       .sort((a, b) => b.totalPoints - a.totalPoints || b.bestScore - a.bestScore)
       .slice(0, 10)
-      .map((p, idx) => ({
-        rank: idx + 1,
-        ...p
-      }));
+      .map((p, idx) => {
+        const realUser = this.getKickUserById(p.userId) || this.getKickUserByUsername(p.username);
+        return {
+          rank: idx + 1,
+          ...p,
+          username: realUser?.username || p.username,
+          avatarUrl: realUser?.avatarUrl || p.avatarUrl || `https://api.dicebear.com/7.x/bottts/svg?seed=${encodeURIComponent(p.username)}`
+        };
+      });
 
     // Recent results (latest 20)
     const recentResults = allScores
@@ -1571,8 +1602,13 @@ class Database {
       .reverse()
       .map(s => {
         const catItem = Database.MINI_GAMES_CATALOG.find(g => g.id === s.gameId);
+        const realUser = this.getKickUserById(s.userId) || this.getKickUserByUsername(s.username);
+        const resolvedUsername = realUser?.username || s.username;
+        const resolvedAvatar = realUser?.avatarUrl || s.avatarUrl || `https://api.dicebear.com/7.x/bottts/svg?seed=${encodeURIComponent(resolvedUsername)}`;
         return {
           ...s,
+          username: resolvedUsername,
+          avatarUrl: resolvedAvatar,
           gameTitle: s.gameTitle || (catItem ? catItem.title : s.gameId)
         };
       });
@@ -1584,8 +1620,11 @@ class Database {
       highestScore,
       fastestCompletionTime,
       recentResults,
+      recentActivity: recentResults,
       perGameStats,
+      perGameMap,
       topRankedPlayers,
+      playerRankings: topRankedPlayers,
       catalog: Database.MINI_GAMES_CATALOG
     };
   }
@@ -1621,12 +1660,15 @@ class Database {
       .slice(0, limit)
       .map((entry, index) => {
         const cat = Database.MINI_GAMES_CATALOG.find(g => g.id === entry.gameId);
+        const realUser = this.getKickUserById(entry.userId) || this.getKickUserByUsername(entry.username);
+        const resolvedUsername = realUser?.username || entry.username;
+        const resolvedAvatar = realUser?.avatarUrl || entry.avatarUrl || `https://api.dicebear.com/7.x/bottts/svg?seed=${encodeURIComponent(resolvedUsername)}`;
         return {
           rank: index + 1,
           id: entry.id,
           userId: entry.userId,
-          username: entry.username,
-          avatarUrl: entry.avatarUrl,
+          username: resolvedUsername,
+          avatarUrl: resolvedAvatar,
           gameId: entry.gameId,
           gameTitle: entry.gameTitle || (cat ? cat.title : entry.gameId),
           score: entry.score,
@@ -1644,12 +1686,15 @@ class Database {
       .slice(0, limit)
       .map((entry, index) => {
         const cat = Database.MINI_GAMES_CATALOG.find(g => g.id === entry.gameId);
+        const realUser = this.getKickUserById(entry.userId) || this.getKickUserByUsername(entry.username);
+        const resolvedUsername = realUser?.username || entry.username;
+        const resolvedAvatar = realUser?.avatarUrl || entry.avatarUrl || `https://api.dicebear.com/7.x/bottts/svg?seed=${encodeURIComponent(resolvedUsername)}`;
         return {
           rank: index + 1,
           id: entry.id,
           userId: entry.userId,
-          username: entry.username,
-          avatarUrl: entry.avatarUrl,
+          username: resolvedUsername,
+          avatarUrl: resolvedAvatar,
           gameId: entry.gameId,
           gameTitle: entry.gameTitle || (cat ? cat.title : entry.gameId),
           score: entry.score,
@@ -1668,79 +1713,195 @@ class Database {
       leaderboard,
       topRuns,
       totalEntries: filtered.length,
-      recentScores: (this.data.miniGameScores || []).slice(-15).reverse()
+      recentScores: (this.data.miniGameScores || []).slice(-15).reverse().map(s => {
+        const cat = Database.MINI_GAMES_CATALOG.find(g => g.id === s.gameId);
+        const realUser = this.getKickUserById(s.userId) || this.getKickUserByUsername(s.username);
+        return {
+          ...s,
+          username: realUser?.username || s.username,
+          avatarUrl: realUser?.avatarUrl || s.avatarUrl || `https://api.dicebear.com/7.x/bottts/svg?seed=${encodeURIComponent(s.username)}`,
+          gameTitle: s.gameTitle || (cat ? cat.title : s.gameId)
+        };
+      })
     };
   }
 
-  public getUserMiniGameStats(userId: string) {
-    const allUserScores = (this.data.miniGameScores || []).filter(s => s.userId === userId);
-    const wins = allUserScores.filter(s => s.success);
+  public getUserMiniGameStats(userId: string, username?: string) {
+    const allScores = this.data.miniGameScores || [];
+    
+    // Match either by exact userId OR by lowercase username (if username provided)
+    const allUserScores = allScores.filter(s => {
+      if (userId && s.userId === userId) return true;
+      if (username && s.username && s.username.toLowerCase() === username.toLowerCase()) return true;
+      return false;
+    });
 
-    const totalAttempts = allUserScores.length;
-    const totalWins = wins.length;
-    const winRate = totalAttempts > 0 ? Math.round((totalWins / totalAttempts) * 100) : 0;
-    const bestScore = wins.length > 0 ? Math.max(...wins.map(s => s.score)) : 0;
-    const averageScore = wins.length > 0 ? Math.round(wins.reduce((sum, s) => sum + s.score, 0) / wins.length) : 0;
-    const fastestWinTime = wins.length > 0 ? Math.min(...wins.map(s => s.timeSeconds)) : 0;
+    const wins = allUserScores.filter(s => s.success);
+    const losses = allUserScores.filter(s => !s.success);
+
+    const totalGamesPlayed = allUserScores.length;
+    const totalGamesWon = wins.length;
+    const totalGamesLost = losses.length;
+    const winRate = totalGamesPlayed > 0 ? Math.round((totalGamesWon / totalGamesPlayed) * 100) : 0;
+    
+    const totalScore = allUserScores.reduce((sum, s) => sum + (s.score || 0), 0);
+    const bestScore = allUserScores.length > 0 ? Math.max(...allUserScores.map(s => s.score || 0)) : 0;
+    const averageScore = totalGamesPlayed > 0 ? Math.round(totalScore / totalGamesPlayed) : 0;
+    const bestCompletionTime = wins.length > 0 ? Math.min(...wins.map(s => s.timeSeconds)) : 0;
+
+    // Accuracy percentage where applicable
+    const scoresWithAcc = allUserScores.filter(s => typeof s.accuracy === 'number' && !Number.isNaN(s.accuracy));
+    const accuracyPercentage = scoresWithAcc.length > 0 
+      ? Math.round(scoresWithAcc.reduce((sum, s) => sum + (s.accuracy || 0), 0) / scoresWithAcc.length) 
+      : null;
+
+    // Calculate current ranking across ALL unique players in the database
+    const playerPointsMap = new Map<string, { totalPoints: number; bestScore: number }>();
+    allScores.forEach(s => {
+      const existing = playerPointsMap.get(s.userId);
+      if (!existing) {
+        playerPointsMap.set(s.userId, { totalPoints: s.score || 0, bestScore: s.score || 0 });
+      } else {
+        existing.totalPoints += s.score || 0;
+        if ((s.score || 0) > existing.bestScore) existing.bestScore = s.score || 0;
+      }
+    });
+
+    const sortedPlayers = Array.from(playerPointsMap.entries())
+      .sort((a, b) => b[1].totalPoints - a[1].totalPoints || b[1].bestScore - a[1].bestScore);
+
+    const totalRankedPlayers = sortedPlayers.length;
+    let currentRanking: number | null = null;
+    
+    if (totalGamesPlayed > 0) {
+      const rankIdx = sortedPlayers.findIndex(([pId]) => pId === userId);
+      if (rankIdx !== -1) {
+        currentRanking = rankIdx + 1;
+      } else {
+        currentRanking = Math.max(1, sortedPlayers.length);
+      }
+    }
 
     // Per-game breakdown across all catalog games
     const perGame: Record<string, {
+      gameId: string;
       title: string;
       category: string;
       bestScore: number;
       fastestTime: number;
       wins: number;
       attempts: number;
-      averageAccuracy: number;
+      losses: number;
+      winRate: number;
+      averageAccuracy: number | null;
+      lastPlayed?: string;
     }> = {};
 
-    Database.MINI_GAMES_CATALOG.forEach(g => {
-      const gScores = allUserScores.filter(s => s.gameId === g.id);
-      const gWins = gScores.filter(s => s.success);
-      const accList = gWins.filter(w => typeof w.accuracy === 'number').map(w => w.accuracy!);
-      const avgAcc = accList.length > 0 ? Math.round(accList.reduce((a, b) => a + b, 0) / accList.length) : 100;
+    const personalBests: Array<{
+      gameId: string;
+      title: string;
+      category: string;
+      bestScore: number;
+      fastestTime: number;
+      accuracy: number | null;
+      wins: number;
+      attempts: number;
+      winRate: number;
+    }> = [];
 
-      perGame[g.id] = {
-        title: g.title,
-        category: g.category,
-        bestScore: gWins.length > 0 ? Math.max(...gWins.map(s => s.score)) : 0,
-        fastestTime: gWins.length > 0 ? Math.min(...gWins.map(s => s.timeSeconds)) : 0,
-        wins: gWins.length,
-        attempts: gScores.length,
-        averageAccuracy: avgAcc
-      };
-    });
-
-    // Favorite & highest-performing game
     let favoriteGame = 'Neural Grid Matrix';
     let highestPerformingGame = 'Neural Grid Matrix';
     let maxAttempts = -1;
     let maxBestScore = -1;
 
-    Object.entries(perGame).forEach(([gId, stat]) => {
-      if (stat.attempts > maxAttempts) {
-        maxAttempts = stat.attempts;
-        favoriteGame = stat.title;
+    Database.MINI_GAMES_CATALOG.forEach(g => {
+      const gScores = allUserScores.filter(s => s.gameId === g.id);
+      const gWins = gScores.filter(s => s.success);
+      const gLosses = gScores.filter(s => !s.success);
+      const accList = gScores.filter(s => typeof s.accuracy === 'number' && !Number.isNaN(s.accuracy)).map(s => s.accuracy!);
+      const avgAcc = accList.length > 0 ? Math.round(accList.reduce((a, b) => a + b, 0) / accList.length) : null;
+      const gBestScore = gScores.length > 0 ? Math.max(...gScores.map(s => s.score || 0)) : 0;
+      const gFastest = gWins.length > 0 ? Math.min(...gWins.map(s => s.timeSeconds)) : 0;
+      const gWinRate = gScores.length > 0 ? Math.round((gWins.length / gScores.length) * 100) : 0;
+
+      const gameStat = {
+        gameId: g.id,
+        title: g.title,
+        category: g.category,
+        bestScore: gBestScore,
+        fastestTime: gFastest,
+        wins: gWins.length,
+        attempts: gScores.length,
+        losses: gLosses.length,
+        winRate: gWinRate,
+        averageAccuracy: avgAcc,
+        lastPlayed: gScores.length > 0 ? gScores[gScores.length - 1].createdAt : undefined
+      };
+
+      perGame[g.id] = gameStat;
+
+      personalBests.push({
+        gameId: g.id,
+        title: g.title,
+        category: g.category,
+        bestScore: gBestScore,
+        fastestTime: gFastest,
+        accuracy: avgAcc,
+        wins: gWins.length,
+        attempts: gScores.length,
+        winRate: gWinRate
+      });
+
+      if (gScores.length > maxAttempts) {
+        maxAttempts = gScores.length;
+        favoriteGame = g.title;
       }
-      if (stat.bestScore > maxBestScore) {
-        maxBestScore = stat.bestScore;
-        highestPerformingGame = stat.title;
+      if (gBestScore > maxBestScore) {
+        maxBestScore = gBestScore;
+        highestPerformingGame = g.title;
       }
     });
 
+    const recentGameResults = allUserScores.slice(-15).reverse().map(s => {
+      const catItem = Database.MINI_GAMES_CATALOG.find(g => g.id === s.gameId);
+      return {
+        ...s,
+        gameTitle: s.gameTitle || (catItem ? catItem.title : s.gameId)
+      };
+    });
+
+    // Resolved real user identity from Kick database
+    const realUser = (userId ? this.getKickUserById(userId) : undefined) ||
+                     (username ? this.getKickUserByUsername(username) : undefined);
+    const resolvedUsername = realUser?.username || username || (allUserScores.length > 0 ? allUserScores[allUserScores.length - 1].username : undefined) || 'Operator';
+    const resolvedAvatar = realUser?.avatarUrl || (allUserScores.length > 0 ? allUserScores[allUserScores.length - 1].avatarUrl : undefined);
+
     return {
       userId,
-      totalAttempts,
-      totalWins,
+      username: resolvedUsername,
+      avatarUrl: resolvedAvatar,
+      hasPlayed: totalGamesPlayed > 0,
+      totalGamesPlayed,
+      totalGamesWon,
+      totalGamesLost,
+      totalAttempts: totalGamesPlayed, // Compatibility alias
+      totalWins: totalGamesWon,         // Compatibility alias
       winRate,
+      totalScore,
       bestScore,
       averageScore,
-      bestCompletionTime: fastestWinTime,
-      fastestWinTime,
+      bestCompletionTime,
+      fastestWinTime: bestCompletionTime, // Compatibility alias
+      accuracyPercentage,
+      currentRanking,
+      totalRankedPlayers,
+      highestRankedGame: highestPerformingGame,
       favoriteGame,
       highestPerformingGame,
+      personalBests,
       perGame,
-      recentActivity: allUserScores.slice(-10).reverse()
+      recentActivity: recentGameResults,
+      recentGameResults
     };
   }
 

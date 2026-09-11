@@ -94,7 +94,13 @@ export default function App() {
       return <UserProfilePage username={username} navigate={navigate} />;
     }
     if (currentRoute === 'my-stats') {
-      return <MyStatsPage navigate={navigate} />;
+      return <MyStatsPage navigate={navigate} defaultTab="minigames" />;
+    }
+    if (currentRoute === 'my-performance' || currentRoute === 'performance') {
+      return <MiniGamesPage navigate={navigate} initialTab="mystats" />;
+    }
+    if (currentRoute === 'leaderboard') {
+      return <MiniGamesPage navigate={navigate} initialTab="leaderboard" />;
     }
     if (currentRoute === 'login') {
       return <LoginPage navigate={navigate} />;

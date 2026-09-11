@@ -52,7 +52,27 @@ export function authMiddleware(req: AuthRequest, res: Response, next: NextFuncti
 
 export function requireAuth(req: AuthRequest, res: Response, next: NextFunction) {
   if (!req.user) {
-    return res.status(401).json({ error: 'Unauthorized. Please login with Kick.' });
+    let token = req.cookies?.auth_token;
+    if (!token && req.headers.authorization) {
+      const parts = req.headers.authorization.split(' ');
+      if (parts.length === 2 && parts[0] === 'Bearer') {
+        token = parts[1];
+      }
+    }
+    if (token) {
+      const payload = verifyToken(token);
+      if (payload) {
+        req.user = payload;
+      }
+    }
+  }
+
+  if (!req.user) {
+    return res.status(401).json({ 
+      error: 'Please log in to play games.', 
+      message: 'Unauthorized. Please login with your Kick account.', 
+      requiresAuth: true 
+    });
   }
   next();
 }

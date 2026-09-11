@@ -176,6 +176,13 @@ export const Navbar: React.FC<NavbarProps> = ({ currentRoute, navigate, channelL
                       <span>View Public Profile</span>
                     </button>
                     <button
+                      onClick={() => handleNav('my-performance')}
+                      className="w-full flex items-center gap-2.5 px-3 py-2 rounded-sm text-xs font-bold uppercase tracking-wider text-gray-300 hover:text-[#D4AF37] hover:bg-[#111] text-left"
+                    >
+                      <Gamepad2 className="w-4 h-4 text-[#D4AF37]" />
+                      <span>My Performance</span>
+                    </button>
+                    <button
                       onClick={() => handleNav('my-stats')}
                       className="w-full flex items-center gap-2.5 px-3 py-2 rounded-sm text-xs font-bold uppercase tracking-wider text-gray-300 hover:text-[#D4AF37] hover:bg-[#111] text-left"
                     >

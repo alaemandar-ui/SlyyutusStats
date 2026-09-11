@@ -29,10 +29,8 @@ export function getSafeAvatarUrl(avatarUrl?: string | null, username?: string, u
     hash |= 0;
   }
   const idx = (Math.abs(hash) % 8) + 1;
-  if (userId && /^\d+$/.test(userId)) {
-    return `https://files.kick.com/images/user/${userId}/profile_image/conversion/default${idx}-fullsize.webp`;
-  }
-  return `https://files.kick.com/images/default_avatars/avatar_${idx}.png`;
+  // Use Kick's verified working default profile picture CDN (returns HTTP 200)
+  return `https://kick.com/img/default-profile-pictures/default-avatar-${idx}.webp`;
 }
 
 export function getFallbackAvatarUrl(username?: string): string {
@@ -41,71 +39,84 @@ export function getFallbackAvatarUrl(username?: string): string {
 
 export interface UserAvatarProps extends React.ImgHTMLAttributes<HTMLImageElement> {
   src?: string | null;
+  avatarUrl?: string | null;
   username?: string;
   userId?: string;
+  size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | '2xl';
   className?: string;
   alt?: string;
+  bordered?: boolean;
 }
+
+const SIZE_CLASSES: Record<string, string> = {
+  xs: 'w-6 h-6 rounded-md text-[10px]',
+  sm: 'w-8 h-8 rounded-lg text-xs',
+  md: 'w-10 h-10 rounded-lg text-sm',
+  lg: 'w-12 h-12 rounded-xl text-base',
+  xl: 'w-14 h-14 rounded-xl text-lg',
+  '2xl': 'w-16 h-16 rounded-2xl text-xl'
+};
 
 export const UserAvatar: React.FC<UserAvatarProps> = ({
   src,
+  avatarUrl,
   username = 'User',
   userId,
-  className = 'w-10 h-10 rounded-full object-cover',
+  size,
+  className,
   alt,
+  bordered = true,
   ...props
 }) => {
-  const [imgSrc, setImgSrc] = useState<string>(() => getSafeAvatarUrl(src, username, userId));
+  const effectiveUrl = src || avatarUrl;
+  const [imgSrc, setImgSrc] = useState<string>(() => getSafeAvatarUrl(effectiveUrl, username, userId));
   const [attempt, setAttempt] = useState<number>(0);
   const [hasError, setHasError] = useState<boolean>(false);
 
   useEffect(() => {
-    setImgSrc(getSafeAvatarUrl(src, username, userId));
+    setImgSrc(getSafeAvatarUrl(effectiveUrl, username, userId));
     setAttempt(0);
     setHasError(false);
-  }, [src, username, userId]);
+  }, [effectiveUrl, username, userId]);
 
   const handleError = () => {
+    const seed = username || userId || 'chatter';
+    let hash = 0;
+    for (let i = 0; i < seed.length; i++) {
+      hash = ((hash << 5) - hash) + seed.charCodeAt(i);
+      hash |= 0;
+    }
+    const idx = (Math.abs(hash) % 8) + 1;
+
     if (attempt === 0) {
       setAttempt(1);
-      // Fallback 1: Try personal user default on files.kick.com
-      const seed = userId || username || 'chatter';
-      let hash = 0;
-      for (let i = 0; i < seed.length; i++) {
-        hash = ((hash << 5) - hash) + seed.charCodeAt(i);
-        hash |= 0;
-      }
-      const idx = (Math.abs(hash) % 8) + 1;
-      if (userId && /^\d+$/.test(userId)) {
-        setImgSrc(`https://files.kick.com/images/user/${userId}/profile_image/conversion/default${idx}-fullsize.webp`);
-      } else {
-        setImgSrc(`https://files.kick.com/images/default_avatars/avatar_${idx}.png`);
-      }
+      // Fallback 1: Kick official default avatar (HTTP 200)
+      setImgSrc(`https://kick.com/img/default-profile-pictures/default-avatar-${idx}.webp`);
     } else if (attempt === 1) {
       setAttempt(2);
-      // Fallback 2: Guaranteed DiceBear or Kick direct default
-      const seed = username || userId || 'chatter';
-      let hash = 0;
-      for (let i = 0; i < seed.length; i++) {
-        hash = ((hash << 5) - hash) + seed.charCodeAt(i);
-        hash |= 0;
-      }
-      const idx = (Math.abs(hash) % 8) + 1;
-      setImgSrc(`https://kick.com/img/default-profile-pictures/default-avatar-${idx}.webp`);
+      // Fallback 2: DiceBear reliable SVG avatar
+      setImgSrc(`https://api.dicebear.com/7.x/bottts/svg?seed=${encodeURIComponent(username || userId || 'kick')}`);
     } else {
-      // Gracefully switch to clean inline badge fallback rather than displaying broken alt text
+      // Fallback 3: Switch to sleek luxury monogram badge
       setHasError(true);
     }
   };
+
+  // Base sizing and styling
+  const sizeClass = size ? SIZE_CLASSES[size] : '';
+  const borderClass = bordered ? 'border border-[#D4AF37]/30 hover:border-[#D4AF37]' : '';
+  const finalClassName = className 
+    ? (className.includes('rounded') ? className : `${className} rounded-lg`)
+    : `${sizeClass || 'w-10 h-10 rounded-lg'} ${borderClass} object-cover transition-all shadow-sm`;
 
   if (hasError || !imgSrc) {
     const initial = (username || 'U').charAt(0).toUpperCase();
     return (
       <div
-        className={`${className} flex items-center justify-center bg-gradient-to-br from-[#1E1E24] to-[#121216] border border-[#D4AF37]/30 text-[#D4AF37] font-bold select-none shrink-0`}
+        className={`${finalClassName} flex items-center justify-center bg-gradient-to-br from-[#1C1A14] via-[#121212] to-[#0A0A0A] border border-[#D4AF37]/50 text-[#FFD700] font-black font-heading select-none shrink-0 shadow-[0_0_10px_rgba(212,175,55,0.15)]`}
         title={username}
       >
-        <span className="text-[0.65em] tracking-tight">{initial}</span>
+        <span className="tracking-tight">{initial}</span>
       </div>
     );
   }
@@ -116,7 +127,7 @@ export const UserAvatar: React.FC<UserAvatarProps> = ({
       alt={alt || username}
       referrerPolicy="no-referrer"
       onError={handleError}
-      className={className}
+      className={finalClassName}
       {...props}
     />
   );

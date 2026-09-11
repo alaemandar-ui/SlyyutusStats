@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { useAuth } from '../context/AuthContext';
 import { 
   fetchMiniGameDashboard, 
-  fetchMiniGameLeaderboard, 
   fetchUserMiniGameStats, 
   submitMiniGameScore, 
+  startMiniGameSession,
   MiniGameDashboardData 
 } from '../lib/api';
 import { 
@@ -33,29 +33,33 @@ import { UserAvatar } from '../components/UserAvatar';
 import { 
   Gamepad2, 
   Trophy, 
-  Flame, 
   Clock, 
   Zap, 
   Target, 
-  HelpCircle, 
   CheckCircle2, 
-  XCircle, 
   Sparkles, 
   Medal, 
   Award, 
-  RotateCcw,
-  Sliders,
-  ChevronRight,
-  Layers,
-  Terminal,
-  Binary,
-  Grid,
+  ArrowRight, 
+  UserCheck, 
+  TrendingUp, 
+  Activity, 
+  Play, 
+  ShieldCheck, 
+  Sliders, 
+  Flame, 
+  Layers, 
+  Terminal, 
+  Binary, 
+  Grid, 
   Crosshair,
-  ArrowRight,
-  UserCheck,
-  TrendingUp,
-  Activity,
-  Play
+  RotateCcw,
+  BarChart3,
+  Calendar,
+  Lock,
+  LogIn,
+  X,
+  ShieldAlert
 } from 'lucide-react';
 
 export const MINI_GAMES_CATALOG: GameCatalogItem[] = [
@@ -118,11 +122,19 @@ export const MINI_GAMES_CATALOG: GameCatalogItem[] = [
   }
 ];
 
-export const MiniGamesPage: React.FC<{ navigate: (route: string) => void }> = ({ navigate }) => {
+interface MiniGamesPageProps {
+  navigate: (route: string) => void;
+  initialTab?: 'dashboard' | 'arena' | 'leaderboard' | 'mystats';
+}
+
+export const MiniGamesPage: React.FC<MiniGamesPageProps> = ({ 
+  navigate, 
+  initialTab = 'dashboard' 
+}) => {
   const { isAuthenticated, user, showToast } = useAuth();
 
   // Navigation tabs: 'dashboard' | 'arena' | 'leaderboard' | 'mystats'
-  const [activeTab, setActiveTab] = useState<'dashboard' | 'arena' | 'leaderboard' | 'mystats'>('dashboard');
+  const [activeTab, setActiveTab] = useState<'dashboard' | 'arena' | 'leaderboard' | 'mystats'>(initialTab);
   
   // Active game setup
   const [selectedGameId, setSelectedGameId] = useState<GameId>('logic_grid');
@@ -130,21 +142,36 @@ export const MiniGamesPage: React.FC<{ navigate: (route: string) => void }> = ({
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
   const [categoryFilter, setCategoryFilter] = useState<'all' | 'puzzle' | 'quiz' | 'skill' | 'arcade'>('all');
 
-  // Dashboard server state
+  // Dashboard & User server state
   const [dashboardData, setDashboardData] = useState<MiniGameDashboardData | null>(null);
+  const [userStats, setUserStats] = useState<PlayerStats | null>(null);
   const [loadingDashboard, setLoadingDashboard] = useState<boolean>(true);
+  const [loadingUserStats, setLoadingUserStats] = useState<boolean>(true);
   const [submittingScore, setSubmittingScore] = useState<boolean>(false);
   const [lastSubmissionResult, setLastSubmissionResult] = useState<any | null>(null);
 
+  // Authentication gate modal state
+  const [showLoginModal, setShowLoginModal] = useState<boolean>(false);
+  const [loginModalGameTitle, setLoginModalGameTitle] = useState<string>('');
+
   useEffect(() => {
     loadDashboard();
-  }, []);
+    if (isAuthenticated) {
+      loadUserStats();
+    } else {
+      setUserStats(null);
+      setLoadingUserStats(false);
+    }
+  }, [isAuthenticated, user?.kickUserId]);
 
   const loadDashboard = async () => {
     setLoadingDashboard(true);
     try {
       const data = await fetchMiniGameDashboard();
       setDashboardData(data);
+      if (data && (data as any).userStats) {
+        setUserStats((data as any).userStats);
+      }
     } catch (err) {
       console.error('Failed to load mini game dashboard:', err);
     } finally {
@@ -152,29 +179,87 @@ export const MiniGamesPage: React.FC<{ navigate: (route: string) => void }> = ({
     }
   };
 
-  const handleLaunchGame = (gameId: GameId, targetDifficulty?: GameDifficulty) => {
+  const loadUserStats = async () => {
+    if (!isAuthenticated) {
+      setUserStats(null);
+      setLoadingUserStats(false);
+      return;
+    }
+    setLoadingUserStats(true);
+    try {
+      const stats = await fetchUserMiniGameStats(user?.kickUserId, user?.username);
+      if (stats) {
+        setUserStats(stats);
+      }
+    } catch (err) {
+      console.error('Failed to load user mini game stats:', err);
+    } finally {
+      setLoadingUserStats(false);
+    }
+  };
+
+  const handleLaunchGame = async (gameId: GameId, targetDifficulty?: GameDifficulty) => {
+    if (!isAuthenticated) {
+      const game = MINI_GAMES_CATALOG.find(g => g.id === gameId);
+      setLoginModalGameTitle(game?.title || 'Tactical Operation');
+      setShowLoginModal(true);
+      showToast('Please log in to play games.', 'info');
+      return;
+    }
+
+    try {
+      await startMiniGameSession({ 
+        gameId, 
+        difficulty: targetDifficulty || difficulty 
+      });
+    } catch (err: any) {
+      if (err.message?.includes('log in') || err.message?.includes('Unauthorized')) {
+        setShowLoginModal(true);
+        showToast('Please log in to play games.', 'error');
+        return;
+      }
+    }
+
     setSelectedGameId(gameId);
     if (targetDifficulty) setDifficulty(targetDifficulty);
     setIsPlaying(true);
     setActiveTab('arena');
     setLastSubmissionResult(null);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const handleGameFinish = async (submission: GameScoreSubmission) => {
+    if (!isAuthenticated) {
+      setShowLoginModal(true);
+      showToast('Please log in to play games.', 'error');
+      return;
+    }
+
     setSubmittingScore(true);
     try {
       const res = await submitMiniGameScore({
         ...submission,
-        username: user?.username || 'Guest Operative'
+        userId: user?.kickUserId,
+        username: user?.username,
+        avatarUrl: user?.avatarUrl
       });
       setLastSubmissionResult({
         ...res,
         submission
       });
+      if (res.userStats) {
+        setUserStats(res.userStats);
+      }
       showToast(res.message || 'Score verified and synced to community database!', 'success');
       loadDashboard();
+      loadUserStats();
     } catch (err: any) {
-      showToast(err.message || 'Error recording mission score', 'error');
+      if (err.message?.includes('log in') || err.message?.includes('Unauthorized')) {
+        setShowLoginModal(true);
+        showToast('Please log in to play games.', 'error');
+      } else {
+        showToast(err.message || 'Error recording mission score', 'error');
+      }
     } finally {
       setSubmittingScore(false);
     }
@@ -186,70 +271,126 @@ export const MiniGamesPage: React.FC<{ navigate: (route: string) => void }> = ({
     ? MINI_GAMES_CATALOG 
     : MINI_GAMES_CATALOG.filter(g => g.category === categoryFilter);
 
+  // Derive top stats from dashboardData
+  const totalPlayers = dashboardData?.totalPlayers || 0;
+  const totalGamesPlayed = dashboardData?.totalGamesPlayed || 0;
+  const totalWins = dashboardData?.totalWins || 0;
+  const highestScore = dashboardData?.highestScore || 0;
+  const fastestTime = dashboardData?.fastestCompletionTime || 0;
+  const recentResults = dashboardData?.recentResults || [];
+  const topRankedPlayers = dashboardData?.topRankedPlayers || [];
+  const perGameStats = dashboardData?.perGameStats || [];
+
   return (
     <div className="space-y-8 py-6 pb-24 text-white">
-      {/* Top Header & Navigation Banner */}
-      <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 border-b border-[#232936] pb-6">
+      {/* Top Header & Navigation Banner - High-contrast Gold & Dark Aesthetics */}
+      <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 border-b border-[#D4AF37]/20 pb-6">
         <div>
-          <div className="flex items-center gap-2 text-cyan-400 font-mono text-xs uppercase tracking-wider mb-1">
-            <Gamepad2 className="w-4 h-4" />
-            <span>Cybernetic Mini-Game Arena & Real-Time Records</span>
+          <div className="flex items-center gap-2 text-[#D4AF37] font-mono text-xs uppercase tracking-wider mb-1.5">
+            <Gamepad2 className="w-4 h-4 text-[#D4AF37]" />
+            <span>Tactical Arena • Real-Time Community Records</span>
           </div>
-          <h1 className="text-3xl sm:text-4xl font-black font-heading bg-gradient-to-r from-white via-gray-200 to-cyan-400 bg-clip-text text-transparent uppercase tracking-tight">
-            Tactical Mini Games
+          <h1 className="text-3xl sm:text-4xl font-black font-heading text-white uppercase tracking-tight">
+            MINI <span className="text-[#D4AF37]">GAMES</span>
           </h1>
-          <p className="text-xs font-mono text-gray-400 mt-1 max-w-2xl">
-            Eight original, highly competitive cognitive games. All games sync real server records, track accuracy, and award Kick League league points.
+          <p className="text-xs sm:text-sm font-mono text-zinc-400 mt-1 max-w-2xl leading-relaxed">
+            Eight challenging cognitive operations. Compete on official leaderboards, track individual accuracy, and earn verified Kick League Points.
           </p>
         </div>
 
         {/* Global Navigation Tabs */}
-        <div className="flex flex-wrap items-center bg-[#121720] p-1.5 rounded-xl border border-[#232936] gap-1">
+        <div className="flex flex-wrap items-center bg-[#111] p-1.5 rounded-xl border border-[#D4AF37]/30 shadow-lg gap-1.5">
           <button
             onClick={() => { setActiveTab('dashboard'); setIsPlaying(false); }}
-            className={`px-3.5 py-1.5 rounded-lg text-xs font-semibold transition-all ${
+            className={`px-4 py-2 rounded-lg text-xs font-heading font-extrabold uppercase tracking-wider transition-all flex items-center gap-1.5 ${
               activeTab === 'dashboard'
-                ? 'bg-cyan-500/20 text-cyan-300 border border-cyan-500/40 shadow-sm'
-                : 'text-gray-400 hover:text-white'
+                ? 'bg-[#D4AF37] text-black shadow-[0_0_15px_rgba(212,175,55,0.3)]'
+                : 'text-zinc-400 hover:text-white hover:bg-zinc-900'
             }`}
           >
-            Dashboard
+            <BarChart3 className="w-3.5 h-3.5" />
+            <span>Dashboard</span>
           </button>
+          
           <button
-            onClick={() => setActiveTab('arena')}
-            className={`px-3.5 py-1.5 rounded-lg text-xs font-semibold transition-all flex items-center gap-1.5 ${
+            onClick={() => {
+              if (!isAuthenticated) {
+                setShowLoginModal(true);
+                showToast('Please log in to play games.', 'info');
+                return;
+              }
+              setActiveTab('arena');
+            }}
+            className={`px-4 py-2 rounded-lg text-xs font-heading font-extrabold uppercase tracking-wider transition-all flex items-center gap-1.5 ${
               activeTab === 'arena'
-                ? 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 shadow-sm'
-                : 'text-gray-400 hover:text-white'
+                ? 'bg-[#D4AF37] text-black shadow-[0_0_15px_rgba(212,175,55,0.3)]'
+                : 'text-zinc-400 hover:text-white hover:bg-zinc-900'
             }`}
           >
-            <Play className="w-3 h-3" />
-            Game Arena
+            {isAuthenticated ? (
+              <Play className="w-3.5 h-3.5" />
+            ) : (
+              <Lock className="w-3.5 h-3.5 text-[#D4AF37]" />
+            )}
+            <span>Game Arena</span>
           </button>
+
           <button
             onClick={() => { setActiveTab('leaderboard'); setIsPlaying(false); }}
-            className={`px-3.5 py-1.5 rounded-lg text-xs font-semibold transition-all flex items-center gap-1.5 ${
+            className={`px-4 py-2 rounded-lg text-xs font-heading font-extrabold uppercase tracking-wider transition-all flex items-center gap-1.5 ${
               activeTab === 'leaderboard'
-                ? 'bg-amber-500/20 text-amber-300 border border-amber-500/40 shadow-sm'
-                : 'text-gray-400 hover:text-white'
+                ? 'bg-[#D4AF37] text-black shadow-[0_0_15px_rgba(212,175,55,0.3)]'
+                : 'text-zinc-400 hover:text-white hover:bg-zinc-900'
             }`}
           >
-            <Trophy className="w-3 h-3" />
-            Leaderboard
+            <Trophy className="w-3.5 h-3.5" />
+            <span>Leaderboard</span>
           </button>
+
           <button
             onClick={() => { setActiveTab('mystats'); setIsPlaying(false); }}
-            className={`px-3.5 py-1.5 rounded-lg text-xs font-semibold transition-all flex items-center gap-1.5 ${
+            className={`px-4 py-2 rounded-lg text-xs font-heading font-extrabold uppercase tracking-wider transition-all flex items-center gap-1.5 ${
               activeTab === 'mystats'
-                ? 'bg-purple-500/20 text-purple-300 border border-purple-500/40 shadow-sm'
-                : 'text-gray-400 hover:text-white'
+                ? 'bg-[#D4AF37] text-black shadow-[0_0_15px_rgba(212,175,55,0.3)]'
+                : 'text-zinc-400 hover:text-white hover:bg-zinc-900'
             }`}
           >
-            <UserCheck className="w-3 h-3" />
-            My Performance
+            <UserCheck className="w-3.5 h-3.5" />
+            <span>My Performance</span>
           </button>
         </div>
       </div>
+
+      {/* Guest Mode Notification Banner */}
+      {!isAuthenticated && (
+        <div className="rounded-xl border border-amber-500/30 bg-gradient-to-r from-amber-500/10 via-zinc-950 to-black p-4 shadow-lg flex flex-col sm:flex-row sm:items-center justify-between gap-4 animate-in fade-in">
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 rounded-xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center text-amber-400 shrink-0 shadow-[0_0_15px_rgba(245,158,11,0.2)]">
+              <Lock className="w-5 h-5" />
+            </div>
+            <div>
+              <div className="flex items-center gap-2">
+                <span className="font-heading font-black text-sm uppercase text-amber-300">
+                  Guest Mode • Login Required to Play
+                </span>
+                <span className="text-[10px] font-mono uppercase px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 border border-amber-500/30">
+                  Read-Only Catalog
+                </span>
+              </div>
+              <p className="text-xs font-mono text-zinc-300 mt-0.5">
+                You can browse operations and view global rankings. Please log in with Kick to start games, record official scores, and appear on leaderboards.
+              </p>
+            </div>
+          </div>
+          <button
+            onClick={() => navigate('login')}
+            className="px-5 py-2.5 rounded-xl bg-[#D4AF37] text-black font-heading font-extrabold uppercase text-xs hover:bg-[#FFD700] transition-all flex items-center justify-center gap-2 shadow-[0_0_15px_rgba(212,175,55,0.25)] shrink-0 cursor-pointer"
+          >
+            <LogIn className="w-3.5 h-3.5" />
+            <span>Log In</span>
+          </button>
+        </div>
+      )}
 
       {/* ========================================================= */}
       {/* 1. DASHBOARD VIEW                                         */}
@@ -259,69 +400,141 @@ export const MiniGamesPage: React.FC<{ navigate: (route: string) => void }> = ({
           {/* Real Global Statistics Cards */}
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
             {/* Total Players */}
-            <div className="bg-[#0e1217] border border-[#232936] rounded-xl p-4 shadow-lg flex flex-col justify-between">
-              <span className="text-xs text-gray-400 font-medium flex items-center gap-1.5">
-                <UserCheck className="w-4 h-4 text-cyan-400" />
-                Total Players
-              </span>
-              <span className="text-2xl font-bold font-mono text-white mt-2">
-                {loadingDashboard ? '--' : dashboardData?.totalPlayers || 0}
+            <div className="relative overflow-hidden rounded-xl border border-[#D4AF37]/20 bg-[#111] p-4 transition-all hover:border-[#D4AF37]/40 shadow-sm">
+              <div className="flex items-center justify-between gap-2 mb-2">
+                <span className="text-[10px] font-bold uppercase tracking-widest text-[#D4AF37]">
+                  Total Players
+                </span>
+                <UserCheck className="w-4 h-4 text-[#D4AF37]" />
+              </div>
+              <div className="text-2xl sm:text-3xl font-black font-mono text-white">
+                {loadingDashboard ? '--' : totalPlayers}
+              </div>
+              <span className="text-[10px] font-mono text-zinc-500 mt-1 block">
+                Unique operatives
               </span>
             </div>
 
             {/* Total Games Played */}
-            <div className="bg-[#0e1217] border border-[#232936] rounded-xl p-4 shadow-lg flex flex-col justify-between">
-              <span className="text-xs text-gray-400 font-medium flex items-center gap-1.5">
-                <Gamepad2 className="w-4 h-4 text-emerald-400" />
-                Total Games Played
-              </span>
-              <span className="text-2xl font-bold font-mono text-emerald-400 mt-2">
-                {loadingDashboard ? '--' : dashboardData?.totalGamesPlayed || 0}
+            <div className="relative overflow-hidden rounded-xl border border-zinc-800 bg-[#111] p-4 transition-all hover:border-[#D4AF37]/30 shadow-sm">
+              <div className="flex items-center justify-between gap-2 mb-2">
+                <span className="text-[10px] font-bold uppercase tracking-widest text-zinc-400">
+                  Total Games Played
+                </span>
+                <Gamepad2 className="w-4 h-4 text-zinc-400" />
+              </div>
+              <div className="text-2xl sm:text-3xl font-black font-mono text-zinc-100">
+                {loadingDashboard ? '--' : totalGamesPlayed}
+              </div>
+              <span className="text-[10px] font-mono text-zinc-500 mt-1 block">
+                Attempted missions
               </span>
             </div>
 
             {/* Total Wins */}
-            <div className="bg-[#0e1217] border border-[#232936] rounded-xl p-4 shadow-lg flex flex-col justify-between">
-              <span className="text-xs text-gray-400 font-medium flex items-center gap-1.5">
-                <CheckCircle2 className="w-4 h-4 text-[#00ff88]" />
-                Total Wins
-              </span>
-              <span className="text-2xl font-bold font-mono text-[#00ff88] mt-2">
-                {loadingDashboard ? '--' : dashboardData?.totalWins || 0}
+            <div className="relative overflow-hidden rounded-xl border border-emerald-500/20 bg-[#111] p-4 transition-all hover:border-emerald-500/40 shadow-sm">
+              <div className="flex items-center justify-between gap-2 mb-2">
+                <span className="text-[10px] font-bold uppercase tracking-widest text-emerald-400">
+                  Total Wins
+                </span>
+                <CheckCircle2 className="w-4 h-4 text-emerald-400" />
+              </div>
+              <div className="text-2xl sm:text-3xl font-black font-mono text-emerald-400">
+                {loadingDashboard ? '--' : totalWins}
+              </div>
+              <span className="text-[10px] font-mono text-zinc-500 mt-1 block">
+                Successful clearances
               </span>
             </div>
 
             {/* Highest Score */}
-            <div className="bg-[#0e1217] border border-[#232936] rounded-xl p-4 shadow-lg flex flex-col justify-between">
-              <span className="text-xs text-gray-400 font-medium flex items-center gap-1.5">
-                <Trophy className="w-4 h-4 text-amber-400" />
-                Highest Score
-              </span>
-              <span className="text-2xl font-bold font-mono text-amber-300 mt-2">
-                {loadingDashboard ? '--' : dashboardData?.highestScore || 0}
+            <div className="relative overflow-hidden rounded-xl border border-[#D4AF37]/40 bg-gradient-to-b from-[#1c190f] to-[#111] p-4 shadow-[0_0_15px_rgba(212,175,55,0.15)]">
+              <div className="flex items-center justify-between gap-2 mb-2">
+                <span className="text-[10px] font-bold uppercase tracking-widest text-[#FFD700]">
+                  Highest Score
+                </span>
+                <Trophy className="w-4 h-4 text-[#FFD700]" />
+              </div>
+              <div className="text-2xl sm:text-3xl font-black font-mono text-[#FFD700]">
+                {loadingDashboard ? '--' : highestScore.toLocaleString()}
+              </div>
+              <span className="text-[10px] font-mono text-zinc-400 mt-1 block">
+                Arena record
               </span>
             </div>
 
             {/* Fastest Completion */}
-            <div className="bg-[#0e1217] border border-[#232936] rounded-xl p-4 shadow-lg flex flex-col justify-between col-span-2 sm:col-span-1">
-              <span className="text-xs text-gray-400 font-medium flex items-center gap-1.5">
-                <Clock className="w-4 h-4 text-rose-400" />
-                Fastest Record
-              </span>
-              <span className="text-2xl font-bold font-mono text-rose-300 mt-2">
-                {loadingDashboard ? '--' : dashboardData?.fastestCompletionTime ? `${dashboardData.fastestCompletionTime.toFixed(1)}s` : '--'}
+            <div className="relative overflow-hidden rounded-xl border border-zinc-800 bg-[#111] p-4 transition-all hover:border-[#D4AF37]/30 shadow-sm col-span-2 sm:col-span-1">
+              <div className="flex items-center justify-between gap-2 mb-2">
+                <span className="text-[10px] font-bold uppercase tracking-widest text-zinc-400">
+                  Fastest Time
+                </span>
+                <Clock className="w-4 h-4 text-cyan-400" />
+              </div>
+              <div className="text-2xl sm:text-3xl font-black font-mono text-cyan-300">
+                {loadingDashboard ? '--' : fastestTime > 0 ? `${fastestTime.toFixed(1)}s` : '--'}
+              </div>
+              <span className="text-[10px] font-mono text-zinc-500 mt-1 block">
+                Lightning clearance
               </span>
             </div>
           </div>
 
+          {/* Quick Access to My Performance */}
+          <div className="relative overflow-hidden rounded-xl border border-[#D4AF37]/30 bg-gradient-to-r from-[#1c190e] via-[#111] to-[#0A0A0A] p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <div className="flex items-center gap-3.5">
+              {isAuthenticated && user ? (
+                <UserAvatar
+                  src={user.avatarUrl}
+                  avatarUrl={user.avatarUrl}
+                  username={user.username}
+                  userId={user.kickUserId}
+                  size="lg"
+                  className="w-12 h-12 rounded-xl object-cover border-2 border-[#D4AF37]/50 shadow-[0_0_15px_rgba(212,175,55,0.25)] shrink-0"
+                />
+              ) : (
+                <div className="w-12 h-12 rounded-xl bg-[#D4AF37]/15 border border-[#D4AF37]/40 flex items-center justify-center text-[#D4AF37] shrink-0">
+                  <Activity className="w-6 h-6" />
+                </div>
+              )}
+              <div>
+                <h3 className="text-base font-black font-heading uppercase text-white tracking-wide">
+                  {isAuthenticated ? `Welcome Back, ${user?.username}!` : 'Track Your Tactical Legacy'}
+                </h3>
+                <p className="text-xs font-mono text-zinc-400 mt-0.5">
+                  {isAuthenticated
+                    ? userStats && userStats.totalGamesPlayed > 0
+                      ? `You have played ${userStats.totalGamesPlayed} games with a ${userStats.winRate}% win rate. View complete stats below.`
+                      : 'You haven’t played any games yet. Launch a mission to claim your rank!'
+                    : 'Log in to track personal bests, accuracy percentage, and game-by-game records.'}
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-3 shrink-0">
+              <button
+                onClick={() => setActiveTab('mystats')}
+                className="px-5 py-2.5 rounded-lg text-xs font-heading font-extrabold uppercase tracking-wider bg-[#D4AF37] text-black hover:bg-[#FFD700] transition-all shadow-[0_0_15px_rgba(212,175,55,0.25)] flex items-center gap-2 cursor-pointer"
+              >
+                <UserCheck className="w-4 h-4 text-black" />
+                <span>My Performance</span>
+                <ArrowRight className="w-3.5 h-3.5" />
+              </button>
+            </div>
+          </div>
+
           {/* Catalog Filter Header */}
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-[#232936] pb-3">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-zinc-800 pb-3">
             <div>
-              <h2 className="text-xl font-bold text-white flex items-center gap-2">
-                Tactical Game Matrix
-                <span className="text-xs text-gray-400 font-normal">({filteredCatalog.length} Operations Ready)</span>
+              <h2 className="text-xl font-black font-heading text-white flex items-center gap-2 uppercase tracking-wide">
+                <span>Tactical Game Catalog</span>
+                <span className="text-xs font-mono text-[#D4AF37] font-normal">
+                  ({filteredCatalog.length} Operations Ready)
+                </span>
               </h2>
-              <p className="text-xs text-gray-400">Choose a discipline to test logic, cognitive dexterity, or high-speed reflexes</p>
+              <p className="text-xs font-mono text-zinc-400 mt-0.5">
+                Select a game to calibrate logic, high-speed reflexes, or cognitive multitasking
+              </p>
             </div>
 
             {/* Category Pills */}
@@ -336,10 +549,10 @@ export const MiniGamesPage: React.FC<{ navigate: (route: string) => void }> = ({
                 <button
                   key={cat.id}
                   onClick={() => setCategoryFilter(cat.id as any)}
-                  className={`px-3 py-1.5 rounded-lg text-xs font-semibold whitespace-nowrap transition-all ${
+                  className={`px-3 py-1.5 rounded-lg text-xs font-mono uppercase whitespace-nowrap transition-all ${
                     categoryFilter === cat.id
-                      ? 'bg-cyan-500/20 text-cyan-300 border border-cyan-500/40'
-                      : 'bg-[#121720] text-gray-400 hover:text-white border border-[#232936]'
+                      ? 'bg-[#D4AF37] text-black font-bold shadow-[0_0_12px_rgba(212,175,55,0.25)]'
+                      : 'bg-[#111] text-zinc-400 hover:text-white border border-zinc-800'
                   }`}
                 >
                   {cat.label}
@@ -348,59 +561,83 @@ export const MiniGamesPage: React.FC<{ navigate: (route: string) => void }> = ({
             </div>
           </div>
 
-          {/* Game Cards Grid */}
+          {/* Game Cards Grid - High Contrast Dark with Gold Highlights */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {filteredCatalog.map(game => {
-              const gameStats = dashboardData?.perGameStats?.[game.id];
-              let icon = <Grid className="w-5 h-5 text-cyan-400" />;
-              let themeBorder = 'hover:border-cyan-500/50';
+              const gameStat = perGameStats.find((s: any) => s.gameId === game.id);
+              const userGameStat = userStats?.perGame?.[game.id];
 
-              if (game.id === 'pattern_decoder') icon = <Binary className="w-5 h-5 text-purple-400" />;
-              if (game.id === 'sequence_master') icon = <Sparkles className="w-5 h-5 text-pink-400" />;
+              let icon = <Grid className="w-5 h-5 text-[#D4AF37]" />;
+              if (game.id === 'pattern_decoder') icon = <Binary className="w-5 h-5 text-amber-400" />;
+              if (game.id === 'sequence_master') icon = <Sparkles className="w-5 h-5 text-yellow-400" />;
               if (game.id === 'cipher_puzzle') icon = <Terminal className="w-5 h-5 text-emerald-400" />;
-              if (game.id === 'difficult_quiz') icon = <Trophy className="w-5 h-5 text-amber-400" />;
-              if (game.id === 'precision_timing') icon = <Target className="w-5 h-5 text-red-400" />;
+              if (game.id === 'difficult_quiz') icon = <Trophy className="w-5 h-5 text-[#FFD700]" />;
+              if (game.id === 'precision_timing') icon = <Target className="w-5 h-5 text-cyan-400" />;
               if (game.id === 'multi_task') icon = <Layers className="w-5 h-5 text-orange-400" />;
               if (game.id === 'arcade_shooter') icon = <Crosshair className="w-5 h-5 text-rose-400" />;
 
               return (
                 <div
                   key={game.id}
-                  className={`bg-[#0e1217] border border-[#232936] rounded-2xl p-5 flex flex-col justify-between transition-all group ${themeBorder} shadow-lg hover:shadow-cyan-500/5`}
+                  className="bg-[#111] border border-zinc-800 hover:border-[#D4AF37]/50 rounded-xl p-5 flex flex-col justify-between transition-all group shadow-md hover:shadow-[0_0_20px_rgba(212,175,55,0.1)]"
                 >
                   <div>
                     {/* Card Head */}
                     <div className="flex items-center justify-between gap-2 mb-3">
-                      <div className="w-10 h-10 rounded-xl bg-[#161c24] border border-[#232936] flex items-center justify-center">
+                      <div className="w-10 h-10 rounded-xl bg-[#181818] border border-zinc-700/60 flex items-center justify-center group-hover:border-[#D4AF37]/40 transition-colors">
                         {icon}
                       </div>
-                      <span className="text-[10px] font-mono uppercase px-2 py-0.5 rounded-full bg-[#161c26] text-gray-300 border border-[#232936]">
+                      <span className="text-[10px] font-mono uppercase px-2 py-0.5 rounded bg-zinc-900 text-[#D4AF37] border border-[#D4AF37]/30">
                         {game.badge}
                       </span>
                     </div>
 
-                    <h3 className="text-base font-bold text-white group-hover:text-cyan-300 transition-colors">
+                    {/* Title & Description */}
+                    <h3 className="text-base font-black font-heading text-white tracking-wide group-hover:text-[#FFD700] transition-colors">
                       {game.title}
                     </h3>
-                    <p className="text-xs text-gray-400 mt-1 leading-relaxed line-clamp-3">
+                    <p className="text-xs font-mono text-zinc-400 mt-2 leading-relaxed line-clamp-3">
                       {game.description}
                     </p>
                   </div>
 
-                  <div className="mt-5 pt-3 border-t border-[#232936]/60">
-                    {/* Mini stats preview */}
-                    <div className="flex items-center justify-between text-[11px] text-gray-400 mb-3 font-mono">
-                      <span>Top: <strong className="text-amber-300">{gameStats?.highScore || 0} pts</strong></span>
-                      <span>Fast: <strong className="text-gray-300">{gameStats?.bestTime ? `${gameStats.bestTime.toFixed(1)}s` : '--'}</strong></span>
+                  {/* Footer Stats & Launch Button */}
+                  <div className="mt-5 pt-4 border-t border-zinc-800/80 space-y-3">
+                    <div className="flex items-center justify-between text-[11px] font-mono">
+                      <span className="text-zinc-500">Arena High Score:</span>
+                      <strong className="text-[#FFD700]">
+                        {gameStat?.highestScore ? gameStat.highestScore.toLocaleString() : '--'}
+                      </strong>
                     </div>
 
-                    {/* Launch Button */}
+                    {userGameStat && userGameStat.bestScore > 0 && (
+                      <div className="flex items-center justify-between text-[11px] font-mono">
+                        <span className="text-zinc-500">Personal Best:</span>
+                        <strong className="text-emerald-400">
+                          {userGameStat.bestScore.toLocaleString()}
+                        </strong>
+                      </div>
+                    )}
+
                     <button
                       onClick={() => handleLaunchGame(game.id, 'medium')}
-                      className="w-full py-2.5 rounded-xl font-bold text-xs bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 text-white shadow-md shadow-cyan-600/20 transition-all flex items-center justify-center gap-1.5 active:scale-95"
+                      className={`w-full py-2.5 rounded-lg font-heading font-extrabold text-xs uppercase tracking-wider transition-all flex items-center justify-center gap-2 cursor-pointer shadow-sm ${
+                        isAuthenticated
+                          ? 'bg-[#1A1A1A] group-hover:bg-[#D4AF37] text-zinc-200 group-hover:text-black border border-zinc-700 group-hover:border-[#D4AF37]'
+                          : 'bg-zinc-900 group-hover:bg-[#D4AF37] text-amber-400 group-hover:text-black border border-amber-500/40 group-hover:border-[#D4AF37]'
+                      }`}
                     >
-                      <Play className="w-3.5 h-3.5 fill-current" />
-                      Deploy Operation
+                      {isAuthenticated ? (
+                        <>
+                          <Play className="w-3.5 h-3.5" />
+                          <span>Deploy Operation</span>
+                        </>
+                      ) : (
+                        <>
+                          <Lock className="w-3.5 h-3.5 text-amber-400 group-hover:text-black" />
+                          <span>Deploy (Login Required)</span>
+                        </>
+                      )}
                     </button>
                   </div>
                 </div>
@@ -408,118 +645,115 @@ export const MiniGamesPage: React.FC<{ navigate: (route: string) => void }> = ({
             })}
           </div>
 
-          {/* Lower Split: Recent Activity & Top Players Spotlight */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 pt-4">
-            {/* Recent Live Activity Feed (2 Cols) */}
-            <div className="lg:col-span-2 bg-[#0e1217] border border-[#232936] rounded-2xl p-6 shadow-xl">
-              <div className="flex items-center justify-between border-b border-[#232936] pb-3 mb-4">
-                <h3 className="text-sm font-bold uppercase tracking-wider text-gray-200 flex items-center gap-2">
-                  <Activity className="w-4 h-4 text-emerald-400" />
-                  Live Operational Activity Feed
-                </h3>
-                <span className="text-[11px] text-gray-500 font-mono">Real-Time Database Records</span>
+          {/* Leaderboard Summary & Live Feed Dual Panel */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 pt-4">
+            {/* Left: Top Operatives Ranking */}
+            <div className="rounded-xl border border-[#D4AF37]/20 bg-[#111] p-6 space-y-4">
+              <div className="flex items-center justify-between border-b border-zinc-800 pb-3">
+                <div className="flex items-center gap-2.5">
+                  <Trophy className="w-5 h-5 text-[#FFD700]" />
+                  <h3 className="text-base font-black font-heading text-white uppercase tracking-wider">
+                    Top Ranked Operatives
+                  </h3>
+                </div>
+                <button
+                  onClick={() => setActiveTab('leaderboard')}
+                  className="text-xs font-mono text-[#D4AF37] hover:text-[#FFD700] transition-colors flex items-center gap-1"
+                >
+                  <span>Full Leaderboard</span>
+                  <ArrowRight className="w-3.5 h-3.5" />
+                </button>
               </div>
 
-              <div className="space-y-2.5">
-                {(!dashboardData?.recentActivity || dashboardData.recentActivity.length === 0) ? (
-                  <p className="text-xs text-gray-500 py-6 text-center">No recent games logged yet. Deploy a mission to set the first score!</p>
-                ) : (
-                  dashboardData.recentActivity.slice(0, 6).map((act, i) => (
-                    <div
-                      key={act.id || i}
-                      className="flex items-center justify-between p-3 rounded-xl bg-[#121720] border border-[#232936] hover:bg-[#161c26] transition-colors"
-                    >
+              {topRankedPlayers.length === 0 ? (
+                <div className="p-8 text-center text-xs font-mono text-zinc-500">
+                  No registered rankings yet. Be the first to play and rank!
+                </div>
+              ) : (
+                <div className="divide-y divide-zinc-800/60 font-mono text-xs">
+                  {topRankedPlayers.slice(0, 5).map((p: any) => (
+                    <div key={p.userId} className="py-3 flex items-center justify-between gap-3">
+                      <div className="flex items-center gap-3">
+                        <span className={`w-6 h-6 rounded-md flex items-center justify-center text-xs font-bold ${
+                          p.rank === 1 ? 'bg-[#D4AF37] text-black' :
+                          p.rank === 2 ? 'bg-slate-300 text-black' :
+                          p.rank === 3 ? 'bg-amber-700 text-white' :
+                          'bg-zinc-800 text-zinc-400'
+                        }`}>
+                          {p.rank}
+                        </span>
+                        <UserAvatar
+                          src={p.avatarUrl}
+                          avatarUrl={p.avatarUrl}
+                          username={p.username}
+                          userId={p.userId}
+                          size="sm"
+                        />
+                        <span className="font-bold text-white font-sans">{p.username}</span>
+                      </div>
+
+                      <div className="text-right">
+                        <strong className="text-[#FFD700] block text-sm">
+                          {p.totalPoints?.toLocaleString()} pts
+                        </strong>
+                        <span className="text-[10px] text-zinc-500">
+                          {p.totalWins} wins • {p.totalPlays} plays
+                        </span>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            {/* Right: Recent Live Deployments */}
+            <div className="rounded-xl border border-zinc-800 bg-[#111] p-6 space-y-4">
+              <div className="flex items-center justify-between border-b border-zinc-800 pb-3">
+                <div className="flex items-center gap-2.5">
+                  <Activity className="w-5 h-5 text-[#D4AF37]" />
+                  <h3 className="text-base font-black font-heading text-white uppercase tracking-wider">
+                    Recent Verified Runs
+                  </h3>
+                </div>
+                <span className="text-xs font-mono text-zinc-500">Live Telemetry</span>
+              </div>
+
+              {recentResults.length === 0 ? (
+                <div className="p-8 text-center text-xs font-mono text-zinc-500">
+                  No games logged yet.
+                </div>
+              ) : (
+                <div className="divide-y divide-zinc-800/60 font-mono text-xs">
+                  {recentResults.slice(0, 5).map((s: any, idx: number) => (
+                    <div key={s.id || idx} className="py-3 flex items-center justify-between gap-3">
                       <div className="flex items-center gap-3">
                         <UserAvatar
-                          username={act.username}
-                          avatarUrl={act.avatarUrl}
+                          src={s.avatarUrl}
+                          avatarUrl={s.avatarUrl}
+                          username={s.username}
+                          userId={s.userId}
                           size="sm"
                         />
                         <div>
-                          <div className="flex items-center gap-2">
-                            <span className="text-xs font-bold text-white">{act.username}</span>
-                            <span className="text-[10px] uppercase font-mono px-2 py-0.5 rounded bg-[#161c26] text-gray-300 border border-[#232936]">
-                              {act.gameTitle || act.gameId}
-                            </span>
-                          </div>
-                          <span className="text-[10px] text-gray-500">
-                            {new Date(act.createdAt).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })} • {act.difficulty} tier
+                          <span className="font-bold text-white block font-sans">{s.username}</span>
+                          <span className="text-[10px] text-zinc-500">
+                            {s.gameTitle || s.gameId} ({s.difficulty})
                           </span>
                         </div>
                       </div>
 
                       <div className="text-right">
-                        <span className="font-mono font-bold text-sm text-[#00ff88] block">
-                          {act.score} pts
+                        <span className="font-bold text-[#FFD700] block">
+                          {(s.score || 0).toLocaleString()} pts
                         </span>
-                        <span className="text-[10px] font-mono text-gray-400">
-                          {act.timeSeconds}s {act.accuracy ? `(${act.accuracy}%)` : ''}
+                        <span className="text-[10px] text-zinc-500">
+                          {s.timeSeconds?.toFixed(1)}s • {s.success ? 'Won' : 'Lost'}
                         </span>
                       </div>
                     </div>
-                  ))
-                )}
-              </div>
-            </div>
-
-            {/* Top Operatives Rankings Spotlight (1 Col) */}
-            <div className="bg-[#0e1217] border border-[#232936] rounded-2xl p-6 shadow-xl flex flex-col justify-between">
-              <div>
-                <div className="flex items-center justify-between border-b border-[#232936] pb-3 mb-4">
-                  <h3 className="text-sm font-bold uppercase tracking-wider text-gray-200 flex items-center gap-2">
-                    <Trophy className="w-4 h-4 text-amber-400" />
-                    Top Operatives
-                  </h3>
-                  <button
-                    onClick={() => setActiveTab('leaderboard')}
-                    className="text-[11px] text-cyan-400 hover:text-cyan-300"
-                  >
-                    View All
-                  </button>
+                  ))}
                 </div>
-
-                <div className="space-y-2.5">
-                  {(!dashboardData?.playerRankings || dashboardData.playerRankings.length === 0) ? (
-                    <p className="text-xs text-gray-500 py-6 text-center">No ranked operatives yet.</p>
-                  ) : (
-                    dashboardData.playerRankings.slice(0, 5).map((rank) => (
-                      <div
-                        key={rank.userId}
-                        className="flex items-center justify-between p-2.5 rounded-xl bg-[#121720] border border-[#232936]"
-                      >
-                        <div className="flex items-center gap-2.5">
-                          <span className={`w-5 text-center font-mono font-bold text-xs ${
-                            rank.rank === 1 ? 'text-amber-400' : rank.rank === 2 ? 'text-slate-300' : rank.rank === 3 ? 'text-amber-600' : 'text-gray-500'
-                          }`}>
-                            #{rank.rank}
-                          </span>
-                          <UserAvatar
-                            username={rank.username}
-                            avatarUrl={rank.avatarUrl}
-                            size="sm"
-                          />
-                          <div>
-                            <span className="text-xs font-bold text-white block">{rank.username}</span>
-                            <span className="text-[10px] text-gray-500 font-mono">{rank.totalWins} wins</span>
-                          </div>
-                        </div>
-
-                        <div className="text-right font-mono">
-                          <span className="text-xs font-bold text-amber-300 block">{rank.bestScore} pts</span>
-                          <span className="text-[10px] text-gray-400">{rank.favoriteGame}</span>
-                        </div>
-                      </div>
-                    ))
-                  )}
-                </div>
-              </div>
-
-              <button
-                onClick={() => setActiveTab('leaderboard')}
-                className="w-full mt-4 py-2.5 rounded-xl text-xs font-bold bg-[#161c24] hover:bg-[#1e2533] border border-[#232936] text-gray-300 hover:text-white transition-all text-center"
-              >
-                Inspect Global Rankings
-              </button>
+              )}
             </div>
           </div>
         </div>
@@ -529,169 +763,229 @@ export const MiniGamesPage: React.FC<{ navigate: (route: string) => void }> = ({
       {/* 2. GAME ARENA VIEW                                        */}
       {/* ========================================================= */}
       {activeTab === 'arena' && (
-        <div className="space-y-6">
-          {/* Game Selection & Tier Selector Bar */}
-          <div className="bg-[#0e1217] border border-[#232936] rounded-2xl p-5 flex flex-col md:flex-row md:items-center justify-between gap-4 shadow-xl">
-            {/* Game Picker */}
-            <div className="flex flex-wrap items-center gap-3">
-              <span className="text-xs text-gray-400 font-mono">Discipline:</span>
-              <select
-                value={selectedGameId}
-                onChange={(e) => {
-                  setSelectedGameId(e.target.value as GameId);
-                  setLastSubmissionResult(null);
-                }}
-                className="bg-[#121720] border border-[#232936] text-white font-bold text-sm rounded-xl px-4 py-2 outline-none focus:border-cyan-400"
-              >
-                {MINI_GAMES_CATALOG.map(g => (
-                  <option key={g.id} value={g.id}>{g.title} ({g.badge})</option>
-                ))}
-              </select>
-            </div>
+        !isAuthenticated ? (
+          <div className="relative overflow-hidden rounded-2xl border border-[#D4AF37]/40 bg-gradient-to-b from-[#18150c] via-[#0E0E0E] to-[#070707] p-8 sm:p-14 text-center shadow-[0_0_40px_rgba(212,175,55,0.15)] animate-in fade-in">
+            <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-96 h-96 bg-[#D4AF37]/10 rounded-full blur-3xl pointer-events-none" />
 
-            {/* Difficulty Tier Selector */}
-            <div className="flex items-center gap-2">
-              <span className="text-xs text-gray-400 font-mono mr-1">Difficulty:</span>
-              {(['easy', 'medium', 'hard', 'expert'] as GameDifficulty[]).map(d => (
+            <div className="relative z-10 max-w-xl mx-auto space-y-6">
+              <div className="w-20 h-20 rounded-2xl bg-[#D4AF37]/10 border-2 border-[#D4AF37]/60 flex items-center justify-center mx-auto text-[#D4AF37] shadow-[0_0_30px_rgba(212,175,55,0.3)]">
+                <Lock className="w-10 h-10" />
+              </div>
+
+              <div className="space-y-3">
+                <div className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-[#D4AF37]/10 border border-[#D4AF37]/30 text-xs font-mono uppercase tracking-wider text-[#D4AF37]">
+                  <Sparkles className="w-3.5 h-3.5" />
+                  <span>Tactical Security Gate</span>
+                </div>
+                <h2 className="text-3xl sm:text-4xl font-black font-heading text-white uppercase tracking-tight">
+                  Please Log In to Play Games
+                </h2>
+                <p className="text-sm font-mono text-zinc-400 leading-relaxed max-w-lg mx-auto">
+                  Access to live training simulations, accuracy telemetry, and official score recording requires an authenticated Kick account. Please log in to deploy operations and climb the global leaderboards.
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-left max-w-md mx-auto pt-2">
+                <div className="p-3 rounded-lg bg-zinc-900/60 border border-zinc-800 text-xs font-mono text-zinc-300 flex items-center gap-2.5">
+                  <CheckCircle2 className="w-4 h-4 text-[#D4AF37] shrink-0" />
+                  <span>Real-time score verification</span>
+                </div>
+                <div className="p-3 rounded-lg bg-zinc-900/60 border border-zinc-800 text-xs font-mono text-zinc-300 flex items-center gap-2.5">
+                  <CheckCircle2 className="w-4 h-4 text-[#D4AF37] shrink-0" />
+                  <span>Global leaderboard rankings</span>
+                </div>
+                <div className="p-3 rounded-lg bg-zinc-900/60 border border-zinc-800 text-xs font-mono text-zinc-300 flex items-center gap-2.5">
+                  <CheckCircle2 className="w-4 h-4 text-[#D4AF37] shrink-0" />
+                  <span>Kick League Points earned</span>
+                </div>
+                <div className="p-3 rounded-lg bg-zinc-900/60 border border-zinc-800 text-xs font-mono text-zinc-300 flex items-center gap-2.5">
+                  <CheckCircle2 className="w-4 h-4 text-[#D4AF37] shrink-0" />
+                  <span>Personal performance stats</span>
+                </div>
+              </div>
+
+              <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
                 <button
-                  key={d}
-                  onClick={() => {
-                    setDifficulty(d);
-                    setLastSubmissionResult(null);
-                  }}
-                  className={`px-3 py-1.5 rounded-xl text-xs font-bold uppercase tracking-wider transition-all border ${
-                    difficulty === d
-                      ? d === 'expert' 
-                        ? 'bg-purple-500/20 text-purple-300 border-purple-500/50 shadow-md shadow-purple-500/20'
-                        : d === 'hard'
-                        ? 'bg-rose-500/20 text-rose-300 border-rose-500/50 shadow-md shadow-rose-500/20'
-                        : d === 'medium'
-                        ? 'bg-cyan-500/20 text-cyan-300 border-cyan-500/50 shadow-md shadow-cyan-500/20'
-                        : 'bg-emerald-500/20 text-emerald-300 border-emerald-500/50 shadow-md shadow-emerald-500/20'
-                      : 'bg-[#121720] text-gray-400 hover:text-white border-[#232936]'
-                  }`}
+                  onClick={() => navigate('login')}
+                  className="w-full sm:w-auto px-8 py-3.5 rounded-xl font-heading font-extrabold text-sm uppercase tracking-wider bg-[#D4AF37] text-black hover:bg-[#FFD700] transition-all shadow-[0_0_25px_rgba(212,175,55,0.4)] flex items-center justify-center gap-2.5 cursor-pointer"
                 >
-                  {d}
+                  <LogIn className="w-4 h-4" />
+                  <span>Log In</span>
                 </button>
-              ))}
+                <button
+                  onClick={() => setActiveTab('dashboard')}
+                  className="w-full sm:w-auto px-6 py-3.5 rounded-xl font-mono text-xs uppercase tracking-wider bg-zinc-900 border border-zinc-700 text-zinc-300 hover:text-white hover:bg-zinc-800 transition-colors cursor-pointer"
+                >
+                  Return to Catalog
+                </button>
+              </div>
             </div>
           </div>
-
-          {/* Active Mission Card Info */}
-          <div className="bg-[#121720] border border-[#232936] rounded-xl px-6 py-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-            <div>
-              <h3 className="text-sm font-bold text-white flex items-center gap-2">
-                {activeGameCatalog.title}
-                <span className="text-[10px] px-2 py-0.5 rounded bg-[#1a2332] text-cyan-300 border border-cyan-500/20 font-mono">
-                  {activeGameCatalog.badge}
-                </span>
-              </h3>
-              <p className="text-xs text-gray-400 mt-0.5">{activeGameCatalog.description}</p>
-            </div>
-
-            <div className="flex items-center gap-3 shrink-0">
-              <span className="text-xs text-gray-400">Target Tier: <strong className="text-cyan-300 font-mono uppercase">{difficulty}</strong></span>
-            </div>
-          </div>
-
-          {/* Last Submission Result Notice */}
-          {lastSubmissionResult && (
-            <div className="bg-gradient-to-r from-[#00ff88]/10 via-cyan-500/10 to-[#0e1217] border border-[#00ff88]/30 rounded-2xl p-6 text-white shadow-xl animate-fade-in">
-              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        ) : (
+          <div className="space-y-6">
+            {/* Game Selection & Difficulty Bar */}
+            <div className="rounded-xl border border-[#D4AF37]/30 bg-[#111] p-5 shadow-lg space-y-4">
+              <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-zinc-800 pb-4">
                 <div>
-                  <div className="flex items-center gap-2 text-[#00ff88] font-bold text-base mb-1">
-                    <CheckCircle2 className="w-5 h-5" />
-                    Mission Record Synchronized!
-                  </div>
-                  <p className="text-xs text-gray-300">
-                    Earned <strong className="text-amber-300 font-mono text-sm">{lastSubmissionResult.submission?.score || 0} pts</strong> and 
-                    awarded <strong className="text-[#00ff88] font-mono text-sm">+{lastSubmissionResult.pointsAwarded || 50} Kick League Points</strong>.
+                  <span className="text-[10px] font-mono text-[#D4AF37] uppercase tracking-widest block mb-1">
+                    Active Mission Environment
+                  </span>
+                  <h2 className="text-xl sm:text-2xl font-black font-heading text-white uppercase tracking-tight flex items-center gap-2">
+                    <span>{activeGameCatalog.title}</span>
+                    <span className="text-xs px-2.5 py-0.5 rounded-full bg-[#D4AF37]/15 text-[#FFD700] border border-[#D4AF37]/40 font-mono">
+                      {activeGameCatalog.badge}
+                    </span>
+                  </h2>
+                  <p className="text-xs font-mono text-zinc-400 mt-1 max-w-xl">
+                    {activeGameCatalog.description}
                   </p>
                 </div>
 
-                <div className="flex items-center gap-3">
-                  <button
-                    onClick={() => setActiveTab('leaderboard')}
-                    className="px-4 py-2 rounded-xl text-xs font-bold bg-[#161c24] hover:bg-[#1e2533] border border-[#232936] text-gray-300 hover:text-white transition-colors"
-                  >
-                    View Leaderboard
-                  </button>
-                  <button
-                    onClick={() => setLastSubmissionResult(null)}
-                    className="px-4 py-2 rounded-xl text-xs font-bold bg-[#00ff88] text-black hover:bg-[#00ff88]/90 transition-colors shadow-md shadow-[#00ff88]/20"
-                  >
-                    Play Again
-                  </button>
+                {/* Difficulty Selector */}
+                <div className="flex flex-col sm:flex-row sm:items-center gap-3">
+                  <span className="text-xs font-mono text-zinc-400">Select Tier:</span>
+                  <div className="flex items-center bg-[#181818] p-1 rounded-lg border border-zinc-700">
+                    {(['easy', 'medium', 'hard', 'expert'] as GameDifficulty[]).map(diff => (
+                      <button
+                        key={diff}
+                        onClick={() => setDifficulty(diff)}
+                        className={`px-3 py-1 rounded text-xs font-mono uppercase transition-all ${
+                          difficulty === diff
+                            ? 'bg-[#D4AF37] text-black font-bold shadow-sm'
+                            : 'text-zinc-400 hover:text-white'
+                        }`}
+                      >
+                        {diff}
+                      </button>
+                    ))}
+                  </div>
                 </div>
               </div>
+
+              {/* Quick Game Switcher Bar */}
+              <div className="flex items-center gap-2 overflow-x-auto pb-1">
+                <span className="text-xs font-mono text-zinc-500 shrink-0">Switch Operation:</span>
+                {MINI_GAMES_CATALOG.map(g => (
+                  <button
+                    key={g.id}
+                    onClick={() => {
+                      setSelectedGameId(g.id);
+                      setLastSubmissionResult(null);
+                    }}
+                    className={`px-3 py-1.5 rounded-lg text-xs font-mono whitespace-nowrap transition-all ${
+                      selectedGameId === g.id
+                        ? 'bg-[#D4AF37]/20 text-[#FFD700] border border-[#D4AF37]/50 font-bold'
+                        : 'bg-zinc-900/80 text-zinc-400 hover:text-white border border-zinc-800'
+                    }`}
+                  >
+                    {g.title}
+                  </button>
+                ))}
+              </div>
             </div>
-          )}
 
-          {/* Game Component Render */}
-          {selectedGameId === 'logic_grid' && (
-            <LogicGridGame
-              difficulty={difficulty}
-              onFinish={handleGameFinish}
-              onCancel={() => setActiveTab('dashboard')}
-            />
-          )}
+            {/* Submission Result Notification */}
+            {lastSubmissionResult && (
+              <div className="rounded-xl border border-[#D4AF37]/40 bg-gradient-to-r from-[#1c190f] via-[#111] to-[#0A0A0A] p-5 shadow-[0_0_20px_rgba(212,175,55,0.15)] animate-in fade-in">
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                  <div>
+                    <div className="flex items-center gap-2 text-[#FFD700] font-black font-heading text-base uppercase tracking-wider mb-1">
+                      <CheckCircle2 className="w-5 h-5 text-emerald-400" />
+                      Mission Record Synchronized!
+                    </div>
+                    <p className="text-xs font-mono text-zinc-300">
+                      Recorded Score: <strong className="text-[#FFD700] font-mono text-sm">{lastSubmissionResult.submission?.score || 0} pts</strong> • 
+                      Time: <span className="text-cyan-300">{lastSubmissionResult.submission?.timeSeconds?.toFixed(1)}s</span> • 
+                      Awarded: <strong className="text-emerald-400 font-mono text-sm">+{lastSubmissionResult.pointsAwarded || 50} Kick League Points</strong>.
+                    </p>
+                  </div>
 
-          {selectedGameId === 'pattern_decoder' && (
-            <PatternDecoderGame
-              difficulty={difficulty}
-              onFinish={handleGameFinish}
-              onCancel={() => setActiveTab('dashboard')}
-            />
-          )}
+                  <div className="flex items-center gap-3">
+                    <button
+                      onClick={() => setActiveTab('leaderboard')}
+                      className="px-4 py-2 rounded-lg text-xs font-heading font-extrabold uppercase tracking-wider bg-[#1A1A1A] hover:bg-zinc-800 border border-zinc-700 text-zinc-300 hover:text-white transition-colors cursor-pointer"
+                    >
+                      View Leaderboard
+                    </button>
+                    <button
+                      onClick={() => setLastSubmissionResult(null)}
+                      className="px-5 py-2 rounded-lg text-xs font-heading font-extrabold uppercase tracking-wider bg-[#D4AF37] text-black hover:bg-[#FFD700] transition-colors shadow-[0_0_15px_rgba(212,175,55,0.3)] cursor-pointer"
+                    >
+                      Play Again
+                    </button>
+                  </div>
+                </div>
+              </div>
+            )}
 
-          {selectedGameId === 'sequence_master' && (
-            <SequenceMasterGame
-              difficulty={difficulty}
-              onFinish={handleGameFinish}
-              onCancel={() => setActiveTab('dashboard')}
-            />
-          )}
+            {/* Game Component Render */}
+            <div className="rounded-xl border border-zinc-800 bg-[#0A0A0A] overflow-hidden shadow-2xl">
+              {selectedGameId === 'logic_grid' && (
+                <LogicGridGame
+                  difficulty={difficulty}
+                  onFinish={handleGameFinish}
+                  onCancel={() => setActiveTab('dashboard')}
+                />
+              )}
 
-          {selectedGameId === 'cipher_puzzle' && (
-            <CipherPuzzleGame
-              difficulty={difficulty}
-              onFinish={handleGameFinish}
-              onCancel={() => setActiveTab('dashboard')}
-            />
-          )}
+              {selectedGameId === 'pattern_decoder' && (
+                <PatternDecoderGame
+                  difficulty={difficulty}
+                  onFinish={handleGameFinish}
+                  onCancel={() => setActiveTab('dashboard')}
+                />
+              )}
 
-          {selectedGameId === 'difficult_quiz' && (
-            <DifficultQuizGame
-              difficulty={difficulty}
-              onFinish={handleGameFinish}
-              onCancel={() => setActiveTab('dashboard')}
-            />
-          )}
+              {selectedGameId === 'sequence_master' && (
+                <SequenceMasterGame
+                  difficulty={difficulty}
+                  onFinish={handleGameFinish}
+                  onCancel={() => setActiveTab('dashboard')}
+                />
+              )}
 
-          {selectedGameId === 'precision_timing' && (
-            <PrecisionTimingGame
-              difficulty={difficulty}
-              onFinish={handleGameFinish}
-              onCancel={() => setActiveTab('dashboard')}
-            />
-          )}
+              {selectedGameId === 'cipher_puzzle' && (
+                <CipherPuzzleGame
+                  difficulty={difficulty}
+                  onFinish={handleGameFinish}
+                  onCancel={() => setActiveTab('dashboard')}
+                />
+              )}
 
-          {selectedGameId === 'multi_task' && (
-            <MultiTaskGame
-              difficulty={difficulty}
-              onFinish={handleGameFinish}
-              onCancel={() => setActiveTab('dashboard')}
-            />
-          )}
+              {selectedGameId === 'difficult_quiz' && (
+                <DifficultQuizGame
+                  difficulty={difficulty}
+                  onFinish={handleGameFinish}
+                  onCancel={() => setActiveTab('dashboard')}
+                />
+              )}
 
-          {selectedGameId === 'arcade_shooter' && (
-            <ArcadeShooterGame
-              difficulty={difficulty}
-              onFinish={handleGameFinish}
-              onCancel={() => setActiveTab('dashboard')}
-            />
-          )}
-        </div>
+              {selectedGameId === 'precision_timing' && (
+                <PrecisionTimingGame
+                  difficulty={difficulty}
+                  onFinish={handleGameFinish}
+                  onCancel={() => setActiveTab('dashboard')}
+                />
+              )}
+
+              {selectedGameId === 'multi_task' && (
+                <MultiTaskGame
+                  difficulty={difficulty}
+                  onFinish={handleGameFinish}
+                  onCancel={() => setActiveTab('dashboard')}
+                />
+              )}
+
+              {selectedGameId === 'arcade_shooter' && (
+                <ArcadeShooterGame
+                  difficulty={difficulty}
+                  onFinish={handleGameFinish}
+                  onCancel={() => setActiveTab('dashboard')}
+                />
+              )}
+            </div>
+          </div>
+        )
       )}
 
       {/* ========================================================= */}
@@ -705,16 +999,107 @@ export const MiniGamesPage: React.FC<{ navigate: (route: string) => void }> = ({
       )}
 
       {/* ========================================================= */}
-      {/* 4. PERSONAL PLAYER STATS VIEW                             */}
+      {/* 4. PERSONAL PLAYER STATS VIEW ("MY PERFORMANCE")          */}
       {/* ========================================================= */}
       {activeTab === 'mystats' && (
         <div className="space-y-6">
           <PlayerStatsCard
-            stats={dashboardData?.userStats || null}
-            username={user?.username || 'Guest Operative'}
-            avatarUrl={user?.avatarUrl}
-            loading={loadingDashboard}
+            stats={userStats}
+            userId={user?.kickUserId || userStats?.userId}
+            username={user?.username || userStats?.username || 'Guest Operative'}
+            avatarUrl={user?.avatarUrl || userStats?.avatarUrl}
+            isAuthenticated={isAuthenticated}
+            loading={loadingUserStats}
+            onLogin={() => navigate('login')}
+            onGoToGames={() => {
+              setActiveTab('dashboard');
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }}
+            onPlayGame={(gId) => {
+              handleLaunchGame(gId as GameId, 'medium');
+            }}
           />
+        </div>
+      )}
+
+      {/* ========================================================= */}
+      {/* AUTHENTICATION REQUIRED MODAL                             */}
+      {/* ========================================================= */}
+      {showLoginModal && (
+        <div 
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-in fade-in duration-200"
+          onClick={() => setShowLoginModal(false)}
+        >
+          <div 
+            className="relative w-full max-w-md overflow-hidden rounded-2xl border border-[#D4AF37]/50 bg-gradient-to-b from-[#18150c] via-[#0E0E0E] to-[#070707] p-6 sm:p-8 shadow-[0_0_50px_rgba(212,175,55,0.25)] space-y-6 text-center"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Close button */}
+            <button
+              onClick={() => setShowLoginModal(false)}
+              className="absolute top-4 right-4 p-1.5 rounded-lg bg-zinc-900 border border-zinc-800 text-zinc-400 hover:text-white transition-colors cursor-pointer"
+              aria-label="Close dialog"
+            >
+              <X className="w-4 h-4" />
+            </button>
+
+            {/* Icon */}
+            <div className="w-16 h-16 rounded-2xl bg-[#D4AF37]/10 border-2 border-[#D4AF37]/50 flex items-center justify-center mx-auto text-[#D4AF37] shadow-[0_0_25px_rgba(212,175,55,0.3)]">
+              <Lock className="w-8 h-8" />
+            </div>
+
+            {/* Content */}
+            <div className="space-y-2">
+              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#D4AF37]/10 border border-[#D4AF37]/30 text-[11px] font-mono uppercase tracking-wider text-[#D4AF37]">
+                <Sparkles className="w-3.5 h-3.5" />
+                <span>Authentication Required</span>
+              </div>
+              <h3 className="text-2xl font-black font-heading text-white uppercase tracking-tight">
+                Please Log In to Play Games
+              </h3>
+              <p className="text-xs sm:text-sm font-mono text-zinc-400 leading-relaxed">
+                {loginModalGameTitle 
+                  ? `To deploy ${loginModalGameTitle} and submit your verified mission results, you must be logged in with your Kick account.`
+                  : 'You must be logged in with your Kick account to play tactical operations, calibrate challenges, and rank on the global leaderboard.'}
+              </p>
+            </div>
+
+            {/* Feature bullets */}
+            <div className="text-left space-y-2 bg-zinc-900/60 p-3.5 rounded-xl border border-zinc-800 font-mono text-xs text-zinc-300">
+              <div className="flex items-center gap-2">
+                <CheckCircle2 className="w-3.5 h-3.5 text-[#D4AF37] shrink-0" />
+                <span>Play all 8 cognitive training simulations</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <CheckCircle2 className="w-3.5 h-3.5 text-[#D4AF37] shrink-0" />
+                <span>Submit verified scores & climb leaderboards</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <CheckCircle2 className="w-3.5 h-3.5 text-[#D4AF37] shrink-0" />
+                <span>Track personal accuracy & win rate records</span>
+              </div>
+            </div>
+
+            {/* Buttons */}
+            <div className="space-y-3 pt-2">
+              <button
+                onClick={() => {
+                  setShowLoginModal(false);
+                  navigate('login');
+                }}
+                className="w-full py-3.5 rounded-xl font-heading font-extrabold text-xs sm:text-sm uppercase tracking-wider bg-[#D4AF37] text-black hover:bg-[#FFD700] transition-all shadow-[0_0_20px_rgba(212,175,55,0.35)] flex items-center justify-center gap-2 cursor-pointer"
+              >
+                <LogIn className="w-4 h-4" />
+                <span>Log In</span>
+              </button>
+              <button
+                onClick={() => setShowLoginModal(false)}
+                className="w-full py-2.5 rounded-xl font-mono text-xs uppercase tracking-wider bg-zinc-900 border border-zinc-800 text-zinc-400 hover:text-white hover:bg-zinc-800 transition-colors cursor-pointer"
+              >
+                Continue Browsing
+              </button>
+            </div>
+          </div>
         </div>
       )}
     </div>
