@@ -64,22 +64,47 @@ export const HomePage: React.FC<{ navigate: (route: string) => void }> = ({ navi
     <div className="space-y-12 py-6 pb-20">
       
       {/* Hero Banner with Channel Header */}
-      <section className="relative overflow-hidden rounded-lg border border-[#D4AF37]/20 bg-gradient-to-b from-[#111] to-[#050505] p-6 sm:p-8">
+      <section className="relative overflow-hidden rounded-2xl border border-[#D4AF37]/35 bg-[#08080a] shadow-[0_0_60px_-15px_rgba(212,175,55,0.28),inset_0_1px_1px_rgba(255,215,0,0.25)] p-6 sm:p-8 lg:p-10 transition-all">
         
-        {/* Big Background Watermark */}
-        <div className="absolute right-2 top-1/2 -translate-y-1/2 text-[120px] sm:text-[180px] font-black text-[#D4AF37] leading-none opacity-5 pointer-events-none select-none tracking-tighter">
-          STATS
+        {/* Top Gold Horizon Shimmer Line */}
+        <div className="absolute top-0 inset-x-0 h-[2px] bg-gradient-to-r from-transparent via-[#FFD700] to-transparent shadow-[0_0_18px_#FFD700] z-20" />
+        <div className="absolute bottom-0 inset-x-0 h-[1px] bg-gradient-to-r from-transparent via-[#D4AF37]/30 to-transparent z-20" />
+
+        {/* Cyber HUD Esports Corner Accents */}
+        <div className="absolute top-2.5 left-2.5 w-3 h-3 border-t-2 border-l-2 border-[#D4AF37]/70 pointer-events-none z-20" />
+        <div className="absolute top-2.5 right-2.5 w-3 h-3 border-t-2 border-r-2 border-[#D4AF37]/70 pointer-events-none z-20" />
+        <div className="absolute bottom-2.5 left-2.5 w-3 h-3 border-b-2 border-l-2 border-[#D4AF37]/70 pointer-events-none z-20" />
+        <div className="absolute bottom-2.5 right-2.5 w-3 h-3 border-b-2 border-r-2 border-[#D4AF37]/70 pointer-events-none z-20" />
+
+        {/* High-Tech Geometric Grid Texture */}
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#D4AF370D_1px,transparent_1px),linear-gradient(to_bottom,#D4AF370D_1px,transparent_1px)] bg-[size:28px_28px] [mask-image:radial-gradient(ellipse_70%_60%_at_50%_40%,#000_60%,transparent_100%)] pointer-events-none" />
+
+        {/* Dynamic Dual-Color Auroras & Energy Fields (Championship Gold + Kick Emerald) */}
+        <div className="absolute -top-36 -right-16 w-[520px] h-[520px] rounded-full bg-gradient-to-br from-[#FFD700]/20 via-[#D4AF37]/15 to-transparent blur-[110px] pointer-events-none animate-pulse" />
+        <div className="absolute -bottom-28 -left-16 w-[400px] h-[400px] rounded-full bg-gradient-to-tr from-[#53FC18]/15 via-[#00E701]/08 to-transparent blur-[90px] pointer-events-none" />
+        <div className="absolute top-1/2 left-1/3 -translate-x-1/2 -translate-y-1/2 w-96 h-48 bg-[#D4AF37]/10 rounded-full blur-[80px] pointer-events-none" />
+
+        {/* Angled Light Sweep / Sheen */}
+        <div className="absolute -inset-x-32 top-0 h-full bg-gradient-to-r from-transparent via-[#D4AF37]/[0.05] to-transparent -skew-x-12 pointer-events-none" />
+
+        {/* Goated Watermark Background (Stylized Crown + Typography) */}
+        <div className="absolute right-0 top-1/2 -translate-y-1/2 flex items-center gap-4 opacity-[0.06] pointer-events-none select-none pr-4 sm:pr-8">
+          <Crown className="w-48 h-48 sm:w-64 sm:h-64 text-[#D4AF37] stroke-[1.2]" />
+          <div className="text-[90px] sm:text-[140px] lg:text-[180px] font-black text-[#D4AF37] leading-none tracking-tighter">
+            GOAT
+          </div>
         </div>
-        
-        {/* Ambient Gold Glow */}
-        <div className="absolute top-0 right-1/4 w-96 h-96 bg-[#D4AF37]/10 rounded-full blur-3xl pointer-events-none" />
+
+        {/* Floating Golden Sparks */}
+        <Sparkles className="absolute top-5 right-20 w-5 h-5 text-[#FFD700]/40 animate-pulse pointer-events-none" />
+        <Sparkles className="absolute bottom-8 right-1/3 w-4 h-4 text-[#D4AF37]/30 pointer-events-none" />
 
         <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-8">
           
           {/* Avatar & Channel info */}
           <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6 text-center sm:text-left">
             <div className="relative group shrink-0">
-              <div className="w-28 h-28 sm:w-32 sm:h-32 rounded-full border-4 border-[#D4AF37] overflow-hidden shadow-[0_0_30px_rgba(212,175,55,0.25)] bg-[#1A1A1A]">
+              <div className="w-28 h-28 sm:w-32 sm:h-32 rounded-full border-4 border-[#D4AF37] overflow-hidden shadow-[0_0_35px_rgba(212,175,55,0.4),0_0_15px_rgba(83,252,24,0.2)] bg-[#1A1A1A] ring-2 ring-[#FFD700]/50">
                 <UserAvatar
                   src={channel.avatarUrl}
                   username={channel.username}
@@ -87,7 +112,7 @@ export const HomePage: React.FC<{ navigate: (route: string) => void }> = ({ navi
                 />
               </div>
               {channel.isLive && (
-                <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 px-2.5 py-0.5 rounded-sm bg-red-600 text-white text-[9px] font-black tracking-widest uppercase font-mono shadow-lg flex items-center gap-1 border border-red-400">
+                <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 px-2.5 py-0.5 rounded-sm bg-red-600 text-white text-[9px] font-black tracking-widest uppercase font-mono shadow-[0_0_15px_rgba(239,68,68,0.5)] flex items-center gap-1 border border-red-400">
                   <span className="w-1.5 h-1.5 rounded-full bg-white animate-ping" />
                   LIVE
                 </div>
@@ -96,14 +121,16 @@ export const HomePage: React.FC<{ navigate: (route: string) => void }> = ({ navi
 
             <div className="space-y-2">
               <div className="flex flex-wrap items-center justify-center sm:justify-start gap-3">
-                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tighter uppercase leading-none text-white">
+                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tighter uppercase leading-none text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]">
                   {channel.username}
                 </h1>
-                <span className="px-2 py-0.5 rounded-sm text-[10px] font-bold tracking-widest uppercase bg-[#D4AF37] text-black">
-                  VERIFIED
+                <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-sm text-[10px] font-black tracking-widest uppercase bg-gradient-to-r from-[#FFD700] to-[#D4AF37] text-black shadow-[0_0_12px_rgba(212,175,55,0.4)]">
+                  <Crown className="w-3 h-3 text-black" />
+                  GOAT VERIFIED
                 </span>
               </div>
-              <p className="text-xs text-gray-400 font-bold uppercase tracking-widest">
+              <p className="text-xs text-[#D4AF37] font-bold uppercase tracking-widest flex items-center justify-center sm:justify-start gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#53FC18] inline-block shadow-[0_0_8px_#53FC18]" />
                 OFFICIAL KICK STREAMER • COMMUNITY STATS & LEAGUE
               </p>
               <p className="text-xs sm:text-sm text-gray-300 max-w-xl leading-relaxed">
@@ -112,7 +139,7 @@ export const HomePage: React.FC<{ navigate: (route: string) => void }> = ({ navi
               
               {channel.isLive && (
                 <div className="pt-1 flex items-center justify-center sm:justify-start gap-2 text-[11px] font-mono text-emerald-400 font-bold uppercase tracking-wider">
-                  <Radio className="w-3.5 h-3.5 animate-pulse" />
+                  <Radio className="w-3.5 h-3.5 animate-pulse text-[#53FC18]" />
                   <span>{channel.currentStreamTitle}</span>
                 </div>
               )}
@@ -125,7 +152,7 @@ export const HomePage: React.FC<{ navigate: (route: string) => void }> = ({ navi
               href={`https://kick.com/${channel.slug}`}
               target="_blank"
               rel="noreferrer"
-              className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3 rounded-sm font-black text-xs uppercase tracking-widest bg-[#D4AF37] text-black hover:bg-[#FFD700] shadow-[0_0_20px_rgba(212,175,55,0.3)] transition-all"
+              className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3 rounded-sm font-black text-xs uppercase tracking-widest bg-gradient-to-r from-[#D4AF37] to-[#FFD700] text-black hover:brightness-110 shadow-[0_0_25px_rgba(212,175,55,0.4)] transition-all transform hover:-translate-y-0.5"
             >
               <Radio className="w-4 h-4 text-black animate-pulse" />
               <span>WATCH ON KICK</span>
@@ -134,7 +161,7 @@ export const HomePage: React.FC<{ navigate: (route: string) => void }> = ({ navi
 
             <button
               onClick={() => navigate('league')}
-              className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3 rounded-sm font-black text-xs uppercase tracking-widest bg-[#1A1A1A] border border-[#D4AF37]/30 text-[#D4AF37] hover:bg-[#D4AF37] hover:text-black transition-all"
+              className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3 rounded-sm font-black text-xs uppercase tracking-widest bg-[#111]/80 backdrop-blur-sm border border-[#D4AF37]/50 text-[#D4AF37] hover:bg-[#D4AF37] hover:text-black shadow-[0_0_15px_rgba(212,175,55,0.15)] transition-all transform hover:-translate-y-0.5"
             >
               <Trophy className="w-4 h-4" />
               <span>LEAGUE STANDINGS</span>

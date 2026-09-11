@@ -353,12 +353,8 @@ export class TrackerService {
       const activeStreamId = db.getActiveStreamId() || latestStream?.streamId || '125836373';
       const streamTitle = db.getStreamById(activeStreamId)?.title || db.getChannel().currentStreamTitle || 'Kick Broadcast';
 
-      // Check if message is already recorded in database
-      const existingMessages = db.getRawData().chatMessages;
-      const isAlreadySaved = messageId 
-        ? existingMessages.some(m => m.messageId === messageId)
-        : existingMessages.some(m => m.kickUserId === senderId && m.content === content && Math.abs(new Date(m.timestamp).getTime() - new Date(createdAt).getTime()) < 5000);
-
+      // Persist and count through authoritative db.addChatMessage logic
+      const countBefore = db.getRawData().chatMessages.length;
       const savedMsg = db.addChatMessage({
         messageId,
         kickUserId: senderId,
@@ -369,8 +365,9 @@ export class TrackerService {
         content,
         timestamp: createdAt
       });
+      const isNewlyRecorded = db.getRawData().chatMessages.length > countBefore;
 
-      if (!isAlreadySaved) {
+      if (isNewlyRecorded) {
         this.totalTrackedThisSession += 1;
         this.lastMessageAt = createdAt;
         console.log(`[Tracker] [${source}] Recorded chat from ${username} (${senderId}): "${content.slice(0, 35)}..." (+1 pt)`);

@@ -346,46 +346,6 @@ apiRouter.get('/user/:username/messages', (req: Request, res: Response) => {
   res.json(data);
 });
 
-// --- Chat Analytics ---
-apiRouter.get('/chat/analytics', (req: Request, res: Response) => {
-  const allResult = db.getChatMessages(100, 0);
-  const recentMessages = allResult.messages || [];
-  const totalMessages = allResult.total || recentMessages.length;
-
-  const userCounts: Record<string, { count: number; username: string; avatarUrl: string }> = {};
-  recentMessages.forEach(m => {
-    if (!userCounts[m.kickUserId]) {
-      userCounts[m.kickUserId] = {
-        count: 0,
-        username: m.username,
-        avatarUrl: m.avatarUrl
-      };
-    }
-    userCounts[m.kickUserId].count++;
-  });
-
-  const activeChatters = Object.keys(userCounts).length;
-  const averageMessagesPerUser = activeChatters > 0 ? Math.round(totalMessages / activeChatters) : 0;
-
-  const topChatters = Object.entries(userCounts)
-    .map(([kickUserId, data]) => ({
-      kickUserId,
-      username: data.username,
-      avatarUrl: data.avatarUrl,
-      messageCount: data.count
-    }))
-    .sort((a, b) => b.messageCount - a.messageCount)
-    .slice(0, 10);
-
-  res.json({
-    totalMessages,
-    activeChatters,
-    averageMessagesPerUser,
-    topChatters,
-    recentMessages
-  });
-});
-
 // --- VODs & Streams ---
 apiRouter.get('/vods', (req: Request, res: Response) => {
   const limit = Math.min(50, Math.max(1, parseInt(req.query.limit as string) || 12));
@@ -837,22 +797,24 @@ apiRouter.post('/admin/adjust-points', requireAdmin, (req: AuthRequest, res: Res
 });
 
 apiRouter.post('/admin/test-event', requireAdmin, (req: AuthRequest, res: Response) => {
-  const { type, username, kickUserId, messageContent } = req.body;
+  const { type, username, kickUserId, messageContent, messageId, timestamp } = req.body;
   const avatar = `https://api.dicebear.com/7.x/bottts/svg?seed=${username || 'Chatter'}`;
   const uid = kickUserId || `k_${Date.now()}`;
   const uname = username || 'TestChatter';
 
   if (type === 'CHAT' || type === 'chat') {
     const targetStreamId = (req.body.streamId as string) || db.getActiveStreamId() || 'vod_live_active';
-    db.addChatMessage({
+    const msg = db.addChatMessage({
+      messageId: messageId || (req.body.id ? String(req.body.id) : undefined),
       kickUserId: uid,
       username: uname,
       avatarUrl: avatar,
       streamId: targetStreamId,
       streamTitle: db.getStreamById(targetStreamId)?.title || db.getChannel().currentStreamTitle || 'Kick Broadcast',
       content: messageContent || 'Live message test from Admin Panel!',
-      timestamp: new Date().toISOString()
+      timestamp: timestamp || new Date().toISOString()
     });
+    return res.json({ status: 'ok', message: `Dispatched test ${type} event for ${uname}`, chatMessage: msg });
   } else if (type === 'SUB' || type === 'subscription') {
     const targetStreamId = (req.body.streamId as string) || db.getActiveStreamId();
     db.addSubscriptionEvent({

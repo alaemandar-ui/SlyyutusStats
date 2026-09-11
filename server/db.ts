@@ -434,11 +434,8 @@ class Database {
     const now = new Date().toISOString();
     const isTestUser = Boolean(
       isTest || 
-      username.toLowerCase().startsWith('test') || 
       username.toLowerCase().includes('demo_user') || 
-      username.toLowerCase().includes('fake_user') || 
-      kickUserId.startsWith('k_test') || 
-      kickUserId.startsWith('test_')
+      username.toLowerCase().includes('fake_user')
     );
 
     if (!user) {
@@ -568,7 +565,7 @@ class Database {
   }
 
   public addPoints(kickUserId: string, username: string, avatarUrl: string, type: 'CHAT_MESSAGE' | 'SUBSCRIPTION' | 'GIFT_SUBSCRIPTION' | 'MINI_GAME_WIN', customPoints?: number, isTest: boolean = false): { pointsAwarded: number; totalPoints: number } {
-    const isTestFlag = isTest || username.toLowerCase().startsWith('test') || kickUserId.startsWith('k_test') || kickUserId.startsWith('test_');
+    const isTestFlag = Boolean(isTest);
     const user = this.ensureKickUser(kickUserId, username, avatarUrl, isTestFlag);
     const activeSeason = this.getActiveSeason();
     const now = new Date().toISOString();
@@ -1106,9 +1103,9 @@ class Database {
   // --- Chat Messages ---
   public addChatMessage(msg: Omit<DBChatMessage, 'messageId' | 'pointsAwarded'> & { messageId?: string }): DBChatMessage {
     const pointValue = this.getPointRule('CHAT_MESSAGE');
-    const isTest = Boolean(msg.isTest || (msg.username && msg.username.toLowerCase().startsWith('test')));
+    const isTest = Boolean(msg.isTest);
 
-    // Deduplication check 1: Exact messageId
+    // Deduplication check 1: Exact messageId already recorded (prevents double-counting duplicate event deliveries)
     if (msg.messageId) {
       const existing = this.data.chatMessages.find(m => m.messageId === msg.messageId);
       if (existing) {
@@ -1116,17 +1113,41 @@ class Database {
       }
     }
 
-    // Deduplication check 2: Same user, exact content, within 5 seconds timestamp
-    const msgTime = new Date(msg.timestamp).getTime();
-    if (!isNaN(msgTime)) {
-      const existingFuzzy = this.data.chatMessages.find(m => 
-        m.kickUserId === msg.kickUserId && 
-        m.content === msg.content && 
-        Math.abs(new Date(m.timestamp).getTime() - msgTime) < 5000
-      );
-      if (existingFuzzy) {
-        return existingFuzzy;
-      }
+    // Deduplication check 2 & Spam Burst Counting:
+    // Requirements:
+    // - If the same user sends 3 consecutive messages, count ALL 3 messages normally.
+    // - Bursts of up to 3 consecutive messages (including identical content / hype spam bursts like "W", "W", "W")
+    //   must NOT automatically be classified as spam or discarded.
+    // - Valid consecutive messages must count toward total messages, user stats, league stats, rankings, and activity metrics.
+    // - Only exclude if clearly violating anti-abuse rules (e.g. automated bot flooding > 3 identical messages in rapid burst or > 10 messages in 5s).
+    const msgTime = msg.timestamp ? new Date(msg.timestamp).getTime() : Date.now();
+    const validMsgTime = isNaN(msgTime) ? Date.now() : msgTime;
+    const BURST_WINDOW_MS = 5000;
+    const MAX_CONSECUTIVE_IDENTICAL = 3; // Allow up to 3 consecutive identical messages (valid spam burst)
+    const MAX_RAPID_BURST_TOTAL = 10;    // Allow up to 10 rapid messages in 5 seconds from a single user
+
+    const trimmedContent = (msg.content || '').trim();
+
+    // Find recent messages from this user within the burst window (5 seconds)
+    const recentFromUser = this.data.chatMessages.filter(m => {
+      if (m.kickUserId !== msg.kickUserId) return false;
+      const t = new Date(m.timestamp).getTime();
+      return !isNaN(t) && Math.abs(validMsgTime - t) <= BURST_WINDOW_MS;
+    });
+
+    const identicalInBurst = recentFromUser.filter(m => (m.content || '').trim() === trimmedContent);
+
+    // Anti-spam / anti-flood enforcement:
+    // Allow up to MAX_CONSECUTIVE_IDENTICAL (3) consecutive identical messages in a rapid burst.
+    // Only exclude when exceeding the burst limit (4th+ identical message within 5s or > 10 rapid messages).
+    if (identicalInBurst.length >= MAX_CONSECUTIVE_IDENTICAL) {
+      // Exclude excessive automated spam/flood: return the last recorded message without awarding points or double-counting
+      return identicalInBurst[identicalInBurst.length - 1];
+    }
+
+    if (recentFromUser.length >= MAX_RAPID_BURST_TOTAL) {
+      // Exclude excessive rapid flooding
+      return recentFromUser[recentFromUser.length - 1];
     }
 
     const newMsg: DBChatMessage = {
