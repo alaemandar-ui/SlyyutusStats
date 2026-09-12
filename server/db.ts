@@ -298,46 +298,12 @@ class Database {
         if (!this.data.userBadges) {
           this.data.userBadges = [];
         }
-        if (!this.data.questions || this.data.questions.length === 0) {
-          this.data.questions = [
-            {
-              id: 'q_seed_1',
-              userId: 'community_member_1',
-              kickUserId: 'community_member_1',
-              username: 'ApexViper',
-              avatarUrl: 'https://files.kick.com/images/default_avatars/avatar_1.png',
-              question: 'What sensitivity and DPI settings do you run for your high-kill games in Apex Legends?',
-              status: 'answered',
-              createdAt: new Date(Date.now() - 3600 * 1000 * 48).toISOString(),
-              answer: '800 DPI at 1.4 in-game sensitivity! Keep your arm relaxed for consistent tracking and micro-adjustments with wrist.',
-              answeredAt: new Date(Date.now() - 3600 * 1000 * 36).toISOString(),
-              answeredBy: 'Slyyutus'
-            },
-            {
-              id: 'q_seed_2',
-              userId: 'community_member_2',
-              kickUserId: 'community_member_2',
-              username: 'QuantumShooter',
-              avatarUrl: 'https://files.kick.com/images/default_avatars/avatar_2.png',
-              question: 'When is the next community tournament or viewer custom lobby night on stream?',
-              status: 'answered',
-              createdAt: new Date(Date.now() - 3600 * 1000 * 24).toISOString(),
-              answer: 'We host community customs every Friday evening at 7 PM EST! Join chat to get the lobby code and queue up.',
-              answeredAt: new Date(Date.now() - 3600 * 1000 * 12).toISOString(),
-              answeredBy: 'Slyyutus'
-            },
-            {
-              id: 'q_seed_3',
-              userId: 'community_member_3',
-              kickUserId: 'community_member_3',
-              username: 'PulseSniper',
-              avatarUrl: 'https://files.kick.com/images/default_avatars/avatar_3.png',
-              question: 'Are you planning to test out the new Ranked season split on day one?',
-              status: 'pending',
-              createdAt: new Date(Date.now() - 3600 * 1000 * 4).toISOString()
-            }
-          ];
+        if (!this.data.questions) {
+          this.data.questions = [];
         }
+
+        // Purge ONLY the three specific test users from Q&A system
+        this.purgeQnATestUsers();
 
         // Clean out any test or fake users (e.g. ApexLegend99, SuperKickFan, GenerousGiftMaster)
         this.cleanTestUsersAndData();
@@ -2608,6 +2574,51 @@ class Database {
       this.addSystemLog('info', 'QA', `Deleted question ${questionId}`);
     }
     return deleted;
+  }
+
+  /**
+   * Specifically purges ONLY the 3 designated Q&A test users: PulseSniper, QuantumShooter, ApexViper.
+   * Removes their questions, answers, history, and records without touching any real users.
+   */
+  public purgeQnATestUsers(): { removedQuestions: number; removedUsers: string[] } {
+    const targetNames = ['PulseSniper', 'QuantumShooter', 'ApexViper'];
+    const targetNamesLower = new Set(targetNames.map(n => n.toLowerCase()));
+    const targetIds = new Set(['community_member_1', 'community_member_2', 'community_member_3']);
+
+    const matchedUsers: string[] = [];
+    let removedQuestions = 0;
+
+    if (this.data.questions && this.data.questions.length > 0) {
+      const initialCount = this.data.questions.length;
+      this.data.questions = this.data.questions.filter(q => {
+        const uname = (q.username || '').toLowerCase();
+        const matchesName = targetNamesLower.has(uname);
+        const matchesId = targetIds.has(q.userId) || targetIds.has(q.kickUserId);
+        if (matchesName || matchesId) {
+          if (!matchedUsers.includes(q.username)) {
+            matchedUsers.push(q.username);
+          }
+          return false;
+        }
+        return true;
+      });
+      removedQuestions = initialCount - this.data.questions.length;
+      if (removedQuestions > 0) {
+        this.addSystemLog('info', 'QA_CLEANUP', `Purged ${removedQuestions} test questions/answers for: ${matchedUsers.join(', ')}`);
+      }
+    }
+
+    // Also remove from kickUsers if any record was created for these 3 test users
+    if (this.data.kickUsers && this.data.kickUsers.length > 0) {
+      this.data.kickUsers = this.data.kickUsers.filter(u => {
+        const matchesName = targetNamesLower.has((u.username || '').toLowerCase());
+        const matchesId = targetIds.has(u.kickUserId);
+        return !(matchesName || matchesId);
+      });
+    }
+
+    this.saveSync();
+    return { removedQuestions, removedUsers: matchedUsers };
   }
 
   // --- Initial Seed Data ---

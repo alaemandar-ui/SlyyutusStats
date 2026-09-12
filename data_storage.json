@@ -2470,7 +2470,7 @@
     "totalStreams": 0,
     "currentStreamTitle": "",
     "currentStreamCategory": "",
-    "lastUpdated": "2026-09-12T12:50:04.300Z"
+    "lastUpdated": "2026-09-12T13:29:06.226Z"
   },
   "streams": [
     {
@@ -52587,22 +52587,148 @@
       "ruleKey": "CHAT_MESSAGE",
       "pointValue": 1,
       "description": "1 point per valid chat message in live stream",
-      "updatedAt": "2026-09-12T12:43:01.881Z"
+      "updatedAt": "2026-09-12T13:28:02.025Z"
     },
     {
       "ruleKey": "SUBSCRIPTION",
       "pointValue": 100,
       "description": "100 points for subscribing to Slyyutus",
-      "updatedAt": "2026-09-12T12:43:01.881Z"
+      "updatedAt": "2026-09-12T13:28:02.025Z"
     },
     {
       "ruleKey": "GIFT_SUBSCRIPTION",
       "pointValue": 100,
       "description": "100 points per gift subscription to the community",
-      "updatedAt": "2026-09-12T12:43:01.881Z"
+      "updatedAt": "2026-09-12T13:28:02.025Z"
     }
   ],
   "systemLogs": [
+    {
+      "id": "log_1789219746227_bahia",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26604 followers, 63 subs, 28 real streams.",
+      "createdAt": "2026-09-12T13:29:06.227Z"
+    },
+    {
+      "id": "log_1789219684808_82c41",
+      "level": "error",
+      "module": "KICK_EVENTS",
+      "message": "Cannot subscribe to webhook events: no app access token.",
+      "createdAt": "2026-09-12T13:28:04.808Z"
+    },
+    {
+      "id": "log_1789219684808_g3h4t",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26604 followers, 63 subs, 28 real streams.",
+      "createdAt": "2026-09-12T13:28:04.808Z"
+    },
+    {
+      "id": "log_1789219684467_26tc4",
+      "level": "success",
+      "module": "TRACKER",
+      "message": "Kick WebSocket connected. Subscribing to chatroom 229380.",
+      "createdAt": "2026-09-12T13:28:04.467Z"
+    },
+    {
+      "id": "log_1789219682084_ikois",
+      "level": "info",
+      "module": "TRACKER",
+      "message": "Starting Kick real-time tracking service with WebSocket & API fallback.",
+      "createdAt": "2026-09-12T13:28:02.084Z"
+    },
+    {
+      "id": "log_1789219682023_jt55e",
+      "level": "info",
+      "module": "SUBS_TRACKER",
+      "message": "Recalculated subscriptions for 31 VODs (78 non-overlapping subs linked).",
+      "createdAt": "2026-09-12T13:28:02.023Z"
+    },
+    {
+      "id": "log_1789219678484_kb36e",
+      "level": "info",
+      "module": "TRACKER",
+      "message": "Starting Kick real-time tracking service with WebSocket & API fallback.",
+      "createdAt": "2026-09-12T13:27:58.484Z"
+    },
+    {
+      "id": "log_1789219678424_4jjjm",
+      "level": "info",
+      "module": "SUBS_TRACKER",
+      "message": "Recalculated subscriptions for 31 VODs (78 non-overlapping subs linked).",
+      "createdAt": "2026-09-12T13:27:58.424Z"
+    },
+    {
+      "id": "log_1789219625439_1j1kc",
+      "level": "error",
+      "module": "KICK_EVENTS",
+      "message": "Cannot subscribe to webhook events: no app access token.",
+      "createdAt": "2026-09-12T13:27:05.439Z"
+    },
+    {
+      "id": "log_1789219625438_886dt",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26604 followers, 63 subs, 28 real streams.",
+      "createdAt": "2026-09-12T13:27:05.438Z"
+    },
+    {
+      "id": "log_1789219625149_9advv",
+      "level": "success",
+      "module": "TRACKER",
+      "message": "Kick WebSocket connected. Subscribing to chatroom 229380.",
+      "createdAt": "2026-09-12T13:27:05.149Z"
+    },
+    {
+      "id": "log_1789219622895_uz3kc",
+      "level": "info",
+      "module": "TRACKER",
+      "message": "Starting Kick real-time tracking service with WebSocket & API fallback.",
+      "createdAt": "2026-09-12T13:27:02.895Z"
+    },
+    {
+      "id": "log_1789219622837_gx4po",
+      "level": "info",
+      "module": "SUBS_TRACKER",
+      "message": "Recalculated subscriptions for 31 VODs (78 non-overlapping subs linked).",
+      "createdAt": "2026-09-12T13:27:02.837Z"
+    },
+    {
+      "id": "log_1789219614102_elogn",
+      "level": "error",
+      "module": "KICK_EVENTS",
+      "message": "Cannot subscribe to webhook events: no app access token.",
+      "createdAt": "2026-09-12T13:26:54.102Z"
+    },
+    {
+      "id": "log_1789219614101_6u91e",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26604 followers, 63 subs, 28 real streams.",
+      "createdAt": "2026-09-12T13:26:54.101Z"
+    },
+    {
+      "id": "log_1789219613978_f2poo",
+      "level": "success",
+      "module": "TRACKER",
+      "message": "Kick WebSocket connected. Subscribing to chatroom 229380.",
+      "createdAt": "2026-09-12T13:26:53.978Z"
+    },
+    {
+      "id": "log_1789219611705_1z9kx",
+      "level": "info",
+      "module": "TRACKER",
+      "message": "Starting Kick real-time tracking service with WebSocket & API fallback.",
+      "createdAt": "2026-09-12T13:26:51.705Z"
+    },
+    {
+      "id": "log_1789219611652_thaqx",
+      "level": "info",
+      "module": "SUBS_TRACKER",
+      "message": "Recalculated subscriptions for 31 VODs (78 non-overlapping subs linked).",
+      "createdAt": "2026-09-12T13:26:51.653Z"
+    },
     {
       "id": "log_1789217437515_7tc7h",
       "level": "info",
@@ -55976,132 +56102,6 @@
       "module": "CHAT_TRACKER",
       "message": "[WEBSOCKET] Recorded chat from @Karmosaa: \"[emote:37226:KEKW]\" (+1 pt)",
       "createdAt": "2026-09-11T17:14:34.349Z"
-    },
-    {
-      "id": "log_1789146874045_vwmez",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @ayoubrs: \"[emote:37225:KEKLEO]\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:34.045Z"
-    },
-    {
-      "id": "log_1789146873850_swey9",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @yserKL: \"nhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:33.850Z"
-    },
-    {
-      "id": "log_1789146873849_7bn3d",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @MedXx10: \"Wsh a sly\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:33.849Z"
-    },
-    {
-      "id": "log_1789146873547_o91kk",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @ch4rif: \"wach a sly hani liya\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:33.547Z"
-    },
-    {
-      "id": "log_1789146873350_e83cf",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @gostime: \"CASPER WELA BOU9LWA\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:33.350Z"
-    },
-    {
-      "id": "log_1789146873247_rz5nv",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @Haytam183: \"HHHHHHHHHHHHHHHHHHHHHHH\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:33.247Z"
-    },
-    {
-      "id": "log_1789146873049_sm4ro",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @inzo_x10: \"dar skata\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:33.049Z"
-    },
-    {
-      "id": "log_1789146873048_bdzkd",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @yserKL: \"nhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:33.048Z"
-    },
-    {
-      "id": "log_1789146873047_vxi0l",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @momocityred: \"dooooobiii skoskanoooooooooooo\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:33.048Z"
-    },
-    {
-      "id": "log_1789146872549_s0inm",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @gostime: \"CASPER WELA BOU9LWA\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:32.549Z"
-    },
-    {
-      "id": "log_1789146872248_w59lq",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @slyy_haytamvvv3: \"hhhhhhhhhhhhhhhhhhhh\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:32.248Z"
-    },
-    {
-      "id": "log_1789146871948_1rk1p",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @Blazex_1: \"porn hub\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:31.948Z"
-    },
-    {
-      "id": "log_1789146871847_asm58",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @FLANFARTLAN: \"hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:31.847Z"
-    },
-    {
-      "id": "log_1789146871647_pjqtp",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @ch4rif: \"wach a sly hani liya\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:31.647Z"
-    },
-    {
-      "id": "log_1789146871547_5hkrf",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @yserKL: \"nhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:31.548Z"
-    },
-    {
-      "id": "log_1789146870752_zp4sk",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @gostime: \"CASPER WELA BOU9LWA\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:30.752Z"
-    },
-    {
-      "id": "log_1789146870648_t7s9x",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @NHkhalid: \"b9iti blaaa zab awda Casper\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:30.648Z"
-    },
-    {
-      "id": "log_1789146870347_10ggi",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @BesTosAnAsBeSt: \"hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:30.347Z"
     }
   ],
   "subscriptionEvents": [
