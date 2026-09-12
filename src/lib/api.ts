@@ -192,16 +192,27 @@ export async function fetchVodDetail(streamId: string): Promise<{
   totalChatters: number;
   chatMessages: ChatMessage[];
   totalMessages: number;
+  subscribers?: {
+    kickUserId: string;
+    username: string;
+    avatarUrl: string;
+    type: string;
+    timestamp: string;
+  }[];
 }> {
   const res = await apiFetch(`${API_BASE}/vod/${encodeURIComponent(streamId)}`);
   if (!res.ok) throw new Error(`Stream ${streamId} not found`);
   const data = await res.json();
   return {
-    stream: data.stream,
+    stream: {
+      ...data.stream,
+      subscribers: data.subscribers || []
+    },
     rankings: data.chatterRankings || data.rankings || [],
     totalChatters: data.totalChatters || 0,
     chatMessages: data.chatMessages || [],
-    totalMessages: data.totalMessages || 0
+    totalMessages: data.totalMessages || 0,
+    subscribers: data.subscribers || []
   };
 }
 
@@ -578,5 +589,120 @@ export async function fetchChatAnalytics(): Promise<{
 }> {
   const res = await fetch(`${API_BASE}/chat/analytics`);
   if (!res.ok) throw new Error('Failed to fetch chat analytics');
+  return await res.json();
+}
+
+// --- Community Q/A for Chatters & Slyyutus ---
+
+export interface QuestionItem {
+  id: string;
+  userId: string;
+  kickUserId: string;
+  username: string;
+  avatarUrl: string;
+  question: string;
+  status: 'pending' | 'answered' | 'rejected';
+  answer?: string;
+  createdAt: string;
+  answeredAt?: string;
+  answeredBy?: string;
+}
+
+export async function submitQuestion(question: string): Promise<{ status: string; success: boolean; message: string; question: QuestionItem }> {
+  const res = await apiFetch(`${API_BASE}/qa/questions`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ question })
+  });
+  if (!res.ok) {
+    const err = await res.json().catch(() => ({}));
+    throw new Error(err.error || 'Failed to submit question.');
+  }
+  return await res.json();
+}
+
+export async function fetchMyQuestions(): Promise<{ status: string; questions: QuestionItem[] }> {
+  const res = await apiFetch(`${API_BASE}/qa/my-questions`);
+  if (!res.ok) {
+    const err = await res.json().catch(() => ({}));
+    throw new Error(err.error || 'Failed to load your questions.');
+  }
+  return await res.json();
+}
+
+export async function fetchPublicQuestions(status?: string, sort: 'newest' | 'oldest' = 'newest'): Promise<{
+  status: string;
+  questions: QuestionItem[];
+  total: number;
+  pendingCount: number;
+  answeredCount: number;
+  rejectedCount?: number;
+}> {
+  const query = new URLSearchParams();
+  if (status && status !== 'all') query.set('status', status);
+  if (sort) query.set('sort', sort);
+
+  const res = await apiFetch(`${API_BASE}/qa/questions?${query.toString()}`);
+  if (!res.ok) {
+    const err = await res.json().catch(() => ({}));
+    throw new Error(err.error || 'Failed to load questions.');
+  }
+  return await res.json();
+}
+
+export async function fetchAdminQuestions(status?: string, sort: 'newest' | 'oldest' = 'newest'): Promise<{
+  status: string;
+  questions: QuestionItem[];
+  total: number;
+  pendingCount: number;
+  answeredCount: number;
+  rejectedCount: number;
+}> {
+  const query = new URLSearchParams();
+  if (status && status !== 'all') query.set('status', status);
+  if (sort) query.set('sort', sort);
+
+  const res = await apiFetch(`${API_BASE}/qa/admin/questions?${query.toString()}`);
+  if (!res.ok) {
+    const err = await res.json().catch(() => ({}));
+    throw new Error(err.error || 'Failed to load questions.');
+  }
+  return await res.json();
+}
+
+export async function answerAdminQuestion(id: string, answer: string): Promise<{ status: string; success: boolean; question: QuestionItem }> {
+  const res = await apiFetch(`${API_BASE}/qa/admin/questions/${id}/answer`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ answer })
+  });
+  if (!res.ok) {
+    const err = await res.json().catch(() => ({}));
+    throw new Error(err.error || 'Failed to submit answer.');
+  }
+  return await res.json();
+}
+
+export async function updateAdminQuestionStatus(id: string, status: 'pending' | 'answered' | 'rejected'): Promise<{ status: string; success: boolean; question: QuestionItem }> {
+  const res = await apiFetch(`${API_BASE}/qa/admin/questions/${id}/status`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ status })
+  });
+  if (!res.ok) {
+    const err = await res.json().catch(() => ({}));
+    throw new Error(err.error || 'Failed to update question status.');
+  }
+  return await res.json();
+}
+
+export async function deleteAdminQuestion(id: string): Promise<{ status: string; success: boolean }> {
+  const res = await apiFetch(`${API_BASE}/qa/admin/questions/${id}`, {
+    method: 'DELETE'
+  });
+  if (!res.ok) {
+    const err = await res.json().catch(() => ({}));
+    throw new Error(err.error || 'Failed to delete question.');
+  }
   return await res.json();
 }

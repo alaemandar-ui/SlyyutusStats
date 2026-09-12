@@ -16,13 +16,14 @@ import {
 } from '../components/minigames/types';
 
 // Game Components
-import { LogicGridGame } from '../components/minigames/LogicGridGame';
-import { PatternDecoderGame } from '../components/minigames/PatternDecoderGame';
-import { SequenceMasterGame } from '../components/minigames/SequenceMasterGame';
-import { CipherPuzzleGame } from '../components/minigames/CipherPuzzleGame';
-import { DifficultQuizGame } from '../components/minigames/DifficultQuizGame';
+import { AimTrainerGame } from '../components/minigames/AimTrainerGame';
+import { SkillbarLockpickGame } from '../components/minigames/SkillbarLockpickGame';
+import { CircuitWireGame } from '../components/minigames/CircuitWireGame';
+import { KeypadMemoryGame } from '../components/minigames/KeypadMemoryGame';
+import { ThermiteMemoryGame } from '../components/minigames/ThermiteMemoryGame';
 import { PrecisionTimingGame } from '../components/minigames/PrecisionTimingGame';
-import { MultiTaskGame } from '../components/minigames/MultiTaskGame';
+import { SequenceMasterGame } from '../components/minigames/SequenceMasterGame';
+import { LogicGridGame } from '../components/minigames/LogicGridGame';
 import { ArcadeShooterGame } from '../components/minigames/ArcadeShooterGame';
 
 // UI Subcomponents
@@ -64,61 +65,65 @@ import {
 
 export const MINI_GAMES_CATALOG: GameCatalogItem[] = [
   {
-    id: 'logic_grid',
-    title: 'Neural Grid Matrix',
-    category: 'puzzle',
-    description: 'Deductive constraint grid. Uncover valid node coordinates using interconnected logical clues and negative scratchpad elimination.',
-    badge: 'Logic & IQ'
+    id: 'aim_trainer',
+    title: 'AimLabs Reflex Arena',
+    category: 'arcade',
+    description: 'AimLabs-inspired precision target acquisition. Fast-moving reflex drones, micro targets, combo multipliers, and sub-pixel reaction telemetry.',
+    badge: 'AimLabs Pro',
+    modes: ['Time Attack', 'Accuracy Challenge', 'Survival']
   },
   {
-    id: 'pattern_decoder',
-    title: 'Pattern Decoder',
-    category: 'puzzle',
-    description: 'Determine the missing element in complex algorithmic sequences, Fibonacci variations, and interwoven number transformations.',
-    badge: 'Algorithmic'
+    id: 'skillbar_lockpick',
+    title: 'Tactical Skillbar Lockpick',
+    category: 'skill',
+    description: 'FiveM-inspired quick-time lockpick dial. Intercept sweeping needle on sweet spots across accelerating tumblers. Center bullseyes award critical override bonuses.',
+    badge: 'FiveM Skillbar',
+    modes: ['QTE Lockpick']
   },
   {
-    id: 'sequence_master',
-    title: 'Sequence Master',
+    id: 'circuit_wire',
+    title: 'Circuit Wire Defusal',
     category: 'puzzle',
-    description: 'High-speed memory retention challenge. Memorize and reproduce progressively elongating cyber glyph transmissions.',
-    badge: 'Memory Tier'
+    description: 'FiveM-inspired circuit defusal. Follow electronic schematics, terminal voltage readings, and defusal protocols to sever designated wires before countdown detonation.',
+    badge: 'Wire Defusal',
+    modes: ['Wire Defusal']
   },
   {
-    id: 'cipher_puzzle',
-    title: 'Cipher Decoder',
+    id: 'keypad_memory',
+    title: 'Keypad Cipher Memory',
     category: 'puzzle',
-    description: 'Intercepted cryptographic telemetry. Calibrate rotation keys and decrypt mainframe communication under rapid countdown.',
-    badge: 'Cryptography'
+    description: 'FiveM-inspired terminal memory hack. Memorize flashing passcodes and punch them into the cyber numpad before security terminal lockdown.',
+    badge: 'Cipher Hack',
+    modes: ['Cipher Memory']
   },
   {
-    id: 'difficult_quiz',
-    title: 'Apex Intellect Trivia',
-    category: 'quiz',
-    description: 'Demanding global trivia across 13 disciplines: Science, Quantum Physics, Space, History, Geography, Tech, and Records.',
-    badge: 'Global Trivia'
+    id: 'thermite_memory',
+    title: 'Thermite Memory Grid',
+    category: 'puzzle',
+    description: 'FiveM-inspired thermite breach. Memorize illuminated thermal nodes across cyber grids and replicate without error before thermal burnout.',
+    badge: 'FiveM Thermite',
+    modes: ['Thermite Hack']
   },
   {
     id: 'precision_timing',
     title: 'Oscillation Calibrator',
     category: 'skill',
-    description: 'Stop the oscillating quantum beam within microscopic sweet spots. Center bullseyes award critical precision bonuses.',
+    description: 'Stop oscillating harmonic beams within micro target windows. Center bullseyes award critical precision bonuses.',
     badge: 'Reflex Sync'
   },
   {
-    id: 'multi_task',
-    title: 'Cognitive Overload',
+    id: 'sequence_master',
+    title: 'Sequence Master',
     category: 'skill',
-    description: 'Triple simultaneous tactical stream: Stabilize drone balance, verify algebraic integrity, and vent rising reactor heat.',
-    badge: 'Multitask'
+    description: 'High-speed directional memory challenge. Memorize and reproduce progressively elongating tactical sequence transmissions.',
+    badge: 'Sequence Tier'
   },
   {
-    id: 'arcade_shooter',
-    title: 'Holo-Range Assault',
-    category: 'arcade',
-    description: 'High-velocity target range. Blast swift recon drones, hit gold bonus targets, avoid EMP decoys, and chain combo multipliers.',
-    badge: 'Shooter Arena',
-    modes: ['Time Attack', 'Accuracy Challenge', 'Survival', 'Endless']
+    id: 'logic_grid',
+    title: 'Neural Grid Matrix',
+    category: 'puzzle',
+    description: 'Deductive constraint grid. Uncover valid node coordinates using interconnected logical clues and negative scratchpad elimination.',
+    badge: 'Logic & IQ'
   }
 ];
 
@@ -137,7 +142,7 @@ export const MiniGamesPage: React.FC<MiniGamesPageProps> = ({
   const [activeTab, setActiveTab] = useState<'dashboard' | 'arena' | 'leaderboard' | 'mystats'>(initialTab);
   
   // Active game setup
-  const [selectedGameId, setSelectedGameId] = useState<GameId>('logic_grid');
+  const [selectedGameId, setSelectedGameId] = useState<GameId>('aim_trainer');
   const [difficulty, setDifficulty] = useState<GameDifficulty>('medium');
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
   const [categoryFilter, setCategoryFilter] = useState<'all' | 'puzzle' | 'quiz' | 'skill' | 'arcade'>('all');
@@ -920,40 +925,40 @@ export const MiniGamesPage: React.FC<MiniGamesPageProps> = ({
 
             {/* Game Component Render */}
             <div className="rounded-xl border border-zinc-800 bg-[#0A0A0A] overflow-hidden shadow-2xl">
-              {selectedGameId === 'logic_grid' && (
-                <LogicGridGame
+              {selectedGameId === 'aim_trainer' && (
+                <AimTrainerGame
                   difficulty={difficulty}
                   onFinish={handleGameFinish}
                   onCancel={() => setActiveTab('dashboard')}
                 />
               )}
 
-              {selectedGameId === 'pattern_decoder' && (
-                <PatternDecoderGame
+              {selectedGameId === 'skillbar_lockpick' && (
+                <SkillbarLockpickGame
                   difficulty={difficulty}
                   onFinish={handleGameFinish}
                   onCancel={() => setActiveTab('dashboard')}
                 />
               )}
 
-              {selectedGameId === 'sequence_master' && (
-                <SequenceMasterGame
+              {selectedGameId === 'circuit_wire' && (
+                <CircuitWireGame
                   difficulty={difficulty}
                   onFinish={handleGameFinish}
                   onCancel={() => setActiveTab('dashboard')}
                 />
               )}
 
-              {selectedGameId === 'cipher_puzzle' && (
-                <CipherPuzzleGame
+              {selectedGameId === 'keypad_memory' && (
+                <KeypadMemoryGame
                   difficulty={difficulty}
                   onFinish={handleGameFinish}
                   onCancel={() => setActiveTab('dashboard')}
                 />
               )}
 
-              {selectedGameId === 'difficult_quiz' && (
-                <DifficultQuizGame
+              {selectedGameId === 'thermite_memory' && (
+                <ThermiteMemoryGame
                   difficulty={difficulty}
                   onFinish={handleGameFinish}
                   onCancel={() => setActiveTab('dashboard')}
@@ -968,8 +973,16 @@ export const MiniGamesPage: React.FC<MiniGamesPageProps> = ({
                 />
               )}
 
-              {selectedGameId === 'multi_task' && (
-                <MultiTaskGame
+              {selectedGameId === 'sequence_master' && (
+                <SequenceMasterGame
+                  difficulty={difficulty}
+                  onFinish={handleGameFinish}
+                  onCancel={() => setActiveTab('dashboard')}
+                />
+              )}
+
+              {selectedGameId === 'logic_grid' && (
+                <LogicGridGame
                   difficulty={difficulty}
                   onFinish={handleGameFinish}
                   onCancel={() => setActiveTab('dashboard')}

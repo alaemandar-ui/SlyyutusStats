@@ -21,6 +21,7 @@ export interface DBKickUser {
   totalMessages: number;
   totalSubs: number;
   totalGifts: number;
+  totalPoints?: number;
   isVerified: boolean;
   isTest?: boolean;
 }
@@ -80,6 +81,7 @@ export interface DBChatMessage {
 
 export interface DBSubscriptionEvent {
   id: string;
+  eventId?: string;
   kickUserId: string;
   username: string;
   avatarUrl: string;
@@ -87,7 +89,24 @@ export interface DBSubscriptionEvent {
   streamId?: string;
   gifterUserId?: string;
   gifterUsername?: string;
+  giftCount?: number;
   pointsAwarded: number;
+  timestamp: string;
+  isTest?: boolean;
+}
+
+export interface DBPointTransaction {
+  id: string;
+  kickUserId: string;
+  username: string;
+  seasonId: string;
+  type: 'CHAT_MESSAGE' | 'SUBSCRIPTION' | 'GIFT_SUBSCRIPTION' | 'MINI_GAME_WIN' | 'ADMIN_ADJUSTMENT';
+  source?: string;
+  pointsAwarded: number;
+  totalPointsAfter: number;
+  eventId?: string;
+  streamId?: string;
+  description: string;
   timestamp: string;
   isTest?: boolean;
 }
@@ -193,6 +212,20 @@ export interface DBSystemLog {
   createdAt: string;
 }
 
+export interface DBQuestion {
+  id: string;
+  userId: string;
+  kickUserId: string;
+  username: string;
+  avatarUrl: string;
+  question: string;
+  status: 'pending' | 'answered' | 'rejected';
+  answer?: string;
+  createdAt: string;
+  answeredAt?: string;
+  answeredBy?: string;
+}
+
 export interface DatabaseSchema {
   users: DBUser[];
   kickUsers: DBKickUser[];
@@ -209,6 +242,9 @@ export interface DatabaseSchema {
   pointRules: DBPointRule[];
   systemLogs: DBSystemLog[];
   miniGameScores: DBMiniGameScore[];
+  pointTransactions: DBPointTransaction[];
+  processedEventIds: string[];
+  questions: DBQuestion[];
 }
 
 const DB_FILE_PATH = path.resolve(process.cwd(), 'data_storage.json');
@@ -245,6 +281,14 @@ class Database {
         if (!this.data.subscriptionEvents) {
           this.data.subscriptionEvents = [];
         }
+        if (!this.data.pointTransactions) {
+          this.data.pointTransactions = [];
+        }
+        if (!this.data.processedEventIds) {
+          this.data.processedEventIds = [];
+        }
+        this.processedWebhookEventIds = new Set(this.data.processedEventIds);
+
         if (!this.data.miniGameScores) {
           this.data.miniGameScores = [];
         } else {
@@ -254,6 +298,49 @@ class Database {
         if (!this.data.userBadges) {
           this.data.userBadges = [];
         }
+        if (!this.data.questions || this.data.questions.length === 0) {
+          this.data.questions = [
+            {
+              id: 'q_seed_1',
+              userId: 'community_member_1',
+              kickUserId: 'community_member_1',
+              username: 'ApexViper',
+              avatarUrl: 'https://files.kick.com/images/default_avatars/avatar_1.png',
+              question: 'What sensitivity and DPI settings do you run for your high-kill games in Apex Legends?',
+              status: 'answered',
+              createdAt: new Date(Date.now() - 3600 * 1000 * 48).toISOString(),
+              answer: '800 DPI at 1.4 in-game sensitivity! Keep your arm relaxed for consistent tracking and micro-adjustments with wrist.',
+              answeredAt: new Date(Date.now() - 3600 * 1000 * 36).toISOString(),
+              answeredBy: 'Slyyutus'
+            },
+            {
+              id: 'q_seed_2',
+              userId: 'community_member_2',
+              kickUserId: 'community_member_2',
+              username: 'QuantumShooter',
+              avatarUrl: 'https://files.kick.com/images/default_avatars/avatar_2.png',
+              question: 'When is the next community tournament or viewer custom lobby night on stream?',
+              status: 'answered',
+              createdAt: new Date(Date.now() - 3600 * 1000 * 24).toISOString(),
+              answer: 'We host community customs every Friday evening at 7 PM EST! Join chat to get the lobby code and queue up.',
+              answeredAt: new Date(Date.now() - 3600 * 1000 * 12).toISOString(),
+              answeredBy: 'Slyyutus'
+            },
+            {
+              id: 'q_seed_3',
+              userId: 'community_member_3',
+              kickUserId: 'community_member_3',
+              username: 'PulseSniper',
+              avatarUrl: 'https://files.kick.com/images/default_avatars/avatar_3.png',
+              question: 'Are you planning to test out the new Ranked season split on day one?',
+              status: 'pending',
+              createdAt: new Date(Date.now() - 3600 * 1000 * 4).toISOString()
+            }
+          ];
+        }
+
+        // Clean out any test or fake users (e.g. ApexLegend99, SuperKickFan, GenerousGiftMaster)
+        this.cleanTestUsersAndData();
 
         // Initialize realistic subscription events if none exist yet to accurately track subs per VOD
         if (this.data.subscriptionEvents.length === 0 && this.data.streams && this.data.streams.length > 0) {
@@ -267,6 +354,38 @@ class Database {
               s.subsGained = s.subscribersGained || 0;
             }
           });
+        }
+
+        // Recalculate historical stream subscriptions so every VOD is 100% accurate
+        this.recalculateStreamSubscriptions();
+
+        // Enforce user totalPoints synchronization from active season points
+        const activeSeason = this.getActiveSeason();
+        if (this.data.kickUsers) {
+          this.data.kickUsers.forEach(u => {
+            const pRec = this.getSeasonPointsRecord(activeSeason.seasonId, u.kickUserId);
+            u.totalPoints = pRec ? pRec.points : (u.totalPoints || 0);
+          });
+        }
+
+        // Backfill pointTransactions from historical subscription events if empty
+        if (this.data.pointTransactions.length === 0 && this.data.subscriptionEvents.length > 0) {
+          for (const se of this.data.subscriptionEvents) {
+            this.data.pointTransactions.push({
+              id: `ptx_${se.id}`,
+              kickUserId: se.kickUserId,
+              username: se.username,
+              seasonId: activeSeason.seasonId,
+              type: se.type,
+              pointsAwarded: se.pointsAwarded || 100,
+              totalPointsAfter: 100,
+              eventId: se.eventId,
+              streamId: se.streamId,
+              description: se.type === 'GIFT_SUBSCRIPTION' ? 'Gift subscription in community (+100 pts)' : 'Subscribed to Slyyutus (+100 pts)',
+              timestamp: se.timestamp,
+              isTest: se.isTest
+            });
+          }
         }
 
         // Enforce official SLYYUTUS League point rules: CHAT=1, SUBSCRIPTION=100, GIFT_SUBSCRIPTION=100
@@ -471,18 +590,42 @@ class Database {
     return user;
   }
 
-  public searchKickUsers(query: string, limit: number = 20, offset: number = 0): { users: DBKickUser[]; total: number } {
+  public searchKickUsers(query: string, limit: number = 20, offset: number = 0): { users: (DBKickUser & { currentPoints: number; currentRank: number; totalSubscriptions: number; totalChatMessages: number })[]; total: number } {
     const q = query.trim().toLowerCase();
     const realUsers = this.data.kickUsers.filter(u => !u.isTest);
     const filtered = q
       ? realUsers.filter(u => u.username.toLowerCase().includes(q) || u.kickUserId.includes(q))
       : realUsers;
-    
-    // Sort by activity (messages + subs * 100)
-    filtered.sort((a, b) => (b.totalMessages + b.totalSubs * 100) - (a.totalMessages + a.totalSubs * 100));
+
+    const activeSeason = this.getActiveSeason();
+    const rankings = this.getLeagueRankings(activeSeason.seasonId, undefined, 500, 0).rankings;
+    const rankMap = new Map<string, number>();
+    rankings.forEach(r => rankMap.set(r.kickUserId, r.rank));
+
+    // Sort by points or activity
+    filtered.sort((a, b) => {
+      const ptsA = (this.getSeasonPointsRecord(activeSeason.seasonId, a.kickUserId)?.points || a.totalPoints || 0);
+      const ptsB = (this.getSeasonPointsRecord(activeSeason.seasonId, b.kickUserId)?.points || b.totalPoints || 0);
+      if (ptsB !== ptsA) return ptsB - ptsA;
+      return (b.totalMessages + b.totalSubs * 100) - (a.totalMessages + a.totalSubs * 100);
+    });
+
     const total = filtered.length;
-    const users = filtered.slice(offset, offset + limit);
-    return { users, total };
+    const paged = filtered.slice(offset, offset + limit).map(u => {
+      const pRec = this.getSeasonPointsRecord(activeSeason.seasonId, u.kickUserId);
+      const points = pRec ? pRec.points : (u.totalPoints || 0);
+      const rank = rankMap.get(u.kickUserId) || (rankings.length + 1);
+      return {
+        ...u,
+        totalPoints: points,
+        currentPoints: points,
+        currentRank: rank,
+        totalChatMessages: u.totalMessages,
+        totalSubscriptions: u.totalSubs
+      };
+    });
+
+    return { users: paged, total };
   }
 
   public updateUserAvatar(kickUserId: string, avatarUrl: string): boolean {
@@ -564,13 +707,30 @@ class Database {
     return this.data.leaguePoints.find(p => p.seasonId === seasonId && p.kickUserId === kickUserId);
   }
 
-  public addPoints(kickUserId: string, username: string, avatarUrl: string, type: 'CHAT_MESSAGE' | 'SUBSCRIPTION' | 'GIFT_SUBSCRIPTION' | 'MINI_GAME_WIN', customPoints?: number, isTest: boolean = false): { pointsAwarded: number; totalPoints: number } {
+  public addPoints(
+    kickUserId: string,
+    username: string,
+    avatarUrl: string,
+    type: 'CHAT_MESSAGE' | 'SUBSCRIPTION' | 'GIFT_SUBSCRIPTION' | 'MINI_GAME_WIN' | 'ADMIN_ADJUSTMENT',
+    customPoints?: number,
+    isTest: boolean = false,
+    options?: { eventId?: string; streamId?: string; description?: string }
+  ): { pointsAwarded: number; totalPoints: number } {
     const isTestFlag = Boolean(isTest);
+
+    // Prevent duplicate points if eventId was already processed
+    if (options?.eventId && this.isEventProcessed(options.eventId)) {
+      const existingTx = (this.data.pointTransactions || []).find(t => t.eventId === options.eventId);
+      if (existingTx) {
+        return { pointsAwarded: 0, totalPoints: existingTx.totalPointsAfter };
+      }
+    }
+
     const user = this.ensureKickUser(kickUserId, username, avatarUrl, isTestFlag);
     const activeSeason = this.getActiveSeason();
     const now = new Date().toISOString();
 
-    let pointsAwarded = customPoints !== undefined ? customPoints : this.getPointRule(type);
+    let pointsAwarded = customPoints !== undefined ? customPoints : this.getPointRule(type as any);
 
     let pointRecord = this.getSeasonPointsRecord(activeSeason.seasonId, kickUserId);
     if (!pointRecord) {
@@ -615,12 +775,46 @@ class Database {
       }
     }
 
+    // Always keep user's cumulative totalPoints in sync
+    user.totalPoints = pointRecord.points;
     user.lastActiveAt = now;
+
     if (!isTestFlag) {
       activeSeason.totalPointsDistributed += pointsAwarded;
     }
-    this.save();
 
+    // Persist points transaction in the database
+    if (!this.data.pointTransactions) {
+      this.data.pointTransactions = [];
+    }
+
+    const transaction: DBPointTransaction = {
+      id: `ptx_${Date.now()}_${Math.random().toString(36).substring(2, 7)}`,
+      kickUserId,
+      username: user.username,
+      seasonId: activeSeason.seasonId,
+      type,
+      source: type,
+      pointsAwarded,
+      totalPointsAfter: pointRecord.points,
+      eventId: options?.eventId,
+      streamId: options?.streamId,
+      description: options?.description || `${type.replace(/_/g, ' ')} (+${pointsAwarded} pts)`,
+      timestamp: now,
+      isTest: isTestFlag
+    };
+    this.data.pointTransactions.push(transaction);
+
+    // Keep point transactions capped at 10000 for high performance
+    if (this.data.pointTransactions.length > 10000) {
+      this.data.pointTransactions = this.data.pointTransactions.slice(-8000);
+    }
+
+    if (options?.eventId) {
+      this.markEventProcessed(options.eventId);
+    }
+
+    this.save();
     return { pointsAwarded, totalPoints: pointRecord.points };
   }
 
@@ -903,59 +1097,224 @@ class Database {
     this.save();
   }
 
-  // --- Webhook Deduplication & Idempotency ---
+  // --- Webhook Deduplication & Event Idempotency ---
   private processedWebhookEventIds: Set<string> = new Set();
 
-  public isWebhookProcessed(eventId: string): boolean {
+  public isEventProcessed(eventId: string): boolean {
     if (!eventId) return false;
     return this.processedWebhookEventIds.has(eventId);
   }
 
-  public markWebhookProcessed(eventId: string): void {
+  public isWebhookProcessed(eventId: string): boolean {
+    return this.isEventProcessed(eventId);
+  }
+
+  public markEventProcessed(eventId: string): void {
     if (!eventId) return;
     this.processedWebhookEventIds.add(eventId);
+    if (!this.data.processedEventIds) {
+      this.data.processedEventIds = [];
+    }
+    if (!this.data.processedEventIds.includes(eventId)) {
+      this.data.processedEventIds.push(eventId);
+      if (this.data.processedEventIds.length > 5000) {
+        this.data.processedEventIds.shift();
+      }
+    }
     if (this.processedWebhookEventIds.size > 5000) {
       const first = this.processedWebhookEventIds.values().next().value;
       if (first) this.processedWebhookEventIds.delete(first);
     }
   }
 
+  public markWebhookProcessed(eventId: string): void {
+    this.markEventProcessed(eventId);
+  }
+
+  /**
+   * Resolves a Kick user using existing database mappings.
+   * Checks by kickUserId, by username in kickUsers, and in registered OAuth users.
+   * If unresolvable, returns user: null and logs reason clearly.
+   */
+  public resolveKickUser(
+    candidateId?: string | number,
+    candidateUsername?: string,
+    avatarUrl?: string
+  ): { user: DBKickUser | null; kickUserId: string | null; username: string; resolvedBy: string } {
+    let kickUserId = candidateId !== undefined && candidateId !== null ? String(candidateId).trim() : '';
+    if (['unknown', 'undefined', 'null', '0', ''].includes(kickUserId)) {
+      kickUserId = '';
+    }
+
+    let username = candidateUsername ? String(candidateUsername).trim() : '';
+    if (['unknown', 'undefined', 'null', 'Subscriber', 'Gifter', 'Chatter', ''].includes(username)) {
+      username = '';
+    }
+
+    // 1. Try resolving by explicit Kick user ID
+    if (kickUserId) {
+      const existing = this.getKickUserById(kickUserId);
+      if (existing) {
+        if (username && existing.username !== username) {
+          existing.username = username;
+        }
+        return { user: existing, kickUserId: existing.kickUserId, username: existing.username, resolvedBy: 'id_match' };
+      }
+    }
+
+    // 2. Try resolving by username in existing kickUsers mapping
+    if (username) {
+      const existing = this.getKickUserByUsername(username);
+      if (existing) {
+        return { user: existing, kickUserId: existing.kickUserId, username: existing.username, resolvedBy: 'username_match' };
+      }
+    }
+
+    // 3. Try resolving by username in registered OAuth users
+    if (username && this.data.users) {
+      const authUser = this.data.users.find(u => u.username.toLowerCase() === username.toLowerCase());
+      if (authUser && authUser.kickUserId) {
+        const existing = this.getKickUserById(authUser.kickUserId);
+        if (existing) {
+          return { user: existing, kickUserId: existing.kickUserId, username: existing.username, resolvedBy: 'auth_username_match' };
+        }
+        const created = this.ensureKickUser(authUser.kickUserId, authUser.username, avatarUrl || authUser.avatarUrl);
+        return { user: created, kickUserId: created.kickUserId, username: created.username, resolvedBy: 'auth_created' };
+      }
+    }
+
+    // 4. If we have a kickUserId, create/ensure them even if new
+    if (kickUserId) {
+      const effectiveUsername = username || `User_${kickUserId}`;
+      const user = this.ensureKickUser(kickUserId, effectiveUsername, avatarUrl);
+      return { user, kickUserId: user.kickUserId, username: user.username, resolvedBy: 'new_id_created' };
+    }
+
+    // 5. If we only have username and no existing mapping found: unresolvable
+    return { user: null, kickUserId: null, username, resolvedBy: 'unresolvable' };
+  }
+
+  /**
+   * Finds the exact stream/VOD whose broadcast window encompasses the given timestamp.
+   * Subscription is only counted if event timestamp falls between stream startedAt and endedAt.
+   */
+  public findStreamForTimestamp(isoTimestamp?: string): DBStream | undefined {
+    if (!this.data.streams || this.data.streams.length === 0) return undefined;
+    const eventTime = new Date(isoTimestamp || Date.now()).getTime();
+    if (isNaN(eventTime)) return undefined;
+
+    return this.data.streams.find(s => {
+      const startTime = new Date(s.startedAt).getTime();
+      if (isNaN(startTime)) return false;
+
+      let endTime: number;
+      if (s.isLive) {
+        endTime = Date.now();
+      } else if (s.endedAt) {
+        endTime = new Date(s.endedAt).getTime();
+      } else if (s.durationSeconds && s.durationSeconds > 0) {
+        endTime = startTime + (s.durationSeconds * 1000);
+      } else {
+        endTime = startTime;
+      }
+
+      return eventTime >= startTime && eventTime <= endTime;
+    });
+  }
+
   // --- Subscriptions ---
-  public addSubscriptionEvent(event: Omit<DBSubscriptionEvent, 'id'>): DBSubscriptionEvent {
+  public addSubscriptionEvent(event: Omit<DBSubscriptionEvent, 'id'>): DBSubscriptionEvent | null {
+    // 1. Idempotency Check: Prevent duplicate event processing
+    if (event.eventId && this.isEventProcessed(event.eventId)) {
+      const existing = (this.data.subscriptionEvents || []).find(e => e.eventId === event.eventId);
+      if (existing) return existing;
+      return null;
+    }
+
+    // 2. Identify correct user using existing Kick user ID mapping
+    const resolution = this.resolveKickUser(event.kickUserId, event.username, event.avatarUrl);
+    if (!resolution.user || !resolution.kickUserId) {
+      this.addSystemLog(
+        'warn',
+        'SUBSCRIPTION_REWARDS',
+        `Cannot link subscription event to user: Kick user ID "${event.kickUserId || 'unknown'}" and username "${event.username || 'unknown'}" could not be resolved in registered Kick users.`
+      );
+      return null;
+    }
+
+    const resolvedUser = resolution.user;
+    const kickUserId = resolution.kickUserId;
+    const username = resolution.username;
+    const avatarUrl = resolvedUser.avatarUrl || event.avatarUrl;
+
+    // 3. Find matching stream strictly based on timestamp
+    // Count a subscription ONLY if it happened between the VOD start and end time
+    let targetStream = this.findStreamForTimestamp(event.timestamp);
+
+    // If streamId was explicitly passed, verify that the event timestamp actually falls within that stream!
+    if (event.streamId && !targetStream) {
+      const explicitStream = this.getStreamById(event.streamId);
+      if (explicitStream) {
+        const sStart = new Date(explicitStream.startedAt).getTime();
+        const sEnd = explicitStream.isLive ? Date.now() : (explicitStream.endedAt ? new Date(explicitStream.endedAt).getTime() : (explicitStream.durationSeconds > 0 ? sStart + (explicitStream.durationSeconds * 1000) : sStart));
+        const eventTime = new Date(event.timestamp || Date.now()).getTime();
+        if (eventTime >= sStart && eventTime <= sEnd) {
+          targetStream = explicitStream;
+        }
+      }
+    }
+
+    const targetStreamId = targetStream ? targetStream.streamId : undefined;
     const id = `sub_${Date.now()}_${Math.random().toString(36).substring(2, 7)}`;
-    const fullEvent: DBSubscriptionEvent = { ...event, id };
+    const pointsToAward = event.pointsAwarded !== undefined ? event.pointsAwarded : this.getPointRule(event.type as any);
+
+    const fullEvent: DBSubscriptionEvent = {
+      ...event,
+      id,
+      kickUserId,
+      username,
+      avatarUrl,
+      streamId: targetStreamId,
+      pointsAwarded: pointsToAward
+    };
 
     if (!this.data.subscriptionEvents) {
       this.data.subscriptionEvents = [];
     }
     this.data.subscriptionEvents.push(fullEvent);
 
-    // If streamId not explicitly passed, detect active or matching stream based on timestamp
-    let targetStreamId = event.streamId;
-    if (!targetStreamId) {
-      targetStreamId = this.getActiveStreamId();
-      if (!targetStreamId) {
-        const eventTime = new Date(event.timestamp || Date.now()).getTime();
-        const matchedStream = this.data.streams.find(s => {
-          const start = new Date(s.startedAt).getTime();
-          const end = s.endedAt ? new Date(s.endedAt).getTime() : (start + (s.durationSeconds * 1000) + 15 * 60 * 1000);
-          return eventTime >= start && eventTime <= end;
-        });
-        if (matchedStream) targetStreamId = matchedStream.streamId;
-      }
+    // If stream matched and event is not a test, increment stream subscriber count
+    if (targetStream && !event.isTest) {
+      targetStream.subscribersGained = (targetStream.subscribersGained || 0) + 1;
+      targetStream.subsGained = targetStream.subscribersGained;
     }
 
-    if (targetStreamId && !event.isTest) {
-      fullEvent.streamId = targetStreamId;
-      const stream = this.getStreamById(targetStreamId);
-      if (stream) {
-        stream.subscribersGained = (stream.subscribersGained || 0) + 1;
-        stream.subsGained = stream.subscribersGained;
+    // 4. Award points according to the existing points system and save points transaction
+    this.addPoints(
+      kickUserId,
+      username,
+      avatarUrl,
+      event.type,
+      pointsToAward,
+      event.isTest,
+      {
+        eventId: event.eventId || id,
+        streamId: targetStreamId,
+        description: event.type === 'GIFT_SUBSCRIPTION'
+          ? `Gift subscription in community (+${pointsToAward} pts)`
+          : `Subscribed to Slyyutus (+${pointsToAward} pts)`
       }
+    );
+
+    // 5. Automatic Sub Titan badge if supporter reaches 10+ subscriptions/gifts
+    if (!event.isTest && (resolvedUser.totalSubs + resolvedUser.totalGifts >= 10)) {
+      this.awardBadge(kickUserId, 'SUB_TITAN');
     }
 
-    // Award 100 league points (per official rules)
-    this.addPoints(event.kickUserId, event.username, event.avatarUrl, event.type, 100, event.isTest);
+    // 6. Mark event as processed
+    if (event.eventId) {
+      this.markEventProcessed(event.eventId);
+    }
 
     this.save();
     return fullEvent;
@@ -971,11 +1330,39 @@ class Database {
     };
   }
 
+  public getStreamSubscriptionEvents(streamId: string): DBSubscriptionEvent[] {
+    if (!streamId) return [];
+    const stream = this.getStreamById(streamId);
+    const events = (this.data.subscriptionEvents || []).filter(e => !e.isTest);
+    
+    if (!stream) {
+      return events.filter(e => e.streamId === streamId);
+    }
+
+    const sStart = new Date(stream.startedAt).getTime();
+    const sEnd = stream.isLive ? Date.now() : (stream.endedAt ? new Date(stream.endedAt).getTime() : (stream.durationSeconds > 0 ? sStart + stream.durationSeconds * 1000 : sStart));
+
+    return events.filter(e => {
+      if (e.streamId === streamId) return true;
+      const t = new Date(e.timestamp).getTime();
+      return !isNaN(t) && t >= sStart && t <= sEnd;
+    }).sort((a, b) => b.timestamp.localeCompare(a.timestamp));
+  }
+
+  public getPointTransactions(kickUserId?: string, limit: number = 50, offset: number = 0): { transactions: DBPointTransaction[]; total: number } {
+    const list = (this.data.pointTransactions || []).filter(t => !t.isTest && (!kickUserId || t.kickUserId === kickUserId));
+    list.sort((a, b) => b.timestamp.localeCompare(a.timestamp));
+    return {
+      transactions: list.slice(offset, offset + limit),
+      total: list.length
+    };
+  }
+
   /**
    * Recalculates subscriptions received during each VOD strictly based on:
-   * 1. Explicit streamId association
-   * 2. Or subscription timestamp falling between VOD start and end time.
-   * Guarantees no double-counting and correctly handles VODs with zero subs.
+   * Counting a subscription ONLY if it happened between the VOD start and end time.
+   * Guarantees zero double counting, shows 0 for VODs with no subscriptions,
+   * and persists the exact counts in the database.
    */
   public recalculateStreamSubscriptions(): { streamsUpdated: number; totalSubsTracked: number; perStream: Record<string, number> } {
     const streams = this.data.streams || [];
@@ -983,39 +1370,54 @@ class Database {
     const streamSubsCount: Record<string, number> = {};
     streams.forEach(s => { streamSubsCount[s.streamId] = 0; });
 
-    const claimedEventIds = new Set<string>();
+    // De-duplicate subscription events by eventId or unique key
+    const seenEventKeys = new Set<string>();
+    const uniqueEvents: DBSubscriptionEvent[] = [];
 
-    // Pass 1: Explicit streamId matching
     for (const event of subEvents) {
-      if (event.streamId && streamSubsCount[event.streamId] !== undefined) {
-        streamSubsCount[event.streamId] = (streamSubsCount[event.streamId] || 0) + 1;
-        claimedEventIds.add(event.id);
+      const key = event.eventId || `${event.kickUserId}_${event.timestamp}_${event.type}`;
+      if (seenEventKeys.has(key)) {
+        continue;
       }
+      seenEventKeys.add(key);
+      uniqueEvents.push(event);
     }
 
-    // Pass 2: Timestamp-based attribution for unclaimed events
-    for (const event of subEvents) {
-      if (claimedEventIds.has(event.id)) continue;
+    let totalAttributed = 0;
 
+    for (const event of uniqueEvents) {
       const eventTime = new Date(event.timestamp).getTime();
-      if (isNaN(eventTime)) continue;
+      if (isNaN(eventTime)) {
+        event.streamId = undefined;
+        continue;
+      }
 
-      // Find the stream that spans this timestamp
+      // Count a subscription only if it happened between the VOD start and end time
       const matched = streams.find(s => {
         const startTime = new Date(s.startedAt).getTime();
-        const endTime = s.endedAt ? new Date(s.endedAt).getTime() : (startTime + (s.durationSeconds * 1000) + 15 * 60 * 1000);
+        let endTime: number;
+        if (s.isLive) {
+          endTime = Date.now();
+        } else if (s.endedAt) {
+          endTime = new Date(s.endedAt).getTime();
+        } else if (s.durationSeconds && s.durationSeconds > 0) {
+          endTime = startTime + (s.durationSeconds * 1000);
+        } else {
+          endTime = startTime;
+        }
         return eventTime >= startTime && eventTime <= endTime;
       });
 
       if (matched) {
         streamSubsCount[matched.streamId] = (streamSubsCount[matched.streamId] || 0) + 1;
-        claimedEventIds.add(event.id);
-        // Persist explicit link so future lookups are instant
         event.streamId = matched.streamId;
+        totalAttributed++;
+      } else {
+        event.streamId = undefined;
       }
     }
 
-    // Apply exact counts to streams without loss of data
+    // Persist exact counts in streams (0 when there are no subscriptions)
     let updated = 0;
     for (const stream of streams) {
       const calculatedCount = streamSubsCount[stream.streamId] || 0;
@@ -1024,11 +1426,11 @@ class Database {
       updated++;
     }
 
-    this.addSystemLog('info', 'SUBS_TRACKER', `Recalculated subscriptions for ${updated} VODs (${claimedEventIds.size} non-overlapping subs linked).`);
+    this.addSystemLog('info', 'SUBS_TRACKER', `Recalculated subscriptions for ${updated} VODs (${totalAttributed} non-overlapping subs linked).`);
     this.save();
     return {
       streamsUpdated: updated,
-      totalSubsTracked: claimedEventIds.size,
+      totalSubsTracked: totalAttributed,
       perStream: streamSubsCount
     };
   }
@@ -1436,14 +1838,69 @@ class Database {
 
   // --- Mini Games Leaderboard & Scores ---
   public static readonly MINI_GAMES_CATALOG = [
-    { id: 'logic_grid', title: 'Neural Grid Matrix', category: 'puzzle', description: 'Deduce correct operator-sector-tech combinations through logic clues.' },
-    { id: 'pattern_decoder', title: 'Pattern Decoder', category: 'puzzle', description: 'Decode complex algorithmic, geometric, and modular sequences.' },
-    { id: 'sequence_master', title: 'Sequence Master', category: 'puzzle', description: 'Reproduce growing multi-tier glyph and directional memory matrices.' },
-    { id: 'cipher_puzzle', title: 'Cipher Decoder', category: 'puzzle', description: 'Cryptographic terminal deciphering encrypted intelligence with algorithmic clues.' },
-    { id: 'difficult_quiz', title: 'Apex Intellect Trivia', category: 'quiz', description: '13-category difficult general knowledge quiz with multipliers and streak bonuses.' },
-    { id: 'precision_timing', title: 'Oscillation Calibrator', category: 'skill', description: 'Lock in oscillating lasers within dynamic sub-millisecond target zones.' },
-    { id: 'multi_task', title: 'Cognitive Overload', category: 'skill', description: 'Multitask simultaneous drone lane balance, Stroop tests, and countdown defusal.' },
-    { id: 'arcade_shooter', title: 'Holo-Range Assault', category: 'arcade', description: 'High-speed holographic target shooter with combo multipliers and accuracy tracking.' }
+    { 
+      id: 'aim_trainer', 
+      title: 'AimLabs Reflex Arena', 
+      category: 'arcade', 
+      description: 'Precision aim & reaction trainer with dynamic moving targets, variable sizes, reaction time tracking, combo chains, and Time Attack / Accuracy / Survival modes.',
+      badge: 'Aim & Reflex',
+      modes: ['Time Attack', 'Accuracy Challenge', 'Survival']
+    },
+    { 
+      id: 'skillbar_lockpick', 
+      title: 'Tactical Skillbar', 
+      category: 'skill', 
+      description: 'FiveM-inspired quick time mechanical lockpick. Intercept sweeping needle within microscopic sweet spots under increasing angular velocity.',
+      badge: 'Skillbar QTE'
+    },
+    { 
+      id: 'circuit_wire', 
+      title: 'Circuit Wire Defusal', 
+      category: 'puzzle', 
+      description: 'High-voltage circuit defusal puzzle. Analyze electronic schematics, decode wire specifications, and cut designated terminals before detonation.',
+      badge: 'Wire Defusal'
+    },
+    { 
+      id: 'keypad_memory', 
+      title: 'Keypad Cipher Memory', 
+      category: 'puzzle', 
+      description: 'Mainframe terminal breach. Memorize flashed alphanumeric security passcodes and key them into the tactical cyber numpad under lockdown countdown.',
+      badge: 'Code Memory'
+    },
+    { 
+      id: 'thermite_memory', 
+      title: 'Thermite Memory Grid', 
+      category: 'puzzle', 
+      description: 'FiveM-inspired thermite memory hack. Memorize glowing thermal nodes across the grid before they darken, then replicate the pattern without fault.',
+      badge: 'Thermite Grid'
+    },
+    { 
+      id: 'sequence_master', 
+      title: 'Directional Sequence Hack', 
+      category: 'puzzle', 
+      description: 'Cyberpunk directional transmission. Memorize and reproduce rapid multi-directional arrow sequences under escalating tempo.',
+      badge: 'Sequence Memory'
+    },
+    { 
+      id: 'precision_timing', 
+      title: 'Oscillation Calibrator', 
+      category: 'skill', 
+      description: 'Quantum oscillation calibrator. Freeze high-frequency harmonic laser pulses within sub-millisecond precision bands.',
+      badge: 'Timing Sync'
+    },
+    { 
+      id: 'logic_grid', 
+      title: 'Neural Grid Matrix', 
+      category: 'puzzle', 
+      description: 'Deductive constraint matrix. Uncover valid node coordinates using interconnected logical clues and negative elimination.',
+      badge: 'Logic IQ'
+    },
+    // Aliases & legacy games
+    { id: 'arcade_shooter', title: 'AimLabs Reflex Arena', category: 'arcade', description: 'Precision aim & reaction trainer with dynamic moving targets.', badge: 'Aim & Reflex' },
+    { id: 'pattern_decoder', title: 'Pattern Decoder', category: 'puzzle', description: 'Decode complex algorithmic, geometric, and modular sequences.', badge: 'Algorithmic' },
+    { id: 'cipher_puzzle', title: 'Cipher Decoder', category: 'puzzle', description: 'Cryptographic terminal deciphering encrypted intelligence with algorithmic clues.', badge: 'Cryptography' },
+    { id: 'difficult_quiz', title: 'Apex Intellect Trivia', category: 'quiz', description: '13-category difficult general knowledge quiz with multipliers and streak bonuses.', badge: 'Global Trivia' },
+    { id: 'multi_task', title: 'Cognitive Overload', category: 'skill', description: 'Multitask simultaneous drone lane balance, Stroop tests, and countdown defusal.', badge: 'Multitask' }
   ];
 
   public saveMiniGameScore(score: Omit<DBMiniGameScore, 'id' | 'createdAt'>): DBMiniGameScore {
@@ -1451,8 +1908,10 @@ class Database {
       this.data.miniGameScores = [];
     }
 
-    const catalogItem = Database.MINI_GAMES_CATALOG.find(g => g.id === score.gameId);
-    const gameTitle = score.gameTitle || (catalogItem ? catalogItem.title : score.gameId);
+    // Map arcade_shooter to aim_trainer
+    const normalizedGameId = score.gameId === 'arcade_shooter' ? 'aim_trainer' : score.gameId;
+    const catalogItem = Database.MINI_GAMES_CATALOG.find(g => g.id === normalizedGameId) || Database.MINI_GAMES_CATALOG.find(g => g.id === score.gameId);
+    const gameTitle = score.gameTitle || (catalogItem ? catalogItem.title : normalizedGameId);
 
     // Resolve real user record if known to guarantee real Kick avatar
     const realUser = (score.userId ? this.getKickUserById(score.userId) : undefined) ||
@@ -1463,6 +1922,7 @@ class Database {
     const fullScore: DBMiniGameScore = {
       id: `mgs_${Date.now()}_${Math.random().toString(36).substr(2, 6)}`,
       ...score,
+      gameId: normalizedGameId,
       username: resolvedUsername,
       avatarUrl: resolvedAvatar,
       gameTitle,
@@ -1957,6 +2417,199 @@ class Database {
     return { purgedCount, remainingCount: this.data.miniGameScores.length };
   }
 
+  /**
+   * Purges known test/demo users (e.g. ApexLegend99, SuperKickFan, GenerousGiftMaster)
+   * while strictly leaving real community members untouched.
+   */
+  public cleanTestUsersAndData(): { removedUsers: string[]; removedScores: number } {
+    const testIds = new Set(['k_1788627626013', '847291', '928374', '999888', '888777']);
+    const testNames = new Set(['apexlegend99', 'superkickfan', 'generousgiftmaster', 'testsubscriberbot', 'megagifterhero']);
+
+    const usersToRemove = (this.data.kickUsers || []).filter(u =>
+      testIds.has(u.kickUserId) ||
+      testNames.has(u.username.toLowerCase()) ||
+      u.kickUserId.startsWith('test_') ||
+      u.kickUserId.startsWith('fake_') ||
+      u.kickUserId.startsWith('guest_')
+    );
+
+    if (usersToRemove.length === 0) {
+      return { removedUsers: [], removedScores: 0 };
+    }
+
+    const removedUserIds = new Set(usersToRemove.map(u => u.kickUserId));
+    const removedUsernames = new Set(usersToRemove.map(u => u.username.toLowerCase()));
+
+    this.data.kickUsers = this.data.kickUsers.filter(u => !removedUserIds.has(u.kickUserId));
+    this.data.leaguePoints = this.data.leaguePoints.filter(p => !removedUserIds.has(p.kickUserId));
+    this.data.chatMessages = this.data.chatMessages.filter(m => !removedUserIds.has(m.kickUserId));
+    if (this.data.userBadges) {
+      this.data.userBadges = this.data.userBadges.filter(b => !removedUserIds.has(b.kickUserId));
+    }
+
+    const initialScores = this.data.miniGameScores?.length || 0;
+    this.data.miniGameScores = (this.data.miniGameScores || []).filter(s =>
+      !removedUserIds.has(s.userId) &&
+      !removedUsernames.has((s.username || '').toLowerCase()) &&
+      !s.userId.startsWith('guest_') &&
+      !s.userId.startsWith('test_')
+    );
+    const removedScores = initialScores - (this.data.miniGameScores?.length || 0);
+
+    this.data.pointTransactions = (this.data.pointTransactions || []).filter(t =>
+      !removedUserIds.has(t.kickUserId) &&
+      !removedUsernames.has((t.username || '').toLowerCase())
+    );
+
+    this.data.subscriptionEvents = (this.data.subscriptionEvents || []).filter(e =>
+      !removedUserIds.has(e.kickUserId) &&
+      !removedUsernames.has((e.username || '').toLowerCase())
+    );
+
+    this.recalculateStreamSubscriptions();
+    this.saveSync();
+    console.log(`[DB] Cleaned ${usersToRemove.length} test users: ${Array.from(removedUsernames).join(', ')}`);
+    return {
+      removedUsers: usersToRemove.map(u => u.username),
+      removedScores
+    };
+  }
+
+  // --- Q/A Methods for Chatters and Streamer Slyyutus ---
+  public createQuestion(payload: {
+    userId: string;
+    kickUserId: string;
+    username: string;
+    avatarUrl?: string;
+    question: string;
+  }): DBQuestion {
+    if (!this.data.questions) {
+      this.data.questions = [];
+    }
+
+    const realUser = this.getKickUserById(payload.kickUserId) || this.getKickUserByUsername(payload.username);
+    const resolvedUsername = realUser?.username || payload.username;
+    const resolvedAvatar = realUser?.avatarUrl || payload.avatarUrl || `https://api.dicebear.com/7.x/bottts/svg?seed=${encodeURIComponent(resolvedUsername)}`;
+
+    const newQ: DBQuestion = {
+      id: `qa_${Date.now()}_${Math.random().toString(36).substr(2, 6)}`,
+      userId: payload.userId,
+      kickUserId: payload.kickUserId,
+      username: resolvedUsername,
+      avatarUrl: resolvedAvatar,
+      question: payload.question.trim(),
+      status: 'pending',
+      createdAt: new Date().toISOString()
+    };
+
+    this.data.questions.unshift(newQ);
+    this.addSystemLog('info', 'QA', `Question submitted by @${resolvedUsername} (${newQ.id})`);
+    this.save();
+    return newQ;
+  }
+
+  public getQuestionsForUser(userId: string, kickUserId?: string): DBQuestion[] {
+    if (!this.data.questions) return [];
+    return this.data.questions
+      .filter(q => q.userId === userId || (kickUserId && q.kickUserId === kickUserId))
+      .sort((a, b) => b.createdAt.localeCompare(a.createdAt));
+  }
+
+  public getPublicQuestions(status?: string, sortOrder: 'newest' | 'oldest' = 'newest') {
+    if (!this.data.questions) {
+      this.data.questions = [];
+    }
+
+    // Public users only see non-rejected questions
+    let list = this.data.questions.filter(q => q.status !== 'rejected');
+    if (status && status !== 'all') {
+      list = list.filter(q => q.status === status);
+    }
+
+    list.sort((a, b) => {
+      return sortOrder === 'oldest' 
+        ? a.createdAt.localeCompare(b.createdAt)
+        : b.createdAt.localeCompare(a.createdAt);
+    });
+
+    const pendingCount = this.data.questions.filter(q => q.status === 'pending').length;
+    const answeredCount = this.data.questions.filter(q => q.status === 'answered').length;
+
+    return {
+      questions: list,
+      total: list.length,
+      pendingCount,
+      answeredCount,
+      rejectedCount: 0
+    };
+  }
+
+  public getAllQuestionsAdmin(status?: string, sortOrder: 'newest' | 'oldest' = 'newest') {
+    if (!this.data.questions) {
+      this.data.questions = [];
+    }
+
+    let list = [...this.data.questions];
+    if (status && status !== 'all') {
+      list = list.filter(q => q.status === status);
+    }
+
+    list.sort((a, b) => {
+      return sortOrder === 'oldest' 
+        ? a.createdAt.localeCompare(b.createdAt)
+        : b.createdAt.localeCompare(a.createdAt);
+    });
+
+    const pendingCount = this.data.questions.filter(q => q.status === 'pending').length;
+    const answeredCount = this.data.questions.filter(q => q.status === 'answered').length;
+    const rejectedCount = this.data.questions.filter(q => q.status === 'rejected').length;
+
+    return {
+      questions: list,
+      total: this.data.questions.length,
+      pendingCount,
+      answeredCount,
+      rejectedCount
+    };
+  }
+
+  public answerQuestion(questionId: string, answerText: string, answeredBy: string = 'Slyyutus'): DBQuestion | null {
+    if (!this.data.questions) return null;
+    const q = this.data.questions.find(item => item.id === questionId);
+    if (!q) return null;
+
+    q.answer = answerText.trim();
+    q.status = 'answered';
+    q.answeredAt = new Date().toISOString();
+    q.answeredBy = answeredBy;
+
+    this.addSystemLog('info', 'QA', `Question ${questionId} answered by ${answeredBy}`);
+    this.save();
+    return q;
+  }
+
+  public updateQuestionStatus(questionId: string, status: 'pending' | 'answered' | 'rejected'): DBQuestion | null {
+    if (!this.data.questions) return null;
+    const q = this.data.questions.find(item => item.id === questionId);
+    if (!q) return null;
+
+    q.status = status;
+    this.save();
+    return q;
+  }
+
+  public deleteQuestion(questionId: string): boolean {
+    if (!this.data.questions) return false;
+    const lenBefore = this.data.questions.length;
+    this.data.questions = this.data.questions.filter(item => item.id !== questionId);
+    const deleted = this.data.questions.length < lenBefore;
+    if (deleted) {
+      this.save();
+      this.addSystemLog('info', 'QA', `Deleted question ${questionId}`);
+    }
+    return deleted;
+  }
+
   // --- Initial Seed Data ---
   private seedInitialDatabase() {
     console.log('[DB] Seeding database with official Slyyutus channel statistics & community records...');
@@ -2056,7 +2709,10 @@ class Database {
       vodChatterStats,
       pointRules,
       systemLogs,
-      miniGameScores: []
+      miniGameScores: [],
+      pointTransactions: [],
+      processedEventIds: [],
+      questions: []
     };
 
     this.saveSync();

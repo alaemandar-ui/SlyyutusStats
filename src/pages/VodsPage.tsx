@@ -157,7 +157,7 @@ export const VodsPage: React.FC<{ navigate: (route: string) => void }> = ({ navi
                   <div className="flex items-center gap-3">
                     <span className="text-emerald-400 font-bold flex items-center gap-1" title="Subscriptions gained during this VOD">
                       <Zap className="w-3 h-3 text-emerald-400" />
-                      +{stream.subsGained ?? stream.subscribersGained ?? 0} subs
+                      {(stream.subscribersGained ?? stream.subsGained ?? 0) > 0 ? `+${stream.subscribersGained ?? stream.subsGained} subs` : '0 subs'}
                     </span>
                     <span className="text-amber-400 font-bold flex items-center gap-1">
                       <MessageSquare className="w-3.5 h-3.5" />

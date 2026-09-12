@@ -12,20 +12,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
-    },
-    {
-      "kickUserId": "k_1788627626013",
-      "username": "ApexLegend99",
-      "avatarUrl": "https://api.dicebear.com/7.x/bottts/svg?seed=ApexLegend99",
-      "bio": "Member of Slyyutus Kick Community",
-      "firstSeenAt": "2026-09-05T17:00:26.018Z",
-      "lastActiveAt": "2026-09-05T17:00:26.019Z",
-      "totalMessages": 1,
-      "totalSubs": 0,
-      "totalGifts": 0,
-      "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 64
     },
     {
       "kickUserId": "40562106",
@@ -38,7 +26,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 31
     },
     {
       "kickUserId": "63532872",
@@ -51,7 +40,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 46
     },
     {
       "kickUserId": "35678970",
@@ -64,7 +54,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 4
     },
     {
       "kickUserId": "1692922",
@@ -77,7 +68,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 2
     },
     {
       "kickUserId": "40072518",
@@ -90,7 +82,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 2
     },
     {
       "kickUserId": "120680906",
@@ -103,7 +96,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 1
     },
     {
       "kickUserId": "38431381",
@@ -116,7 +110,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 4
     },
     {
       "kickUserId": "27761763",
@@ -129,7 +124,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 43
     },
     {
       "kickUserId": "121622857",
@@ -142,7 +138,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 1
     },
     {
       "kickUserId": "73525120",
@@ -155,7 +152,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 1
     },
     {
       "kickUserId": "74477606",
@@ -168,7 +166,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 2
     },
     {
       "kickUserId": "32384390",
@@ -181,7 +180,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 8
     },
     {
       "kickUserId": "59408660",
@@ -194,7 +194,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 1
     },
     {
       "kickUserId": "18126041",
@@ -207,7 +208,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 5
     },
     {
       "kickUserId": "9133806",
@@ -220,7 +222,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 1
     },
     {
       "kickUserId": "45714031",
@@ -233,7 +236,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 1
     },
     {
       "kickUserId": "66307387",
@@ -246,7 +250,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 5
     },
     {
       "kickUserId": "107948839",
@@ -259,7 +264,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 3
     },
     {
       "kickUserId": "52465117",
@@ -272,7 +278,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 4
     },
     {
       "kickUserId": "1160406",
@@ -285,7 +292,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 15
     },
     {
       "kickUserId": "30144675",
@@ -298,7 +306,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 1
     },
     {
       "kickUserId": "25592000",
@@ -311,7 +320,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 12
     },
     {
       "kickUserId": "42846243",
@@ -324,7 +334,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 1
     },
     {
       "kickUserId": "110390844",
@@ -337,7 +348,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 4
     },
     {
       "kickUserId": "21539055",
@@ -350,7 +362,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 1
     },
     {
       "kickUserId": "58372792",
@@ -358,12 +371,13 @@
       "avatarUrl": "https://files.kick.com/images/user/58372792/profile_image/conversion/b4f618fa-90d1-4642-82cf-031d28d843a0-fullsize.webp",
       "bio": "Member of Slyyutus Kick Community",
       "firstSeenAt": "2026-09-10T14:50:36.612Z",
-      "lastActiveAt": "2026-09-10T14:50:36.619Z",
-      "totalMessages": 2,
+      "lastActiveAt": "2026-09-12T12:19:05.445Z",
+      "totalMessages": 9,
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 9
     },
     {
       "kickUserId": "35614462",
@@ -376,7 +390,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 1
     },
     {
       "kickUserId": "17568523",
@@ -389,7 +404,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 1
     },
     {
       "kickUserId": "41481649",
@@ -402,7 +418,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 1
     },
     {
       "kickUserId": "6093798",
@@ -415,7 +432,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 1
     },
     {
       "kickUserId": "17089736",
@@ -428,7 +446,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 2
     },
     {
       "kickUserId": "6426999",
@@ -441,7 +460,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 1
     },
     {
       "kickUserId": "44610253",
@@ -454,7 +474,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 1
     },
     {
       "kickUserId": "104278800",
@@ -467,7 +488,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 43
     },
     {
       "kickUserId": "37883128",
@@ -480,7 +502,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 1
     },
     {
       "kickUserId": "83558041",
@@ -493,7 +516,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 1
     },
     {
       "kickUserId": "6013381",
@@ -506,7 +530,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 3
     },
     {
       "kickUserId": "36839980",
@@ -519,7 +544,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 1
     },
     {
       "kickUserId": "21534241",
@@ -532,7 +558,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 154
     },
     {
       "kickUserId": "18084867",
@@ -545,7 +572,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 1
     },
     {
       "kickUserId": "30252236",
@@ -558,7 +586,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 198
     },
     {
       "kickUserId": "6123466",
@@ -571,7 +600,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 31
     },
     {
       "kickUserId": "40732282",
@@ -584,7 +614,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 236
     },
     {
       "kickUserId": "60237205",
@@ -597,7 +628,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 94
     },
     {
       "kickUserId": "34637101",
@@ -610,7 +642,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 115
     },
     {
       "kickUserId": "38170845",
@@ -623,7 +656,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 51
     },
     {
       "kickUserId": "32240569",
@@ -636,7 +670,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 5
     },
     {
       "kickUserId": "102499722",
@@ -649,7 +684,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 124
     },
     {
       "kickUserId": "32377674",
@@ -662,7 +698,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 139
     },
     {
       "kickUserId": "104078966",
@@ -675,7 +712,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 99
     },
     {
       "kickUserId": "22788807",
@@ -688,7 +726,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 18
     },
     {
       "kickUserId": "60685636",
@@ -701,7 +740,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 16
     },
     {
       "kickUserId": "40527240",
@@ -714,7 +754,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 8
     },
     {
       "kickUserId": "38665044",
@@ -727,7 +768,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 66
     },
     {
       "kickUserId": "21030331",
@@ -740,7 +782,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 64
     },
     {
       "kickUserId": "38637723",
@@ -753,7 +796,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 16
     },
     {
       "kickUserId": "31644386",
@@ -766,7 +810,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 20
     },
     {
       "kickUserId": "61250056",
@@ -779,7 +824,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 12
     },
     {
       "kickUserId": "16112887",
@@ -792,7 +838,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 14
     },
     {
       "kickUserId": "60840984",
@@ -805,7 +852,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 23
     },
     {
       "kickUserId": "68875356",
@@ -818,7 +866,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 12
     },
     {
       "kickUserId": "21685730",
@@ -831,7 +880,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 106
     },
     {
       "kickUserId": "18367248",
@@ -844,7 +894,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 29
     },
     {
       "kickUserId": "6161834",
@@ -857,7 +908,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 33
     },
     {
       "kickUserId": "5891184",
@@ -870,7 +922,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 11
     },
     {
       "kickUserId": "44722474",
@@ -883,7 +936,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 15
     },
     {
       "kickUserId": "47086098",
@@ -896,7 +950,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 39
     },
     {
       "kickUserId": "128620412",
@@ -909,7 +964,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 34
     },
     {
       "kickUserId": "37652629",
@@ -922,7 +978,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 20
     },
     {
       "kickUserId": "68237951",
@@ -935,7 +992,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 37
     },
     {
       "kickUserId": "14528142",
@@ -948,7 +1006,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 2
     },
     {
       "kickUserId": "6111394",
@@ -961,7 +1020,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 3
     },
     {
       "kickUserId": "4746872",
@@ -974,7 +1034,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 69
     },
     {
       "kickUserId": "27875989",
@@ -987,7 +1048,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 4
     },
     {
       "kickUserId": "5834963",
@@ -1000,7 +1062,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 5
     },
     {
       "kickUserId": "66207477",
@@ -1013,7 +1076,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 8
     },
     {
       "kickUserId": "31438243",
@@ -1026,7 +1090,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 1
     },
     {
       "kickUserId": "83880380",
@@ -1039,7 +1104,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 4
     },
     {
       "kickUserId": "104500185",
@@ -1052,7 +1118,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 12
     },
     {
       "kickUserId": "16246528",
@@ -1065,7 +1132,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 1
     },
     {
       "kickUserId": "28121509",
@@ -1078,7 +1146,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 1
     },
     {
       "kickUserId": "16207277",
@@ -1091,7 +1160,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 47
     },
     {
       "kickUserId": "42123641",
@@ -1104,7 +1174,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 63
     },
     {
       "kickUserId": "101361278",
@@ -1117,7 +1188,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 22
     },
     {
       "kickUserId": "76523882",
@@ -1130,7 +1202,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 6
     },
     {
       "kickUserId": "21952011",
@@ -1143,7 +1216,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 2
     },
     {
       "kickUserId": "5621418",
@@ -1156,7 +1230,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 1
     },
     {
       "kickUserId": "16800875",
@@ -1169,7 +1244,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 25
     },
     {
       "kickUserId": "61805337",
@@ -1182,7 +1258,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 21
     },
     {
       "kickUserId": "39104441",
@@ -1195,7 +1272,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 39
     },
     {
       "kickUserId": "31295519",
@@ -1208,7 +1286,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 15
     },
     {
       "kickUserId": "32244455",
@@ -1221,7 +1300,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 1
     },
     {
       "kickUserId": "5837817",
@@ -1234,7 +1314,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 1
     },
     {
       "kickUserId": "43104393",
@@ -1247,7 +1328,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 3
     },
     {
       "kickUserId": "106081283",
@@ -1260,7 +1342,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 16
     },
     {
       "kickUserId": "41375882",
@@ -1273,7 +1356,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 4
     },
     {
       "kickUserId": "126126585",
@@ -1286,7 +1370,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 18
     },
     {
       "kickUserId": "103711940",
@@ -1299,7 +1384,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 7
     },
     {
       "kickUserId": "35740293",
@@ -1312,7 +1398,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 65
     },
     {
       "kickUserId": "26770405",
@@ -1325,7 +1412,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 3
     },
     {
       "kickUserId": "25712341",
@@ -1338,7 +1426,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 35
     },
     {
       "kickUserId": "128620995",
@@ -1351,7 +1440,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 7
     },
     {
       "kickUserId": "6158826",
@@ -1364,7 +1454,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 4
     },
     {
       "kickUserId": "128715958",
@@ -1377,7 +1468,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 3
     },
     {
       "kickUserId": "67052389",
@@ -1390,7 +1482,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 12
     },
     {
       "kickUserId": "55332203",
@@ -1403,7 +1496,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 1
     },
     {
       "kickUserId": "57406047",
@@ -1416,7 +1510,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 3
     },
     {
       "kickUserId": "32716821",
@@ -1429,7 +1524,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 1
     },
     {
       "kickUserId": "52119944",
@@ -1442,7 +1538,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 2
     },
     {
       "kickUserId": "96278256",
@@ -1455,7 +1552,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 2
     },
     {
       "kickUserId": "30327764",
@@ -1468,7 +1566,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 22
     },
     {
       "kickUserId": "56065468",
@@ -1481,7 +1580,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 3
     },
     {
       "kickUserId": "41660263",
@@ -1494,7 +1594,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 4
     },
     {
       "kickUserId": "25840832",
@@ -1507,7 +1608,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 3
     },
     {
       "kickUserId": "35686753",
@@ -1520,7 +1622,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 101
     },
     {
       "kickUserId": "40642744",
@@ -1533,7 +1636,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 92
     },
     {
       "kickUserId": "56106395",
@@ -1546,7 +1650,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 3
     },
     {
       "kickUserId": "126542372",
@@ -1559,7 +1664,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 2
     },
     {
       "kickUserId": "35815422",
@@ -1572,7 +1678,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 1
     },
     {
       "kickUserId": "49567947",
@@ -1585,7 +1692,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 43
     },
     {
       "kickUserId": "36151793",
@@ -1598,7 +1706,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 2
     },
     {
       "kickUserId": "18058348",
@@ -1611,7 +1720,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 7
     },
     {
       "kickUserId": "56247670",
@@ -1624,7 +1734,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 1
     },
     {
       "kickUserId": "64973760",
@@ -1637,7 +1748,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 13
     },
     {
       "kickUserId": "25067173",
@@ -1650,7 +1762,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 53
     },
     {
       "kickUserId": "64575074",
@@ -1663,7 +1776,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 11
     },
     {
       "kickUserId": "5785623",
@@ -1676,7 +1790,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 6
     },
     {
       "kickUserId": "6784194",
@@ -1689,7 +1804,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 6
     },
     {
       "kickUserId": "16106020",
@@ -1702,7 +1818,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 13
     },
     {
       "kickUserId": "53406652",
@@ -1715,7 +1832,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 2
     },
     {
       "kickUserId": "36838838",
@@ -1728,7 +1846,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 36
     },
     {
       "kickUserId": "27672740",
@@ -1741,7 +1860,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 29
     },
     {
       "kickUserId": "107112801",
@@ -1754,7 +1874,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 23
     },
     {
       "kickUserId": "66324660",
@@ -1767,7 +1888,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 6
     },
     {
       "kickUserId": "35218917",
@@ -1780,7 +1902,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 16
     },
     {
       "kickUserId": "37578046",
@@ -1793,7 +1916,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 6
     },
     {
       "kickUserId": "16099626",
@@ -1806,7 +1930,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 2
     },
     {
       "kickUserId": "32540699",
@@ -1819,7 +1944,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 2
     },
     {
       "kickUserId": "42897556",
@@ -1832,7 +1958,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 13
     },
     {
       "kickUserId": "16267202",
@@ -1845,7 +1972,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 1
     },
     {
       "kickUserId": "98775243",
@@ -1858,7 +1986,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 24
     },
     {
       "kickUserId": "17336004",
@@ -1871,7 +2000,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 2
     },
     {
       "kickUserId": "60690546",
@@ -1884,7 +2014,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 16
     },
     {
       "kickUserId": "42076771",
@@ -1897,7 +2028,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 52
     },
     {
       "kickUserId": "78972133",
@@ -1910,7 +2042,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 58
     },
     {
       "kickUserId": "8477739",
@@ -1923,7 +2056,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 4
     },
     {
       "kickUserId": "16609197",
@@ -1936,7 +2070,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 3
     },
     {
       "kickUserId": "40648200",
@@ -1949,7 +2084,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 1
     },
     {
       "kickUserId": "40472442",
@@ -1962,7 +2098,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 1
     },
     {
       "kickUserId": "5838809",
@@ -1975,7 +2112,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 1
     },
     {
       "kickUserId": "118805595",
@@ -1988,7 +2126,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 1
     },
     {
       "kickUserId": "31211808",
@@ -2001,7 +2140,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 1
     },
     {
       "kickUserId": "44465421",
@@ -2014,7 +2154,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 32
     },
     {
       "kickUserId": "85330201",
@@ -2027,7 +2168,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 9
     },
     {
       "kickUserId": "97226586",
@@ -2040,7 +2182,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 1
     },
     {
       "kickUserId": "17223005",
@@ -2053,7 +2196,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 6
     },
     {
       "kickUserId": "66832666",
@@ -2066,7 +2210,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 3
     },
     {
       "kickUserId": "70669456",
@@ -2079,7 +2224,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 1
     },
     {
       "kickUserId": "21527659",
@@ -2092,7 +2238,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 17
     },
     {
       "kickUserId": "106453174",
@@ -2105,7 +2252,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 3
     },
     {
       "kickUserId": "5836801",
@@ -2118,7 +2266,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 4
     },
     {
       "kickUserId": "16293345",
@@ -2131,7 +2280,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 4
     },
     {
       "kickUserId": "51832122",
@@ -2144,7 +2294,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 17
     },
     {
       "kickUserId": "32214777",
@@ -2157,7 +2308,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 1
     },
     {
       "kickUserId": "18443393",
@@ -2170,7 +2322,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 11
     },
     {
       "kickUserId": "26525181",
@@ -2183,7 +2336,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 3
     },
     {
       "kickUserId": "21539778",
@@ -2196,7 +2350,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 2
     },
     {
       "kickUserId": "21325560",
@@ -2209,7 +2364,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 4
     },
     {
       "kickUserId": "21530081",
@@ -2222,7 +2378,8 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 1
     },
     {
       "kickUserId": "2437018",
@@ -2235,7 +2392,64 @@
       "totalSubs": 0,
       "totalGifts": 0,
       "isVerified": false,
-      "isTest": false
+      "isTest": false,
+      "totalPoints": 1
+    },
+    {
+      "kickUserId": "36274163",
+      "username": "Maksour",
+      "avatarUrl": "https://files.kick.com/images/user/36274163/profile_image/conversion/3277977c-8e0f-48a1-902e-13fff41c18ba-fullsize.webp",
+      "bio": "Member of Slyyutus Kick Community",
+      "firstSeenAt": "2026-09-12T12:19:05.440Z",
+      "lastActiveAt": "2026-09-12T12:19:05.440Z",
+      "totalMessages": 1,
+      "totalSubs": 0,
+      "totalGifts": 0,
+      "isVerified": false,
+      "isTest": false,
+      "totalPoints": 1
+    },
+    {
+      "kickUserId": "64179816",
+      "username": "WBLG_SIMOO",
+      "avatarUrl": "https://files.kick.com/images/user/64179816/profile_image/conversion/default1-fullsize.webp",
+      "bio": "Member of Slyyutus Kick Community",
+      "firstSeenAt": "2026-09-12T12:19:05.448Z",
+      "lastActiveAt": "2026-09-12T12:19:05.448Z",
+      "totalMessages": 1,
+      "totalSubs": 0,
+      "totalGifts": 0,
+      "isVerified": false,
+      "isTest": false,
+      "totalPoints": 1
+    },
+    {
+      "kickUserId": "61236719",
+      "username": "lamlih93",
+      "avatarUrl": "https://files.kick.com/images/user/61236719/profile_image/conversion/default8-fullsize.webp",
+      "bio": "Member of Slyyutus Kick Community",
+      "firstSeenAt": "2026-09-12T12:19:05.451Z",
+      "lastActiveAt": "2026-09-12T12:19:05.452Z",
+      "totalMessages": 1,
+      "totalSubs": 0,
+      "totalGifts": 0,
+      "isVerified": false,
+      "isTest": false,
+      "totalPoints": 1
+    },
+    {
+      "kickUserId": "5832997",
+      "username": "SO9R4Tx",
+      "avatarUrl": "https://files.kick.com/images/user/5832997/profile_image/conversion/d3d53452-0062-4a6b-89b8-4218b909ddce-fullsize.webp",
+      "bio": "Member of Slyyutus Kick Community",
+      "firstSeenAt": "2026-09-12T12:19:05.454Z",
+      "lastActiveAt": "2026-09-12T12:19:05.534Z",
+      "totalMessages": 10,
+      "totalSubs": 0,
+      "totalGifts": 0,
+      "isVerified": false,
+      "isTest": false,
+      "totalPoints": 10
     }
   ],
   "channel": {
@@ -2246,7 +2460,7 @@
     "avatarUrl": "https://files.kick.com/images/user/231626/profile_image/conversion/b39d4d71-93ab-4563-ad7a-b054e4fdd90a-fullsize.webp",
     "bannerUrl": "https://files.kick.com/images/channel/229384/banner_image/868e7c21-4096-40a2-90ef-8b4d933bc1dd",
     "bio": "Moroccan Streamer ! Gamer ! GODAIM",
-    "followersCount": 26524,
+    "followersCount": 26604,
     "subscribersCount": 63,
     "totalViews": 0,
     "isLive": false,
@@ -2256,7 +2470,7 @@
     "totalStreams": 0,
     "currentStreamTitle": "",
     "currentStreamCategory": "",
-    "lastUpdated": "2026-09-11T17:16:41.457Z"
+    "lastUpdated": "2026-09-12T12:50:04.300Z"
   },
   "streams": [
     {
@@ -2302,13 +2516,13 @@
       "durationSeconds": 17582,
       "averageViewers": 1993,
       "peakViewers": 2431,
-      "subscribersGained": 3,
+      "subscribersGained": 2,
       "totalChatMessages": 0,
       "vodUrl": "https://kick.com/video/05d0eb39-bd30-483b-b418-2f82ca0f346b",
       "thumbnailUrl": "https://images.kick.com/video_thumbnails/VcbHiZyXVlnu/j6XBBqP54qiM/720.webp",
       "isLive": false,
       "views": 11294,
-      "subsGained": 3
+      "subsGained": 2
     },
     {
       "streamId": "125013750",
@@ -2353,13 +2567,13 @@
       "durationSeconds": 34354,
       "averageViewers": 1634,
       "peakViewers": 1993,
-      "subscribersGained": 3,
+      "subscribersGained": 2,
       "totalChatMessages": 0,
       "vodUrl": "https://kick.com/video/c74264f1-4875-44b4-9147-ab5fabc3a2e5",
       "thumbnailUrl": "https://images.kick.com/video_thumbnails/VcbHiZyXVlnu/v2qcO1lI5V5a/720.webp",
       "isLive": false,
       "views": 11074,
-      "subsGained": 3
+      "subsGained": 2
     },
     {
       "streamId": "124512550",
@@ -2404,13 +2618,13 @@
       "durationSeconds": 30134,
       "averageViewers": 1594,
       "peakViewers": 1944,
-      "subscribersGained": 3,
+      "subscribersGained": 2,
       "totalChatMessages": 0,
       "vodUrl": "https://kick.com/video/17f2bfb1-de9e-4839-922f-7f4e680d1f88",
       "thumbnailUrl": "https://images.kick.com/video_thumbnails/VcbHiZyXVlnu/IH6u9n72SxjM/720.webp",
       "isLive": false,
       "views": 16419,
-      "subsGained": 3
+      "subsGained": 2
     },
     {
       "streamId": "124030826",
@@ -2455,13 +2669,13 @@
       "durationSeconds": 12990,
       "averageViewers": 1346,
       "peakViewers": 1641,
-      "subscribersGained": 3,
+      "subscribersGained": 2,
       "totalChatMessages": 0,
       "vodUrl": "https://kick.com/video/b0dec6cf-a7c0-4b9c-b500-68be34401f86",
       "thumbnailUrl": "https://images.kick.com/video_thumbnails/VcbHiZyXVlnu/PUUv7atIFs62/720.webp",
       "isLive": false,
       "views": 9760,
-      "subsGained": 3
+      "subsGained": 2
     },
     {
       "streamId": "123242569",
@@ -2506,13 +2720,13 @@
       "durationSeconds": 15108,
       "averageViewers": 1483,
       "peakViewers": 1808,
-      "subscribersGained": 3,
+      "subscribersGained": 2,
       "totalChatMessages": 0,
       "vodUrl": "https://kick.com/video/996e3f8b-f0aa-44fe-91dd-ab70629626f6",
       "thumbnailUrl": "https://images.kick.com/video_thumbnails/VcbHiZyXVlnu/BIAO8ByyimVG/720.webp",
       "isLive": false,
       "views": 33827,
-      "subsGained": 3
+      "subsGained": 2
     },
     {
       "streamId": "122728488",
@@ -2540,13 +2754,13 @@
       "durationSeconds": 6054,
       "averageViewers": 1498,
       "peakViewers": 1827,
-      "subscribersGained": 2,
+      "subscribersGained": 1,
       "totalChatMessages": 0,
       "vodUrl": "https://kick.com/video/7b285a5c-0a8d-4c86-a5bb-51f5f97fb8c0",
       "thumbnailUrl": "https://images.kick.com/video_thumbnails/VcbHiZyXVlnu/fROCXjsawJ4k/720.webp",
       "isLive": false,
       "views": 8888,
-      "subsGained": 2
+      "subsGained": 1
     },
     {
       "streamId": "122400111",
@@ -2642,13 +2856,13 @@
       "durationSeconds": 10659,
       "averageViewers": 1449,
       "peakViewers": 1767,
-      "subscribersGained": 3,
+      "subscribersGained": 2,
       "totalChatMessages": 2100,
       "vodUrl": "https://kick.com/video/3de9ce53-e760-4123-99af-2710ef55e76f",
       "thumbnailUrl": "https://images.kick.com/video_thumbnails/VcbHiZyXVlnu/oY7K1HamQHGt/720.webp",
       "isLive": false,
       "views": 8329,
-      "subsGained": 3
+      "subsGained": 2
     },
     {
       "streamId": "125659897",
@@ -2681,7 +2895,7 @@
       "vodUrl": "https://kick.com/video/c1ed9bf3-d89b-40e8-bb7b-8ed12c284336",
       "thumbnailUrl": "https://images.kick.com/video_thumbnails/VcbHiZyXVlnu/YHINnevmbfPe/720.webp",
       "isLive": false,
-      "views": 9336,
+      "views": 9340,
       "subsGained": 0
     },
     {
@@ -2698,7 +2912,7 @@
       "vodUrl": "https://kick.com/video/d8fc2ac7-f3cf-4019-9e85-1b3ab9100d5a",
       "thumbnailUrl": "https://images.kick.com/video_thumbnails/VcbHiZyXVlnu/8i8gsi2g0M9N/720.webp",
       "isLive": false,
-      "views": 11460,
+      "views": 11464,
       "subsGained": 3
     },
     {
@@ -2715,7 +2929,7 @@
       "vodUrl": "https://kick.com/video/6f6a58cc-876c-4ed4-8a46-f3c38907612c",
       "thumbnailUrl": "https://images.kick.com/video_thumbnails/VcbHiZyXVlnu/W84diQJSPclp/720.webp",
       "isLive": false,
-      "views": 10422,
+      "views": 10426,
       "subsGained": 3
     },
     {
@@ -2727,13 +2941,13 @@
       "durationSeconds": 19294,
       "averageViewers": 1424,
       "peakViewers": 1737,
-      "subscribersGained": 4,
+      "subscribersGained": 3,
       "totalChatMessages": 0,
       "vodUrl": "https://kick.com/video/4c46344b-77af-449e-b374-69c6f07a2b46",
       "thumbnailUrl": "https://images.kick.com/video_thumbnails/VcbHiZyXVlnu/n9QNyJWLtszZ/720.webp",
       "isLive": false,
-      "views": 10568,
-      "subsGained": 4
+      "views": 10574,
+      "subsGained": 3
     },
     {
       "streamId": "126147989",
@@ -2749,7 +2963,7 @@
       "vodUrl": "https://kick.com/video/d6ee02c7-d8ce-481c-85cd-2616925fccbd",
       "thumbnailUrl": "https://images.kick.com/video_thumbnails/VcbHiZyXVlnu/anDNSgxnXvaa/720.webp",
       "isLive": false,
-      "views": 12328,
+      "views": 12334,
       "subsGained": 3
     },
     {
@@ -2766,7 +2980,7 @@
       "vodUrl": "https://kick.com/video/2f55aeff-a73d-4118-9598-124e50495f3c",
       "thumbnailUrl": "https://images.kick.com/video_thumbnails/VcbHiZyXVlnu/PTgZOV4p3cqc/720.webp",
       "isLive": false,
-      "views": 11537,
+      "views": 11545,
       "subsGained": 0
     },
     {
@@ -2774,33 +2988,20 @@
       "title": "👑 Ghadine wlhta ghadine💚! DAY 33/365 👑 '' NEW SUB ALERT ''",
       "category": "Just Chatting",
       "startedAt": "2026-09-11T16:57:55.000Z",
-      "endedAt": "2026-09-11T16:57:55.000Z",
-      "durationSeconds": 0,
-      "averageViewers": 1208,
-      "peakViewers": 1473,
+      "endedAt": "2026-09-12T01:29:02.000Z",
+      "durationSeconds": 30667,
+      "averageViewers": 1521,
+      "peakViewers": 1855,
       "subscribersGained": 0,
-      "totalChatMessages": 3259,
+      "totalChatMessages": 3279,
       "vodUrl": "https://kick.com/video/76a50ebb-20d1-42ea-b44c-27af3324d84a",
-      "thumbnailUrl": "https://images.kick.com/video_thumbnails/VcbHiZyXVlnu/9AhvTBd8EBnl/720.webp?versionId=2AZLD8KVbnj.1.P2uUOvNLbyTw61csmb",
-      "isLive": true,
-      "views": 3,
+      "thumbnailUrl": "https://images.kick.com/video_thumbnails/VcbHiZyXVlnu/9AhvTBd8EBnl/720.webp",
+      "isLive": false,
+      "views": 11121,
       "subsGained": 0
     }
   ],
   "chatMessages": [
-    {
-      "kickUserId": "k_1788627626013",
-      "username": "ApexLegend99",
-      "avatarUrl": "https://api.dicebear.com/7.x/bottts/svg?seed=ApexLegend99",
-      "streamId": "125483810",
-      "streamTitle": "Kick Broadcast",
-      "content": "SLYYUTUS KINGDOM ON TOP! 🔥🔥",
-      "timestamp": "2026-09-05T17:00:26.014Z",
-      "messageId": "msg_1788627626017_3hmas",
-      "channelId": "chan_slyyutus_01",
-      "pointsAwarded": 1,
-      "isTest": false
-    },
     {
       "kickUserId": "40562106",
       "username": "sniper_0808",
@@ -48391,6 +48592,266 @@
       "channelId": "chan_slyyutus_01",
       "pointsAwarded": 1,
       "isTest": false
+    },
+    {
+      "messageId": "ce65939f-d08d-47aa-8925-792a16b2022f",
+      "kickUserId": "58372792",
+      "username": "M3ACH_SLY",
+      "avatarUrl": "https://files.kick.com/images/user/58372792/profile_image/conversion/b4f618fa-90d1-4642-82cf-031d28d843a0-fullsize.webp",
+      "streamId": "126782937",
+      "streamTitle": "👑 Ghadine wlhta ghadine💚! DAY 33/365 👑 '' NEW SUB ALERT ''",
+      "content": "[emote:4147884:vibePls]",
+      "timestamp": "2026-09-12T01:29:34Z",
+      "channelId": "chan_slyyutus_01",
+      "pointsAwarded": 1,
+      "isTest": false
+    },
+    {
+      "messageId": "2c71ab89-89ad-41ab-b303-baeb23cd9c24",
+      "kickUserId": "36274163",
+      "username": "Maksour",
+      "avatarUrl": "https://files.kick.com/images/user/36274163/profile_image/conversion/3277977c-8e0f-48a1-902e-13fff41c18ba-fullsize.webp",
+      "streamId": "126782937",
+      "streamTitle": "👑 Ghadine wlhta ghadine💚! DAY 33/365 👑 '' NEW SUB ALERT ''",
+      "content": "[emote:4147884:vibePls]",
+      "timestamp": "2026-09-12T01:29:35Z",
+      "channelId": "chan_slyyutus_01",
+      "pointsAwarded": 1,
+      "isTest": false
+    },
+    {
+      "messageId": "34287487-75bf-4e93-85d5-11623ab4768c",
+      "kickUserId": "58372792",
+      "username": "M3ACH_SLY",
+      "avatarUrl": "https://files.kick.com/images/user/58372792/profile_image/conversion/b4f618fa-90d1-4642-82cf-031d28d843a0-fullsize.webp",
+      "streamId": "126782937",
+      "streamTitle": "👑 Ghadine wlhta ghadine💚! DAY 33/365 👑 '' NEW SUB ALERT ''",
+      "content": "[emote:4147884:vibePls][emote:4147884:vibePls][emote:4147884:vibePls]",
+      "timestamp": "2026-09-12T01:29:38Z",
+      "channelId": "chan_slyyutus_01",
+      "pointsAwarded": 1,
+      "isTest": false
+    },
+    {
+      "messageId": "d387cbb8-4a60-4f3a-ad3e-8c9bd4ef75ee",
+      "kickUserId": "58372792",
+      "username": "M3ACH_SLY",
+      "avatarUrl": "https://files.kick.com/images/user/58372792/profile_image/conversion/b4f618fa-90d1-4642-82cf-031d28d843a0-fullsize.webp",
+      "streamId": "126782937",
+      "streamTitle": "👑 Ghadine wlhta ghadine💚! DAY 33/365 👑 '' NEW SUB ALERT ''",
+      "content": "[emote:4147884:vibePls]",
+      "timestamp": "2026-09-12T01:29:39Z",
+      "channelId": "chan_slyyutus_01",
+      "pointsAwarded": 1,
+      "isTest": false
+    },
+    {
+      "messageId": "7551192f-a6d4-4dcc-a932-63308b3eee54",
+      "kickUserId": "58372792",
+      "username": "M3ACH_SLY",
+      "avatarUrl": "https://files.kick.com/images/user/58372792/profile_image/conversion/b4f618fa-90d1-4642-82cf-031d28d843a0-fullsize.webp",
+      "streamId": "126782937",
+      "streamTitle": "👑 Ghadine wlhta ghadine💚! DAY 33/365 👑 '' NEW SUB ALERT ''",
+      "content": "[emote:4147884:vibePls]",
+      "timestamp": "2026-09-12T01:29:41Z",
+      "channelId": "chan_slyyutus_01",
+      "pointsAwarded": 1,
+      "isTest": false
+    },
+    {
+      "messageId": "827bab91-f836-402e-92e2-aa7fa5ac5dbd",
+      "kickUserId": "58372792",
+      "username": "M3ACH_SLY",
+      "avatarUrl": "https://files.kick.com/images/user/58372792/profile_image/conversion/b4f618fa-90d1-4642-82cf-031d28d843a0-fullsize.webp",
+      "streamId": "126782937",
+      "streamTitle": "👑 Ghadine wlhta ghadine💚! DAY 33/365 👑 '' NEW SUB ALERT ''",
+      "content": "[emote:4147884:vibePls][emote:4147884:vibePls][emote:4147884:vibePls]",
+      "timestamp": "2026-09-12T01:29:44Z",
+      "channelId": "chan_slyyutus_01",
+      "pointsAwarded": 1,
+      "isTest": false
+    },
+    {
+      "messageId": "bbba14cf-478f-4c4a-83bb-17ffd2235777",
+      "kickUserId": "58372792",
+      "username": "M3ACH_SLY",
+      "avatarUrl": "https://files.kick.com/images/user/58372792/profile_image/conversion/b4f618fa-90d1-4642-82cf-031d28d843a0-fullsize.webp",
+      "streamId": "126782937",
+      "streamTitle": "👑 Ghadine wlhta ghadine💚! DAY 33/365 👑 '' NEW SUB ALERT ''",
+      "content": "[emote:4147884:vibePls]",
+      "timestamp": "2026-09-12T01:29:45Z",
+      "channelId": "chan_slyyutus_01",
+      "pointsAwarded": 1,
+      "isTest": false
+    },
+    {
+      "messageId": "0acfba8c-9de4-4aae-beb7-1cfd3b7804f5",
+      "kickUserId": "58372792",
+      "username": "M3ACH_SLY",
+      "avatarUrl": "https://files.kick.com/images/user/58372792/profile_image/conversion/b4f618fa-90d1-4642-82cf-031d28d843a0-fullsize.webp",
+      "streamId": "126782937",
+      "streamTitle": "👑 Ghadine wlhta ghadine💚! DAY 33/365 👑 '' NEW SUB ALERT ''",
+      "content": "[emote:4147884:vibePls]",
+      "timestamp": "2026-09-12T01:29:50Z",
+      "channelId": "chan_slyyutus_01",
+      "pointsAwarded": 1,
+      "isTest": false
+    },
+    {
+      "messageId": "294beb0d-d111-44ad-9641-17afef6bb928",
+      "kickUserId": "64179816",
+      "username": "WBLG_SIMOO",
+      "avatarUrl": "https://files.kick.com/images/user/64179816/profile_image/conversion/default1-fullsize.webp",
+      "streamId": "126782937",
+      "streamTitle": "👑 Ghadine wlhta ghadine💚! DAY 33/365 👑 '' NEW SUB ALERT ''",
+      "content": "sf",
+      "timestamp": "2026-09-12T01:34:24Z",
+      "channelId": "chan_slyyutus_01",
+      "pointsAwarded": 1,
+      "isTest": false
+    },
+    {
+      "messageId": "3c1df418-9f51-4e75-9c67-a521226bf90f",
+      "kickUserId": "61236719",
+      "username": "lamlih93",
+      "avatarUrl": "https://files.kick.com/images/user/61236719/profile_image/conversion/default8-fullsize.webp",
+      "streamId": "126782937",
+      "streamTitle": "👑 Ghadine wlhta ghadine💚! DAY 33/365 👑 '' NEW SUB ALERT ''",
+      "content": "ggg",
+      "timestamp": "2026-09-12T01:59:24Z",
+      "channelId": "chan_slyyutus_01",
+      "pointsAwarded": 1,
+      "isTest": false
+    },
+    {
+      "messageId": "43d4c6da-184c-4d3c-8963-f5a7c37d2a28",
+      "kickUserId": "5832997",
+      "username": "SO9R4Tx",
+      "avatarUrl": "https://files.kick.com/images/user/5832997/profile_image/conversion/d3d53452-0062-4a6b-89b8-4218b909ddce-fullsize.webp",
+      "streamId": "126782937",
+      "streamTitle": "👑 Ghadine wlhta ghadine💚! DAY 33/365 👑 '' NEW SUB ALERT ''",
+      "content": "[emote:5756623:OuttaPocket]",
+      "timestamp": "2026-09-12T03:56:43Z",
+      "channelId": "chan_slyyutus_01",
+      "pointsAwarded": 1,
+      "isTest": false
+    },
+    {
+      "messageId": "cd7d7952-1219-491b-8f5d-da833a927bfe",
+      "kickUserId": "5832997",
+      "username": "SO9R4Tx",
+      "avatarUrl": "https://files.kick.com/images/user/5832997/profile_image/conversion/d3d53452-0062-4a6b-89b8-4218b909ddce-fullsize.webp",
+      "streamId": "126782937",
+      "streamTitle": "👑 Ghadine wlhta ghadine💚! DAY 33/365 👑 '' NEW SUB ALERT ''",
+      "content": "[emote:5756623:OuttaPocket]",
+      "timestamp": "2026-09-12T03:56:47Z",
+      "channelId": "chan_slyyutus_01",
+      "pointsAwarded": 1,
+      "isTest": false
+    },
+    {
+      "messageId": "4d869ab5-1c3a-4945-9692-d1d6b7525a33",
+      "kickUserId": "5832997",
+      "username": "SO9R4Tx",
+      "avatarUrl": "https://files.kick.com/images/user/5832997/profile_image/conversion/d3d53452-0062-4a6b-89b8-4218b909ddce-fullsize.webp",
+      "streamId": "126782937",
+      "streamTitle": "👑 Ghadine wlhta ghadine💚! DAY 33/365 👑 '' NEW SUB ALERT ''",
+      "content": "[emote:5756623:OuttaPocket]",
+      "timestamp": "2026-09-12T03:56:48Z",
+      "channelId": "chan_slyyutus_01",
+      "pointsAwarded": 1,
+      "isTest": false
+    },
+    {
+      "messageId": "c3870c6d-6637-48ef-8272-3c05fb1ace25",
+      "kickUserId": "5832997",
+      "username": "SO9R4Tx",
+      "avatarUrl": "https://files.kick.com/images/user/5832997/profile_image/conversion/d3d53452-0062-4a6b-89b8-4218b909ddce-fullsize.webp",
+      "streamId": "126782937",
+      "streamTitle": "👑 Ghadine wlhta ghadine💚! DAY 33/365 👑 '' NEW SUB ALERT ''",
+      "content": "[emote:5756623:OuttaPocket]",
+      "timestamp": "2026-09-12T07:14:04Z",
+      "channelId": "chan_slyyutus_01",
+      "pointsAwarded": 1,
+      "isTest": false
+    },
+    {
+      "messageId": "743de27d-1197-46e7-a9b6-55256fcebe1d",
+      "kickUserId": "5832997",
+      "username": "SO9R4Tx",
+      "avatarUrl": "https://files.kick.com/images/user/5832997/profile_image/conversion/d3d53452-0062-4a6b-89b8-4218b909ddce-fullsize.webp",
+      "streamId": "126782937",
+      "streamTitle": "👑 Ghadine wlhta ghadine💚! DAY 33/365 👑 '' NEW SUB ALERT ''",
+      "content": "[emote:5756623:OuttaPocket]",
+      "timestamp": "2026-09-12T07:14:08Z",
+      "channelId": "chan_slyyutus_01",
+      "pointsAwarded": 1,
+      "isTest": false
+    },
+    {
+      "messageId": "e6d9052c-9ca5-4390-9a97-3bfa78bac2fa",
+      "kickUserId": "5832997",
+      "username": "SO9R4Tx",
+      "avatarUrl": "https://files.kick.com/images/user/5832997/profile_image/conversion/d3d53452-0062-4a6b-89b8-4218b909ddce-fullsize.webp",
+      "streamId": "126782937",
+      "streamTitle": "👑 Ghadine wlhta ghadine💚! DAY 33/365 👑 '' NEW SUB ALERT ''",
+      "content": "[emote:5756623:OuttaPocket]",
+      "timestamp": "2026-09-12T07:14:08Z",
+      "channelId": "chan_slyyutus_01",
+      "pointsAwarded": 1,
+      "isTest": false
+    },
+    {
+      "messageId": "a8f447ae-3073-478c-9162-c697726e5c7b",
+      "kickUserId": "5832997",
+      "username": "SO9R4Tx",
+      "avatarUrl": "https://files.kick.com/images/user/5832997/profile_image/conversion/d3d53452-0062-4a6b-89b8-4218b909ddce-fullsize.webp",
+      "streamId": "126782937",
+      "streamTitle": "👑 Ghadine wlhta ghadine💚! DAY 33/365 👑 '' NEW SUB ALERT ''",
+      "content": "[emote:5756623:OuttaPocket]",
+      "timestamp": "2026-09-12T08:16:42Z",
+      "channelId": "chan_slyyutus_01",
+      "pointsAwarded": 1,
+      "isTest": false
+    },
+    {
+      "messageId": "a3286ece-e207-4d33-8eb3-2a200bbc3374",
+      "kickUserId": "5832997",
+      "username": "SO9R4Tx",
+      "avatarUrl": "https://files.kick.com/images/user/5832997/profile_image/conversion/d3d53452-0062-4a6b-89b8-4218b909ddce-fullsize.webp",
+      "streamId": "126782937",
+      "streamTitle": "👑 Ghadine wlhta ghadine💚! DAY 33/365 👑 '' NEW SUB ALERT ''",
+      "content": "[emote:5756623:OuttaPocket]",
+      "timestamp": "2026-09-12T09:59:16Z",
+      "channelId": "chan_slyyutus_01",
+      "pointsAwarded": 1,
+      "isTest": false
+    },
+    {
+      "messageId": "d230a5b6-f7fc-4828-96d4-aba64370811e",
+      "kickUserId": "5832997",
+      "username": "SO9R4Tx",
+      "avatarUrl": "https://files.kick.com/images/user/5832997/profile_image/conversion/d3d53452-0062-4a6b-89b8-4218b909ddce-fullsize.webp",
+      "streamId": "126782937",
+      "streamTitle": "👑 Ghadine wlhta ghadine💚! DAY 33/365 👑 '' NEW SUB ALERT ''",
+      "content": "[emote:5756623:OuttaPocket]",
+      "timestamp": "2026-09-12T09:59:16Z",
+      "channelId": "chan_slyyutus_01",
+      "pointsAwarded": 1,
+      "isTest": false
+    },
+    {
+      "messageId": "67fdbffa-02f3-4027-a07a-a552490e05f9",
+      "kickUserId": "5832997",
+      "username": "SO9R4Tx",
+      "avatarUrl": "https://files.kick.com/images/user/5832997/profile_image/conversion/d3d53452-0062-4a6b-89b8-4218b909ddce-fullsize.webp",
+      "streamId": "126782937",
+      "streamTitle": "👑 Ghadine wlhta ghadine💚! DAY 33/365 👑 '' NEW SUB ALERT ''",
+      "content": "[emote:5756623:OuttaPocket]",
+      "timestamp": "2026-09-12T09:59:16Z",
+      "channelId": "chan_slyyutus_01",
+      "pointsAwarded": 1,
+      "isTest": false
     }
   ],
   "leagueSeasons": [
@@ -48401,23 +48862,11 @@
       "endDate": "2026-09-30T23:59:59.000Z",
       "isActive": true,
       "isFinalized": false,
-      "totalParticipants": 176,
-      "totalPointsDistributed": 4215
+      "totalParticipants": 182,
+      "totalPointsDistributed": 4635
     }
   ],
   "leaguePoints": [
-    {
-      "id": "lp_09-26_k_1788627626013",
-      "seasonId": "09-26",
-      "kickUserId": "k_1788627626013",
-      "points": 1,
-      "messagesCount": 1,
-      "subsCount": 0,
-      "giftsCount": 0,
-      "firstScoreAchievedAt": "2026-09-05T17:00:26.019Z",
-      "lastPointAwardedAt": "2026-09-05T17:00:26.019Z",
-      "isTest": false
-    },
     {
       "id": "lp_09-26_40562106",
       "seasonId": "09-26",
@@ -48734,12 +49183,12 @@
       "id": "lp_09-26_58372792",
       "seasonId": "09-26",
       "kickUserId": "58372792",
-      "points": 2,
-      "messagesCount": 2,
+      "points": 9,
+      "messagesCount": 9,
       "subsCount": 0,
       "giftsCount": 0,
       "firstScoreAchievedAt": "2026-09-10T14:50:36.613Z",
-      "lastPointAwardedAt": "2026-09-10T14:50:36.619Z",
+      "lastPointAwardedAt": "2026-09-12T12:19:05.445Z",
       "isTest": false
     },
     {
@@ -50469,6 +50918,54 @@
       "firstScoreAchievedAt": "2026-09-11T17:17:06.556Z",
       "lastPointAwardedAt": "2026-09-11T17:17:06.556Z",
       "isTest": false
+    },
+    {
+      "id": "lp_09-26_36274163",
+      "seasonId": "09-26",
+      "kickUserId": "36274163",
+      "points": 1,
+      "messagesCount": 1,
+      "subsCount": 0,
+      "giftsCount": 0,
+      "firstScoreAchievedAt": "2026-09-12T12:19:05.440Z",
+      "lastPointAwardedAt": "2026-09-12T12:19:05.440Z",
+      "isTest": false
+    },
+    {
+      "id": "lp_09-26_64179816",
+      "seasonId": "09-26",
+      "kickUserId": "64179816",
+      "points": 1,
+      "messagesCount": 1,
+      "subsCount": 0,
+      "giftsCount": 0,
+      "firstScoreAchievedAt": "2026-09-12T12:19:05.448Z",
+      "lastPointAwardedAt": "2026-09-12T12:19:05.448Z",
+      "isTest": false
+    },
+    {
+      "id": "lp_09-26_61236719",
+      "seasonId": "09-26",
+      "kickUserId": "61236719",
+      "points": 1,
+      "messagesCount": 1,
+      "subsCount": 0,
+      "giftsCount": 0,
+      "firstScoreAchievedAt": "2026-09-12T12:19:05.452Z",
+      "lastPointAwardedAt": "2026-09-12T12:19:05.452Z",
+      "isTest": false
+    },
+    {
+      "id": "lp_09-26_5832997",
+      "seasonId": "09-26",
+      "kickUserId": "5832997",
+      "points": 10,
+      "messagesCount": 10,
+      "subsCount": 0,
+      "giftsCount": 0,
+      "firstScoreAchievedAt": "2026-09-12T12:19:05.454Z",
+      "lastPointAwardedAt": "2026-09-12T12:19:05.534Z",
+      "isTest": false
     }
   ],
   "leagueRankings": [],
@@ -51102,14 +51599,14 @@
       "streamId": "126782937",
       "kickUserId": "22788807",
       "messageCount": 5,
-      "rankInVod": 84
+      "rankInVod": 86
     },
     {
       "id": "vcs_126782937_32240569",
       "streamId": "126782937",
       "kickUserId": "32240569",
       "messageCount": 2,
-      "rankInVod": 108
+      "rankInVod": 110
     },
     {
       "id": "vcs_126782937_21534241",
@@ -51151,7 +51648,7 @@
       "streamId": "126782937",
       "kickUserId": "32384390",
       "messageCount": 7,
-      "rankInVod": 72
+      "rankInVod": 73
     },
     {
       "id": "vcs_126782937_32377674",
@@ -51263,7 +51760,7 @@
       "streamId": "126782937",
       "kickUserId": "14528142",
       "messageCount": 2,
-      "rankInVod": 109
+      "rankInVod": 111
     },
     {
       "id": "vcs_126782937_16282003",
@@ -51277,7 +51774,7 @@
       "streamId": "126782937",
       "kickUserId": "6111394",
       "messageCount": 3,
-      "rankInVod": 95
+      "rankInVod": 97
     },
     {
       "id": "vcs_126782937_6123466",
@@ -51305,21 +51802,21 @@
       "streamId": "126782937",
       "kickUserId": "27875989",
       "messageCount": 4,
-      "rankInVod": 86
+      "rankInVod": 88
     },
     {
       "id": "vcs_126782937_68875356",
       "streamId": "126782937",
       "kickUserId": "68875356",
       "messageCount": 9,
-      "rankInVod": 69
+      "rankInVod": 70
     },
     {
       "id": "vcs_126782937_5834963",
       "streamId": "126782937",
       "kickUserId": "5834963",
       "messageCount": 5,
-      "rankInVod": 85
+      "rankInVod": 87
     },
     {
       "id": "vcs_126782937_38170845",
@@ -51340,28 +51837,28 @@
       "streamId": "126782937",
       "kickUserId": "40527240",
       "messageCount": 7,
-      "rankInVod": 73
+      "rankInVod": 74
     },
     {
       "id": "vcs_126782937_66207477",
       "streamId": "126782937",
       "kickUserId": "66207477",
       "messageCount": 8,
-      "rankInVod": 71
+      "rankInVod": 72
     },
     {
       "id": "vcs_126782937_31438243",
       "streamId": "126782937",
       "kickUserId": "31438243",
       "messageCount": 1,
-      "rankInVod": 120
+      "rankInVod": 122
     },
     {
       "id": "vcs_126782937_83880380",
       "streamId": "126782937",
       "kickUserId": "83880380",
       "messageCount": 4,
-      "rankInVod": 87
+      "rankInVod": 89
     },
     {
       "id": "vcs_126782937_31644386",
@@ -51382,21 +51879,21 @@
       "streamId": "126782937",
       "kickUserId": "1160406",
       "messageCount": 6,
-      "rankInVod": 77
+      "rankInVod": 79
     },
     {
       "id": "vcs_126782937_16246528",
       "streamId": "126782937",
       "kickUserId": "16246528",
       "messageCount": 1,
-      "rankInVod": 121
+      "rankInVod": 123
     },
     {
       "id": "vcs_126782937_28121509",
       "streamId": "126782937",
       "kickUserId": "28121509",
       "messageCount": 1,
-      "rankInVod": 122
+      "rankInVod": 124
     },
     {
       "id": "vcs_126782937_16207277",
@@ -51424,7 +51921,7 @@
       "streamId": "126782937",
       "kickUserId": "76523882",
       "messageCount": 6,
-      "rankInVod": 78
+      "rankInVod": 80
     },
     {
       "id": "vcs_126782937_38637723",
@@ -51438,14 +51935,14 @@
       "streamId": "126782937",
       "kickUserId": "21952011",
       "messageCount": 2,
-      "rankInVod": 110
+      "rankInVod": 112
     },
     {
       "id": "vcs_126782937_5621418",
       "streamId": "126782937",
       "kickUserId": "5621418",
       "messageCount": 1,
-      "rankInVod": 123
+      "rankInVod": 125
     },
     {
       "id": "vcs_126782937_16800875",
@@ -51480,21 +51977,21 @@
       "streamId": "126782937",
       "kickUserId": "32244455",
       "messageCount": 1,
-      "rankInVod": 124
+      "rankInVod": 126
     },
     {
       "id": "vcs_126782937_5837817",
       "streamId": "126782937",
       "kickUserId": "5837817",
       "messageCount": 1,
-      "rankInVod": 125
+      "rankInVod": 127
     },
     {
       "id": "vcs_126782937_43104393",
       "streamId": "126782937",
       "kickUserId": "43104393",
       "messageCount": 3,
-      "rankInVod": 96
+      "rankInVod": 98
     },
     {
       "id": "vcs_126782937_106081283",
@@ -51508,7 +52005,7 @@
       "streamId": "126782937",
       "kickUserId": "41375882",
       "messageCount": 4,
-      "rankInVod": 88
+      "rankInVod": 90
     },
     {
       "id": "vcs_126782937_126126585",
@@ -51522,7 +52019,7 @@
       "streamId": "126782937",
       "kickUserId": "103711940",
       "messageCount": 7,
-      "rankInVod": 74
+      "rankInVod": 75
     },
     {
       "id": "vcs_126782937_35740293",
@@ -51536,7 +52033,7 @@
       "streamId": "126782937",
       "kickUserId": "26770405",
       "messageCount": 3,
-      "rankInVod": 97
+      "rankInVod": 99
     },
     {
       "id": "vcs_126782937_25592000",
@@ -51557,21 +52054,21 @@
       "streamId": "126782937",
       "kickUserId": "128620995",
       "messageCount": 7,
-      "rankInVod": 75
+      "rankInVod": 76
     },
     {
       "id": "vcs_126782937_6158826",
       "streamId": "126782937",
       "kickUserId": "6158826",
       "messageCount": 4,
-      "rankInVod": 89
+      "rankInVod": 91
     },
     {
       "id": "vcs_126782937_128715958",
       "streamId": "126782937",
       "kickUserId": "128715958",
       "messageCount": 3,
-      "rankInVod": 98
+      "rankInVod": 100
     },
     {
       "id": "vcs_126782937_67052389",
@@ -51585,35 +52082,35 @@
       "streamId": "126782937",
       "kickUserId": "55332203",
       "messageCount": 1,
-      "rankInVod": 126
+      "rankInVod": 128
     },
     {
       "id": "vcs_126782937_57406047",
       "streamId": "126782937",
       "kickUserId": "57406047",
       "messageCount": 3,
-      "rankInVod": 99
+      "rankInVod": 101
     },
     {
       "id": "vcs_126782937_32716821",
       "streamId": "126782937",
       "kickUserId": "32716821",
       "messageCount": 1,
-      "rankInVod": 127
+      "rankInVod": 129
     },
     {
       "id": "vcs_126782937_52119944",
       "streamId": "126782937",
       "kickUserId": "52119944",
       "messageCount": 2,
-      "rankInVod": 111
+      "rankInVod": 113
     },
     {
       "id": "vcs_126782937_96278256",
       "streamId": "126782937",
       "kickUserId": "96278256",
       "messageCount": 2,
-      "rankInVod": 112
+      "rankInVod": 114
     },
     {
       "id": "vcs_126782937_30327764",
@@ -51627,7 +52124,7 @@
       "streamId": "126782937",
       "kickUserId": "56065468",
       "messageCount": 3,
-      "rankInVod": 100
+      "rankInVod": 102
     },
     {
       "id": "vcs_126782937_18367248",
@@ -51641,14 +52138,14 @@
       "streamId": "126782937",
       "kickUserId": "41660263",
       "messageCount": 4,
-      "rankInVod": 90
+      "rankInVod": 92
     },
     {
       "id": "vcs_126782937_25840832",
       "streamId": "126782937",
       "kickUserId": "25840832",
       "messageCount": 3,
-      "rankInVod": 101
+      "rankInVod": 103
     },
     {
       "id": "vcs_126782937_35686753",
@@ -51669,21 +52166,21 @@
       "streamId": "126782937",
       "kickUserId": "56106395",
       "messageCount": 3,
-      "rankInVod": 102
+      "rankInVod": 104
     },
     {
       "id": "vcs_126782937_126542372",
       "streamId": "126782937",
       "kickUserId": "126542372",
       "messageCount": 2,
-      "rankInVod": 113
+      "rankInVod": 115
     },
     {
       "id": "vcs_126782937_35815422",
       "streamId": "126782937",
       "kickUserId": "35815422",
       "messageCount": 1,
-      "rankInVod": 128
+      "rankInVod": 130
     },
     {
       "id": "vcs_126782937_49567947",
@@ -51697,21 +52194,21 @@
       "streamId": "126782937",
       "kickUserId": "36151793",
       "messageCount": 2,
-      "rankInVod": 114
+      "rankInVod": 116
     },
     {
       "id": "vcs_126782937_18058348",
       "streamId": "126782937",
       "kickUserId": "18058348",
       "messageCount": 7,
-      "rankInVod": 76
+      "rankInVod": 77
     },
     {
       "id": "vcs_126782937_56247670",
       "streamId": "126782937",
       "kickUserId": "56247670",
       "messageCount": 1,
-      "rankInVod": 129
+      "rankInVod": 131
     },
     {
       "id": "vcs_126782937_64973760",
@@ -51739,14 +52236,14 @@
       "streamId": "126782937",
       "kickUserId": "5785623",
       "messageCount": 6,
-      "rankInVod": 79
+      "rankInVod": 81
     },
     {
       "id": "vcs_126782937_6784194",
       "streamId": "126782937",
       "kickUserId": "6784194",
       "messageCount": 6,
-      "rankInVod": 80
+      "rankInVod": 82
     },
     {
       "id": "vcs_126782937_16106020",
@@ -51760,7 +52257,7 @@
       "streamId": "126782937",
       "kickUserId": "53406652",
       "messageCount": 2,
-      "rankInVod": 115
+      "rankInVod": 117
     },
     {
       "id": "vcs_126782937_36838838",
@@ -51788,7 +52285,7 @@
       "streamId": "126782937",
       "kickUserId": "66324660",
       "messageCount": 6,
-      "rankInVod": 81
+      "rankInVod": 83
     },
     {
       "id": "vcs_126782937_35218917",
@@ -51802,28 +52299,28 @@
       "streamId": "126782937",
       "kickUserId": "37578046",
       "messageCount": 6,
-      "rankInVod": 82
+      "rankInVod": 84
     },
     {
       "id": "vcs_126782937_16099626",
       "streamId": "126782937",
       "kickUserId": "16099626",
       "messageCount": 2,
-      "rankInVod": 116
+      "rankInVod": 118
     },
     {
       "id": "vcs_126782937_35678970",
       "streamId": "126782937",
       "kickUserId": "35678970",
       "messageCount": 3,
-      "rankInVod": 103
+      "rankInVod": 105
     },
     {
       "id": "vcs_126782937_32540699",
       "streamId": "126782937",
       "kickUserId": "32540699",
       "messageCount": 2,
-      "rankInVod": 117
+      "rankInVod": 119
     },
     {
       "id": "vcs_126782937_42897556",
@@ -51837,7 +52334,7 @@
       "streamId": "126782937",
       "kickUserId": "16267202",
       "messageCount": 1,
-      "rankInVod": 130
+      "rankInVod": 132
     },
     {
       "id": "vcs_126782937_98775243",
@@ -51851,7 +52348,7 @@
       "streamId": "126782937",
       "kickUserId": "17336004",
       "messageCount": 2,
-      "rankInVod": 118
+      "rankInVod": 120
     },
     {
       "id": "vcs_126782937_60690546",
@@ -51879,49 +52376,49 @@
       "streamId": "126782937",
       "kickUserId": "8477739",
       "messageCount": 4,
-      "rankInVod": 91
+      "rankInVod": 93
     },
     {
       "id": "vcs_126782937_16609197",
       "streamId": "126782937",
       "kickUserId": "16609197",
       "messageCount": 3,
-      "rankInVod": 104
+      "rankInVod": 106
     },
     {
       "id": "vcs_126782937_40648200",
       "streamId": "126782937",
       "kickUserId": "40648200",
       "messageCount": 1,
-      "rankInVod": 131
+      "rankInVod": 133
     },
     {
       "id": "vcs_126782937_40472442",
       "streamId": "126782937",
       "kickUserId": "40472442",
       "messageCount": 1,
-      "rankInVod": 132
+      "rankInVod": 134
     },
     {
       "id": "vcs_126782937_5838809",
       "streamId": "126782937",
       "kickUserId": "5838809",
       "messageCount": 1,
-      "rankInVod": 133
+      "rankInVod": 135
     },
     {
       "id": "vcs_126782937_118805595",
       "streamId": "126782937",
       "kickUserId": "118805595",
       "messageCount": 1,
-      "rankInVod": 134
+      "rankInVod": 136
     },
     {
       "id": "vcs_126782937_31211808",
       "streamId": "126782937",
       "kickUserId": "31211808",
       "messageCount": 1,
-      "rankInVod": 135
+      "rankInVod": 137
     },
     {
       "id": "vcs_126782937_44465421",
@@ -51935,35 +52432,35 @@
       "streamId": "126782937",
       "kickUserId": "85330201",
       "messageCount": 9,
-      "rankInVod": 70
+      "rankInVod": 71
     },
     {
       "id": "vcs_126782937_97226586",
       "streamId": "126782937",
       "kickUserId": "97226586",
       "messageCount": 1,
-      "rankInVod": 136
+      "rankInVod": 138
     },
     {
       "id": "vcs_126782937_17223005",
       "streamId": "126782937",
       "kickUserId": "17223005",
       "messageCount": 6,
-      "rankInVod": 83
+      "rankInVod": 85
     },
     {
       "id": "vcs_126782937_66832666",
       "streamId": "126782937",
       "kickUserId": "66832666",
       "messageCount": 3,
-      "rankInVod": 105
+      "rankInVod": 107
     },
     {
       "id": "vcs_126782937_70669456",
       "streamId": "126782937",
       "kickUserId": "70669456",
       "messageCount": 1,
-      "rankInVod": 137
+      "rankInVod": 139
     },
     {
       "id": "vcs_126782937_21527659",
@@ -51977,21 +52474,21 @@
       "streamId": "126782937",
       "kickUserId": "106453174",
       "messageCount": 3,
-      "rankInVod": 106
+      "rankInVod": 108
     },
     {
       "id": "vcs_126782937_5836801",
       "streamId": "126782937",
       "kickUserId": "5836801",
       "messageCount": 4,
-      "rankInVod": 92
+      "rankInVod": 94
     },
     {
       "id": "vcs_126782937_16293345",
       "streamId": "126782937",
       "kickUserId": "16293345",
       "messageCount": 4,
-      "rankInVod": 93
+      "rankInVod": 95
     },
     {
       "id": "vcs_126782937_51832122",
@@ -52005,7 +52502,7 @@
       "streamId": "126782937",
       "kickUserId": "32214777",
       "messageCount": 1,
-      "rankInVod": 138
+      "rankInVod": 140
     },
     {
       "id": "vcs_126782937_18443393",
@@ -52019,35 +52516,70 @@
       "streamId": "126782937",
       "kickUserId": "26525181",
       "messageCount": 3,
-      "rankInVod": 107
+      "rankInVod": 109
     },
     {
       "id": "vcs_126782937_21539778",
       "streamId": "126782937",
       "kickUserId": "21539778",
       "messageCount": 2,
-      "rankInVod": 119
+      "rankInVod": 121
     },
     {
       "id": "vcs_126782937_21325560",
       "streamId": "126782937",
       "kickUserId": "21325560",
       "messageCount": 4,
-      "rankInVod": 94
+      "rankInVod": 96
     },
     {
       "id": "vcs_126782937_21530081",
       "streamId": "126782937",
       "kickUserId": "21530081",
       "messageCount": 1,
-      "rankInVod": 139
+      "rankInVod": 141
     },
     {
       "id": "vcs_126782937_2437018",
       "streamId": "126782937",
       "kickUserId": "2437018",
       "messageCount": 1,
-      "rankInVod": 140
+      "rankInVod": 142
+    },
+    {
+      "id": "vcs_126782937_58372792",
+      "streamId": "126782937",
+      "kickUserId": "58372792",
+      "messageCount": 7,
+      "rankInVod": 78
+    },
+    {
+      "id": "vcs_126782937_36274163",
+      "streamId": "126782937",
+      "kickUserId": "36274163",
+      "messageCount": 1,
+      "rankInVod": 143
+    },
+    {
+      "id": "vcs_126782937_64179816",
+      "streamId": "126782937",
+      "kickUserId": "64179816",
+      "messageCount": 1,
+      "rankInVod": 144
+    },
+    {
+      "id": "vcs_126782937_61236719",
+      "streamId": "126782937",
+      "kickUserId": "61236719",
+      "messageCount": 1,
+      "rankInVod": 145
+    },
+    {
+      "id": "vcs_126782937_5832997",
+      "streamId": "126782937",
+      "kickUserId": "5832997",
+      "messageCount": 10,
+      "rankInVod": 69
     }
   ],
   "pointRules": [
@@ -52055,22 +52587,589 @@
       "ruleKey": "CHAT_MESSAGE",
       "pointValue": 1,
       "description": "1 point per valid chat message in live stream",
-      "updatedAt": "2026-09-11T17:05:37.969Z"
+      "updatedAt": "2026-09-12T12:43:01.881Z"
     },
     {
       "ruleKey": "SUBSCRIPTION",
       "pointValue": 100,
       "description": "100 points for subscribing to Slyyutus",
-      "updatedAt": "2026-09-11T17:05:37.969Z"
+      "updatedAt": "2026-09-12T12:43:01.881Z"
     },
     {
       "ruleKey": "GIFT_SUBSCRIPTION",
       "pointValue": 100,
       "description": "100 points per gift subscription to the community",
-      "updatedAt": "2026-09-11T17:05:37.969Z"
+      "updatedAt": "2026-09-12T12:43:01.881Z"
     }
   ],
   "systemLogs": [
+    {
+      "id": "log_1789217437515_7tc7h",
+      "level": "info",
+      "module": "SUBS_TRACKER",
+      "message": "Recalculated subscriptions for 31 VODs (78 non-overlapping subs linked).",
+      "createdAt": "2026-09-12T12:50:37.515Z"
+    },
+    {
+      "id": "log_1789217404300_ju3ai",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26604 followers, 63 subs, 28 real streams.",
+      "createdAt": "2026-09-12T12:50:04.300Z"
+    },
+    {
+      "id": "log_1789217344288_rhk0z",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26604 followers, 63 subs, 28 real streams.",
+      "createdAt": "2026-09-12T12:49:04.288Z"
+    },
+    {
+      "id": "log_1789217285701_vhoi1",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26604 followers, 63 subs, 28 real streams.",
+      "createdAt": "2026-09-12T12:48:05.701Z"
+    },
+    {
+      "id": "log_1789217224576_pgsax",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26604 followers, 63 subs, 28 real streams.",
+      "createdAt": "2026-09-12T12:47:04.576Z"
+    },
+    {
+      "id": "log_1789217164204_yolab",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26604 followers, 63 subs, 28 real streams.",
+      "createdAt": "2026-09-12T12:46:04.204Z"
+    },
+    {
+      "id": "log_1789217105666_ex21j",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26604 followers, 63 subs, 28 real streams.",
+      "createdAt": "2026-09-12T12:45:05.666Z"
+    },
+    {
+      "id": "log_1789217044438_jkgor",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26604 followers, 63 subs, 28 real streams.",
+      "createdAt": "2026-09-12T12:44:04.438Z"
+    },
+    {
+      "id": "log_1789216984527_mhm2e",
+      "level": "error",
+      "module": "KICK_EVENTS",
+      "message": "Cannot subscribe to webhook events: no app access token.",
+      "createdAt": "2026-09-12T12:43:04.527Z"
+    },
+    {
+      "id": "log_1789216984526_4lgeo",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26604 followers, 63 subs, 28 real streams.",
+      "createdAt": "2026-09-12T12:43:04.526Z"
+    },
+    {
+      "id": "log_1789216983964_fl0by",
+      "level": "success",
+      "module": "TRACKER",
+      "message": "Kick WebSocket connected. Subscribing to chatroom 229380.",
+      "createdAt": "2026-09-12T12:43:03.964Z"
+    },
+    {
+      "id": "log_1789216981958_lwygq",
+      "level": "info",
+      "module": "TRACKER",
+      "message": "Starting Kick real-time tracking service with WebSocket & API fallback.",
+      "createdAt": "2026-09-12T12:43:01.958Z"
+    },
+    {
+      "id": "log_1789216981879_w25oa",
+      "level": "info",
+      "module": "SUBS_TRACKER",
+      "message": "Recalculated subscriptions for 31 VODs (90 non-overlapping subs linked).",
+      "createdAt": "2026-09-12T12:43:01.879Z"
+    },
+    {
+      "id": "log_1789216961138_6as50",
+      "level": "info",
+      "module": "WEBHOOK",
+      "message": "Successfully tracked 3 Gift Sub(s) from GenerousGiftMaster (+300 pts)",
+      "createdAt": "2026-09-12T12:42:41.138Z"
+    },
+    {
+      "id": "log_1789216961137_k3hy8",
+      "level": "info",
+      "module": "WEBHOOK",
+      "message": "Received Kick webhook event: subscription.gift (ID: webhook_gift_776655)",
+      "createdAt": "2026-09-12T12:42:41.137Z"
+    },
+    {
+      "id": "log_1789216955047_hpite",
+      "level": "info",
+      "module": "WEBHOOK",
+      "message": "Duplicate Kick webhook ignored (Event ID: webhook_evt_998811)",
+      "createdAt": "2026-09-12T12:42:35.047Z"
+    },
+    {
+      "id": "log_1789216952561_o0hyl",
+      "level": "info",
+      "module": "WEBHOOK",
+      "message": "Successfully tracked subscription from SuperKickFan (+100 pts)",
+      "createdAt": "2026-09-12T12:42:32.561Z"
+    },
+    {
+      "id": "log_1789216952559_wo552",
+      "level": "info",
+      "module": "WEBHOOK",
+      "message": "Received Kick webhook event: subscription.new (ID: webhook_evt_998811)",
+      "createdAt": "2026-09-12T12:42:32.559Z"
+    },
+    {
+      "id": "log_1789216949545_jf07p",
+      "level": "error",
+      "module": "KICK_EVENTS",
+      "message": "Cannot subscribe to webhook events: no app access token.",
+      "createdAt": "2026-09-12T12:42:29.545Z"
+    },
+    {
+      "id": "log_1789216949545_8nrk1",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26604 followers, 63 subs, 28 real streams.",
+      "createdAt": "2026-09-12T12:42:29.545Z"
+    },
+    {
+      "id": "log_1789216948968_0irq7",
+      "level": "success",
+      "module": "TRACKER",
+      "message": "Kick WebSocket connected. Subscribing to chatroom 229380.",
+      "createdAt": "2026-09-12T12:42:28.968Z"
+    },
+    {
+      "id": "log_1789216946786_hmt54",
+      "level": "info",
+      "module": "TRACKER",
+      "message": "Starting Kick real-time tracking service with WebSocket & API fallback.",
+      "createdAt": "2026-09-12T12:42:26.786Z"
+    },
+    {
+      "id": "log_1789216946710_lxp9v",
+      "level": "info",
+      "module": "SUBS_TRACKER",
+      "message": "Recalculated subscriptions for 31 VODs (86 non-overlapping subs linked).",
+      "createdAt": "2026-09-12T12:42:26.710Z"
+    },
+    {
+      "id": "log_1789216943031_90665",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26604 followers, 63 subs, 28 real streams.",
+      "createdAt": "2026-09-12T12:42:23.031Z"
+    },
+    {
+      "id": "log_1789216881544_e3fk1",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26604 followers, 63 subs, 28 real streams.",
+      "createdAt": "2026-09-12T12:41:21.544Z"
+    },
+    {
+      "id": "log_1789216821711_miljr",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26604 followers, 63 subs, 28 real streams.",
+      "createdAt": "2026-09-12T12:40:21.711Z"
+    },
+    {
+      "id": "log_1789216762631_9tkyr",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26604 followers, 63 subs, 28 real streams.",
+      "createdAt": "2026-09-12T12:39:22.631Z"
+    },
+    {
+      "id": "log_1789216701844_lw14g",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26604 followers, 63 subs, 28 real streams.",
+      "createdAt": "2026-09-12T12:38:21.844Z"
+    },
+    {
+      "id": "log_1789216641578_a0yt6",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26604 followers, 63 subs, 28 real streams.",
+      "createdAt": "2026-09-12T12:37:21.578Z"
+    },
+    {
+      "id": "log_1789216581533_82s3f",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26604 followers, 63 subs, 28 real streams.",
+      "createdAt": "2026-09-12T12:36:21.533Z"
+    },
+    {
+      "id": "log_1789216522113_qej2i",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26604 followers, 63 subs, 28 real streams.",
+      "createdAt": "2026-09-12T12:35:22.113Z"
+    },
+    {
+      "id": "log_1789216461545_huxah",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26604 followers, 63 subs, 28 real streams.",
+      "createdAt": "2026-09-12T12:34:21.545Z"
+    },
+    {
+      "id": "log_1789216401541_9wcju",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26604 followers, 63 subs, 28 real streams.",
+      "createdAt": "2026-09-12T12:33:21.541Z"
+    },
+    {
+      "id": "log_1789216342710_oq726",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26604 followers, 63 subs, 28 real streams.",
+      "createdAt": "2026-09-12T12:32:22.710Z"
+    },
+    {
+      "id": "log_1789216281619_5e8xp",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26604 followers, 63 subs, 28 real streams.",
+      "createdAt": "2026-09-12T12:31:21.619Z"
+    },
+    {
+      "id": "log_1789216221544_an3ek",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26604 followers, 63 subs, 28 real streams.",
+      "createdAt": "2026-09-12T12:30:21.544Z"
+    },
+    {
+      "id": "log_1789216162959_qqb34",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26604 followers, 63 subs, 28 real streams.",
+      "createdAt": "2026-09-12T12:29:22.959Z"
+    },
+    {
+      "id": "log_1789216101563_47498",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26604 followers, 63 subs, 28 real streams.",
+      "createdAt": "2026-09-12T12:28:21.563Z"
+    },
+    {
+      "id": "log_1789216041487_utfwv",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26604 followers, 63 subs, 28 real streams.",
+      "createdAt": "2026-09-12T12:27:21.487Z"
+    },
+    {
+      "id": "log_1789215982578_g1ykg",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26604 followers, 63 subs, 28 real streams.",
+      "createdAt": "2026-09-12T12:26:22.578Z"
+    },
+    {
+      "id": "log_1789215921541_9a6xi",
+      "level": "error",
+      "module": "KICK_EVENTS",
+      "message": "Cannot subscribe to webhook events: no app access token.",
+      "createdAt": "2026-09-12T12:25:21.541Z"
+    },
+    {
+      "id": "log_1789215921540_41lll",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26604 followers, 63 subs, 28 real streams.",
+      "createdAt": "2026-09-12T12:25:21.540Z"
+    },
+    {
+      "id": "log_1789215921244_hg0t7",
+      "level": "success",
+      "module": "TRACKER",
+      "message": "Kick WebSocket connected. Subscribing to chatroom 229380.",
+      "createdAt": "2026-09-12T12:25:21.244Z"
+    },
+    {
+      "id": "log_1789215919198_3u1s7",
+      "level": "info",
+      "module": "TRACKER",
+      "message": "Starting Kick real-time tracking service with WebSocket & API fallback.",
+      "createdAt": "2026-09-12T12:25:19.198Z"
+    },
+    {
+      "id": "log_1789215917265_zivkt",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26604 followers, 63 subs, 28 real streams.",
+      "createdAt": "2026-09-12T12:25:17.265Z"
+    },
+    {
+      "id": "log_1789215857373_im0rm",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26604 followers, 63 subs, 28 real streams.",
+      "createdAt": "2026-09-12T12:24:17.373Z"
+    },
+    {
+      "id": "log_1789215798478_adwr6",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26604 followers, 63 subs, 28 real streams.",
+      "createdAt": "2026-09-12T12:23:18.478Z"
+    },
+    {
+      "id": "log_1789215737294_vrj1h",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26604 followers, 63 subs, 28 real streams.",
+      "createdAt": "2026-09-12T12:22:17.294Z"
+    },
+    {
+      "id": "log_1789215677248_q91h7",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26604 followers, 63 subs, 28 real streams.",
+      "createdAt": "2026-09-12T12:21:17.248Z"
+    },
+    {
+      "id": "log_1789215618890_vprwz",
+      "level": "error",
+      "module": "KICK_EVENTS",
+      "message": "Cannot subscribe to webhook events: no app access token.",
+      "createdAt": "2026-09-12T12:20:18.890Z"
+    },
+    {
+      "id": "log_1789215618889_cf5la",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26604 followers, 63 subs, 28 real streams.",
+      "createdAt": "2026-09-12T12:20:18.889Z"
+    },
+    {
+      "id": "log_1789215617263_n2xyy",
+      "level": "success",
+      "module": "TRACKER",
+      "message": "Kick WebSocket connected. Subscribing to chatroom 229380.",
+      "createdAt": "2026-09-12T12:20:17.263Z"
+    },
+    {
+      "id": "log_1789215614835_ni5ja",
+      "level": "info",
+      "module": "TRACKER",
+      "message": "Starting Kick real-time tracking service with WebSocket & API fallback.",
+      "createdAt": "2026-09-12T12:20:14.836Z"
+    },
+    {
+      "id": "log_1789215556437_7x5gd",
+      "level": "error",
+      "module": "KICK_EVENTS",
+      "message": "Cannot subscribe to webhook events: no app access token.",
+      "createdAt": "2026-09-12T12:19:16.437Z"
+    },
+    {
+      "id": "log_1789215556436_s0lyd",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26604 followers, 63 subs, 28 real streams.",
+      "createdAt": "2026-09-12T12:19:16.436Z"
+    },
+    {
+      "id": "log_1789215555575_9azte",
+      "level": "success",
+      "module": "TRACKER",
+      "message": "Kick WebSocket connected. Subscribing to chatroom 229380.",
+      "createdAt": "2026-09-12T12:19:15.575Z"
+    },
+    {
+      "id": "log_1789215553572_vqfey",
+      "level": "info",
+      "module": "TRACKER",
+      "message": "Starting Kick real-time tracking service with WebSocket & API fallback.",
+      "createdAt": "2026-09-12T12:19:13.572Z"
+    },
+    {
+      "id": "log_1789215547401_10ctu",
+      "level": "error",
+      "module": "KICK_EVENTS",
+      "message": "Cannot subscribe to webhook events: no app access token.",
+      "createdAt": "2026-09-12T12:19:07.401Z"
+    },
+    {
+      "id": "log_1789215547400_qhd0h",
+      "level": "success",
+      "module": "CHANNEL_SYNC",
+      "message": "Synced real channel metadata & stats from Kick for @slyyutus: 26604 followers, 63 subs, 28 real streams.",
+      "createdAt": "2026-09-12T12:19:07.400Z"
+    },
+    {
+      "id": "log_1789215546005_t37eb",
+      "level": "success",
+      "module": "TRACKER",
+      "message": "Kick WebSocket connected. Subscribing to chatroom 229380.",
+      "createdAt": "2026-09-12T12:19:06.005Z"
+    },
+    {
+      "id": "log_1789215545534_5cgvq",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @SO9R4Tx: \"[emote:5756623:OuttaPocket]\" (+1 pt)",
+      "createdAt": "2026-09-12T12:19:05.534Z"
+    },
+    {
+      "id": "log_1789215545533_lq1ik",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @SO9R4Tx: \"[emote:5756623:OuttaPocket]\" (+1 pt)",
+      "createdAt": "2026-09-12T12:19:05.533Z"
+    },
+    {
+      "id": "log_1789215545530_bmt1v",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @SO9R4Tx: \"[emote:5756623:OuttaPocket]\" (+1 pt)",
+      "createdAt": "2026-09-12T12:19:05.530Z"
+    },
+    {
+      "id": "log_1789215545470_x4h3x",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @SO9R4Tx: \"[emote:5756623:OuttaPocket]\" (+1 pt)",
+      "createdAt": "2026-09-12T12:19:05.470Z"
+    },
+    {
+      "id": "log_1789215545468_7xf4f",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @SO9R4Tx: \"[emote:5756623:OuttaPocket]\" (+1 pt)",
+      "createdAt": "2026-09-12T12:19:05.468Z"
+    },
+    {
+      "id": "log_1789215545467_lxa0t",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @SO9R4Tx: \"[emote:5756623:OuttaPocket]\" (+1 pt)",
+      "createdAt": "2026-09-12T12:19:05.467Z"
+    },
+    {
+      "id": "log_1789215545465_q18tp",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @SO9R4Tx: \"[emote:5756623:OuttaPocket]\" (+1 pt)",
+      "createdAt": "2026-09-12T12:19:05.465Z"
+    },
+    {
+      "id": "log_1789215545459_pgq27",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @SO9R4Tx: \"[emote:5756623:OuttaPocket]\" (+1 pt)",
+      "createdAt": "2026-09-12T12:19:05.459Z"
+    },
+    {
+      "id": "log_1789215545456_koug2",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @SO9R4Tx: \"[emote:5756623:OuttaPocket]\" (+1 pt)",
+      "createdAt": "2026-09-12T12:19:05.456Z"
+    },
+    {
+      "id": "log_1789215545454_67dkl",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @SO9R4Tx: \"[emote:5756623:OuttaPocket]\" (+1 pt)",
+      "createdAt": "2026-09-12T12:19:05.454Z"
+    },
+    {
+      "id": "log_1789215545452_6lnum",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @lamlih93: \"ggg\" (+1 pt)",
+      "createdAt": "2026-09-12T12:19:05.452Z"
+    },
+    {
+      "id": "log_1789215545449_g5ijb",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @WBLG_SIMOO: \"sf\" (+1 pt)",
+      "createdAt": "2026-09-12T12:19:05.449Z"
+    },
+    {
+      "id": "log_1789215545445_9fmxc",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @M3ACH_SLY: \"[emote:4147884:vibePls]\" (+1 pt)",
+      "createdAt": "2026-09-12T12:19:05.445Z"
+    },
+    {
+      "id": "log_1789215545445_q05c6",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @M3ACH_SLY: \"[emote:4147884:vibePls]\" (+1 pt)",
+      "createdAt": "2026-09-12T12:19:05.445Z"
+    },
+    {
+      "id": "log_1789215545445_k4vu3",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @M3ACH_SLY: \"[emote:4147884:vibePls][emote:4147884:vi\" (+1 pt)",
+      "createdAt": "2026-09-12T12:19:05.445Z"
+    },
+    {
+      "id": "log_1789215545443_rub9k",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @M3ACH_SLY: \"[emote:4147884:vibePls]\" (+1 pt)",
+      "createdAt": "2026-09-12T12:19:05.443Z"
+    },
+    {
+      "id": "log_1789215545442_ra5rz",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @M3ACH_SLY: \"[emote:4147884:vibePls]\" (+1 pt)",
+      "createdAt": "2026-09-12T12:19:05.442Z"
+    },
+    {
+      "id": "log_1789215545441_7zc3w",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @M3ACH_SLY: \"[emote:4147884:vibePls][emote:4147884:vi\" (+1 pt)",
+      "createdAt": "2026-09-12T12:19:05.441Z"
+    },
+    {
+      "id": "log_1789215545440_b3kl2",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @Maksour: \"[emote:4147884:vibePls]\" (+1 pt)",
+      "createdAt": "2026-09-12T12:19:05.440Z"
+    },
+    {
+      "id": "log_1789215545438_yajrl",
+      "level": "info",
+      "module": "CHAT_TRACKER",
+      "message": "[POLL] Recorded chat from @M3ACH_SLY: \"[emote:4147884:vibePls]\" (+1 pt)",
+      "createdAt": "2026-09-12T12:19:05.438Z"
+    },
+    {
+      "id": "log_1789215542653_55bo6",
+      "level": "info",
+      "module": "TRACKER",
+      "message": "Starting Kick real-time tracking service with WebSocket & API fallback.",
+      "createdAt": "2026-09-12T12:19:02.653Z"
+    },
     {
       "id": "log_1789147026556_nd8v4",
       "level": "info",
@@ -55003,573 +56102,6 @@
       "module": "CHAT_TRACKER",
       "message": "[WEBSOCKET] Recorded chat from @BesTosAnAsBeSt: \"hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh\" (+1 pt)",
       "createdAt": "2026-09-11T17:14:30.347Z"
-    },
-    {
-      "id": "log_1789146869946_9hque",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @momocityred: \"dooooobiii skoskanoooooooooooo\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:29.946Z"
-    },
-    {
-      "id": "log_1789146869747_catav",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @ALPHA_1K: \"hhhhhhhhhhhh wa ranaki sa7bni chi zamlwl\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:29.747Z"
-    },
-    {
-      "id": "log_1789146869644_633rz",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @MedXx10: \"Wsh a sly\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:29.644Z"
-    },
-    {
-      "id": "log_1789146869549_g508x",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @attesader: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:29.549Z"
-    },
-    {
-      "id": "log_1789146869048_z6r89",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @ch4rif: \"wach a sly hani liya\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:29.048Z"
-    },
-    {
-      "id": "log_1789146868950_v9vc4",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @S1CARIO77: \"JABO 3LK\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:28.950Z"
-    },
-    {
-      "id": "log_1789146868653_7xfso",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @TH3M4FIOSO21: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:28.653Z"
-    },
-    {
-      "id": "log_1789146868550_3g1oo",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @FLANFARTLAN: \"h\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:28.550Z"
-    },
-    {
-      "id": "log_1789146868153_3rcae",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @TH3M4FIOSO21: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:28.153Z"
-    },
-    {
-      "id": "log_1789146867850_s3n61",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @NHkhalid: \"b9iti blaaa zab awda Casper b9iti blaaa \" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:27.850Z"
-    },
-    {
-      "id": "log_1789146867848_09d8w",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @MedXx10: \"Wsh a sly\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:27.848Z"
-    },
-    {
-      "id": "log_1789146867548_p7mnk",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @sly_aymane: \"wrina lvod mn jihtk\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:27.548Z"
-    },
-    {
-      "id": "log_1789146867453_msym9",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @gostime: \"CASPER WELA BOU9LWA\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:27.453Z"
-    },
-    {
-      "id": "log_1789146867452_a0fp0",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @fouadfd: \"@slyyutus khas tchoof pov dyal sheriif 3\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:27.452Z"
-    },
-    {
-      "id": "log_1789146867348_r5iu2",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @FLANFARTLAN: \"hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:27.348Z"
-    },
-    {
-      "id": "log_1789146867250_8d1yz",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @fouadfd: \"@slyyutus khas tchoof pov dyal sheriif 3\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:27.250Z"
-    },
-    {
-      "id": "log_1789146867249_zs7px",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @sniper_0808: \"[emote:37225:KEKLEO]\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:27.249Z"
-    },
-    {
-      "id": "log_1789146866949_cuctm",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @sniper_0808: \"[emote:37225:KEKLEO]\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:26.949Z"
-    },
-    {
-      "id": "log_1789146866947_64uj8",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @sly_aymane: \"wrina lvod mn jihtk\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:26.947Z"
-    },
-    {
-      "id": "log_1789146866849_kp15p",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @sniper_0808: \"[emote:37225:KEKLEO]\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:26.849Z"
-    },
-    {
-      "id": "log_1789146866849_orchh",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @momocityred: \"dooooobiii skoskanoooooooooooo\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:26.849Z"
-    },
-    {
-      "id": "log_1789146866848_aiphq",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @safwane_9: \"jabouuuuu\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:26.848Z"
-    },
-    {
-      "id": "log_1789146866748_4bdyv",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @fouadfd: \"@slyyutus khas tchoof pov dyal sheriif 3\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:26.748Z"
-    },
-    {
-      "id": "log_1789146866446_kg6qd",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @Yamale10: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:26.446Z"
-    },
-    {
-      "id": "log_1789146866255_5pwdu",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @sly_aymane: \"wrina lvod mn jihtk\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:26.255Z"
-    },
-    {
-      "id": "log_1789146866252_xdr35",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @Yamale10: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:26.252Z"
-    },
-    {
-      "id": "log_1789146865950_opr74",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @BesTosAnAsBeSt: \"hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:25.950Z"
-    },
-    {
-      "id": "log_1789146865754_t0blt",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @MedXx10: \"Hhhhhhhh\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:25.754Z"
-    },
-    {
-      "id": "log_1789146865450_sf2fg",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @SMOKY_x1: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:25.450Z"
-    },
-    {
-      "id": "log_1789146865349_i1y31",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @SMOKY_x1: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:25.349Z"
-    },
-    {
-      "id": "log_1789146865248_bl6l1",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @Advvm_rs: \"Hhhhhhhhhhhhhhhhhhhhhhhhhhhh\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:25.248Z"
-    },
-    {
-      "id": "log_1789146865148_5bhbr",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @SMOKY_x1: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:25.148Z"
-    },
-    {
-      "id": "log_1789146865051_9giyg",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @FLANFARTLAN: \"hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:25.051Z"
-    },
-    {
-      "id": "log_1789146864948_0wzc5",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @Yamale10: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:24.948Z"
-    },
-    {
-      "id": "log_1789146864749_shxca",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @Karmosaa: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:24.749Z"
-    },
-    {
-      "id": "log_1789146864449_eh9dh",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @Karmosaa: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:24.450Z"
-    },
-    {
-      "id": "log_1789146864348_sytn7",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @gostime: \"CASPER WELA BOU9LWA\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:24.348Z"
-    },
-    {
-      "id": "log_1789146864152_4a6ci",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @4chr4f_jtt: \"[emote:4147884:vibePls]\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:24.152Z"
-    },
-    {
-      "id": "log_1789146864151_fv1j5",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @Karmosaa: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:24.151Z"
-    },
-    {
-      "id": "log_1789146864150_2rok9",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @MSS_ZIAD: \"[emote:1730794:emojiLol]\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:24.150Z"
-    },
-    {
-      "id": "log_1789146864050_bl32f",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @attesader: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:24.050Z"
-    },
-    {
-      "id": "log_1789146864049_ipiqp",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @MSS_ZIAD: \"[emote:1730794:emojiLol]\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:24.049Z"
-    },
-    {
-      "id": "log_1789146864049_408yt",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @NHkhalid: \"b9iti blaaa zab awda Casper b9iti blaaa \" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:24.049Z"
-    },
-    {
-      "id": "log_1789146863948_eh1hl",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @Jniico_x: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:23.948Z"
-    },
-    {
-      "id": "log_1789146863848_n9tzq",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @MSS_ZIAD: \"[emote:1730794:emojiLol]\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:23.848Z"
-    },
-    {
-      "id": "log_1789146863548_2xacl",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @Jniico_x: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:23.548Z"
-    },
-    {
-      "id": "log_1789146863447_im8na",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @MedXx10: \"Hhhhhhhhh ana trat lia gbila hit machfts\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:23.447Z"
-    },
-    {
-      "id": "log_1789146863349_vw27q",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @momocityred: \"dooooobiii skoskanoooooooooooo\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:23.349Z"
-    },
-    {
-      "id": "log_1789146863348_l2l1a",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @nh_speed: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:23.348Z"
-    },
-    {
-      "id": "log_1789146863151_nu4xa",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @Jniico_x: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:23.151Z"
-    },
-    {
-      "id": "log_1789146863150_ftumw",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @nh_speed: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:23.150Z"
-    },
-    {
-      "id": "log_1789146863148_b54dj",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @ch4rif: \"hhhhhhhhhhh\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:23.148Z"
-    },
-    {
-      "id": "log_1789146862947_iq24r",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @nh_speed: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:22.947Z"
-    },
-    {
-      "id": "log_1789146862548_t4dxg",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @leon4ard: \"wach sf ?\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:22.548Z"
-    },
-    {
-      "id": "log_1789146862151_37jl6",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @4chr4f_jtt: \"[emote:4147884:vibePls]\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:22.151Z"
-    },
-    {
-      "id": "log_1789146861848_tozpe",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @4chr4f_jtt: \"[emote:4147884:vibePls]\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:21.848Z"
-    },
-    {
-      "id": "log_1789146861648_qqp0c",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @safwane_9: \"tay7wikkk\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:21.648Z"
-    },
-    {
-      "id": "log_1789146861346_d8f7t",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @bsb5: \"gg nice action walakin kia t7awat f rp d\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:21.346Z"
-    },
-    {
-      "id": "log_1789146861248_dhn2s",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @Haytam183: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:21.248Z"
-    },
-    {
-      "id": "log_1789146861147_25dcu",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @Haytam183: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:21.147Z"
-    },
-    {
-      "id": "log_1789146860948_tqmyh",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @Haytam183: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:20.948Z"
-    },
-    {
-      "id": "log_1789146860547_3wwhq",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @soarta3334: \"HHHHHHHHH\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:20.547Z"
-    },
-    {
-      "id": "log_1789146860350_9e6lf",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @H4mza_xyz01: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:20.350Z"
-    },
-    {
-      "id": "log_1789146860349_pv1fr",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @gostime: \"CASPER WELA BOU9LWA\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:20.349Z"
-    },
-    {
-      "id": "log_1789146860349_h39b5",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @LL_WINNERS: \"lhwa nayd\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:20.349Z"
-    },
-    {
-      "id": "log_1789146860348_yposa",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @H4mza_xyz01: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:20.348Z"
-    },
-    {
-      "id": "log_1789146860149_kxkva",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @H4mza_xyz01: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:20.149Z"
-    },
-    {
-      "id": "log_1789146859949_m3i6g",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @ch4rif: \"hhhhhhhh\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:19.949Z"
-    },
-    {
-      "id": "log_1789146859647_wt926",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @BesTosAnAsBeSt: \"hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:19.647Z"
-    },
-    {
-      "id": "log_1789146859348_8wr7k",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @Haytam183: \"HHHHHHHHHHHHHHHHHHH\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:19.348Z"
-    },
-    {
-      "id": "log_1789146858850_glhxw",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @gostime: \"CASPER WELA BOU9LWA\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:18.850Z"
-    },
-    {
-      "id": "log_1789146858848_rndd4",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @momocityred: \"dooooobiii skoskanoooooooooooo\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:18.848Z"
-    },
-    {
-      "id": "log_1789146858449_8s75f",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @FLANFARTLAN: \"[emote:5748031:collectibleswideKEKW]\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:18.449Z"
-    },
-    {
-      "id": "log_1789146858149_834y2",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @inzo_x10: \"hhhhhhhhhhhhhhhhhhhhhhhhhhhhhh hhhhhhhhh\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:18.149Z"
-    },
-    {
-      "id": "log_1789146858048_6o3rm",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @NHkhalid: \"b9iti blaaa zab awda Casper\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:18.048Z"
-    },
-    {
-      "id": "log_1789146857449_kqoxm",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @FLANFARTLAN: \"[emote:5748031:collectibleswideKEKW]\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:17.449Z"
-    },
-    {
-      "id": "log_1789146857149_zqi55",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @nh_speed: \"lbarh blil kankhera bda7k\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:17.149Z"
-    },
-    {
-      "id": "log_1789146857048_mz0jj",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @attesader: \"[emote:37226:KEKW]\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:17.048Z"
-    },
-    {
-      "id": "log_1789146856748_96ibx",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @momocityred: \"dooooobiii skoskanoooooooooooo hhhhhhh\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:16.748Z"
-    },
-    {
-      "id": "log_1789146856550_in696",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @yserKL: \"wash sf tl9oh\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:16.550Z"
-    },
-    {
-      "id": "log_1789146856549_u0o2f",
-      "level": "info",
-      "module": "CHAT_TRACKER",
-      "message": "[WEBSOCKET] Recorded chat from @ch4rif: \"hhhhhhh\" (+1 pt)",
-      "createdAt": "2026-09-11T17:14:16.549Z"
     }
   ],
   "subscriptionEvents": [
@@ -55664,16 +56196,6 @@
       "timestamp": "2026-09-01T22:14:03.417Z"
     },
     {
-      "id": "sub_hist_10",
-      "kickUserId": "240182",
-      "username": "ApexLegend99",
-      "avatarUrl": "https://files.kick.com/images/default_avatars/avatar_3.png",
-      "type": "SUBSCRIPTION",
-      "streamId": "125155625",
-      "pointsAwarded": 100,
-      "timestamp": "2026-09-01T18:49:33.518Z"
-    },
-    {
       "id": "sub_hist_11",
       "kickUserId": "239102",
       "username": "MoroccanSniper",
@@ -55762,16 +56284,6 @@
       "streamId": "124681320",
       "pointsAwarded": 100,
       "timestamp": "2026-08-30T02:34:46.570Z"
-    },
-    {
-      "id": "sub_hist_20",
-      "kickUserId": "240182",
-      "username": "ApexLegend99",
-      "avatarUrl": "https://files.kick.com/images/default_avatars/avatar_3.png",
-      "type": "SUBSCRIPTION",
-      "streamId": "124681320",
-      "pointsAwarded": 100,
-      "timestamp": "2026-08-29T23:22:19.387Z"
     },
     {
       "id": "sub_hist_21",
@@ -55864,16 +56376,6 @@
       "timestamp": "2026-08-26T19:05:01.348Z"
     },
     {
-      "id": "sub_hist_30",
-      "kickUserId": "240182",
-      "username": "ApexLegend99",
-      "avatarUrl": "https://files.kick.com/images/default_avatars/avatar_3.png",
-      "type": "SUBSCRIPTION",
-      "streamId": "124177014",
-      "pointsAwarded": 100,
-      "timestamp": "2026-08-26T21:13:40.289Z"
-    },
-    {
       "id": "sub_hist_31",
       "kickUserId": "239102",
       "username": "MoroccanSniper",
@@ -55962,16 +56464,6 @@
       "streamId": "123547819",
       "pointsAwarded": 100,
       "timestamp": "2026-08-22T19:03:23.986Z"
-    },
-    {
-      "id": "sub_hist_40",
-      "kickUserId": "240182",
-      "username": "ApexLegend99",
-      "avatarUrl": "https://files.kick.com/images/default_avatars/avatar_3.png",
-      "type": "SUBSCRIPTION",
-      "streamId": "123547819",
-      "pointsAwarded": 100,
-      "timestamp": "2026-08-22T21:55:20.028Z"
     },
     {
       "id": "sub_hist_41",
@@ -56064,16 +56556,6 @@
       "timestamp": "2026-08-18T21:46:28.159Z"
     },
     {
-      "id": "sub_hist_50",
-      "kickUserId": "240182",
-      "username": "ApexLegend99",
-      "avatarUrl": "https://files.kick.com/images/default_avatars/avatar_3.png",
-      "type": "SUBSCRIPTION",
-      "streamId": "122906412",
-      "pointsAwarded": 100,
-      "timestamp": "2026-08-18T23:00:54.354Z"
-    },
-    {
       "id": "sub_hist_51",
       "kickUserId": "239102",
       "username": "MoroccanSniper",
@@ -56082,16 +56564,6 @@
       "streamId": "122728488",
       "pointsAwarded": 100,
       "timestamp": "2026-08-17T18:24:12.414Z"
-    },
-    {
-      "id": "sub_hist_52",
-      "kickUserId": "240182",
-      "username": "ApexLegend99",
-      "avatarUrl": "https://files.kick.com/images/default_avatars/avatar_3.png",
-      "type": "SUBSCRIPTION",
-      "streamId": "122587832",
-      "pointsAwarded": 100,
-      "timestamp": "2026-08-16T20:06:42.816Z"
     },
     {
       "id": "sub_hist_53",
@@ -56264,16 +56736,6 @@
       "timestamp": "2026-08-07T21:04:57.405Z"
     },
     {
-      "id": "sub_hist_70",
-      "kickUserId": "240182",
-      "username": "ApexLegend99",
-      "avatarUrl": "https://files.kick.com/images/default_avatars/avatar_3.png",
-      "type": "SUBSCRIPTION",
-      "streamId": "121152556",
-      "pointsAwarded": 100,
-      "timestamp": "2026-08-07T22:12:53.993Z"
-    },
-    {
       "id": "sub_hist_71",
       "kickUserId": "239102",
       "username": "MoroccanSniper",
@@ -56374,16 +56836,6 @@
       "timestamp": "2026-09-09T00:32:38.994Z"
     },
     {
-      "id": "sub_hist_81",
-      "kickUserId": "240182",
-      "username": "ApexLegend99",
-      "avatarUrl": "https://files.kick.com/images/default_avatars/avatar_3.png",
-      "type": "SUBSCRIPTION",
-      "streamId": "126335732",
-      "pointsAwarded": 100,
-      "timestamp": "2026-09-09T02:35:17.188Z"
-    },
-    {
       "id": "sub_hist_82",
       "kickUserId": "242901",
       "username": "GodAim_Jr",
@@ -56435,5 +56887,951 @@
     }
   ],
   "adminKickUserId": "16282003",
-  "miniGameScores": []
+  "miniGameScores": [],
+  "pointTransactions": [
+    {
+      "id": "ptx_sub_hist_1",
+      "kickUserId": "239102",
+      "username": "MoroccanSniper",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "125483810",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-09-04T01:19:02.287Z"
+    },
+    {
+      "id": "ptx_sub_hist_2",
+      "kickUserId": "241094",
+      "username": "SlyyutuS_VIP",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "125483810",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-09-03T19:22:30.276Z"
+    },
+    {
+      "id": "ptx_sub_hist_3",
+      "kickUserId": "243881",
+      "username": "Casawi_Gamer",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "125483810",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-09-04T02:29:43.917Z"
+    },
+    {
+      "id": "ptx_sub_hist_4",
+      "kickUserId": "245812",
+      "username": "Yassine_Pro",
+      "seasonId": "09-26",
+      "type": "GIFT_SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "125483810",
+      "description": "Gift subscription in community (+100 pts)",
+      "timestamp": "2026-09-03T23:21:56.239Z"
+    },
+    {
+      "id": "ptx_sub_hist_5",
+      "kickUserId": "243881",
+      "username": "Casawi_Gamer",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "125325948",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-09-02T23:53:44.727Z"
+    },
+    {
+      "id": "ptx_sub_hist_6",
+      "kickUserId": "245812",
+      "username": "Yassine_Pro",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "125325948",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-09-02T21:11:12.599Z"
+    },
+    {
+      "id": "ptx_sub_hist_7",
+      "kickUserId": "247118",
+      "username": "Amina_Sly",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "125325948",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-09-02T22:07:05.924Z"
+    },
+    {
+      "id": "ptx_sub_hist_8",
+      "kickUserId": "246990",
+      "username": "Reda_Aim",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "125155625",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-09-01T21:54:18.648Z"
+    },
+    {
+      "id": "ptx_sub_hist_9",
+      "kickUserId": "238190",
+      "username": "CasperX_Fan",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "125155625",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-09-01T22:14:03.417Z"
+    },
+    {
+      "id": "ptx_sub_hist_11",
+      "kickUserId": "239102",
+      "username": "MoroccanSniper",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "125013750",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-08-31T23:51:42.262Z"
+    },
+    {
+      "id": "ptx_sub_hist_12",
+      "kickUserId": "241094",
+      "username": "SlyyutuS_VIP",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "125013750",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-09-01T00:18:38.344Z"
+    },
+    {
+      "id": "ptx_sub_hist_13",
+      "kickUserId": "243881",
+      "username": "Casawi_Gamer",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "125013750",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-08-31T20:25:30.965Z"
+    },
+    {
+      "id": "ptx_sub_hist_14",
+      "kickUserId": "245812",
+      "username": "Yassine_Pro",
+      "seasonId": "09-26",
+      "type": "GIFT_SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "125013750",
+      "description": "Gift subscription in community (+100 pts)",
+      "timestamp": "2026-08-31T21:42:02.893Z"
+    },
+    {
+      "id": "ptx_sub_hist_15",
+      "kickUserId": "243881",
+      "username": "Casawi_Gamer",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "124857848",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-08-30T19:34:14.743Z"
+    },
+    {
+      "id": "ptx_sub_hist_16",
+      "kickUserId": "245812",
+      "username": "Yassine_Pro",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "124857848",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-08-30T20:22:53.796Z"
+    },
+    {
+      "id": "ptx_sub_hist_17",
+      "kickUserId": "247118",
+      "username": "Amina_Sly",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "124857848",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-08-30T23:50:29.509Z"
+    },
+    {
+      "id": "ptx_sub_hist_18",
+      "kickUserId": "246990",
+      "username": "Reda_Aim",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "124681320",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-08-29T19:21:02.527Z"
+    },
+    {
+      "id": "ptx_sub_hist_19",
+      "kickUserId": "238190",
+      "username": "CasperX_Fan",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "124681320",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-08-30T02:34:46.570Z"
+    },
+    {
+      "id": "ptx_sub_hist_21",
+      "kickUserId": "239102",
+      "username": "MoroccanSniper",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "124512550",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-08-28T19:25:53.805Z"
+    },
+    {
+      "id": "ptx_sub_hist_22",
+      "kickUserId": "241094",
+      "username": "SlyyutuS_VIP",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "124512550",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-08-28T18:51:09.986Z"
+    },
+    {
+      "id": "ptx_sub_hist_23",
+      "kickUserId": "243881",
+      "username": "Casawi_Gamer",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "124512550",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-08-28T21:28:51.406Z"
+    },
+    {
+      "id": "ptx_sub_hist_24",
+      "kickUserId": "245812",
+      "username": "Yassine_Pro",
+      "seasonId": "09-26",
+      "type": "GIFT_SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "124512550",
+      "description": "Gift subscription in community (+100 pts)",
+      "timestamp": "2026-08-28T18:35:15.988Z"
+    },
+    {
+      "id": "ptx_sub_hist_25",
+      "kickUserId": "243881",
+      "username": "Casawi_Gamer",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "124353112",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-08-27T20:35:36.486Z"
+    },
+    {
+      "id": "ptx_sub_hist_26",
+      "kickUserId": "245812",
+      "username": "Yassine_Pro",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "124353112",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-08-27T23:02:32.092Z"
+    },
+    {
+      "id": "ptx_sub_hist_27",
+      "kickUserId": "247118",
+      "username": "Amina_Sly",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "124353112",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-08-28T00:07:06.735Z"
+    },
+    {
+      "id": "ptx_sub_hist_28",
+      "kickUserId": "246990",
+      "username": "Reda_Aim",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "124177014",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-08-27T00:27:25.551Z"
+    },
+    {
+      "id": "ptx_sub_hist_29",
+      "kickUserId": "238190",
+      "username": "CasperX_Fan",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "124177014",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-08-26T19:05:01.348Z"
+    },
+    {
+      "id": "ptx_sub_hist_31",
+      "kickUserId": "239102",
+      "username": "MoroccanSniper",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "124030826",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-08-25T23:38:27.068Z"
+    },
+    {
+      "id": "ptx_sub_hist_32",
+      "kickUserId": "241094",
+      "username": "SlyyutuS_VIP",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "124030826",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-08-26T00:10:25.459Z"
+    },
+    {
+      "id": "ptx_sub_hist_33",
+      "kickUserId": "243881",
+      "username": "Casawi_Gamer",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "124030826",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-08-25T22:09:16.809Z"
+    },
+    {
+      "id": "ptx_sub_hist_34",
+      "kickUserId": "245812",
+      "username": "Yassine_Pro",
+      "seasonId": "09-26",
+      "type": "GIFT_SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "124030826",
+      "description": "Gift subscription in community (+100 pts)",
+      "timestamp": "2026-08-25T21:46:04.102Z"
+    },
+    {
+      "id": "ptx_sub_hist_35",
+      "kickUserId": "243881",
+      "username": "Casawi_Gamer",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "123891936",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-08-24T21:21:00.793Z"
+    },
+    {
+      "id": "ptx_sub_hist_36",
+      "kickUserId": "245812",
+      "username": "Yassine_Pro",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "123891936",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-08-25T02:25:38.821Z"
+    },
+    {
+      "id": "ptx_sub_hist_37",
+      "kickUserId": "247118",
+      "username": "Amina_Sly",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "123891936",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-08-25T02:07:41.342Z"
+    },
+    {
+      "id": "ptx_sub_hist_38",
+      "kickUserId": "246990",
+      "username": "Reda_Aim",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "123547819",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-08-22T19:44:00.222Z"
+    },
+    {
+      "id": "ptx_sub_hist_39",
+      "kickUserId": "238190",
+      "username": "CasperX_Fan",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "123547819",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-08-22T19:03:23.986Z"
+    },
+    {
+      "id": "ptx_sub_hist_41",
+      "kickUserId": "239102",
+      "username": "MoroccanSniper",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "123242569",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-08-20T22:36:27.035Z"
+    },
+    {
+      "id": "ptx_sub_hist_42",
+      "kickUserId": "241094",
+      "username": "SlyyutuS_VIP",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "123242569",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-08-20T21:57:52.887Z"
+    },
+    {
+      "id": "ptx_sub_hist_43",
+      "kickUserId": "243881",
+      "username": "Casawi_Gamer",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "123242569",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-08-20T23:46:04.745Z"
+    },
+    {
+      "id": "ptx_sub_hist_44",
+      "kickUserId": "245812",
+      "username": "Yassine_Pro",
+      "seasonId": "09-26",
+      "type": "GIFT_SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "123242569",
+      "description": "Gift subscription in community (+100 pts)",
+      "timestamp": "2026-08-20T22:25:19.210Z"
+    },
+    {
+      "id": "ptx_sub_hist_45",
+      "kickUserId": "243881",
+      "username": "Casawi_Gamer",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "123077406",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-08-19T21:41:07.327Z"
+    },
+    {
+      "id": "ptx_sub_hist_46",
+      "kickUserId": "245812",
+      "username": "Yassine_Pro",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "123077406",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-08-19T21:08:29.818Z"
+    },
+    {
+      "id": "ptx_sub_hist_47",
+      "kickUserId": "247118",
+      "username": "Amina_Sly",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "123077406",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-08-19T21:18:40.613Z"
+    },
+    {
+      "id": "ptx_sub_hist_48",
+      "kickUserId": "246990",
+      "username": "Reda_Aim",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "122906412",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-08-18T20:04:28.673Z"
+    },
+    {
+      "id": "ptx_sub_hist_49",
+      "kickUserId": "238190",
+      "username": "CasperX_Fan",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "122906412",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-08-18T21:46:28.159Z"
+    },
+    {
+      "id": "ptx_sub_hist_51",
+      "kickUserId": "239102",
+      "username": "MoroccanSniper",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "122728488",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-08-17T18:24:12.414Z"
+    },
+    {
+      "id": "ptx_sub_hist_53",
+      "kickUserId": "242901",
+      "username": "GodAim_Jr",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "122587832",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-08-16T19:15:11.506Z"
+    },
+    {
+      "id": "ptx_sub_hist_54",
+      "kickUserId": "242901",
+      "username": "GodAim_Jr",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "122400111",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-08-15T22:39:08.081Z"
+    },
+    {
+      "id": "ptx_sub_hist_55",
+      "kickUserId": "244190",
+      "username": "Tanger_Warrior",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "122400111",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-08-15T21:58:53.803Z"
+    },
+    {
+      "id": "ptx_sub_hist_56",
+      "kickUserId": "246990",
+      "username": "Reda_Aim",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "122400111",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-08-15T19:14:58.479Z"
+    },
+    {
+      "id": "ptx_sub_hist_57",
+      "kickUserId": "245812",
+      "username": "Yassine_Pro",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "122252718",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-08-14T18:40:22.652Z"
+    },
+    {
+      "id": "ptx_sub_hist_58",
+      "kickUserId": "247118",
+      "username": "Amina_Sly",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "122252718",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-08-14T18:29:27.978Z"
+    },
+    {
+      "id": "ptx_sub_hist_59",
+      "kickUserId": "239102",
+      "username": "MoroccanSniper",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "122252718",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-08-14T18:32:51.070Z"
+    },
+    {
+      "id": "ptx_sub_hist_60",
+      "kickUserId": "241094",
+      "username": "SlyyutuS_VIP",
+      "seasonId": "09-26",
+      "type": "GIFT_SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "122252718",
+      "description": "Gift subscription in community (+100 pts)",
+      "timestamp": "2026-08-14T19:00:25.388Z"
+    },
+    {
+      "id": "ptx_sub_hist_61",
+      "kickUserId": "239102",
+      "username": "MoroccanSniper",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "122084899",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-08-13T20:02:14.250Z"
+    },
+    {
+      "id": "ptx_sub_hist_62",
+      "kickUserId": "241094",
+      "username": "SlyyutuS_VIP",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "122084899",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-08-13T17:29:49.446Z"
+    },
+    {
+      "id": "ptx_sub_hist_63",
+      "kickUserId": "243881",
+      "username": "Casawi_Gamer",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "122084899",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-08-13T18:27:39.522Z"
+    },
+    {
+      "id": "ptx_sub_hist_64",
+      "kickUserId": "242901",
+      "username": "GodAim_Jr",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "121799080",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-08-11T23:19:08.250Z"
+    },
+    {
+      "id": "ptx_sub_hist_65",
+      "kickUserId": "244190",
+      "username": "Tanger_Warrior",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "121799080",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-08-11T21:36:35.458Z"
+    },
+    {
+      "id": "ptx_sub_hist_66",
+      "kickUserId": "246990",
+      "username": "Reda_Aim",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "121799080",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-08-11T23:34:01.479Z"
+    },
+    {
+      "id": "ptx_sub_hist_67",
+      "kickUserId": "245812",
+      "username": "Yassine_Pro",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "121639046",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-08-10T21:20:35.713Z"
+    },
+    {
+      "id": "ptx_sub_hist_68",
+      "kickUserId": "246990",
+      "username": "Reda_Aim",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "121152556",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-08-07T21:09:22.147Z"
+    },
+    {
+      "id": "ptx_sub_hist_69",
+      "kickUserId": "238190",
+      "username": "CasperX_Fan",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "121152556",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-08-07T21:04:57.405Z"
+    },
+    {
+      "id": "ptx_sub_hist_71",
+      "kickUserId": "239102",
+      "username": "MoroccanSniper",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "125659897",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-09-04T22:47:07.216Z"
+    },
+    {
+      "id": "ptx_sub_hist_72",
+      "kickUserId": "241094",
+      "username": "SlyyutuS_VIP",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "125659897",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-09-04T20:31:40.796Z"
+    },
+    {
+      "id": "ptx_sub_hist_73",
+      "kickUserId": "243881",
+      "username": "Casawi_Gamer",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "125659897",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-09-05T01:32:09.978Z"
+    },
+    {
+      "id": "ptx_sub_hist_74",
+      "kickUserId": "242901",
+      "username": "GodAim_Jr",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "126007558",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-09-06T22:53:57.841Z"
+    },
+    {
+      "id": "ptx_sub_hist_75",
+      "kickUserId": "244190",
+      "username": "Tanger_Warrior",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "126007558",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-09-06T23:28:52.905Z"
+    },
+    {
+      "id": "ptx_sub_hist_76",
+      "kickUserId": "246990",
+      "username": "Reda_Aim",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "126007558",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-09-07T01:28:51.866Z"
+    },
+    {
+      "id": "ptx_sub_hist_77",
+      "kickUserId": "245812",
+      "username": "Yassine_Pro",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "126474841",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-09-09T19:56:16.070Z"
+    },
+    {
+      "id": "ptx_sub_hist_78",
+      "kickUserId": "247118",
+      "username": "Amina_Sly",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "126474841",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-09-09T22:08:13.687Z"
+    },
+    {
+      "id": "ptx_sub_hist_79",
+      "kickUserId": "239102",
+      "username": "MoroccanSniper",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "126474841",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-09-09T19:39:49.582Z"
+    },
+    {
+      "id": "ptx_sub_hist_80",
+      "kickUserId": "238190",
+      "username": "CasperX_Fan",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "126335732",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-09-09T00:32:38.994Z"
+    },
+    {
+      "id": "ptx_sub_hist_82",
+      "kickUserId": "242901",
+      "username": "GodAim_Jr",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "126335732",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-09-08T22:08:42.129Z"
+    },
+    {
+      "id": "ptx_sub_hist_83",
+      "kickUserId": "244190",
+      "username": "Tanger_Warrior",
+      "seasonId": "09-26",
+      "type": "GIFT_SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "126335732",
+      "description": "Gift subscription in community (+100 pts)",
+      "timestamp": "2026-09-08T21:56:10.037Z"
+    },
+    {
+      "id": "ptx_sub_hist_84",
+      "kickUserId": "242901",
+      "username": "GodAim_Jr",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "126147989",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-09-07T20:54:29.931Z"
+    },
+    {
+      "id": "ptx_sub_hist_85",
+      "kickUserId": "244190",
+      "username": "Tanger_Warrior",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "126147989",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-09-07T19:34:45.380Z"
+    },
+    {
+      "id": "ptx_sub_hist_86",
+      "kickUserId": "246990",
+      "username": "Reda_Aim",
+      "seasonId": "09-26",
+      "type": "SUBSCRIPTION",
+      "pointsAwarded": 100,
+      "totalPointsAfter": 100,
+      "streamId": "126147989",
+      "description": "Subscribed to Slyyutus (+100 pts)",
+      "timestamp": "2026-09-08T01:12:44.347Z"
+    }
+  ],
+  "processedEventIds": [
+    "webhook_evt_998811",
+    "webhook_gift_776655_gift_0",
+    "webhook_gift_776655_gift_1",
+    "webhook_gift_776655_gift_2",
+    "webhook_gift_776655"
+  ],
+  "questions": []
 }

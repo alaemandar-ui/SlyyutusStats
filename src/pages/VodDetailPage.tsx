@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { StreamVod, VodChatterRanking, ChatMessage } from '../types';
-import { fetchVodDetail } from '../lib/api';
+import { fetchVodDetail, recalculateVodSubs } from '../lib/api';
 import { BadgeItem } from '../components/BadgeItem';
 import { LoadingSkeleton } from '../components/LoadingSkeleton';
 import { UserAvatar } from '../components/UserAvatar';
@@ -18,7 +18,11 @@ import {
   Award,
   Search,
   Users,
-  Activity
+  Activity,
+  Zap,
+  Gift,
+  RefreshCw,
+  CheckCircle2
 } from 'lucide-react';
 
 interface VodDetailPageProps {
@@ -31,27 +35,54 @@ export const VodDetailPage: React.FC<VodDetailPageProps> = ({ streamId, navigate
   const [rankings, setRankings] = useState<VodChatterRanking[]>([]);
   const [chatMessages, setChatMessages] = useState<ChatMessage[]>([]);
   const [totalMessages, setTotalMessages] = useState<number>(0);
+  const [subscribers, setSubscribers] = useState<{
+    kickUserId: string;
+    username: string;
+    avatarUrl?: string;
+    type?: string;
+    pointsAwarded?: number;
+    timestamp?: string;
+  }[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
+  const [recalculating, setRecalculating] = useState<boolean>(false);
+  const [recalcSuccess, setRecalcSuccess] = useState<string | null>(null);
   const [search, setSearch] = useState<string>('');
   const [chatSearch, setChatSearch] = useState<string>('');
 
+  const loadVod = async () => {
+    try {
+      const data = await fetchVodDetail(streamId);
+      setStream(data.stream);
+      setRankings(data.rankings || []);
+      setChatMessages(data.chatMessages || []);
+      setTotalMessages(data.totalMessages || 0);
+      setSubscribers(data.subscribers || (data.stream as any).subscribers || []);
+    } catch (err) {
+      console.error('Failed fetching vod detail:', err);
+    } finally {
+      setLoading(false);
+    }
+  };
+
   useEffect(() => {
-    const loadVod = async () => {
-      setLoading(true);
-      try {
-        const data = await fetchVodDetail(streamId);
-        setStream(data.stream);
-        setRankings(data.rankings || []);
-        setChatMessages(data.chatMessages || []);
-        setTotalMessages(data.totalMessages || 0);
-      } catch (err) {
-        console.error('Failed fetching vod detail:', err);
-      } finally {
-        setLoading(false);
-      }
-    };
+    setLoading(true);
     loadVod();
   }, [streamId]);
+
+  const handleRecalculate = async () => {
+    try {
+      setRecalculating(true);
+      setRecalcSuccess(null);
+      const res = await recalculateVodSubs();
+      setRecalcSuccess(res.message || 'Subscriptions recalculated from database history');
+      await loadVod();
+      setTimeout(() => setRecalcSuccess(null), 5000);
+    } catch (err: any) {
+      console.error('Failed recalculating subscriptions:', err);
+    } finally {
+      setRecalculating(false);
+    }
+  };
 
   if (loading) {
     return (
@@ -158,9 +189,92 @@ export const VodDetailPage: React.FC<VodDetailPageProps> = ({ streamId, navigate
           </div>
           <div className="p-4 rounded-xl bg-zinc-900/60 border border-zinc-800 space-y-1">
             <span className="text-[10px] uppercase font-mono text-zinc-500 font-semibold block">Subs Gained</span>
-            <span className="text-xl font-extrabold font-heading text-emerald-400">+{stream.subsGained || 0}</span>
+            <span className="text-xl font-extrabold font-heading text-emerald-400">
+              {(stream.subscribersGained ?? stream.subsGained ?? subscribers.length) > 0 
+                ? `+${stream.subscribersGained ?? stream.subsGained ?? subscribers.length}` 
+                : '0'}
+            </span>
           </div>
         </div>
+      </div>
+
+      {/* Subscriptions Received Section */}
+      <div className="space-y-4">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div className="flex items-center gap-2">
+            <Zap className="w-5 h-5 text-emerald-400" />
+            <h2 className="text-xl font-black font-heading uppercase text-zinc-100 tracking-wider">
+              Subscriptions Received During VOD
+            </h2>
+            <span className="px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 text-xs font-mono font-bold">
+              {stream.subscribersGained ?? stream.subsGained ?? subscribers.length}
+            </span>
+          </div>
+
+          <button
+            onClick={handleRecalculate}
+            disabled={recalculating}
+            className="flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-zinc-900 hover:bg-zinc-800 text-zinc-300 hover:text-emerald-300 border border-zinc-800 text-xs font-mono transition-colors disabled:opacity-50"
+            title="Recalculate subscriptions strictly within this VOD's timestamp window"
+          >
+            <RefreshCw className={`w-3.5 h-3.5 ${recalculating ? 'animate-spin' : ''}`} />
+            <span>{recalculating ? 'Recalculating...' : 'Recalculate VOD Subs'}</span>
+          </button>
+        </div>
+
+        {recalcSuccess && (
+          <div className="p-3.5 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-xs font-mono text-emerald-300 flex items-center gap-2">
+            <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+            <span>{recalcSuccess}</span>
+          </div>
+        )}
+
+        {subscribers.length === 0 ? (
+          <div className="p-8 text-center rounded-2xl border border-zinc-800 bg-zinc-950/80 space-y-2">
+            <Gift className="w-8 h-8 text-zinc-600 mx-auto" />
+            <p className="text-xs text-zinc-400 font-mono">0 subscriptions recorded during this broadcast window.</p>
+            <p className="text-[11px] text-zinc-500 font-mono">
+              Subscriptions and gift events received between {new Date(stream.startedAt).toLocaleTimeString()} and {stream.endedAt ? new Date(stream.endedAt).toLocaleTimeString() : 'now'} are automatically attributed here.
+            </p>
+          </div>
+        ) : (
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+            {subscribers.map((sub, idx) => (
+              <div 
+                key={`${sub.kickUserId}_${idx}_${sub.timestamp}`}
+                className="p-3 rounded-xl border border-zinc-800 bg-zinc-900/60 hover:border-emerald-500/40 transition-colors flex items-center justify-between gap-3"
+              >
+                <div 
+                  onClick={() => navigate(`user/${sub.username}`)}
+                  className="flex items-center gap-2.5 cursor-pointer min-w-0"
+                >
+                  <UserAvatar
+                    src={sub.avatarUrl}
+                    username={sub.username}
+                    userId={sub.kickUserId}
+                    className="w-8 h-8 rounded-lg object-cover border border-zinc-700 shrink-0"
+                  />
+                  <div className="min-w-0">
+                    <span className="font-heading font-bold text-xs text-zinc-200 hover:text-emerald-300 truncate block">
+                      {sub.username}
+                    </span>
+                    <span className="text-[10px] text-zinc-500 font-mono block">
+                      {sub.timestamp ? new Date(sub.timestamp).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) : ''}
+                    </span>
+                  </div>
+                </div>
+                <div className="flex flex-col items-end gap-1 shrink-0">
+                  <span className="px-1.5 py-0.5 rounded text-[9px] font-mono font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 uppercase">
+                    {sub.type === 'GIFT_SUBSCRIPTION' ? 'Gift Sub' : 'Subscriber'}
+                  </span>
+                  <span className="text-[10px] font-mono font-bold text-amber-400">
+                    +100 pts
+                  </span>
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
       </div>
 
       {/* Stream Chatter Leaderboard */}

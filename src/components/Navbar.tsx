@@ -17,7 +17,8 @@ import {
   Radio, 
   Sparkles,
   MessageSquare,
-  Gamepad2
+  Gamepad2,
+  HelpCircle
 } from 'lucide-react';
 
 interface NavbarProps {
@@ -38,6 +39,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentRoute, navigate, channelL
     { label: 'LEAGUE', route: 'league', icon: Trophy, badge: 'Active' },
     { label: 'CHAT', route: 'chat', icon: MessageSquare },
     { label: 'GAMES', route: 'minigames', icon: Gamepad2 },
+    { label: 'Q&A', route: 'qa', icon: HelpCircle },
     { label: 'SEASONS', route: 'seasons', icon: Calendar },
     { label: 'VODS', route: 'vods', icon: Video },
     { label: 'USERS', route: 'users', icon: Users },

@@ -384,27 +384,37 @@ export class TrackerService {
   public processSubscriptionEvent(payload: any) {
     try {
       const subscriber = payload.subscriber || payload.user || {};
-      const subId = String(payload.user_id || subscriber.id || payload.subscriber_id || payload.username || `sub_${Date.now()}`);
-      const subName = payload.username || subscriber.username || payload.subscriber_username || 'Subscriber';
-      const existingUser = db.getKickUserById(subId);
+      const subId = String(payload.user_id || subscriber.id || payload.subscriber_id || payload.username || '');
+      const subName = payload.username || subscriber.username || payload.subscriber_username || '';
+      const eventId = payload.id ? String(payload.id) : (payload.event_id ? String(payload.event_id) : undefined);
+
+      if (eventId && db.isEventProcessed(eventId)) {
+        console.log(`[Tracker] Skipping duplicate subscription event ${eventId}`);
+        return;
+      }
+
+      const existingUser = subId ? db.getKickUserById(subId) : (subName ? db.getKickUserByUsername(subName) : undefined);
       const avatarUrl = subscriber.profile_pic || 
         payload.profile_pic || 
         (existingUser?.avatarUrl && !existingUser.avatarUrl.includes('default-medium.webp') ? existingUser.avatarUrl : null) ||
         (subId && /^\d+$/.test(subId) ? `https://files.kick.com/images/user/${subId}/profile_image/conversion/default1-fullsize.webp` : `https://files.kick.com/images/default_avatars/avatar_1.png`);
 
-      const streamId = db.getActiveStreamId() || db.getStreams(1, 0).streams[0]?.streamId;
-      db.addSubscriptionEvent({
-        kickUserId: subId,
-        username: subName,
+      const timestamp = payload.created_at || payload.timestamp || new Date().toISOString();
+
+      const result = db.addSubscriptionEvent({
+        eventId,
+        kickUserId: subId || (existingUser?.kickUserId || ''),
+        username: subName || (existingUser?.username || 'Subscriber'),
         avatarUrl,
         type: 'SUBSCRIPTION',
-        streamId,
         pointsAwarded: 100,
-        timestamp: new Date().toISOString()
+        timestamp
       });
 
-      console.log(`[Tracker] Live subscription from ${subName} (+100 pts) associated with VOD ${streamId || 'active'}`);
-      db.addSystemLog('success', 'TRACKER', `Real-time subscription tracked from ${subName} (+100 pts)`);
+      if (result) {
+        console.log(`[Tracker] Live subscription from ${result.username} (+100 pts) linked to stream ${result.streamId || 'offline'}`);
+        db.addSystemLog('success', 'TRACKER', `Real-time subscription tracked from ${result.username} (+100 pts)`);
+      }
     } catch (err: any) {
       console.error('[Tracker] Error processing subscription:', err.message);
     }
@@ -416,9 +426,16 @@ export class TrackerService {
   public processGiftedSubscriptionEvent(payload: any) {
     try {
       const gifter = payload.gifter || payload.user || {};
-      const gifterId = String(payload.gifter_id || payload.gifter_user_id || gifter.id || payload.user_id || payload.gifter_username || 'unknown');
-      const gifterName = payload.gifter_username || gifter.username || payload.username || 'Gifter';
-      const existingUser = db.getKickUserById(gifterId);
+      const gifterId = String(payload.gifter_id || payload.gifter_user_id || gifter.id || payload.user_id || payload.gifter_username || '');
+      const gifterName = payload.gifter_username || gifter.username || payload.username || '';
+      const baseEventId = payload.id ? String(payload.id) : (payload.event_id ? String(payload.event_id) : undefined);
+
+      if (baseEventId && db.isEventProcessed(baseEventId)) {
+        console.log(`[Tracker] Skipping duplicate gift subscription event ${baseEventId}`);
+        return;
+      }
+
+      const existingUser = gifterId ? db.getKickUserById(gifterId) : (gifterName ? db.getKickUserByUsername(gifterName) : undefined);
       const avatarUrl = gifter.profile_pic || 
         payload.profile_pic || 
         (existingUser?.avatarUrl && !existingUser.avatarUrl.includes('default-medium.webp') ? existingUser.avatarUrl : null) ||
@@ -428,21 +445,30 @@ export class TrackerService {
         ? payload.gifted_usernames.length
         : Number(payload.gift_count || payload.count || 1);
 
-      if (gifterId !== 'unknown') {
-        const streamId = db.getActiveStreamId() || db.getStreams(1, 0).streams[0]?.streamId;
-        for (let i = 0; i < count; i++) {
-          db.addSubscriptionEvent({
-            kickUserId: gifterId,
-            username: gifterName,
-            avatarUrl,
-            type: 'GIFT_SUBSCRIPTION',
-            streamId,
-            pointsAwarded: 100,
-            timestamp: new Date().toISOString()
-          });
-        }
-        console.log(`[Tracker] Live gift subs: ${count} from ${gifterName} (+${count * 100} pts)`);
-        db.addSystemLog('success', 'TRACKER', `Tracked ${count} Gift Sub(s) from ${gifterName} (+${count * 100} pts)`);
+      const timestamp = payload.created_at || payload.timestamp || new Date().toISOString();
+      let successfulCount = 0;
+
+      for (let i = 0; i < count; i++) {
+        const itemEventId = baseEventId ? `${baseEventId}_gift_${i}` : undefined;
+        const res = db.addSubscriptionEvent({
+          eventId: itemEventId,
+          kickUserId: gifterId || (existingUser?.kickUserId || ''),
+          username: gifterName || (existingUser?.username || 'Gifter'),
+          avatarUrl,
+          type: 'GIFT_SUBSCRIPTION',
+          pointsAwarded: 100,
+          timestamp
+        });
+        if (res) successfulCount++;
+      }
+
+      if (baseEventId) {
+        db.markEventProcessed(baseEventId);
+      }
+
+      if (successfulCount > 0) {
+        console.log(`[Tracker] Live gift subs: ${successfulCount} from ${gifterName || 'Gifter'} (+${successfulCount * 100} pts)`);
+        db.addSystemLog('success', 'TRACKER', `Tracked ${successfulCount} Gift Sub(s) from ${gifterName || 'Gifter'} (+${successfulCount * 100} pts)`);
       }
     } catch (err: any) {
       console.error('[Tracker] Error processing gift subs:', err.message);

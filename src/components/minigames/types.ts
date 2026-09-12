@@ -1,12 +1,18 @@
 export type GameId = 
-  | 'logic_grid' 
+  | 'aim_trainer'
+  | 'skillbar_lockpick'
+  | 'circuit_wire'
+  | 'keypad_memory'
+  | 'thermite_memory'
+  | 'sequence_master'
+  | 'precision_timing'
+  | 'logic_grid'
+  // Legacy compatibility keys
+  | 'arcade_shooter' 
   | 'pattern_decoder' 
-  | 'sequence_master' 
   | 'cipher_puzzle' 
   | 'difficult_quiz' 
-  | 'precision_timing' 
-  | 'multi_task' 
-  | 'arcade_shooter';
+  | 'multi_task';
 
 export type GameCategory = 'puzzle' | 'quiz' | 'skill' | 'arcade';
 export type GameDifficulty = 'easy' | 'medium' | 'hard' | 'expert';

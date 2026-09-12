@@ -346,6 +346,40 @@ apiRouter.get('/user/:username/messages', (req: Request, res: Response) => {
   res.json(data);
 });
 
+apiRouter.get('/user/:username/transactions', (req: Request, res: Response) => {
+  const username = req.params.username;
+  const user = db.getKickUserByUsername(username) || db.getKickUserById(username);
+  if (!user) {
+    return res.status(404).json({ error: 'User not found' });
+  }
+
+  const limit = Math.min(100, Math.max(1, parseInt(req.query.limit as string) || 50));
+  const offset = Math.max(0, parseInt(req.query.offset as string) || 0);
+
+  const data = db.getPointTransactions(user.kickUserId, limit, offset);
+  res.json({
+    kickUserId: user.kickUserId,
+    username: user.username,
+    ...data
+  });
+});
+
+apiRouter.get('/user/me/transactions', requireAuth, (req: AuthRequest, res: Response) => {
+  if (!req.user) {
+    return res.status(401).json({ error: 'Authentication required' });
+  }
+
+  const limit = Math.min(100, Math.max(1, parseInt(req.query.limit as string) || 50));
+  const offset = Math.max(0, parseInt(req.query.offset as string) || 0);
+
+  const data = db.getPointTransactions(req.user.kickUserId, limit, offset);
+  res.json({
+    kickUserId: req.user.kickUserId,
+    username: req.user.username,
+    ...data
+  });
+});
+
 // --- VODs & Streams ---
 apiRouter.get('/vods', (req: Request, res: Response) => {
   const limit = Math.min(50, Math.max(1, parseInt(req.query.limit as string) || 12));
@@ -399,14 +433,28 @@ apiRouter.get('/vod/:streamId', (req: Request, res: Response) => {
   });
 
   const chatData = db.getStreamChatMessages(streamId, 300, 0);
-  const subCount = stream.subscribersGained ?? (stream as any).subsGained ?? 0;
+  const subEvents = db.getStreamSubscriptionEvents(streamId);
+  const subCount = subEvents.length > 0 
+    ? subEvents.length 
+    : (stream.subscribersGained ?? (stream as any).subsGained ?? 0);
+
+  const subscribers = subEvents.map(e => ({
+    kickUserId: e.kickUserId,
+    username: e.username,
+    avatarUrl: e.avatarUrl,
+    type: e.type,
+    pointsAwarded: e.pointsAwarded,
+    timestamp: e.timestamp
+  }));
 
   res.json({
     stream: {
       ...stream,
       subsGained: subCount,
-      subscribersGained: subCount
+      subscribersGained: subCount,
+      subscribers
     },
+    subscribers,
     chatterRankings: fullRankings,
     rankings: fullRankings,
     totalChatters: fullRankings.length,
@@ -816,30 +864,60 @@ apiRouter.post('/admin/test-event', requireAdmin, (req: AuthRequest, res: Respon
     });
     return res.json({ status: 'ok', message: `Dispatched test ${type} event for ${uname}`, chatMessage: msg });
   } else if (type === 'SUB' || type === 'subscription') {
-    const targetStreamId = (req.body.streamId as string) || db.getActiveStreamId();
-    db.addSubscriptionEvent({
+    const targetStreamId = (req.body.streamId as string) || undefined;
+    const eventTime = req.body.timestamp || new Date().toISOString();
+    const eventId = req.body.eventId || `test_sub_${Date.now()}_${Math.random().toString(36).substring(2, 6)}`;
+
+    const eventResult = db.addSubscriptionEvent({
+      eventId,
       kickUserId: uid,
       username: uname,
       avatarUrl: avatar,
       type: 'SUBSCRIPTION',
       streamId: targetStreamId,
       pointsAwarded: 100,
-      timestamp: new Date().toISOString()
+      timestamp: eventTime,
+      isTest: false
+    });
+
+    const activeSeason = db.getActiveSeason();
+    const updatedPoints = db.getSeasonPointsRecord(activeSeason.seasonId, uid)?.points || 0;
+    return res.json({ 
+      status: 'ok', 
+      message: `Dispatched subscription event for ${uname} (+100 pts)`,
+      event: eventResult,
+      totalPoints: updatedPoints
     });
   } else if (type === 'GIFT' || type === 'gift') {
     const count = Math.max(1, Number(req.body.giftCount) || 1);
-    const targetStreamId = (req.body.streamId as string) || db.getActiveStreamId();
+    const targetStreamId = (req.body.streamId as string) || undefined;
+    const eventTime = req.body.timestamp || new Date().toISOString();
+    const baseEventId = req.body.eventId || `test_gift_${Date.now()}_${Math.random().toString(36).substring(2, 6)}`;
+    const results: any[] = [];
+
     for (let i = 0; i < count; i++) {
-      db.addSubscriptionEvent({
+      const resEvent = db.addSubscriptionEvent({
+        eventId: `${baseEventId}_${i}`,
         kickUserId: uid,
         username: uname,
         avatarUrl: avatar,
         type: 'GIFT_SUBSCRIPTION',
         streamId: targetStreamId,
         pointsAwarded: 100,
-        timestamp: new Date().toISOString()
+        timestamp: eventTime,
+        isTest: false
       });
+      if (resEvent) results.push(resEvent);
     }
+
+    const activeSeason = db.getActiveSeason();
+    const updatedPoints = db.getSeasonPointsRecord(activeSeason.seasonId, uid)?.points || 0;
+    return res.json({ 
+      status: 'ok', 
+      message: `Dispatched ${count} gift subscription(s) for ${uname} (+${count * 100} pts)`,
+      events: results,
+      totalPoints: updatedPoints
+    });
   }
 
   res.json({ status: 'ok', message: `Dispatched test ${type} event for ${uname}` });
@@ -849,12 +927,27 @@ apiRouter.post('/admin/test-event', requireAdmin, (req: AuthRequest, res: Respon
 apiRouter.post('/webhooks/kick', (req: Request, res: Response) => {
   const event = req.body || {};
   const eventType = (req.headers['kick-event-type'] as string) || event.type || event.event || 'unknown';
+  const data = event.data || event;
 
-  db.addSystemLog('info', 'WEBHOOK', `Received Kick webhook event: ${eventType}`);
+  // Extract webhook event ID from Kick headers or payload for strict idempotency
+  const eventId = String(
+    req.headers['kick-event-id'] || 
+    req.headers['x-kick-event-id'] || 
+    event.id || 
+    event.event_id || 
+    data.id || 
+    data.event_id || 
+    ''
+  ).trim();
+
+  if (eventId && db.isWebhookProcessed(eventId)) {
+    db.addSystemLog('info', 'WEBHOOK', `Duplicate Kick webhook ignored (Event ID: ${eventId})`);
+    return res.status(200).json({ received: true, status: 'already_processed', eventId });
+  }
+
+  db.addSystemLog('info', 'WEBHOOK', `Received Kick webhook event: ${eventType} (ID: ${eventId || 'none'})`);
 
   try {
-    const data = event.data || event;
-
     // Handle chat message event
     if (eventType.includes('chat.message') || eventType === 'ChatMessage') {
       const sender = data.sender || data.chatter || data.user || {};
@@ -882,46 +975,57 @@ apiRouter.post('/webhooks/kick', (req: Request, res: Response) => {
     // Handle gift subscriptions (check before general subscription)
     else if (eventType.includes('subscription.gift') || eventType.includes('GiftedSubscriptions') || eventType === 'GiftSubscription' || eventType.includes('gift')) {
       const gifter = data.gifter || data.user || {};
-      const gifterId = String(gifter.id || gifter.user_id || data.gifter_id || 'unknown');
-      const gifterName = gifter.username || gifter.name || data.gifter_username || 'Gifter';
+      const gifterId = String(gifter.id || gifter.user_id || data.gifter_id || '');
+      const gifterName = gifter.username || gifter.name || data.gifter_username || '';
       const avatarUrl = gifter.profile_pic || data.profile_pic || `https://files.kick.com/images/default_avatars/avatar_1.png`;
       const count = Number(data.gift_count || data.count || (Array.isArray(data.gifted_usernames) ? data.gifted_usernames.length : 1));
+      const timestamp = data.created_at || data.timestamp || new Date().toISOString();
 
-      if (gifterId !== 'unknown') {
-        const streamId = String(data.stream_id || data.livestream_id || db.getActiveStreamId() || '');
-        for (let i = 0; i < count; i++) {
-          db.addSubscriptionEvent({
-            kickUserId: gifterId,
-            username: gifterName,
-            avatarUrl,
-            type: 'GIFT_SUBSCRIPTION',
-            streamId: streamId || undefined,
-            pointsAwarded: 100,
-            timestamp: data.created_at || new Date().toISOString()
-          });
-        }
-        db.addSystemLog('info', 'WEBHOOK', `Tracked ${count} Gift Sub(s) from ${gifterName} (+${count * 100} pts)`);
+      let createdCount = 0;
+      for (let i = 0; i < count; i++) {
+        const itemEventId = eventId ? `${eventId}_gift_${i}` : undefined;
+        const subEvent = db.addSubscriptionEvent({
+          eventId: itemEventId,
+          kickUserId: gifterId,
+          username: gifterName,
+          avatarUrl,
+          type: 'GIFT_SUBSCRIPTION',
+          pointsAwarded: 100,
+          timestamp
+        });
+        if (subEvent) createdCount++;
       }
+
+      if (eventId) {
+        db.markWebhookProcessed(eventId);
+      }
+
+      db.addSystemLog('info', 'WEBHOOK', `Successfully tracked ${createdCount} Gift Sub(s) from ${gifterName || 'Gifter'} (+${createdCount * 100} pts)`);
     }
     // Handle new/renewed subscription
     else if (eventType.includes('subscription') || eventType === 'Subscription' || eventType.includes('subscribe')) {
       const subscriber = data.subscriber || data.user || {};
-      const subId = String(subscriber.id || subscriber.user_id || data.user_id || 'unknown');
-      const subName = subscriber.username || subscriber.name || data.username || 'Subscriber';
+      const subId = String(subscriber.id || subscriber.user_id || data.user_id || '');
+      const subName = subscriber.username || subscriber.name || data.username || '';
       const avatarUrl = subscriber.profile_pic || data.profile_pic || `https://files.kick.com/images/default_avatars/avatar_1.png`;
+      const timestamp = data.created_at || data.timestamp || new Date().toISOString();
 
-      if (subId !== 'unknown') {
-        const streamId = String(data.stream_id || data.livestream_id || db.getActiveStreamId() || '');
-        db.addSubscriptionEvent({
-          kickUserId: subId,
-          username: subName,
-          avatarUrl,
-          type: 'SUBSCRIPTION',
-          streamId: streamId || undefined,
-          pointsAwarded: 100,
-          timestamp: data.created_at || new Date().toISOString()
-        });
-        db.addSystemLog('info', 'WEBHOOK', `Tracked subscription from ${subName} (+100 pts)`);
+      const subEvent = db.addSubscriptionEvent({
+        eventId: eventId || undefined,
+        kickUserId: subId,
+        username: subName,
+        avatarUrl,
+        type: 'SUBSCRIPTION',
+        pointsAwarded: 100,
+        timestamp
+      });
+
+      if (eventId) {
+        db.markWebhookProcessed(eventId);
+      }
+
+      if (subEvent) {
+        db.addSystemLog('info', 'WEBHOOK', `Successfully tracked subscription from ${subEvent.username} (+100 pts)`);
       }
     }
     // Handle livestream status update
@@ -1062,14 +1166,19 @@ apiRouter.post('/minigames/start', requireAuth, (req: AuthRequest, res: Response
 
   const { gameId, difficulty = 'medium' } = req.body;
   const validGames = [
+    'aim_trainer',
+    'arcade_shooter',
+    'skillbar_lockpick',
+    'circuit_wire',
+    'keypad_memory',
+    'thermite_memory',
+    'sequence_master',
+    'precision_timing',
     'logic_grid',
     'pattern_decoder',
-    'sequence_master',
     'cipher_puzzle',
     'difficult_quiz',
-    'precision_timing',
-    'multi_task',
-    'arcade_shooter'
+    'multi_task'
   ];
 
   if (gameId && !validGames.includes(gameId)) {
@@ -1118,14 +1227,19 @@ apiRouter.post('/minigames/submit', requireAuth, (req: AuthRequest, res: Respons
   }
 
   const validGames = [
+    'aim_trainer',
+    'arcade_shooter',
+    'skillbar_lockpick',
+    'circuit_wire',
+    'keypad_memory',
+    'thermite_memory',
+    'sequence_master',
+    'precision_timing',
     'logic_grid',
     'pattern_decoder',
-    'sequence_master',
     'cipher_puzzle',
     'difficult_quiz',
-    'precision_timing',
-    'multi_task',
-    'arcade_shooter'
+    'multi_task'
   ];
 
   if (!validGames.includes(gameId)) {
@@ -1136,14 +1250,19 @@ apiRouter.post('/minigames/submit', requireAuth, (req: AuthRequest, res: Respons
   let scoreNum = Math.max(0, parseInt(score) || 0);
   // Cap max score to prevent spoofing
   const maxScoreCaps: Record<string, number> = {
-    logic_grid: 2500,
-    pattern_decoder: 2500,
-    sequence_master: 2500,
-    cipher_puzzle: 2500,
-    difficult_quiz: 3500,
-    precision_timing: 3000,
-    multi_task: 4000,
-    arcade_shooter: 6000
+    aim_trainer: 12000,
+    arcade_shooter: 12000,
+    skillbar_lockpick: 5000,
+    circuit_wire: 5000,
+    keypad_memory: 5000,
+    thermite_memory: 5000,
+    sequence_master: 3500,
+    precision_timing: 3500,
+    logic_grid: 3500,
+    pattern_decoder: 3000,
+    cipher_puzzle: 3000,
+    difficult_quiz: 4000,
+    multi_task: 4000
   };
   const cap = maxScoreCaps[gameId] || 5000;
   if (scoreNum > cap) {
@@ -1168,7 +1287,7 @@ apiRouter.post('/minigames/submit', requireAuth, (req: AuthRequest, res: Respons
     success: Boolean(success)
   });
 
-  const updatedLeaderboard = db.getMiniGameLeaderboard(gameId, diff, 10);
+  const updatedLeaderboard = db.getMiniGameLeaderboard(record.gameId, diff, 10);
   const userStats = db.getUserMiniGameStats(userId, username);
 
   res.json({
@@ -1177,6 +1296,145 @@ apiRouter.post('/minigames/submit', requireAuth, (req: AuthRequest, res: Respons
     score: record,
     leaderboard: updatedLeaderboard.leaderboard,
     userStats
+  });
+});
+
+// --- Q/A API Routes for Community Chatters & Slyyutus ---
+
+// Submit a question to streamer Slyyutus (authenticated chatters only)
+apiRouter.post('/qa/questions', requireAuth, (req: AuthRequest, res: Response) => {
+  if (!req.user) {
+    return res.status(401).json({ error: 'Please log in to submit a question.', requiresAuth: true });
+  }
+
+  const { question } = req.body;
+  if (!question || typeof question !== 'string' || !question.trim()) {
+    return res.status(400).json({ error: 'Question content cannot be empty.' });
+  }
+
+  const trimmed = question.trim();
+  if (trimmed.length < 3) {
+    return res.status(400).json({ error: 'Question is too short (minimum 3 characters).' });
+  }
+  if (trimmed.length > 500) {
+    return res.status(400).json({ error: 'Question exceeds maximum limit of 500 characters.' });
+  }
+
+  const dbUser = db.getKickUserById(req.user.kickUserId) || db.getKickUserByUsername(req.user.username);
+  const resolvedUsername = dbUser?.username || req.user.username;
+  const resolvedAvatar = dbUser?.avatarUrl || req.user.avatarUrl;
+
+  const newQ = db.createQuestion({
+    userId: req.user.kickUserId,
+    kickUserId: req.user.kickUserId,
+    username: resolvedUsername,
+    avatarUrl: resolvedAvatar,
+    question: trimmed
+  });
+
+  res.json({
+    status: 'ok',
+    success: true,
+    message: 'Your question has been securely submitted to Slyyutus!',
+    question: newQ
+  });
+});
+
+// Retrieve questions submitted by the currently authenticated chatter (privacy protected)
+apiRouter.get('/qa/my-questions', requireAuth, (req: AuthRequest, res: Response) => {
+  if (!req.user) {
+    return res.status(401).json({ error: 'Please log in to view your questions.', requiresAuth: true });
+  }
+
+  const questions = db.getQuestionsForUser(req.user.kickUserId, req.user.kickUserId);
+  res.json({
+    status: 'ok',
+    questions
+  });
+});
+
+// Public Community Q&A feed: View answered and pending questions
+apiRouter.get('/qa/questions', (req: Request, res: Response) => {
+  const status = req.query.status as string;
+  const sort = (req.query.sort as 'newest' | 'oldest') || 'newest';
+
+  const data = db.getPublicQuestions(status, sort);
+  res.json({
+    status: 'ok',
+    ...data
+  });
+});
+
+// Admin / Slyyutus inbox: View all submitted questions with status filters and sorting
+apiRouter.get('/qa/admin/questions', requireAdmin, (req: AuthRequest, res: Response) => {
+  const status = req.query.status as string;
+  const sort = (req.query.sort as 'newest' | 'oldest') || 'newest';
+
+  const data = db.getAllQuestionsAdmin(status, sort);
+  res.json({
+    status: 'ok',
+    ...data
+  });
+});
+
+// Admin / Slyyutus action: Answer a question
+apiRouter.post('/qa/admin/questions/:id/answer', requireAdmin, (req: AuthRequest, res: Response) => {
+  const { id } = req.params;
+  const { answer } = req.body;
+
+  if (!answer || typeof answer !== 'string' || !answer.trim()) {
+    return res.status(400).json({ error: 'Answer content cannot be empty.' });
+  }
+
+  const answeredBy = req.user?.username || 'Slyyutus';
+  const updated = db.answerQuestion(id, answer, answeredBy);
+
+  if (!updated) {
+    return res.status(404).json({ error: 'Question not found.' });
+  }
+
+  res.json({
+    status: 'ok',
+    success: true,
+    message: 'Answer published successfully!',
+    question: updated
+  });
+});
+
+// Admin / Slyyutus action: Update question status (pending, answered, rejected)
+apiRouter.post('/qa/admin/questions/:id/status', requireAdmin, (req: AuthRequest, res: Response) => {
+  const { id } = req.params;
+  const { status } = req.body;
+
+  if (!['pending', 'answered', 'rejected'].includes(status)) {
+    return res.status(400).json({ error: 'Invalid status. Must be pending, answered, or rejected.' });
+  }
+
+  const updated = db.updateQuestionStatus(id, status as any);
+  if (!updated) {
+    return res.status(404).json({ error: 'Question not found.' });
+  }
+
+  res.json({
+    status: 'ok',
+    success: true,
+    question: updated
+  });
+});
+
+// Admin / Slyyutus action: Delete an inappropriate question
+apiRouter.delete('/qa/admin/questions/:id', requireAdmin, (req: AuthRequest, res: Response) => {
+  const { id } = req.params;
+  const deleted = db.deleteQuestion(id);
+
+  if (!deleted) {
+    return res.status(404).json({ error: 'Question not found.' });
+  }
+
+  res.json({
+    status: 'ok',
+    success: true,
+    message: 'Question deleted successfully.'
   });
 });
 

@@ -103,10 +103,18 @@ export interface StreamVod {
   averageViewers: number;
   peakViewers: number;
   subsGained: number;
+  subscribersGained?: number;
   totalChatMessages: number;
   vodUrl?: string;
   thumbnailUrl?: string;
   isLive: boolean;
+  subscribers?: {
+    kickUserId: string;
+    username: string;
+    avatarUrl: string;
+    type: string;
+    timestamp: string;
+  }[];
   topChatters?: {
     rank: number;
     kickUserId: string;
@@ -230,4 +238,18 @@ export interface AuthState {
     role: 'admin' | 'user';
   } | null;
   isAdmin: boolean;
+}
+
+export interface PointTransaction {
+  id: string;
+  kickUserId: string;
+  username: string;
+  seasonId: string;
+  type: string;
+  pointsAwarded: number;
+  totalPointsAfter: number;
+  eventId?: string;
+  streamId?: string;
+  description: string;
+  timestamp: string;
 }
